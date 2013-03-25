@@ -6,10 +6,14 @@ engine = phptemplate
 ; Image appears on admin/appearance
 screenshot = images/screenshot.png
 
+; Reset styles with normalize
+stylesheets[all][] = css/normalize.css
+
 ; Foundation framework stylesheets
 stylesheets[all][] = css/foundation.min.css
+
 ; Uncompressed uncomment for dev or as a reference
-;stylesheets[all][] = css/foundation.css 
+;stylesheets[all][] = css/foundation.css
 
 ; Base theme specific CSS
 stylesheets[all][] = css/drupal.css
@@ -63,9 +67,9 @@ plugins[panels][layouts] = layouts
 ; settings[foundation_zurb_font_fallback] = 'sans-serif'
 ; settings[foundation_zurb_font_selectors] = 'body'
 
-; Information added by drupal.org packaging script on 2013-03-09
+; Information added by drupal.org packaging script on 2013-03-21
 version = "7.x-2.x-dev"
 core = "7.x"
 project = "zurb-foundation"
-datestamp = "1362828664"
+datestamp = "1363830735"
 
