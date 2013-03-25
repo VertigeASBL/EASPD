@@ -6,31 +6,21 @@
   </div>
 <?php endif; ?>
 
-<div id="header">
-  <?php if ($linked_site_name || $linked_logo): ?>
-    <div id="logo">
-      <?php if ($linked_logo): ?>
-        <?php print $linked_logo; ?>
-      <?php endif; ?>
-    </div>
-  <?php endif; ?>
-    <div id="slogan">
-      <?php
-        print t("EASPD is the <i>European Association of Service Providers for Persons with Disabilities</i> and represents 10.000 social service provider organisations across Europe and across disability.");
-      ?>
-    </div>
-</div>
-
 <?php if ($main_menu_links || !empty($page['navigation'])): ?>
-  <div id="top_nav">
-    <nav>
-      <?php if (!empty($page['navigation'])): ?>
-        <?php print render($page['navigation']);?>
-      <?php else: ?>
-        <?php print $main_menu_links; ?>
-      <?php endif; ?>
-    </nav>
-  </div>
+  <nav>
+    <?php if ($linked_site_name || $linked_logo): ?>
+      <div id="logo">
+        <?php if ($linked_logo): ?>
+          <?php print $linked_logo; ?>
+        <?php endif; ?>
+      </div>
+    <?php endif; ?>
+    <?php if (!empty($page['navigation'])): ?>
+      <?php print render($page['navigation']);?>
+    <?php else: ?>
+      <?php print $main_menu_links; ?>
+    <?php endif; ?>
+  </nav>
 <?php endif; ?>
 
 <div id="page">
@@ -63,12 +53,12 @@
   </div>
   <div id="sidebar">
     <?php if (!empty($page['sidebar_first'])): ?>
-      <div id="sidebar-first" class="<?php print $sidebar_first_grid; ?> columns sidebar">
+      <div id="sidebar-first">
         <?php print render($page['sidebar_first']); ?>
       </div>
     <?php endif; ?>
     <?php if (!empty($page['sidebar_second'])): ?>
-      <div id="sidebar-second" class="<?php print $sidebar_sec_grid; ?> columns sidebar">
+      <div id="sidebar-second">
         <?php print render($page['sidebar_second']); ?>
       </div>
     <?php endif; ?>
@@ -92,13 +82,4 @@
       </div>
     <?php endif; ?>
   </footer>
-<?php endif; ?>
-<?php if (!empty($site_name)): ?>
-  <div class="bottom-bar panel">
-    <div class="row">
-      <div class="twelve columns">
-        &copy; <?php print date('Y') . ' ' . check_plain($site_name); ?>
-      </div>
-    </div>
-  </div>
 <?php endif; ?>

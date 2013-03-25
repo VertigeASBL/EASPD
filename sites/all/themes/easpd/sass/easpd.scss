@@ -2,14 +2,65 @@
 /* ==========================================================================
    Table of Contents
    ==========================================================================
-:: Shared Styles
+:: Grid
 :: Page Name
 
 */
 
 /* -----------------------------------------
-   Shared Styles
+   Grid
    ----------------------------------------- */
+
+#top {
+  @extend .row;
+  #language_switcher {
+    @extend .three;
+    @extend .columns;
+    @extend .push-nine;
+  }
+}
+
+nav {
+  @extend .row;
+  #logo {
+    @extend .three;
+    @extend .columns;
+  }
+  .block-block-2 {
+    @extend .nine;
+    @extend .columns;
+    @extend .last;
+  }
+  .block-system-main-menu {
+    @extend .nine;
+    @extend .columns;
+    clear: both;
+  }
+  .block-search-form {
+    @extend .three;
+    @extend .columns;
+  }
+}
+
+#page {
+  @extend .row;
+  #main {
+    @extend .nine;
+    @extend .columns;
+  }
+  #sidebar {
+    @extend .three;
+    @extend .columns;
+  }
+}
+
+#footer {
+  @extend .row;
+  #footer-first, #footer-middle, #footer-last {
+    @extend .four;
+    @extend .columns;
+  }
+}
 
 /* -----------------------------------------
    Page Name
