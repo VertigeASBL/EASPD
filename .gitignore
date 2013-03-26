@@ -7,3 +7,6 @@ sites/*/private
 
 # Ignore sass-cache folders
 *.sass-cache*
+
+# Ignore emacs' backup files
+*~
