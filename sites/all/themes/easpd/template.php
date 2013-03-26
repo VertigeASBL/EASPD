@@ -1,5 +1,21 @@
 <?php
 
+function easpd_links__locale_block($variables) {
+
+  $output = "";
+
+  foreach ($variables['links'] as $lang => $link) {
+    $output .= '<li>' .
+      l($lang, $link['href'], array(
+                                    'attributes' => $link['attributes'],
+                                    'language'   => $link['language'],
+                                    )) .
+      '</li>';
+  }
+
+  return '<ul>' . $output . '</ul>';
+}
+
 /**
  * Implements theme_links() targeting the main menu specifically
  * Outputs Foundation Nav bar http://foundation.zurb.com/docs/navigation.php
