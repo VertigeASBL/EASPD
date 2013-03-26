@@ -2,15 +2,20 @@
 
 function easpd_links__locale_block($variables) {
 
+  global $language_url;
   $output = "";
 
   foreach ($variables['links'] as $lang => $link) {
-    $output .= '<li>' .
-      l($lang, $link['href'], array(
-                                    'attributes' => $link['attributes'],
-                                    'language'   => $link['language'],
-                                    )) .
-      '</li>';
+
+    $options = array(
+                     'attributes' => $link['attributes'],
+                     'language'   => $link['language'],
+                     );
+
+    $active = ($link['language']->language == $language_url->language);
+    $class = $active ? ' class="active"' : '';
+
+    $output .= '<li' . $class . '>' . l($lang, $link['href'], $options) . '</li>';
   }
 
   return '<ul>' . $output . '</ul>';

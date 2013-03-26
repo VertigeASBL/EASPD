@@ -1,9 +1,12 @@
 @import "base";
+@import "compass/css3/border-radius";
+
 /* ==========================================================================
    Table of Contents
    ==========================================================================
 :: Grid
-:: Page Name
+:: Decoration
+:: Admin Bar
 
 */
 
@@ -62,5 +65,43 @@ nav {
 }
 
 /* -----------------------------------------
-   Page Name
+   Decoration
    ----------------------------------------- */
+
+body {
+  border-top-color: $darkBlue;
+  border-top-width: 4px;
+  border-top-style: solid;
+}
+
+#language_switcher {
+  ul {
+    margin: 0;
+  }
+  li {
+    list-style: none;
+    display: inline-block;
+    float: left;
+    margin-right: 7px;
+    padding: 3px 7px;
+    text-transform: uppercase;
+    background-color: $lightBlue;
+    @include border-radius(0 0 4px 4px);
+    &.active {
+      background-color: $darkBlue;
+    }
+    a {
+      color: $white;
+      text-weight: bold;
+    }
+  }
+}
+
+/* -----------------------------------------
+   Admin Bar
+   ----------------------------------------- */
+
+html body.admin-menu {
+    margin-top: 34px !important;
+}
+
