@@ -5,6 +5,7 @@
    Table of Contents
    ==========================================================================
 :: Grid
+:: Typography
 :: Decoration
 :: Admin Bar
 
@@ -13,6 +14,12 @@
 /* -----------------------------------------
    Grid
    ----------------------------------------- */
+
+#top-container {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
 
 #top {
   @extend .row;
@@ -65,6 +72,16 @@ nav {
 }
 
 /* -----------------------------------------
+   Typography
+   ----------------------------------------- */
+
+a {
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+/* -----------------------------------------
    Decoration
    ----------------------------------------- */
 
@@ -92,7 +109,8 @@ body {
     }
     a {
       color: $white;
-      text-weight: bold;
+      font-weight: bold;
+      font-size: ms(0);
     }
   }
 }
@@ -102,6 +120,6 @@ body {
    ----------------------------------------- */
 
 html body.admin-menu {
-    margin-top: 34px !important;
+    margin-top: 32px !important;
 }
 

@@ -1,9 +1,9 @@
 <?php if (!empty($page['header'])): ?>
-  <div id="top">
+  <div id="top-container"><div id="top">
     <div id="language_switcher">
       <?php print render($page['header']);?>
     </div>
-  </div>
+  </div></div>
 <?php endif; ?>
 
 <?php if ($main_menu_links || !empty($page['navigation'])): ?>
