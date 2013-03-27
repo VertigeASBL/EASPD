@@ -28,6 +28,17 @@ function easpd_links__locale_block($variables) {
   return '<ul>' . $output . '</ul>';
 }
 
+function easpd_menu_tree($variables) {
+
+  $qp = qp($variables['tree']);
+
+  foreach ($qp->find('a.active') as $active_link) {
+    $active_link->parent()->addClass('active');
+  }
+
+  return '<ul class="menu">' . $qp->top()->find('body')->innerHtml() . '</ul>';
+}
+
 /**
  * Implements theme_links() targeting the main menu specifically
  * Outputs Foundation Nav bar http://foundation.zurb.com/docs/navigation.php

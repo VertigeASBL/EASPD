@@ -144,6 +144,15 @@ body {
 
 #nav-container {
   background-color: $darkYellow;
+  height: 50px;
+}
+
+nav .block-system-main-menu {
+  .menu {
+    @extend .nav-bar;
+    margin: 0;
+    height: 50px;
+  }
 }
 
 /* -----------------------------------------
