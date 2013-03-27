@@ -30,7 +30,7 @@
   }
 }
 
-nav {
+#header {
   @extend .row;
   #logo {
     @extend .three;
@@ -40,6 +40,10 @@ nav {
     @extend .nine;
     @extend .columns;
   }
+}  
+
+nav {
+  @extend .row;
   .block-system-main-menu {
     @extend .nine;
     @extend .columns;
@@ -107,12 +111,39 @@ body {
     &.active {
       background-color: $darkBlue;
     }
+    &.disabled {
+      background-color: darken($lightYellow, 10);
+    }
     a {
       color: $white;
       font-weight: bold;
       font-size: ms(0);
     }
   }
+}
+
+#header-container {
+  @include background(image-url("header_background.png") no-repeat scroll center 0);
+  background-color: $lightYellow;
+  height: 189px;
+  .block-block-2 {
+    color: $darkBlue;
+    text-transform: uppercase;
+    padding: 77px 195px 0 30px;
+    font-family: $bodyFontFamily;
+    font-stretch: semi-condensed;
+    p {
+      font-size: 14px;
+    }
+    em {
+      color: $lightBlue;
+      font-weight: bold;
+    }
+  }
+}
+
+#nav-container {
+  background-color: $darkYellow;
 }
 
 /* -----------------------------------------

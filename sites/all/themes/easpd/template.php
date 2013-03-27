@@ -2,7 +2,7 @@
 
 function easpd_links__locale_block($variables) {
 
-  global $language_url;
+  global $language_url, $element;
   $output = "";
 
   foreach ($variables['links'] as $lang => $link) {
@@ -15,7 +15,14 @@ function easpd_links__locale_block($variables) {
     $active = ($link['language']->language == $language_url->language);
     $class = $active ? ' class="active"' : '';
 
-    $output .= '<li' . $class . '>' . l($lang, $link['href'], $options) . '</li>';
+    if (array_key_exists('href', $link)) {
+      $href = $link['href'];
+    } else {
+      $href = '';
+      $class = ' class="disabled"';
+    }
+
+    $output .= '<li' . $class . '>' . l($lang, $href, $options) . '</li>';
   }
 
   return '<ul>' . $output . '</ul>';

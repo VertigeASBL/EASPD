@@ -6,8 +6,9 @@
   </div></div>
 <?php endif; ?>
 
-<?php if ($main_menu_links || !empty($page['navigation'])): ?>
-  <nav>
+<?php if (!empty($page['help'])): ?> 
+  <div id="header-container">
+  <div id="header">
     <?php if ($linked_site_name || $linked_logo): ?>
       <div id="logo">
         <?php if ($linked_logo): ?>
@@ -15,19 +16,29 @@
         <?php endif; ?>
       </div>
     <?php endif; ?>
+      <div id="help">
+        <?php print render($page['help']); ?>
+      </div>
+  </div>
+  </div>
+<?php endif; ?>
+
+<?php if ($main_menu_links || !empty($page['navigation'])): ?>
+  <div id="nav-container">
+  <nav>
     <?php if (!empty($page['navigation'])): ?>
       <?php print render($page['navigation']);?>
     <?php else: ?>
       <?php print $main_menu_links; ?>
     <?php endif; ?>
   </nav>
+  </div>
 <?php endif; ?>
 
 <div id="page">
   <div id="main">
     <?php if ($breadcrumb): print $breadcrumb; endif; ?>
     <?php if ($messages): print $messages; endif; ?>
-    <?php if (!empty($page['help'])): print render($page['help']); endif; ?>
     <?php if (!empty($page['highlighted'])): ?>
       <div class="highlight panel callout">
         <?php print render($page['highlighted']); ?>
