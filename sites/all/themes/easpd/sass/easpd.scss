@@ -1,5 +1,6 @@
 @import "base";
 @import "compass/css3/border-radius";
+@import "compass/css3/box-shadow";
 
 /* ==========================================================================
    Table of Contents
@@ -45,12 +46,12 @@
 nav {
   @extend .row;
   .block-system-main-menu {
-    @extend .nine;
+    @extend .eight;
     @extend .columns;
     clear: both;
   }
   .block-search-form {
-    @extend .three;
+    @extend .four;
     @extend .columns;
   }
 }
@@ -144,14 +145,77 @@ body {
 
 #nav-container {
   background-color: $darkYellow;
-  height: 50px;
+  height: 51px;
 }
 
-nav .block-system-main-menu {
-  .menu {
-    @extend .nav-bar;
+.barrenav {
+  position: relative;
+  top: -1px;
+  margin: 0;
+  height: 51px;
+  background-color: $lightGrey;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #dedede;
+  @include box-shadow(0 2px 3px rgba(0, 0, 0, 0.09));
+}
+
+nav .block-search-form form {
+  @extend .barrenav;
+  padding-left: 100px;
+  @include border-radius(0 5px 5px 0);
+  #edit-search-block-form--2 {
+    position: relative;
+    top: 9px;
+    width: 162px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dedede;
+    @include border-radius(3px);    
+  }
+  #edit-submit {
+    @include background(image-url("search_icon.png") no-repeat);
+    border: none;
+    position: relative;
+    top: -29px;    
+    left: 172px;
+    padding-left: 45px;
+    color: $darkYellow;
+    @include box-shadow(none);
+  }
+}
+
+nav .block-system-main-menu .menu {
+  @extend .barrenav;
+  width: 674px;
+  @include border-radius(5px 0 0 5px);
+  li {
+    list-style: none;
+    float: left;
     margin: 0;
-    height: 50px;
+    padding: 12px 20px 0px 20px;
+    height: 100%;
+    background-color: $lightGrey;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-right-color: #dedede;
+    @include box-shadow(1px 1px 3px white inset);
+    &.first {
+      @include border-radius(5px 0 0 5px);
+      width: 46px;
+      @include background(image-url("home_icon.png") no-repeat scroll center center);
+      a {
+        position: relative;
+        left: -99999px;
+      }
+    }
+    a {
+      height: 100%;
+      font-family: $headerFontFamily;
+      font-size: 13.5px;
+      font-weight: bold;
+      color: $darkGrey;
+    }
   }
 }
 
