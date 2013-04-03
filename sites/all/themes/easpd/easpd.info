@@ -29,6 +29,8 @@ base theme = zurb_foundation
 
 ; Base theme specific CSS
 stylesheets[all][] = css/easpd.css
+stylesheets[all][] = css/app.css
+stylesheets[all][] = css/foundation.min.css
 
 ; An empty JavaScript file ready to be used just uncomment and add JavaScript
 ; scripts[] = js/easpd.js

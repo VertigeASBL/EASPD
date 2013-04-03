@@ -1,6 +1,7 @@
 @import "base";
 @import "compass/css3/border-radius";
 @import "compass/css3/box-shadow";
+@import "compass/css3/images";
 
 /* ==========================================================================
    Table of Contents
@@ -8,7 +9,6 @@
 :: Grid
 :: Typography
 :: Decoration
-:: Admin Bar
 
 */
 
@@ -25,20 +25,24 @@
 #top {
   @extend .row;
   #language_switcher {
-    @extend .three;
+    @extend .large-3;
     @extend .columns;
-    @extend .push-nine;
+    @extend .push-9;
+  }
+  .block-text-resize-0 {
+    clear: both;
+    float: left;
   }
 }
 
 #header {
   @extend .row;
   #logo {
-    @extend .three;
+    @extend .large-3;
     @extend .columns;
   }
   .block-block-2 {
-    @extend .nine;
+    @extend .large-9;
     @extend .columns;
   }
 }  
@@ -46,12 +50,12 @@
 nav {
   @extend .row;
   .block-system-main-menu {
-    @extend .eight;
+    @extend .large-8;
     @extend .columns;
     clear: both;
   }
   .block-search-form {
-    @extend .four;
+    @extend .large-4;
     @extend .columns;
   }
 }
@@ -59,11 +63,11 @@ nav {
 #page {
   @extend .row;
   #main {
-    @extend .nine;
+    @extend .large-9;
     @extend .columns;
   }
   #sidebar {
-    @extend .three;
+    @extend .large-3;
     @extend .columns;
   }
 }
@@ -71,7 +75,7 @@ nav {
 #footer {
   @extend .row;
   #footer-first, #footer-middle, #footer-last {
-    @extend .four;
+    @extend .large-4;
     @extend .columns;
   }
 }
@@ -118,8 +122,11 @@ body {
     a {
       color: $white;
       font-weight: bold;
-      font-size: ms(0);
+      font-size: emCalc(13px);
     }
+  }
+  .block-text-resize {
+    
   }
 }
 
@@ -131,7 +138,7 @@ body {
     color: $darkBlue;
     text-transform: uppercase;
     padding: 77px 195px 0 30px;
-    font-family: $bodyFontFamily;
+    font-family: $body-font-family;
     font-stretch: semi-condensed;
     p {
       font-size: 14px;
@@ -211,19 +218,10 @@ nav .block-system-main-menu .menu {
     }
     a {
       height: 100%;
-      font-family: $headerFontFamily;
+      font-family: $header-font-family;
       font-size: 13.5px;
       font-weight: bold;
       color: $darkGrey;
     }
   }
 }
-
-/* -----------------------------------------
-   Admin Bar
-   ----------------------------------------- */
-
-html body.admin-menu {
-    margin-top: 32px !important;
-}
-
