@@ -39,6 +39,25 @@ function easpd_menu_tree($variables) {
   return '<ul class="menu">' . $qp->top()->find('body')->innerHtml() . '</ul>';
 }
 
+function easpd_text_resize_block() {
+  drupal_add_css(drupal_get_path('module', 'text_resize') . '/text_resize.css');
+  drupal_add_library('system', 'jquery.cookie');
+  drupal_add_js("var text_resize_scope = " . drupal_json_encode(variable_get('text_resize_scope', 'main')) . ";
+    var text_resize_minimum = " . drupal_json_encode(variable_get('text_resize_minimum', '12')) . ";
+    var text_resize_maximum = " . drupal_json_encode(variable_get('text_resize_maximum', '25')) . ";
+    var text_resize_line_height_allow = " . drupal_json_encode(variable_get('text_resize_line_height_allow', FALSE)) . ";
+    var text_resize_line_height_min = " . drupal_json_encode(variable_get('text_resize_line_height_min', 16)) . ";
+    var text_resize_line_height_max = " . drupal_json_encode(variable_get('text_resize_line_height_max', 36)) . ";", 'inline');
+  drupal_add_js(drupal_get_path('module', 'text_resize') . '/text_resize.js', 'file');
+  if (variable_get('text_resize_reset_button', FALSE) == TRUE) {
+    $output = t('<a href="javascript:;" class="changer" id="text_resize_increase"><sup>+</sup>A</a> <a href="javascript:;" class="changer" id="text_resize_reset">A</a> <a href="javascript:;" class="changer" id="text_resize_decrease"><sup>-</sup>A</a><div id="text_resize_clear"></div>');
+  }
+  else {
+    $output = t('<a href="javascript:;" class="changer" id="text_resize_decrease"><sup>-</sup>A</a> <a href="javascript:;" class="changer" id="text_resize_increase"><sup>+</sup>A</a><div id="text_resize_clear"></div>');
+  }
+  return $output;
+}
+
 /**
  * Implements theme_links() targeting the main menu specifically
  * Outputs Foundation Nav bar http://foundation.zurb.com/docs/navigation.php

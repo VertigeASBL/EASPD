@@ -25,9 +25,9 @@
 #top {
   @extend .row;
   #language_switcher {
-    @extend .large-3;
+    @extend .large-2;
     @extend .columns;
-    @extend .push-9;
+    @extend .push-10;
   }
   .block-text-resize-0 {
     clear: both;
@@ -109,7 +109,7 @@ body {
     display: inline-block;
     float: left;
     margin-right: 7px;
-    padding: 3px 7px;
+    padding: 0px 7px;
     text-transform: uppercase;
     background-color: $lightBlue;
     @include border-radius(0 0 4px 4px);
@@ -126,7 +126,36 @@ body {
     }
   }
   .block-text-resize {
-    
+    position: relative;
+    left: 128px;
+    top: 7px;
+    a.changer {
+      cursor: pointer;
+      display: block;
+      position: relative;
+      right: 67px;
+      outline: medium none;
+      text-indent: -9000px;
+      &#text_resize_decrease {
+        @include background(image-url("text_resize_minus.gif") no-repeat scroll 0 0 transparent);
+        width: 10px;
+        height: 10px;
+      }
+      &#text_resize_reset {
+        @include background(image-url("text_resize_reset.gif") no-repeat scroll 0 0 transparent);
+        width: 12px;
+        height: 12px;
+        top: 1px;
+        margin-right: 4px;
+        margin-left: 5px;
+      }
+      &#text_resize_increase {
+        @include background(image-url("text_resize_plus.gif") no-repeat scroll 0 0 transparent);
+        width: 13px;
+        height: 15px;
+        top: 1px;
+      }
+    }
   }
 }
 
