@@ -17,12 +17,13 @@ function devel_themer_menu() {
     'page callback' => 'drupal_get_form',
     'page arguments' => array('devel_themer_admin_settings'),
     'access arguments' => array('administer site configuration'),
+    'file' => 'devel_themer.admin.inc',
     'type' => MENU_NORMAL_ITEM,
   );
-  $items['devel_themer/variables/%/%'] = array(
+  $items['devel_themer/variables/%'] = array(
     'title' => 'Theme Development AJAX variables',
     'page callback' => 'devel_themer_ajax_variables',
-    'page arguments' => array(2, 3),
+    'page arguments' => array(2),
     'delivery callback' => 'ajax_deliver',
     'access arguments' => array('access devel information'),
     'type' => MENU_CALLBACK,
@@ -33,45 +34,24 @@ function devel_themer_menu() {
 /**
  * A menu callback used by popup to retrieve variables from cache for a recent page.
  *
- * @param $request_id
- *   A unique key that is sent to the browser in Drupal.Settings.devel_themer_request_id
- * @param $call
- *   The theme call for which you wish to retrieve variables.
+ * @param $key
+ *   The unique key that is sent to the browser to identify the variables
+ *   for a theme hook.
  * @return string
- * A chunk of HTML with the devel_print_object() rendering of the variables.
+ *   A chunk of HTML with the devel_print_object() rendering of the variables.
  */
-function devel_themer_ajax_variables($request_id, $call) {
-  $file = "temporary://devel_themer_$request_id";
-  if ($data = unserialize(file_get_contents($file))) {
-    $variables = $data[$call]['variables'];
-    if (has_krumo()) {
-      $content = krumo_ob($variables);
-    }
-    elseif ($data[$call]['type'] == 'func') {
-      $content = $variables;
-    }
-    else {
-      $content =  $variables;
-    }
+function devel_themer_ajax_variables($key) {
+  $content = devel_themer_load_krumo($key);
+  if (empty($content)) {
+    $content = t('Unable to load variables from temporary storage.');
   }
-  else {
-    $content =  'Ajax variables file not found. -' . check_plain($file);
-  }
-
   $commands[] = ajax_command_replace('div.themer-variables', '<div class="themer-variables">' . $content . '</div>');
   return array('#type' => 'ajax', '#commands' => $commands);
 }
 
-function devel_themer_admin_settings() {
-  $form['devel_themer_log'] = array('#type' => 'checkbox',
-    '#title' => t('Display theme log'),
-    '#default_value' => variable_get('devel_themer_log', FALSE),
-    '#description' => t('Display the list of theme templates and theme functions which could have been be used for a given page. The one that was actually used is bolded. This is the same data as the represented in the popup, but all calls are listed in chronological order and can alternately be sorted by time.'),
-  );
-  return system_settings_form($form);
-}
-
-
+/**
+ * Implements hook_init().
+ */
 function devel_themer_init() {
   if (user_access('access devel information')) {
     // Add requisite libraries.
@@ -320,7 +300,6 @@ function devel_themer_catch_function() {
       $processors = array();
     }
 
-    // This variable gets sent to the browser in Drupal.settings.
     $GLOBALS['devel_theme_calls'][$key] = array(
       'id' => $key,
       'name' => $name,
@@ -330,18 +309,80 @@ function devel_themer_catch_function() {
       'candidates' => $candidates,
       'preprocessors' => $preprocessors,
       'processors' => $processors,
-    );
-
-    // Remove some things from variables to reduce size of item in crumo
-    unset($meta['variables']['page']);
-
-    // This variable gets serialized and cached on the server.
-    $GLOBALS['devel_themer_server'][$key] = array(
-      'variables' => $meta['variables'],
-      'type' => $meta['type'],
+      // Variables are stored on the server and sent to browser via Ajax.
+      'variables' => devel_themer_store_krumo($meta['variables']),
     );
   }
   return $return;
+}
+
+/**
+ * Returns true if compression of temporary files is enabled.
+ */
+function devel_themer_compression_enabled() {
+  return variable_get('devel_themer_compress_temporary_files', TRUE)
+    && function_exists('gzcompress');
+}
+
+/**
+ * Temporarily store theme hook variables so that they can be request via ajax
+ * when needed.
+ */
+function devel_themer_store_krumo($variables) {
+  $directory = "temporary://devel_themer";
+  file_prepare_directory($directory, FILE_CREATE_DIRECTORY | FILE_MODIFY_PERMISSIONS);
+
+  // Sometimes serialize will fail, so we will use krumo_ob as a backup.
+  // We don't use krumo_ob by default because it's resource heavy.
+  $output = serialize($variables);
+  if (empty($output)) {
+    $output = krumo_ob($variables);
+    $filename = 'k' . sha1($output);
+  }
+  else {
+    $filename = 's' . sha1($output);
+  }
+
+  if (devel_themer_compression_enabled()) {
+    $filename = 'c' . $filename;
+    $output = gzcompress($output);
+  }
+
+  // Write the variables information to the a file. It will be retrieved on demand via AJAX.
+  // We used to write this to DB but was getting 'Warning: Got a packet bigger than 'max_allowed_packet' bytes'
+  // Writing to temp dir means we don't worry about folder existence/perms and cleanup is free.
+  $file = file_save_data($output, "temporary://devel_themer/$filename", FILE_EXISTS_REPLACE);
+  // file_save_data() saves the file with permanent status. Change this to
+  // temporary so that system_cron() garbage collects them.
+  $file->status = 0;
+  file_save($file);
+
+  return $filename;
+}
+
+/**
+ * Load stored variables.
+ */
+function devel_themer_load_krumo($key) {
+  $data = file_get_contents("temporary://devel_themer/$key");
+  if (empty($data)) {
+    return FALSE;
+  }
+
+  if ($key{0} == 'c') {
+    if (function_exists('gzuncompress')) {
+      $data = gzuncompress($data);
+      $key = substr($key, 1);
+    }
+    else {
+      return FALSE;
+    }
+  }
+  if ($key{0} == 's') {
+    $data = krumo_ob(unserialize($data));
+  }
+
+  return $data;
 }
 
 /**
@@ -456,9 +497,6 @@ function devel_themer_theme_twin($hook, $variables) {
   elseif (!empty($info['render element'])) {
     $variables += array($info['render element'] => array());
   }
-
-  // Add the themer attribute here
-  $variables['attributes_array'][DEVEL_THEMER_ATTRIBUTE] = $thmr_key;
 
   // Invoke the variable processors, if any. The processors may specify
   // alternate suggestions for which hook's template/function to use. If the
@@ -601,25 +639,7 @@ function devel_themer_exit() {
   // TODO: limit to html pages only $router_item = menu_get_item();
   //delivery_callback
   if (!empty($GLOBALS['devel_theme_calls']) && $_SERVER['REQUEST_METHOD'] != 'POST') {
-    // A random string that is sent to the browser. It enables the popup to retrieve params/variables from this request.
-    $request_id = uniqid(rand());
-    // Write the variables information to the a file. It will be retrieved on demand via AJAX.
-    // We used to write this to DB but was getting 'Warning: Got a packet bigger than 'max_allowed_packet' bytes'
-    // Writing to temp dir means we don't worry about folder existence/perms and cleanup is free.
-    try {
-      $file = file_save_data(serialize($GLOBALS['devel_themer_server']), "temporary://devel_themer_$request_id", FILE_EXISTS_REPLACE);
-    }
-    catch (Exception $e) {
-      $file = file_save_data(serialize(array("unables to save variables, probably due to pdo")), "temporary://devel_themer_$request_id", FILE_EXISTS_REPLACE);
-    }
-
-    // file_save_data() saves the file with permanent status. Change this to
-    // temporary so that system_cron() garbage collects them.
-    $file->status = 0;
-    file_save($file);
-
-    $GLOBALS['devel_theme_calls']['request_id'] = $request_id;
-    $GLOBALS['devel_theme_calls']['devel_themer_uri'] = url("devel_themer/variables/$request_id");
+    $GLOBALS['devel_theme_calls']['devel_themer_uri'] = url("devel_themer/variables");
     print '<script type="text/javascript">jQuery.extend(Drupal.settings, ' . drupal_json_encode($GLOBALS['devel_theme_calls']) . ");</script>\n";
   }
 }

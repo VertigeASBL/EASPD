@@ -238,7 +238,7 @@
       $('#themer-popup dd.processors').empty().prepend(vars.processors.join('<span class="delimiter"> + </span>'));
       $('#themer-popup dt.processors-type').empty().prepend(strs.processors);
 
-      var uri = Drupal.settings.devel_themer_uri + '/' + id;
+      var uri = Drupal.settings.devel_themer_uri + '/' + vars['variables'];
       if (type == 'func') {
           // populate the candidates
           $('#themer-popup dt.candidates-type').empty().prepend(strs.candidate_functions);
