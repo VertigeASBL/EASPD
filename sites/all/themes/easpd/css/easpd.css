@@ -7480,7 +7480,7 @@ body {
   position: relative;
   top: -1px;
   margin: 0;
-  height: 51px;
+  height: 52px;
   background-color: #f7f7f7;
   border-style: solid;
   border-width: 1px;
@@ -7541,7 +7541,7 @@ nav .block-system-main-menu .menu li {
   list-style: none;
   float: left;
   margin: 0;
-  padding: 12px 20px 0px 20px;
+  padding: 0;
   height: 100%;
   background-color: #f7f7f7;
   border-right-style: solid;
@@ -7560,17 +7560,15 @@ nav .block-system-main-menu .menu li.first {
   border-radius: 5px 0 0 5px;
   width: 46px;
   background: url('../images/home_icon.png?1364396211') no-repeat scroll center center;
+  text-indent: -99999px;
 }
-/* line 243, ../sass/easpd.scss */
-nav .block-system-main-menu .menu li.first a {
-  position: relative;
-  left: -99999px;
-}
-/* line 248, ../sass/easpd.scss */
+/* line 245, ../sass/easpd.scss */
 nav .block-system-main-menu .menu li a {
   height: 100%;
   font-family: "Roboto Condensed", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-size: 13.5px;
   font-weight: bold;
   color: #555555;
+  display: block;
+  padding: 12px 20px 0px 20px;
 }

@@ -188,7 +188,7 @@ body {
   position: relative;
   top: -1px;
   margin: 0;
-  height: 51px;
+  height: 52px;
   background-color: $lightGrey;
   border-style: solid;
   border-width: 1px;
@@ -229,7 +229,7 @@ nav .block-system-main-menu .menu {
     list-style: none;
     float: left;
     margin: 0;
-    padding: 12px 20px 0px 20px;
+    padding: 0;
     height: 100%;
     background-color: $lightGrey;
     border-right-style: solid;
@@ -240,10 +240,7 @@ nav .block-system-main-menu .menu {
       @include border-radius(5px 0 0 5px);
       width: 46px;
       @include background(image-url("home_icon.png") no-repeat scroll center center);
-      a {
-        position: relative;
-        left: -99999px;
-      }
+      text-indent: -99999px;
     }
     a {
       height: 100%;
@@ -251,6 +248,8 @@ nav .block-system-main-menu .menu {
       font-size: 13.5px;
       font-weight: bold;
       color: $darkGrey;
+      display: block;
+      padding: 12px 20px 0px 20px;
     }
   }
 }
