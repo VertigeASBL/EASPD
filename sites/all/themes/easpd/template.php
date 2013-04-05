@@ -2,19 +2,17 @@
 
 function easpd_links__locale_block($variables) {
 
-  global $language_url, $element;
+  global $language, $element;
   $output = "";
+  $languages = language_list();
 
-  foreach ($variables['links'] as $lang => $link) {
+  foreach ($variables['links'] as $link_lang => $link) {
 
-    $options = array(
-                     'attributes' => $link['attributes'],
-                     'language'   => $link['language'],
-                     );
-
-    $active = ($link['language']->language == $language_url->language);
+    // si langue en cours, le li aura la classe "active"
+    $active = ($link_lang == $language->language);
     $class = $active ? ' class="active"' : '';
 
+    // si aucune pas de traduction, le li aura la class "disabled"
     if (array_key_exists('href', $link)) {
       $href = $link['href'];
     } else {
@@ -22,7 +20,12 @@ function easpd_links__locale_block($variables) {
       $class = ' class="disabled"';
     }
 
-    $output .= '<li' . $class . '>' . l($lang, $href, $options) . '</li>';
+    $options = array(
+                     'attributes' => $link['attributes'],
+                     'language'   => $languages[$link_lang],
+                     );
+
+    $output .= '<li' . $class . '>' . l($link_lang, $href, $options) . '</li>';
   }
 
   return '<ul>' . $output . '</ul>';
