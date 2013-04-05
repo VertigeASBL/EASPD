@@ -29,10 +29,6 @@
     @extend .columns;
     @extend .push-10;
   }
-  .block-text-resize-0 {
-    clear: both;
-    float: left;
-  }
 }
 
 #header {
@@ -101,6 +97,9 @@ body {
 }
 
 #language_switcher {
+  & > div {
+    float: right;
+  }
   ul {
     margin: 0;
   }
@@ -127,13 +126,12 @@ body {
   }
   .block-text-resize {
     position: relative;
-    left: 128px;
     top: 7px;
+    right: 10px;
     a.changer {
       cursor: pointer;
       display: block;
       position: relative;
-      right: 67px;
       outline: medium none;
       text-indent: -9000px;
       &#text_resize_decrease {
@@ -249,7 +247,7 @@ nav .block-system-main-menu .menu {
       font-weight: bold;
       color: $darkGrey;
       display: block;
-      padding: 12px 20px 0px 20px;
+      padding: 15px 20px 0px 20px;
     }
   }
 }
