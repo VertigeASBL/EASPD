@@ -39,7 +39,8 @@ function easpd_menu_tree($variables) {
     $active_link->parent()->addClass('active');
   }
 
-  return '<ul class="menu">' . $qp->top()->find('body')->innerHtml() . '</ul>';
+  // on doit décoder l'utf8 parce que Drupal ré-encode par la suite 
+  return '<ul class="menu">' . utf8_decode($qp->top()->find('body')->innerHtml()) . '</ul>';
 }
 
 function easpd_text_resize_block() {
