@@ -18,9 +18,9 @@ stylesheets[all][] = css/drupal.css
 stylesheets[all][] = css/app.css
 
 ; Foundation framework scripts.
-scripts[] = js/modernizr.foundation.js
-scripts[] = js/foundation.min.js
-scripts[] = js/app.js
+; scripts[] = js/modernizr.foundation.js
+; scripts[] = js/foundation.min.js
+; scripts[] = js/app.js
 
 ; Uncompressed uncomment for development or as a reference
 ; scripts[] = js/jquery.foundation.accordion.js
