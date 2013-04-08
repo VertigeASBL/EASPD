@@ -81,23 +81,22 @@ regions[page_bottom]    = Page bottom
 ; features[] = secondary_menu
 
 ; Foundation framework scripts.
-scripts[] = js/modernizr.foundation.js
-scripts[] = js/foundation.min.js
+scripts[] = javascripts/vendor/custom.modernizr.js
+scripts[] = javascripts/foundation/foundation.js
 
 ; Uncompressed uncomment for development or as a reference
-; scripts[] = js/jquery.foundation.accordion.js
-scripts[] = js/jquery.foundation.alerts.js
-; scripts[] = js/jquery.foundation.buttons.js
-; scripts[] = js/jquery.foundation.clearing.js
-; scripts[] = js/jquery.foundation.forms.js
-; scripts[] = js/jquery.foundation.joyride.js
-; scripts[] = js/jquery.foundation.magellan.js
-; scripts[] = js/jquery.foundation.mediaQueryToggle.js
-; scripts[] = js/jquery.foundation.navigation.js
-scripts[] = js/jquery.foundation.orbit.js
-; scripts[] = js/jquery.foundation.reveal.js
-; scripts[] = js/jquery.foundation.tabs.js
-; scripts[] = js/jquery.foundation.tooltips.js
-; scripts[] = js/jquery.placeholder.js
+; scripts[] = javascripts/foundation/foundation.alerts.js
+; scripts[] = javascripts/foundation/foundation.clearing.js
+; scripts[] = javascripts/foundation/foundation.cookie.js
+; scripts[] = javascripts/foundation/foundation.dropdown.js
+; scripts[] = javascripts/foundation/foundation.forms.js
+; scripts[] = javascripts/foundation/foundation.joyride.js
+; scripts[] = javascripts/foundation/foundation.magellan.js
+scripts[] = javascripts/foundation/foundation.orbit.js
+; scripts[] = javascripts/foundation/foundation.placeholder.js
+; scripts[] = javascripts/foundation/foundation.reveal.js
+; scripts[] = javascripts/foundation/foundation.section.js
+; scripts[] = javascripts/foundation/foundation.tooltips.js
+; scripts[] = javascripts/foundation/foundation.topbar.js
 
-scripts[] = js/easpd.js
+scripts[] = javascripts/easpd.js
