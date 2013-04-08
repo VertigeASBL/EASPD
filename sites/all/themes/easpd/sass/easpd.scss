@@ -9,6 +9,7 @@
 :: Grid
 :: Typography
 :: Decoration
+:: Orbit Slider
 
 */
 
@@ -250,4 +251,12 @@ nav .block-system-main-menu .menu {
       padding: 15px 20px 0px 20px;
     }
   }
+}
+
+/* -----------------------------------------
+   Orbit Slider
+   ----------------------------------------- */
+
+#slider-container {
+  max-width: 670px;
 }

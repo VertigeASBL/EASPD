@@ -40,7 +40,7 @@
     <?php if ($breadcrumb): print $breadcrumb; endif; ?>
     <?php if ($messages): print $messages; endif; ?>
     <?php if (!empty($page['highlighted'])): ?>
-      <div class="highlight panel callout">
+      <div id="highlight">
         <?php print render($page['highlighted']); ?>
       </div>
     <?php endif; ?>
