@@ -95,6 +95,7 @@ body {
   border-top-color: $darkBlue;
   border-top-width: 4px;
   border-top-style: solid;
+  background-color: $lighterBlue;
 }
 
 #language_switcher {
@@ -253,10 +254,64 @@ nav .block-system-main-menu .menu {
   }
 }
 
+#page {
+  margin-top: 25px;
+}
+
 /* -----------------------------------------
    Orbit Slider
    ----------------------------------------- */
 
-#slider-container {
-  max-width: 670px;
+#highlight {
+  @include background(image-url("fond_slideshow.png") no-repeat);
+  padding: 8px;
+  max-width: 686px;
+  .orbit-container {    
+    border-style: solid;
+    border-width: 1px;
+    border-color: #c8c8c8;
+    @include border-radius(1px);
+  }
+  .orbit-prev {
+    @include background(image-url("slideshow_fleche_gauche.png") no-repeat scroll left center);
+    span { border: none; } /* pour virer les flèches en css */
+  }
+  .orbit-next {
+    @include background(image-url("slideshow_fleche_droite.png") no-repeat scroll right center);
+    span { border: none; } /* pour virer les flèches en css */
+  }
+  .orbit-caption {
+    width: 80%;
+    margin: 0 10%;
+    background-color: fade_out($darkYellow, 0.1);
+    h2 a, h2 {
+      text-transform: uppercase;
+      font-size: emCalc(17px);
+      color: $darkBlue;
+      margin: 1px 0;
+    }
+    p {
+      font-size: emCalc(16px);
+      color: darken($darkBlue, 15);
+      margin-bottom: 0;
+      a {
+        color: $darkBlue;
+        text-decoration: underline;
+        margin-left: 0.5em;
+      }
+    }
+  }
+  .orbit-bullets {
+    left: 45%;
+    top: 15px;
+    li {
+      height: 21px;
+      width: 21px;
+      border: none;
+      @include background(image-url("slideshow_bullet_inactive.png") no-repeat);
+      &.active {
+        @include background(image-url("slideshow_bullet_active.png") no-repeat);
+      }
+    }
+  }
 }

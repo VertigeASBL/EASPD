@@ -1,5 +1,18 @@
 <?php
 
+function easpd_views_view_field__slideshow_home__block__body($variables) {
+
+  $qp = qp($variables['output']);
+
+  $href = $qp->find('a')->attr('href');
+  
+  $qp->top()
+    ->find('p')
+    ->append("<a href='$href'>" . t('Read more') . "</a>");
+
+  return $qp->top()->find('body')->innerHtml();
+}
+
 function easpd_links__locale_block($variables) {
 
   global $language, $element;

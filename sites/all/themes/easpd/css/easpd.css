@@ -7367,17 +7367,18 @@ body {
   border-top-color: #184996;
   border-top-width: 4px;
   border-top-style: solid;
+  background-color: #ecf2f9;
 }
 
-/* line 101, ../sass/easpd.scss */
+/* line 102, ../sass/easpd.scss */
 #language_switcher > div {
   float: right;
 }
-/* line 104, ../sass/easpd.scss */
+/* line 105, ../sass/easpd.scss */
 #language_switcher ul {
   margin: 0;
 }
-/* line 107, ../sass/easpd.scss */
+/* line 108, ../sass/easpd.scss */
 #language_switcher li {
   list-style: none;
   display: inline-block;
@@ -7392,27 +7393,27 @@ body {
   -o-border-radius: 0 0 4px 4px;
   border-radius: 0 0 4px 4px;
 }
-/* line 116, ../sass/easpd.scss */
+/* line 117, ../sass/easpd.scss */
 #language_switcher li.active {
   background-color: #184996;
 }
-/* line 119, ../sass/easpd.scss */
+/* line 120, ../sass/easpd.scss */
 #language_switcher li.disabled {
   background-color: #ffda2b;
 }
-/* line 122, ../sass/easpd.scss */
+/* line 123, ../sass/easpd.scss */
 #language_switcher li a {
   color: white;
   font-weight: bold;
   font-size: 0.8125em;
 }
-/* line 128, ../sass/easpd.scss */
+/* line 129, ../sass/easpd.scss */
 #language_switcher .block-text-resize {
   position: relative;
   top: 7px;
   right: 10px;
 }
-/* line 132, ../sass/easpd.scss */
+/* line 133, ../sass/easpd.scss */
 #language_switcher .block-text-resize a.changer {
   cursor: pointer;
   display: block;
@@ -7420,36 +7421,36 @@ body {
   outline: medium none;
   text-indent: -9000px;
 }
-/* line 138, ../sass/easpd.scss */
+/* line 139, ../sass/easpd.scss */
 #language_switcher .block-text-resize a.changer#text_resize_decrease {
-  background: url('../images/text_resize_minus.gif?1364998155') no-repeat scroll 0 0 transparent;
+  background: url('../images/text_resize_minus.gif?1365514547') no-repeat scroll 0 0 transparent;
   width: 10px;
   height: 10px;
 }
-/* line 143, ../sass/easpd.scss */
+/* line 144, ../sass/easpd.scss */
 #language_switcher .block-text-resize a.changer#text_resize_reset {
-  background: url('../images/text_resize_reset.gif?1364998188') no-repeat scroll 0 0 transparent;
+  background: url('../images/text_resize_reset.gif?1365514547') no-repeat scroll 0 0 transparent;
   width: 12px;
   height: 12px;
   top: 1px;
   margin-right: 4px;
   margin-left: 5px;
 }
-/* line 151, ../sass/easpd.scss */
+/* line 152, ../sass/easpd.scss */
 #language_switcher .block-text-resize a.changer#text_resize_increase {
-  background: url('../images/text_resize_plus.gif?1364998306') no-repeat scroll 0 0 transparent;
+  background: url('../images/text_resize_plus.gif?1365514547') no-repeat scroll 0 0 transparent;
   width: 13px;
   height: 15px;
   top: 1px;
 }
 
-/* line 161, ../sass/easpd.scss */
+/* line 162, ../sass/easpd.scss */
 #header-container {
-  background: url('../images/header_background.png?1364305799') no-repeat scroll center 0;
+  background: url('../images/header_background.png?1365514547') no-repeat scroll center 0;
   background-color: #ffe35e;
   height: 189px;
 }
-/* line 165, ../sass/easpd.scss */
+/* line 166, ../sass/easpd.scss */
 #header-container .block-block-2 {
   color: #184996;
   text-transform: uppercase;
@@ -7457,23 +7458,23 @@ body {
   font-family: "Roboto Condensed Book", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-stretch: semi-condensed;
 }
-/* line 171, ../sass/easpd.scss */
+/* line 172, ../sass/easpd.scss */
 #header-container .block-block-2 p {
   font-size: 14px;
 }
-/* line 174, ../sass/easpd.scss */
+/* line 175, ../sass/easpd.scss */
 #header-container .block-block-2 em {
   color: #5b87c4;
   font-weight: bold;
 }
 
-/* line 181, ../sass/easpd.scss */
+/* line 182, ../sass/easpd.scss */
 #nav-container {
   background-color: #ffd200;
   height: 51px;
 }
 
-/* line 186, ../sass/easpd.scss */
+/* line 187, ../sass/easpd.scss */
 .barrenav, nav .block-search-form form, nav .block-system-main-menu .menu {
   position: relative;
   top: -1px;
@@ -7488,7 +7489,7 @@ body {
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.09);
 }
 
-/* line 198, ../sass/easpd.scss */
+/* line 199, ../sass/easpd.scss */
 nav .block-search-form form {
   padding-left: 100px;
   -webkit-border-radius: 0 5px 5px 0;
@@ -7497,7 +7498,7 @@ nav .block-search-form form {
   -o-border-radius: 0 5px 5px 0;
   border-radius: 0 5px 5px 0;
 }
-/* line 202, ../sass/easpd.scss */
+/* line 203, ../sass/easpd.scss */
 nav .block-search-form form #edit-search-block-form--2 {
   position: relative;
   top: 9px;
@@ -7511,9 +7512,9 @@ nav .block-search-form form #edit-search-block-form--2 {
   -o-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 211, ../sass/easpd.scss */
+/* line 212, ../sass/easpd.scss */
 nav .block-search-form form #edit-submit {
-  background: url('../images/search_icon.png?1364398765') no-repeat;
+  background: url('../images/search_icon.png?1365514547') no-repeat;
   border: none;
   position: relative;
   top: -29px;
@@ -7525,7 +7526,7 @@ nav .block-search-form form #edit-submit {
   box-shadow: none;
 }
 
-/* line 223, ../sass/easpd.scss */
+/* line 224, ../sass/easpd.scss */
 nav .block-system-main-menu .menu {
   width: 674px;
   -webkit-border-radius: 5px 0 0 5px;
@@ -7534,7 +7535,7 @@ nav .block-system-main-menu .menu {
   -o-border-radius: 5px 0 0 5px;
   border-radius: 5px 0 0 5px;
 }
-/* line 227, ../sass/easpd.scss */
+/* line 228, ../sass/easpd.scss */
 nav .block-system-main-menu .menu li {
   list-style: none;
   float: left;
@@ -7549,7 +7550,7 @@ nav .block-system-main-menu .menu li {
   -moz-box-shadow: 1px 1px 3px white inset;
   box-shadow: 1px 1px 3px white inset;
 }
-/* line 238, ../sass/easpd.scss */
+/* line 239, ../sass/easpd.scss */
 nav .block-system-main-menu .menu li.first {
   -webkit-border-radius: 5px 0 0 5px;
   -moz-border-radius: 5px 0 0 5px;
@@ -7557,10 +7558,10 @@ nav .block-system-main-menu .menu li.first {
   -o-border-radius: 5px 0 0 5px;
   border-radius: 5px 0 0 5px;
   width: 46px;
-  background: url('../images/home_icon.png?1364396211') no-repeat scroll center center;
+  background: url('../images/home_icon.png?1365514547') no-repeat scroll center center;
   text-indent: -99999px;
 }
-/* line 244, ../sass/easpd.scss */
+/* line 245, ../sass/easpd.scss */
 nav .block-system-main-menu .menu li a {
   height: 100%;
   font-family: "Roboto Condensed", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
@@ -7571,10 +7572,87 @@ nav .block-system-main-menu .menu li a {
   padding: 15px 20px 0px 20px;
 }
 
+/* line 257, ../sass/easpd.scss */
+#page {
+  margin-top: 25px;
+}
+
 /* -----------------------------------------
    Orbit Slider
    ----------------------------------------- */
-/* line 260, ../sass/easpd.scss */
-#slider-container {
-  max-width: 670px;
+/* line 265, ../sass/easpd.scss */
+#highlight {
+  background: url('../images/fond_slideshow.png?1365514547') no-repeat;
+  padding: 8px;
+  max-width: 686px;
+}
+/* line 269, ../sass/easpd.scss */
+#highlight .orbit-container {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #c8c8c8;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  -ms-border-radius: 1px;
+  -o-border-radius: 1px;
+  border-radius: 1px;
+}
+/* line 275, ../sass/easpd.scss */
+#highlight .orbit-prev {
+  background: url('../images/slideshow_fleche_gauche.png?1365605410') no-repeat scroll left center;
+  /* pour virer les flèches en css */
+}
+/* line 277, ../sass/easpd.scss */
+#highlight .orbit-prev span {
+  border: none;
+}
+/* line 279, ../sass/easpd.scss */
+#highlight .orbit-next {
+  background: url('../images/slideshow_fleche_droite.png?1365605382') no-repeat scroll right center;
+  /* pour virer les flèches en css */
+}
+/* line 281, ../sass/easpd.scss */
+#highlight .orbit-next span {
+  border: none;
+}
+/* line 283, ../sass/easpd.scss */
+#highlight .orbit-caption {
+  width: 80%;
+  margin: 0 10%;
+  background-color: rgba(255, 210, 0, 0.9);
+}
+/* line 287, ../sass/easpd.scss */
+#highlight .orbit-caption h2 a, #highlight .orbit-caption h2 {
+  text-transform: uppercase;
+  font-size: 1.0625em;
+  color: #184996;
+  margin: 1px 0;
+}
+/* line 293, ../sass/easpd.scss */
+#highlight .orbit-caption p {
+  font-size: 1em;
+  color: #0d2954;
+  margin-bottom: 0;
+}
+/* line 297, ../sass/easpd.scss */
+#highlight .orbit-caption p a {
+  color: #184996;
+  text-decoration: underline;
+  margin-left: 0.5em;
+}
+/* line 304, ../sass/easpd.scss */
+#highlight .orbit-bullets {
+  left: 45%;
+  top: 15px;
+}
+/* line 307, ../sass/easpd.scss */
+#highlight .orbit-bullets li {
+  height: 21px;
+  width: 21px;
+  border: none;
+  background: url('../images/slideshow_bullet_inactive.png?1366204728') no-repeat;
+}
+/* line 312, ../sass/easpd.scss */
+#highlight .orbit-bullets li.active {
+  background: url('../images/slideshow_bullet_active.png?1366204765') no-repeat;
 }
