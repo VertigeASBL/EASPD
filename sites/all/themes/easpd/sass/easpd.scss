@@ -104,6 +104,24 @@ body {
   background-color: $lighterBlue;
 }
 
+.tabs {
+  dd {
+    display: inline-block;
+    padding: 3px 10px;
+    position: relative;
+    left: 6px;
+    margin: 0 0 0 -6px;
+    border-color: $darkBlue;
+    border-style: solid;
+    border-width: 1px 2px 4px;
+    @include border-radius(4px 4px 0 0);
+    &.active {
+      border-bottom-width: 0;
+      a { font-weight: bold; }
+    }
+  }
+}
+
 #language_switcher {
   & > div {
     float: right;
