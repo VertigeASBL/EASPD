@@ -7688,7 +7688,7 @@ nav .block-search-form form #edit-submit {
 }
 /* line 338, ../sass/easpd.scss */
 #highlight .orbit-bullets {
-  left: 45%;
+  display: table;
   top: 15px;
 }
 /* line 341, ../sass/easpd.scss */
