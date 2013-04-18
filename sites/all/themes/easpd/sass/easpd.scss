@@ -46,13 +46,13 @@
 
 nav {
   @extend .row;
-  .block-system-main-menu {
-    @extend .large-8;
+  .block-superfish-1 {
+    @extend .large-9;
     @extend .columns;
     clear: both;
   }
   .block-search-form {
-    @extend .large-4;
+    @extend .large-3;
     @extend .columns;
   }
 }
@@ -85,6 +85,12 @@ a {
   &:hover {
     text-decoration: underline;
   }
+}
+
+*:focus {
+  border-style: dotted;
+  border-width: 1px;
+  border-color: $darkBlue;
 }
 
 /* -----------------------------------------
@@ -196,60 +202,88 @@ body {
   @include box-shadow(0 2px 3px rgba(0, 0, 0, 0.09));
 }
 
-nav .block-search-form form {
-  @extend .barrenav;
-  padding-left: 100px;
-  @include border-radius(0 5px 5px 0);
-  #edit-search-block-form--2 {
-    position: relative;
-    top: 9px;
-    width: 162px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #dedede;
-    @include border-radius(3px);    
-  }
-  #edit-submit {
-    @include background(image-url("search_icon.png") no-repeat);
-    border: none;
-    position: relative;
-    top: -29px;    
-    left: 172px;
-    padding-left: 45px;
-    color: $darkYellow;
-    @include box-shadow(none);
-  }
-}
-
-nav .block-system-main-menu .menu {
-  @extend .barrenav;
-  width: 674px;
-  @include border-radius(5px 0 0 5px);
-  li {
-    list-style: none;
-    float: left;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    background-color: $lightGrey;
-    border-right-style: solid;
-    border-right-width: 1px;
-    border-right-color: #dedede;
-    @include box-shadow(1px 1px 3px white inset);
-    &.first {
+nav .block-superfish-1 {
+  padding-right: 0;
+  #superfish-1 {
+    @extend .barrenav;
+    @include border-radius(5px 0 0 5px);
+    border-right: none;
+    > li.first a {
       @include border-radius(5px 0 0 5px);
       width: 46px;
       @include background(image-url("home_icon.png") no-repeat scroll center center);
       text-indent: -99999px;
     }
-    a {
+    li {
+      list-style: none;
+      float: left;
+      margin: 0;
+      padding: 0;
       height: 100%;
-      font-family: $header-font-family;
-      font-size: 13.5px;
-      font-weight: bold;
-      color: $darkGrey;
-      display: block;
-      padding: 15px 20px 0px 20px;
+      background-color: $lightGrey;
+      border-right-style: solid;
+      border-right-width: 1px;
+      border-right-color: #dedede;
+      @include box-shadow(1px 1px 3px white inset);
+      &:hover, & a:focus {
+        background-color: darken($lightGrey, 10);
+        @include box-shadow(1px 1px 3px darken($lightGrey, 20) inset);
+      }
+      a {
+        height: 100%;
+        font-family: $header-font-family;
+        font-size: 13.5px;
+        font-weight: bold;
+        color: $darkGrey;
+        display: block;
+        padding: 18px 18px 0px 18px;
+      }
+      ul {
+        margin-top: 11px;
+        li {
+          background-color: $lightGrey;
+          border-bottom-style: solid;
+          border-bottom-width: 1px;
+          border-bottom-color: #dedede;
+          @include box-shadow(1px 1px 3px white inset);
+          a {
+              padding: 10px 18px;
+          }
+          ul {
+            margin-left: -8px;
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+nav .block-search-form {
+  padding-left: 0;
+  left: -1px;
+  form {
+    @extend .barrenav;
+    padding-left: 15px;
+    @include border-radius(0 5px 5px 0);
+    #edit-search-block-form--2 {
+      position: relative;
+      top: 9px;
+      width: 175px;
+      border-style: solid;
+      border-width: 1px;
+      border-color: #dedede;
+      @include border-radius(3px);    
+    }
+    #edit-submit {
+      @include background(image-url("search_icon.png") no-repeat);
+      border: none;
+      position: relative;
+      top: -29px;    
+      left: 185px;
+      padding-left: 45px;
+      color: $darkYellow;
+      @include box-shadow(none);
     }
   }
 }
