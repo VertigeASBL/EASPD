@@ -311,6 +311,120 @@ nav .block-search-form {
 }
 
 /* -----------------------------------------
+   Article Lists
+   ----------------------------------------- */
+.thumbnail {
+  float: right;
+}
+
+.block-views-newsflashes-block {
+  background-color: white;
+  @include border-radius(5px);
+  padding: 0 30px;
+  h2 {
+    display: inline-block;
+    padding: 0 15px;
+    margin: 0;
+    @include border-radius(0 0 8px 8px);
+    background-color: $darkBlue;
+    color: white;
+    font-size: emCalc(30px);
+  }
+  .view-header {
+    font-style: italic;
+    left: 150px;
+    position: relative;
+    text-decoration: underline;
+    top: -23px;
+    color: $darkBlue;
+    font-size: emCalc(14px);
+  }
+  .views-field-changed {
+    float: left;
+    color: $lightBlue;
+    text-transform: uppercase;
+    margin: 7px 5px 0 0;
+    font-size: emCalc(14px);
+  }
+  .views-field-title {
+    float: left;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-stretch: semi-condensed;
+    margin: 8px 0 5px;
+    font-size: emCalc(14px);
+  }
+  .views-field-body {
+    font-size: emCalc(15px);
+    padding-top: 28px;
+    p {
+      line-height: 1.2;
+     }
+    .readmore {
+      display: inline-block;
+      color: white;
+      font-size: emCalc(14px);
+      font-weight: bold;
+      margin-top: 6px;
+      padding: 9px 40px 9px 10px;
+      text-transform: uppercase;
+      @include border-radius(5px);
+      @include background(image-url('fleche_readmore.png') no-repeat scroll right center $lightBlue);
+    }
+  }
+  .view-content {
+    @extend .row;
+  }
+  .views-row {
+    margin-bottom: 1em;
+  }
+  .views-row-1 {
+    @extend .columns;
+    @extend .large-12;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #eaeaea;
+    .views-field-field-image {
+      float: left;
+      margin: 5px 15px 0 0;
+      a {
+        display: block;
+        width: 200px;
+        height: 139px;
+        @include background(image-url('cadre_news_grand.png'));
+        padding: 5px 4px;
+      }
+    }
+  }
+  .views-row-2, .views-row-3, .views-row-4 {
+    @extend .columns;
+    @extend .large-4;    
+    .views-field-body p {
+      clear: both;
+    }
+    .views-field-field-image {
+        div {
+        width: 200px;
+        height: 105px;
+        @include background(image-url('cadre_news_petit.png'));
+        a {
+          position: relative;
+          display: block;
+          padding: 5px 4px;
+          overflow: hidden;
+          height: 97px;
+          top: 4px;
+          img {
+            position: relative;
+            top: -20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* -----------------------------------------
    Orbit Slider
    ----------------------------------------- */
 

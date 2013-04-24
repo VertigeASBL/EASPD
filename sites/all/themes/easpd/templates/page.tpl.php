@@ -60,6 +60,10 @@
         <?php print render($action_links); ?>
       </ul>
     <?php endif; ?>
+      <?php 
+      if (drupal_is_front_page()) {
+        hide($page['content']['system_main']);
+      } ?>
     <?php print render($page['content']); ?>
   </div>
   <div id="sidebar">

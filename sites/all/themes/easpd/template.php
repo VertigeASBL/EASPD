@@ -1,6 +1,6 @@
 <?php
 
-function easpd_views_view_field__slideshow_home__block__body($variables) {
+function ajouter_read_more ($variables, $suffix='') {
 
   $qp = qp($variables['output']);
 
@@ -8,9 +8,19 @@ function easpd_views_view_field__slideshow_home__block__body($variables) {
   
   $qp->top()
     ->find('p')
-    ->append("<a href='$href'>" . t('Read more') . "</a>");
+    ->append("<a class='readmore' href='$href'>" . t('Read more') .  $suffix . "</a>");
 
   return $qp->top()->find('body')->innerHtml();
+}
+
+function easpd_views_view_field__newsflashes__block__body ($variables) {
+
+  return ajouter_read_more($variables, ' …');
+}
+
+function easpd_views_view_field__slideshow_home__block__body($variables) {
+
+  return ajouter_read_more($variables);
 }
 
 function easpd_links__locale_block($variables) {
