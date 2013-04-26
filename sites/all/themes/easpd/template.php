@@ -18,6 +18,11 @@ function easpd_views_view_field__newsflashes__block__body ($variables) {
   return ajouter_read_more($variables, ' …');
 }
 
+function easpd_views_view_field__last_publications__block__body ($variables) {
+
+  return ajouter_read_more($variables, ' …');
+}
+
 function easpd_views_view_field__slideshow_home__block__body($variables) {
 
   return ajouter_read_more($variables);

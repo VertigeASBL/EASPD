@@ -9,6 +9,7 @@
 :: Grid
 :: Typography
 :: Decoration
+:: Article Lists
 :: Orbit Slider
 
 */
@@ -42,7 +43,7 @@
     @extend .large-9;
     @extend .columns;
   }
-}  
+}
 
 nav {
   @extend .row;
@@ -62,6 +63,15 @@ nav {
   #main {
     @extend .large-9;
     @extend .columns;
+    @extend .row;
+    #highlight .block-views-newsflashes-block {
+      @extend .large-12;
+      @extend .columns;
+    }
+    .block-views-last-publications-block {
+      @extend .large-6;
+      @extend .columns;
+    }
   }
   #sidebar {
     @extend .large-3;
@@ -291,13 +301,13 @@ nav .block-search-form {
       border-style: solid;
       border-width: 1px;
       border-color: #dedede;
-      @include border-radius(3px);    
+      @include border-radius(3px);
     }
     #edit-submit {
       @include background(image-url("search_icon.png") no-repeat);
       border: none;
       position: relative;
-      top: -29px;    
+      top: -29px;
       left: 185px;
       padding-left: 45px;
       color: $darkYellow;
@@ -313,23 +323,46 @@ nav .block-search-form {
 /* -----------------------------------------
    Article Lists
    ----------------------------------------- */
+
 .thumbnail {
   float: right;
 }
 
-.block-views-newsflashes-block {
+.titre_bloc {
+  display: inline-block;
+  padding: 0 15px;
+  margin: 0;
+  @include border-radius(0 0 8px 8px);
+  background-color: $darkBlue;
+  color: white;
+  font-size: emCalc(30px);
+}
+
+.titre_article {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-stretch: semi-condensed;
+  margin: 4px 0 3px;
+  font-size: emCalc(14px);
+}
+
+.bouton_bleu_clair {
+  display: inline-block;
+  color: white;
+  font-size: emCalc(14px);
+  font-weight: bold;
+  margin-top: 6px;
+  padding: 9px 40px 9px 10px;
+  text-transform: uppercase;
+  @include border-radius(5px);
+  @include background(image-url('fleche_readmore.png') no-repeat scroll right center $lightBlue);
+}
+
+@mixin bloc {
   background-color: white;
   @include border-radius(5px);
-  padding: 0 30px;
-  h2 {
-    display: inline-block;
-    padding: 0 15px;
-    margin: 0;
-    @include border-radius(0 0 8px 8px);
-    background-color: $darkBlue;
-    color: white;
-    font-size: emCalc(30px);
-  }
+  padding: 0 30px !important;
+  margin-bottom: 23px;
   .view-header {
     font-style: italic;
     left: 150px;
@@ -339,44 +372,35 @@ nav .block-search-form {
     color: $darkBlue;
     font-size: emCalc(14px);
   }
-  .views-field-changed {
+  h2 {
+    @extend .titre_bloc;
+  }
+  h3 {
+    @extend .titre_article;
+  }
+  p {
+    font-size: emCalc(15px);
+    line-height: 1.2;
+    .readmore {
+      @extend .bouton_bleu_clair;
+    }
+  }
+  .date {
     float: left;
     color: $lightBlue;
     text-transform: uppercase;
     margin: 7px 5px 0 0;
     font-size: emCalc(14px);
   }
-  .views-field-title {
+}
+
+.block-views-newsflashes-block {
+  @include bloc;
+  .h3 {
     float: left;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-stretch: semi-condensed;
-    margin: 8px 0 5px;
-    font-size: emCalc(14px);
-  }
-  .views-field-body {
-    font-size: emCalc(15px);
-    padding-top: 28px;
-    p {
-      line-height: 1.2;
-     }
-    .readmore {
-      display: inline-block;
-      color: white;
-      font-size: emCalc(14px);
-      font-weight: bold;
-      margin-top: 6px;
-      padding: 9px 40px 9px 10px;
-      text-transform: uppercase;
-      @include border-radius(5px);
-      @include background(image-url('fleche_readmore.png') no-repeat scroll right center $lightBlue);
-    }
   }
   .view-content {
     @extend .row;
-  }
-  .views-row {
-    margin-bottom: 1em;
   }
   .views-row-1 {
     @extend .columns;
@@ -384,7 +408,8 @@ nav .block-search-form {
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: #eaeaea;
-    .views-field-field-image {
+    margin-bottom: 10px;
+    .logo {
       float: left;
       margin: 5px 15px 0 0;
       a {
@@ -398,28 +423,56 @@ nav .block-search-form {
   }
   .views-row-2, .views-row-3, .views-row-4 {
     @extend .columns;
-    @extend .large-4;    
+    @extend .large-4;
     .views-field-body p {
       clear: both;
     }
-    .views-field-field-image {
-        div {
-        width: 200px;
-        height: 105px;
-        @include background(image-url('cadre_news_petit.png'));
-        a {
+    .logo {
+      width: 200px;
+      height: 105px;
+      @include background(image-url('cadre_news_petit.png'));
+      a {
+        position: relative;
+        display: block;
+        padding: 5px 4px;
+        overflow: hidden;
+        height: 97px;
+        top: 4px;
+        img {
           position: relative;
-          display: block;
-          padding: 5px 4px;
-          overflow: hidden;
-          height: 97px;
-          top: 4px;
-          img {
-            position: relative;
-            top: -20px;
-          }
+          top: -20px;
         }
       }
+    }
+  }
+}
+
+.block-views-last-publications-block {
+  @include bloc;
+  padding-bottom: 30px !important;
+  h2 {
+    margin-bottom: 15px;
+  }
+  .logo {
+    float: right;
+    padding-left: 5px;
+  }
+  .readmore {
+    clear: both;
+    float: right;
+  }
+  .views-row {
+    clear: both;
+    border-top-style: dotted;
+    border-top-width: 1px;
+    border-top-color: $darkBlue;
+    position: relative;
+    top: 15px;
+    padding-top: 5px;
+    &.views-row-first {
+      border: none;
+      top: 0;
+      padding-top: 0;
     }
   }
 }
@@ -432,7 +485,8 @@ nav .block-search-form {
   @include background(image-url("fond_slideshow.png") no-repeat);
   padding: 8px;
   max-width: 686px;
-  .orbit-container {    
+  margin: auto;
+  .orbit-container {
     border-style: solid;
     border-width: 1px;
     border-color: #c8c8c8;
