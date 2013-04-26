@@ -9,7 +9,7 @@
 :: Grid
 :: Typography
 :: Decoration
-:: Article Lists
+:: Blocs 
 :: Orbit Slider
 
 */
@@ -325,7 +325,7 @@ nav .block-search-form {
 }
 
 /* -----------------------------------------
-   Article Lists
+   Blocs
    ----------------------------------------- */
 
 .thumbnail {
@@ -511,6 +511,17 @@ nav .block-search-form {
       margin: 10px 0 25px;
     }
   }
+}
+
+.cadre_bleu {
+  background-color: #5b87c4;
+  @include border-radius(10px);
+}
+
+#sidebar {
+  @extend .cadre_bleu;
+  @include background(image-url('carte_europe.png') no-repeat scroll center top #5b87c4);
+  padding-top: 300px;
 }
 
 /* -----------------------------------------

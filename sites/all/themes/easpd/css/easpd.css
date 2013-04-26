@@ -12382,7 +12382,7 @@ table tfoot tr td {
 :: Grid
 :: Typography
 :: Decoration
-:: Article Lists
+:: Blocs 
 :: Orbit Slider
 
 */
@@ -12699,7 +12699,7 @@ nav .block-search-form form #edit-submit {
 }
 
 /* -----------------------------------------
-   Article Lists
+   Blocs
    ----------------------------------------- */
 /* line 331, ../sass/easpd.scss */
 .thumbnail {
@@ -12965,17 +12965,33 @@ nav .block-search-form form #edit-submit {
   margin: 10px 0 25px;
 }
 
+/* line 516, ../sass/easpd.scss */
+.cadre_bleu, #sidebar {
+  background-color: #5b87c4;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* line 521, ../sass/easpd.scss */
+#sidebar {
+  background: url('../images/carte_europe.png?1366988066') no-repeat scroll center top #5b87c4;
+  padding-top: 300px;
+}
+
 /* -----------------------------------------
    Orbit Slider
    ----------------------------------------- */
-/* line 520, ../sass/easpd.scss */
+/* line 531, ../sass/easpd.scss */
 #highlight {
   background: url('../images/fond_slideshow.png?1365514547') no-repeat;
   padding: 8px;
   max-width: 686px;
   margin: auto;
 }
-/* line 525, ../sass/easpd.scss */
+/* line 536, ../sass/easpd.scss */
 #highlight .orbit-container {
   border-style: solid;
   border-width: 1px;
@@ -12986,62 +13002,62 @@ nav .block-search-form form #edit-submit {
   -o-border-radius: 1px;
   border-radius: 1px;
 }
-/* line 531, ../sass/easpd.scss */
+/* line 542, ../sass/easpd.scss */
 #highlight .orbit-prev {
   background: url('../images/slideshow_fleche_gauche.png?1365605410') no-repeat scroll left center;
   /* pour virer les flèches en css */
 }
-/* line 533, ../sass/easpd.scss */
+/* line 544, ../sass/easpd.scss */
 #highlight .orbit-prev span {
   border: none;
 }
-/* line 535, ../sass/easpd.scss */
+/* line 546, ../sass/easpd.scss */
 #highlight .orbit-next {
   background: url('../images/slideshow_fleche_droite.png?1365605382') no-repeat scroll right center;
   /* pour virer les flèches en css */
 }
-/* line 537, ../sass/easpd.scss */
+/* line 548, ../sass/easpd.scss */
 #highlight .orbit-next span {
   border: none;
 }
-/* line 539, ../sass/easpd.scss */
+/* line 550, ../sass/easpd.scss */
 #highlight .orbit-caption {
   width: 80%;
   margin: 0 10%;
   background-color: rgba(255, 210, 0, 0.9);
 }
-/* line 543, ../sass/easpd.scss */
+/* line 554, ../sass/easpd.scss */
 #highlight .orbit-caption h2 a, #highlight .orbit-caption h2 {
   text-transform: uppercase;
   font-size: 1.0625em;
   color: #184996;
   margin: 1px 0;
 }
-/* line 549, ../sass/easpd.scss */
+/* line 560, ../sass/easpd.scss */
 #highlight .orbit-caption p {
   font-size: 1em;
   color: #0d2954;
   margin-bottom: 0;
 }
-/* line 553, ../sass/easpd.scss */
+/* line 564, ../sass/easpd.scss */
 #highlight .orbit-caption p a {
   color: #184996;
   text-decoration: underline;
   margin-left: 0.5em;
 }
-/* line 560, ../sass/easpd.scss */
+/* line 571, ../sass/easpd.scss */
 #highlight .orbit-bullets {
   display: table;
   top: 15px;
 }
-/* line 563, ../sass/easpd.scss */
+/* line 574, ../sass/easpd.scss */
 #highlight .orbit-bullets li {
   height: 21px;
   width: 21px;
   border: none;
   background: url('../images/slideshow_bullet_inactive.png?1366204728') no-repeat;
 }
-/* line 568, ../sass/easpd.scss */
+/* line 579, ../sass/easpd.scss */
 #highlight .orbit-bullets li.active {
   background: url('../images/slideshow_bullet_active.png?1366204765') no-repeat;
 }
