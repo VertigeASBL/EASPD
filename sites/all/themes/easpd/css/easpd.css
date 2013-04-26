@@ -264,6 +264,20 @@ nav #page #main .block-views-last-publications-block,
 #page #main #footer .block-views-last-publications-block,
 .block-views-newsflashes-block .view-content #page #main .block-views-last-publications-block,
 #page #main .block-views-newsflashes-block .view-content .block-views-last-publications-block,
+.row #page #main .block-views-press-releases-block,
+#page #main .row .block-views-press-releases-block,
+#top #page #main .block-views-press-releases-block,
+#page #main #top .block-views-press-releases-block,
+#header #page #main .block-views-press-releases-block,
+#page #main #header .block-views-press-releases-block,
+nav #page #main .block-views-press-releases-block,
+#page #main nav .block-views-press-releases-block,
+#page #main .block-views-press-releases-block,
+#page #main .block-views-press-releases-block,
+#footer #page #main .block-views-press-releases-block,
+#page #main #footer .block-views-press-releases-block,
+.block-views-newsflashes-block .view-content #page #main .block-views-press-releases-block,
+#page #main .block-views-newsflashes-block .view-content .block-views-press-releases-block,
 .row #page #sidebar,
 #page .row #sidebar,
 #top #page #sidebar,
@@ -516,6 +530,20 @@ nav.collapse #page #main .block-views-last-publications-block,
 #page #main .collapse#footer .block-views-last-publications-block,
 .block-views-newsflashes-block .collapse.view-content #page #main .block-views-last-publications-block,
 #page #main .block-views-newsflashes-block .collapse.view-content .block-views-last-publications-block,
+.row.collapse #page #main .block-views-press-releases-block,
+#page #main .row.collapse .block-views-press-releases-block,
+.collapse#top #page #main .block-views-press-releases-block,
+#page #main .collapse#top .block-views-press-releases-block,
+.collapse#header #page #main .block-views-press-releases-block,
+#page #main .collapse#header .block-views-press-releases-block,
+nav.collapse #page #main .block-views-press-releases-block,
+#page #main nav.collapse .block-views-press-releases-block,
+.collapse#page #main .block-views-press-releases-block,
+#page .collapse#main .block-views-press-releases-block,
+.collapse#footer #page #main .block-views-press-releases-block,
+#page #main .collapse#footer .block-views-press-releases-block,
+.block-views-newsflashes-block .collapse.view-content #page #main .block-views-press-releases-block,
+#page #main .block-views-newsflashes-block .collapse.view-content .block-views-press-releases-block,
 .row.collapse #page #sidebar,
 #page .row.collapse #sidebar,
 .collapse#top #page #sidebar,
@@ -804,6 +832,20 @@ nav.collapse .block-views-newsflashes-block .views-row-4,
   #page #main #footer .block-views-last-publications-block,
   .block-views-newsflashes-block .view-content #page #main .block-views-last-publications-block,
   #page #main .block-views-newsflashes-block .view-content .block-views-last-publications-block,
+  .row #page #main .block-views-press-releases-block,
+  #page #main .row .block-views-press-releases-block,
+  #top #page #main .block-views-press-releases-block,
+  #page #main #top .block-views-press-releases-block,
+  #header #page #main .block-views-press-releases-block,
+  #page #main #header .block-views-press-releases-block,
+  nav #page #main .block-views-press-releases-block,
+  #page #main nav .block-views-press-releases-block,
+  #page #main .block-views-press-releases-block,
+  #page #main .block-views-press-releases-block,
+  #footer #page #main .block-views-press-releases-block,
+  #page #main #footer .block-views-press-releases-block,
+  .block-views-newsflashes-block .view-content #page #main .block-views-press-releases-block,
+  #page #main .block-views-newsflashes-block .view-content .block-views-press-releases-block,
   .row #page #sidebar,
   #page .row #sidebar,
   #top #page #sidebar,
@@ -1082,6 +1124,7 @@ nav.collapse .block-views-newsflashes-block .views-row-4,
   #page .small-centered#main,
   #page #main #highlight .small-centered.block-views-newsflashes-block,
   #page #main .small-centered.block-views-last-publications-block,
+  #page #main .small-centered.block-views-press-releases-block,
   #page .small-centered#sidebar,
   #footer .small-centered#footer-first,
   #footer .small-centered#footer-middle,
@@ -1129,7 +1172,7 @@ nav.collapse .block-views-newsflashes-block .views-row-4,
   }
 
   /* line 146, ../../../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-4.1.1/scss/foundation/components/_grid.scss */
-  .row .large-6, #top .large-6, #header .large-6, nav .large-6, #page .large-6, #page #main .large-6, #footer .large-6, .block-views-newsflashes-block .view-content .large-6, .row #page #main .block-views-last-publications-block, #page #main .row .block-views-last-publications-block, #top #page #main .block-views-last-publications-block, #page #main #top .block-views-last-publications-block, #header #page #main .block-views-last-publications-block, #page #main #header .block-views-last-publications-block, nav #page #main .block-views-last-publications-block, #page #main nav .block-views-last-publications-block, #page #main .block-views-last-publications-block, #page #main .block-views-last-publications-block, #footer #page #main .block-views-last-publications-block, #page #main #footer .block-views-last-publications-block, .block-views-newsflashes-block .view-content #page #main .block-views-last-publications-block, #page #main .block-views-newsflashes-block .view-content .block-views-last-publications-block {
+  .row .large-6, #top .large-6, #header .large-6, nav .large-6, #page .large-6, #page #main .large-6, #footer .large-6, .block-views-newsflashes-block .view-content .large-6, .row #page #main .block-views-last-publications-block, #page #main .row .block-views-last-publications-block, #top #page #main .block-views-last-publications-block, #page #main #top .block-views-last-publications-block, #header #page #main .block-views-last-publications-block, #page #main #header .block-views-last-publications-block, nav #page #main .block-views-last-publications-block, #page #main nav .block-views-last-publications-block, #page #main .block-views-last-publications-block, #page #main .block-views-last-publications-block, #footer #page #main .block-views-last-publications-block, #page #main #footer .block-views-last-publications-block, .block-views-newsflashes-block .view-content #page #main .block-views-last-publications-block, #page #main .block-views-newsflashes-block .view-content .block-views-last-publications-block, .row #page #main .block-views-press-releases-block, #page #main .row .block-views-press-releases-block, #top #page #main .block-views-press-releases-block, #page #main #top .block-views-press-releases-block, #header #page #main .block-views-press-releases-block, #page #main #header .block-views-press-releases-block, nav #page #main .block-views-press-releases-block, #page #main nav .block-views-press-releases-block, #page #main .block-views-press-releases-block, #page #main .block-views-press-releases-block, #footer #page #main .block-views-press-releases-block, #page #main #footer .block-views-press-releases-block, .block-views-newsflashes-block .view-content #page #main .block-views-press-releases-block, #page #main .block-views-newsflashes-block .view-content .block-views-press-releases-block {
     position: relative;
     width: 50%;
   }
@@ -1457,6 +1500,7 @@ nav.collapse .block-views-newsflashes-block .views-row-4,
   #page .large-centered#main,
   #page #main #highlight .large-centered.block-views-newsflashes-block,
   #page #main .large-centered.block-views-last-publications-block,
+  #page #main .large-centered.block-views-press-releases-block,
   #page .large-centered#sidebar,
   #footer .large-centered#footer-first,
   #footer .large-centered#footer-middle,
@@ -4291,6 +4335,156 @@ form .block-views-newsflashes-block .view-content .view-content #page #main .blo
 #page #main form .block-views-newsflashes-block .view-content .view-content .block-views-last-publications-block,
 .block-views-newsflashes-block form .view-content .view-content #page #main .block-views-last-publications-block,
 #page #main .block-views-newsflashes-block form .view-content .view-content .block-views-last-publications-block,
+form .row .row #page #main .block-views-press-releases-block,
+#page #main form .row .row .block-views-press-releases-block,
+form #top .row #page #main .block-views-press-releases-block,
+#page #main form #top .row .block-views-press-releases-block,
+form #header .row #page #main .block-views-press-releases-block,
+#page #main form #header .row .block-views-press-releases-block,
+form nav .row #page #main .block-views-press-releases-block,
+#page #main form nav .row .block-views-press-releases-block,
+form #page .row #main .block-views-press-releases-block,
+form #page #main .row .block-views-press-releases-block,
+form #page #main .row .block-views-press-releases-block,
+#page form #main .row .block-views-press-releases-block,
+form #footer .row #page #main .block-views-press-releases-block,
+#page #main form #footer .row .block-views-press-releases-block,
+form .block-views-newsflashes-block .view-content .row #page #main .block-views-press-releases-block,
+#page #main form .block-views-newsflashes-block .view-content .row .block-views-press-releases-block,
+.block-views-newsflashes-block form .view-content .row #page #main .block-views-press-releases-block,
+#page #main .block-views-newsflashes-block form .view-content .row .block-views-press-releases-block,
+form .row #top #page #main .block-views-press-releases-block,
+#page #main form .row #top .block-views-press-releases-block,
+form #top #top #page #main .block-views-press-releases-block,
+#page #main form #top #top .block-views-press-releases-block,
+form #header #top #page #main .block-views-press-releases-block,
+#page #main form #header #top .block-views-press-releases-block,
+form nav #top #page #main .block-views-press-releases-block,
+#page #main form nav #top .block-views-press-releases-block,
+form #page #top #main .block-views-press-releases-block,
+form #page #main #top .block-views-press-releases-block,
+form #page #main #top .block-views-press-releases-block,
+#page form #main #top .block-views-press-releases-block,
+form #footer #top #page #main .block-views-press-releases-block,
+#page #main form #footer #top .block-views-press-releases-block,
+form .block-views-newsflashes-block .view-content #top #page #main .block-views-press-releases-block,
+#page #main form .block-views-newsflashes-block .view-content #top .block-views-press-releases-block,
+.block-views-newsflashes-block form .view-content #top #page #main .block-views-press-releases-block,
+#page #main .block-views-newsflashes-block form .view-content #top .block-views-press-releases-block,
+form .row #header #page #main .block-views-press-releases-block,
+#page #main form .row #header .block-views-press-releases-block,
+form #top #header #page #main .block-views-press-releases-block,
+#page #main form #top #header .block-views-press-releases-block,
+form #header #header #page #main .block-views-press-releases-block,
+#page #main form #header #header .block-views-press-releases-block,
+form nav #header #page #main .block-views-press-releases-block,
+#page #main form nav #header .block-views-press-releases-block,
+form #page #header #main .block-views-press-releases-block,
+form #page #main #header .block-views-press-releases-block,
+form #page #main #header .block-views-press-releases-block,
+#page form #main #header .block-views-press-releases-block,
+form #footer #header #page #main .block-views-press-releases-block,
+#page #main form #footer #header .block-views-press-releases-block,
+form .block-views-newsflashes-block .view-content #header #page #main .block-views-press-releases-block,
+#page #main form .block-views-newsflashes-block .view-content #header .block-views-press-releases-block,
+.block-views-newsflashes-block form .view-content #header #page #main .block-views-press-releases-block,
+#page #main .block-views-newsflashes-block form .view-content #header .block-views-press-releases-block,
+form .row nav #page #main .block-views-press-releases-block,
+#page #main form .row nav .block-views-press-releases-block,
+form #top nav #page #main .block-views-press-releases-block,
+#page #main form #top nav .block-views-press-releases-block,
+form #header nav #page #main .block-views-press-releases-block,
+#page #main form #header nav .block-views-press-releases-block,
+form nav nav #page #main .block-views-press-releases-block,
+#page #main form nav nav .block-views-press-releases-block,
+form #page nav #main .block-views-press-releases-block,
+form #page #main nav .block-views-press-releases-block,
+form #page #main nav .block-views-press-releases-block,
+#page form #main nav .block-views-press-releases-block,
+form #footer nav #page #main .block-views-press-releases-block,
+#page #main form #footer nav .block-views-press-releases-block,
+form .block-views-newsflashes-block .view-content nav #page #main .block-views-press-releases-block,
+#page #main form .block-views-newsflashes-block .view-content nav .block-views-press-releases-block,
+.block-views-newsflashes-block form .view-content nav #page #main .block-views-press-releases-block,
+#page #main .block-views-newsflashes-block form .view-content nav .block-views-press-releases-block,
+form .row #page #main .block-views-press-releases-block,
+form #top #page #main .block-views-press-releases-block,
+form #header #page #main .block-views-press-releases-block,
+form nav #page #main .block-views-press-releases-block,
+form #page #page #main .block-views-press-releases-block,
+form #page #main #page .block-views-press-releases-block,
+form #page #main #page .block-views-press-releases-block,
+#page form #main #page .block-views-press-releases-block,
+form #footer #page #main .block-views-press-releases-block,
+form .block-views-newsflashes-block .view-content #page #main .block-views-press-releases-block,
+.block-views-newsflashes-block form .view-content #page #main .block-views-press-releases-block,
+form .row #page #main .block-views-press-releases-block,
+#page form .row #main .block-views-press-releases-block,
+form #top #page #main .block-views-press-releases-block,
+#page form #top #main .block-views-press-releases-block,
+form #header #page #main .block-views-press-releases-block,
+#page form #header #main .block-views-press-releases-block,
+form nav #page #main .block-views-press-releases-block,
+#page form nav #main .block-views-press-releases-block,
+form #page #main .block-views-press-releases-block,
+form #page #main #main .block-views-press-releases-block,
+#page form #main #main .block-views-press-releases-block,
+form #footer #page #main .block-views-press-releases-block,
+#page form #footer #main .block-views-press-releases-block,
+form .block-views-newsflashes-block .view-content #page #main .block-views-press-releases-block,
+#page form .block-views-newsflashes-block .view-content #main .block-views-press-releases-block,
+.block-views-newsflashes-block form .view-content #page #main .block-views-press-releases-block,
+#page .block-views-newsflashes-block form .view-content #main .block-views-press-releases-block,
+form .row #footer #page #main .block-views-press-releases-block,
+#page #main form .row #footer .block-views-press-releases-block,
+form #top #footer #page #main .block-views-press-releases-block,
+#page #main form #top #footer .block-views-press-releases-block,
+form #header #footer #page #main .block-views-press-releases-block,
+#page #main form #header #footer .block-views-press-releases-block,
+form nav #footer #page #main .block-views-press-releases-block,
+#page #main form nav #footer .block-views-press-releases-block,
+form #page #footer #main .block-views-press-releases-block,
+form #page #main #footer .block-views-press-releases-block,
+form #page #main #footer .block-views-press-releases-block,
+#page form #main #footer .block-views-press-releases-block,
+form #footer #footer #page #main .block-views-press-releases-block,
+#page #main form #footer #footer .block-views-press-releases-block,
+form .block-views-newsflashes-block .view-content #footer #page #main .block-views-press-releases-block,
+#page #main form .block-views-newsflashes-block .view-content #footer .block-views-press-releases-block,
+.block-views-newsflashes-block form .view-content #footer #page #main .block-views-press-releases-block,
+#page #main .block-views-newsflashes-block form .view-content #footer .block-views-press-releases-block,
+form .row .block-views-newsflashes-block .view-content #page #main .block-views-press-releases-block,
+#page #main form .row .block-views-newsflashes-block .view-content .block-views-press-releases-block,
+.block-views-newsflashes-block form .row .view-content #page #main .block-views-press-releases-block,
+#page #main .block-views-newsflashes-block form .row .view-content .block-views-press-releases-block,
+form #top .block-views-newsflashes-block .view-content #page #main .block-views-press-releases-block,
+#page #main form #top .block-views-newsflashes-block .view-content .block-views-press-releases-block,
+.block-views-newsflashes-block form #top .view-content #page #main .block-views-press-releases-block,
+#page #main .block-views-newsflashes-block form #top .view-content .block-views-press-releases-block,
+form #header .block-views-newsflashes-block .view-content #page #main .block-views-press-releases-block,
+#page #main form #header .block-views-newsflashes-block .view-content .block-views-press-releases-block,
+.block-views-newsflashes-block form #header .view-content #page #main .block-views-press-releases-block,
+#page #main .block-views-newsflashes-block form #header .view-content .block-views-press-releases-block,
+form nav .block-views-newsflashes-block .view-content #page #main .block-views-press-releases-block,
+#page #main form nav .block-views-newsflashes-block .view-content .block-views-press-releases-block,
+.block-views-newsflashes-block form nav .view-content #page #main .block-views-press-releases-block,
+#page #main .block-views-newsflashes-block form nav .view-content .block-views-press-releases-block,
+form #page .block-views-newsflashes-block .view-content #main .block-views-press-releases-block,
+form #page #main .block-views-newsflashes-block .view-content .block-views-press-releases-block,
+.block-views-newsflashes-block form #page .view-content #main .block-views-press-releases-block,
+.block-views-newsflashes-block form #page #main .view-content .block-views-press-releases-block,
+form #page #main .block-views-newsflashes-block .view-content .block-views-press-releases-block,
+.block-views-newsflashes-block form #page #main .view-content .block-views-press-releases-block,
+#page form #main .block-views-newsflashes-block .view-content .block-views-press-releases-block,
+.block-views-newsflashes-block #page form #main .view-content .block-views-press-releases-block,
+form #footer .block-views-newsflashes-block .view-content #page #main .block-views-press-releases-block,
+#page #main form #footer .block-views-newsflashes-block .view-content .block-views-press-releases-block,
+.block-views-newsflashes-block form #footer .view-content #page #main .block-views-press-releases-block,
+#page #main .block-views-newsflashes-block form #footer .view-content .block-views-press-releases-block,
+form .block-views-newsflashes-block .view-content .view-content #page #main .block-views-press-releases-block,
+#page #main form .block-views-newsflashes-block .view-content .view-content .block-views-press-releases-block,
+.block-views-newsflashes-block form .view-content .view-content #page #main .block-views-press-releases-block,
+#page #main .block-views-newsflashes-block form .view-content .view-content .block-views-press-releases-block,
 form .row .row #page #sidebar,
 #page form .row .row #sidebar,
 form #top .row #page #sidebar,
@@ -6988,6 +7182,156 @@ form .block-views-newsflashes-block .view-content .collapse.view-content #page #
 #page #main form .block-views-newsflashes-block .view-content .collapse.view-content .block-views-last-publications-block,
 .block-views-newsflashes-block form .view-content .collapse.view-content #page #main .block-views-last-publications-block,
 #page #main .block-views-newsflashes-block form .view-content .collapse.view-content .block-views-last-publications-block,
+form .row .row.collapse #page #main .block-views-press-releases-block,
+#page #main form .row .row.collapse .block-views-press-releases-block,
+form #top .row.collapse #page #main .block-views-press-releases-block,
+#page #main form #top .row.collapse .block-views-press-releases-block,
+form #header .row.collapse #page #main .block-views-press-releases-block,
+#page #main form #header .row.collapse .block-views-press-releases-block,
+form nav .row.collapse #page #main .block-views-press-releases-block,
+#page #main form nav .row.collapse .block-views-press-releases-block,
+form #page .row.collapse #main .block-views-press-releases-block,
+form #page #main .row.collapse .block-views-press-releases-block,
+form #page #main .row.collapse .block-views-press-releases-block,
+#page form #main .row.collapse .block-views-press-releases-block,
+form #footer .row.collapse #page #main .block-views-press-releases-block,
+#page #main form #footer .row.collapse .block-views-press-releases-block,
+form .block-views-newsflashes-block .view-content .row.collapse #page #main .block-views-press-releases-block,
+#page #main form .block-views-newsflashes-block .view-content .row.collapse .block-views-press-releases-block,
+.block-views-newsflashes-block form .view-content .row.collapse #page #main .block-views-press-releases-block,
+#page #main .block-views-newsflashes-block form .view-content .row.collapse .block-views-press-releases-block,
+form .row .collapse#top #page #main .block-views-press-releases-block,
+#page #main form .row .collapse#top .block-views-press-releases-block,
+form #top .collapse#top #page #main .block-views-press-releases-block,
+#page #main form #top .collapse#top .block-views-press-releases-block,
+form #header .collapse#top #page #main .block-views-press-releases-block,
+#page #main form #header .collapse#top .block-views-press-releases-block,
+form nav .collapse#top #page #main .block-views-press-releases-block,
+#page #main form nav .collapse#top .block-views-press-releases-block,
+form #page .collapse#top #main .block-views-press-releases-block,
+form #page #main .collapse#top .block-views-press-releases-block,
+form #page #main .collapse#top .block-views-press-releases-block,
+#page form #main .collapse#top .block-views-press-releases-block,
+form #footer .collapse#top #page #main .block-views-press-releases-block,
+#page #main form #footer .collapse#top .block-views-press-releases-block,
+form .block-views-newsflashes-block .view-content .collapse#top #page #main .block-views-press-releases-block,
+#page #main form .block-views-newsflashes-block .view-content .collapse#top .block-views-press-releases-block,
+.block-views-newsflashes-block form .view-content .collapse#top #page #main .block-views-press-releases-block,
+#page #main .block-views-newsflashes-block form .view-content .collapse#top .block-views-press-releases-block,
+form .row .collapse#header #page #main .block-views-press-releases-block,
+#page #main form .row .collapse#header .block-views-press-releases-block,
+form #top .collapse#header #page #main .block-views-press-releases-block,
+#page #main form #top .collapse#header .block-views-press-releases-block,
+form #header .collapse#header #page #main .block-views-press-releases-block,
+#page #main form #header .collapse#header .block-views-press-releases-block,
+form nav .collapse#header #page #main .block-views-press-releases-block,
+#page #main form nav .collapse#header .block-views-press-releases-block,
+form #page .collapse#header #main .block-views-press-releases-block,
+form #page #main .collapse#header .block-views-press-releases-block,
+form #page #main .collapse#header .block-views-press-releases-block,
+#page form #main .collapse#header .block-views-press-releases-block,
+form #footer .collapse#header #page #main .block-views-press-releases-block,
+#page #main form #footer .collapse#header .block-views-press-releases-block,
+form .block-views-newsflashes-block .view-content .collapse#header #page #main .block-views-press-releases-block,
+#page #main form .block-views-newsflashes-block .view-content .collapse#header .block-views-press-releases-block,
+.block-views-newsflashes-block form .view-content .collapse#header #page #main .block-views-press-releases-block,
+#page #main .block-views-newsflashes-block form .view-content .collapse#header .block-views-press-releases-block,
+form .row nav.collapse #page #main .block-views-press-releases-block,
+#page #main form .row nav.collapse .block-views-press-releases-block,
+form #top nav.collapse #page #main .block-views-press-releases-block,
+#page #main form #top nav.collapse .block-views-press-releases-block,
+form #header nav.collapse #page #main .block-views-press-releases-block,
+#page #main form #header nav.collapse .block-views-press-releases-block,
+form nav nav.collapse #page #main .block-views-press-releases-block,
+#page #main form nav nav.collapse .block-views-press-releases-block,
+form #page nav.collapse #main .block-views-press-releases-block,
+form #page #main nav.collapse .block-views-press-releases-block,
+form #page #main nav.collapse .block-views-press-releases-block,
+#page form #main nav.collapse .block-views-press-releases-block,
+form #footer nav.collapse #page #main .block-views-press-releases-block,
+#page #main form #footer nav.collapse .block-views-press-releases-block,
+form .block-views-newsflashes-block .view-content nav.collapse #page #main .block-views-press-releases-block,
+#page #main form .block-views-newsflashes-block .view-content nav.collapse .block-views-press-releases-block,
+.block-views-newsflashes-block form .view-content nav.collapse #page #main .block-views-press-releases-block,
+#page #main .block-views-newsflashes-block form .view-content nav.collapse .block-views-press-releases-block,
+form .row .collapse#page #main .block-views-press-releases-block,
+form #top .collapse#page #main .block-views-press-releases-block,
+form #header .collapse#page #main .block-views-press-releases-block,
+form nav .collapse#page #main .block-views-press-releases-block,
+form .collapse#page .collapse#page #main .block-views-press-releases-block,
+form .collapse#page #main .collapse#page .block-views-press-releases-block,
+form #page #main .collapse#page .block-views-press-releases-block,
+#page form #main .collapse#page .block-views-press-releases-block,
+form #footer .collapse#page #main .block-views-press-releases-block,
+form .block-views-newsflashes-block .view-content .collapse#page #main .block-views-press-releases-block,
+.block-views-newsflashes-block form .view-content .collapse#page #main .block-views-press-releases-block,
+form .row #page .collapse#main .block-views-press-releases-block,
+#page form .row .collapse#main .block-views-press-releases-block,
+form #top #page .collapse#main .block-views-press-releases-block,
+#page form #top .collapse#main .block-views-press-releases-block,
+form #header #page .collapse#main .block-views-press-releases-block,
+#page form #header .collapse#main .block-views-press-releases-block,
+form nav #page .collapse#main .block-views-press-releases-block,
+#page form nav .collapse#main .block-views-press-releases-block,
+form #page .collapse#main .block-views-press-releases-block,
+form #page .collapse#main .collapse#main .block-views-press-releases-block,
+#page form .collapse#main .collapse#main .block-views-press-releases-block,
+form #footer #page .collapse#main .block-views-press-releases-block,
+#page form #footer .collapse#main .block-views-press-releases-block,
+form .block-views-newsflashes-block .view-content #page .collapse#main .block-views-press-releases-block,
+#page form .block-views-newsflashes-block .view-content .collapse#main .block-views-press-releases-block,
+.block-views-newsflashes-block form .view-content #page .collapse#main .block-views-press-releases-block,
+#page .block-views-newsflashes-block form .view-content .collapse#main .block-views-press-releases-block,
+form .row .collapse#footer #page #main .block-views-press-releases-block,
+#page #main form .row .collapse#footer .block-views-press-releases-block,
+form #top .collapse#footer #page #main .block-views-press-releases-block,
+#page #main form #top .collapse#footer .block-views-press-releases-block,
+form #header .collapse#footer #page #main .block-views-press-releases-block,
+#page #main form #header .collapse#footer .block-views-press-releases-block,
+form nav .collapse#footer #page #main .block-views-press-releases-block,
+#page #main form nav .collapse#footer .block-views-press-releases-block,
+form #page .collapse#footer #main .block-views-press-releases-block,
+form #page #main .collapse#footer .block-views-press-releases-block,
+form #page #main .collapse#footer .block-views-press-releases-block,
+#page form #main .collapse#footer .block-views-press-releases-block,
+form #footer .collapse#footer #page #main .block-views-press-releases-block,
+#page #main form #footer .collapse#footer .block-views-press-releases-block,
+form .block-views-newsflashes-block .view-content .collapse#footer #page #main .block-views-press-releases-block,
+#page #main form .block-views-newsflashes-block .view-content .collapse#footer .block-views-press-releases-block,
+.block-views-newsflashes-block form .view-content .collapse#footer #page #main .block-views-press-releases-block,
+#page #main .block-views-newsflashes-block form .view-content .collapse#footer .block-views-press-releases-block,
+form .row .block-views-newsflashes-block .collapse.view-content #page #main .block-views-press-releases-block,
+#page #main form .row .block-views-newsflashes-block .collapse.view-content .block-views-press-releases-block,
+.block-views-newsflashes-block form .row .collapse.view-content #page #main .block-views-press-releases-block,
+#page #main .block-views-newsflashes-block form .row .collapse.view-content .block-views-press-releases-block,
+form #top .block-views-newsflashes-block .collapse.view-content #page #main .block-views-press-releases-block,
+#page #main form #top .block-views-newsflashes-block .collapse.view-content .block-views-press-releases-block,
+.block-views-newsflashes-block form #top .collapse.view-content #page #main .block-views-press-releases-block,
+#page #main .block-views-newsflashes-block form #top .collapse.view-content .block-views-press-releases-block,
+form #header .block-views-newsflashes-block .collapse.view-content #page #main .block-views-press-releases-block,
+#page #main form #header .block-views-newsflashes-block .collapse.view-content .block-views-press-releases-block,
+.block-views-newsflashes-block form #header .collapse.view-content #page #main .block-views-press-releases-block,
+#page #main .block-views-newsflashes-block form #header .collapse.view-content .block-views-press-releases-block,
+form nav .block-views-newsflashes-block .collapse.view-content #page #main .block-views-press-releases-block,
+#page #main form nav .block-views-newsflashes-block .collapse.view-content .block-views-press-releases-block,
+.block-views-newsflashes-block form nav .collapse.view-content #page #main .block-views-press-releases-block,
+#page #main .block-views-newsflashes-block form nav .collapse.view-content .block-views-press-releases-block,
+form #page .block-views-newsflashes-block .collapse.view-content #main .block-views-press-releases-block,
+form #page #main .block-views-newsflashes-block .collapse.view-content .block-views-press-releases-block,
+.block-views-newsflashes-block form #page .collapse.view-content #main .block-views-press-releases-block,
+.block-views-newsflashes-block form #page #main .collapse.view-content .block-views-press-releases-block,
+form #page #main .block-views-newsflashes-block .collapse.view-content .block-views-press-releases-block,
+.block-views-newsflashes-block form #page #main .collapse.view-content .block-views-press-releases-block,
+#page form #main .block-views-newsflashes-block .collapse.view-content .block-views-press-releases-block,
+.block-views-newsflashes-block #page form #main .collapse.view-content .block-views-press-releases-block,
+form #footer .block-views-newsflashes-block .collapse.view-content #page #main .block-views-press-releases-block,
+#page #main form #footer .block-views-newsflashes-block .collapse.view-content .block-views-press-releases-block,
+.block-views-newsflashes-block form #footer .collapse.view-content #page #main .block-views-press-releases-block,
+#page #main .block-views-newsflashes-block form #footer .collapse.view-content .block-views-press-releases-block,
+form .block-views-newsflashes-block .view-content .collapse.view-content #page #main .block-views-press-releases-block,
+#page #main form .block-views-newsflashes-block .view-content .collapse.view-content .block-views-press-releases-block,
+.block-views-newsflashes-block form .view-content .collapse.view-content #page #main .block-views-press-releases-block,
+#page #main .block-views-newsflashes-block form .view-content .collapse.view-content .block-views-press-releases-block,
 form .row .row.collapse #page #sidebar,
 #page form .row .row.collapse #sidebar,
 form #top .row.collapse #page #sidebar,
@@ -8427,6 +8771,23 @@ form .block-views-newsflashes-block .view-content #page #main input.block-views-
 #page #main form .block-views-newsflashes-block .view-content input.block-views-last-publications-block,
 .block-views-newsflashes-block form .view-content #page #main input.block-views-last-publications-block,
 #page #main .block-views-newsflashes-block form .view-content input.block-views-last-publications-block,
+form .row #page #main input.block-views-press-releases-block,
+#page #main form .row input.block-views-press-releases-block,
+form #top #page #main input.block-views-press-releases-block,
+#page #main form #top input.block-views-press-releases-block,
+form #header #page #main input.block-views-press-releases-block,
+#page #main form #header input.block-views-press-releases-block,
+form nav #page #main input.block-views-press-releases-block,
+#page #main form nav input.block-views-press-releases-block,
+form #page #main input.block-views-press-releases-block,
+form #page #main input.block-views-press-releases-block,
+#page form #main input.block-views-press-releases-block,
+form #footer #page #main input.block-views-press-releases-block,
+#page #main form #footer input.block-views-press-releases-block,
+form .block-views-newsflashes-block .view-content #page #main input.block-views-press-releases-block,
+#page #main form .block-views-newsflashes-block .view-content input.block-views-press-releases-block,
+.block-views-newsflashes-block form .view-content #page #main input.block-views-press-releases-block,
+#page #main .block-views-newsflashes-block form .view-content input.block-views-press-releases-block,
 form .row #page input#sidebar,
 #page form .row input#sidebar,
 form #top #page input#sidebar,
@@ -10492,6 +10853,8 @@ nav .reveal-modal .block-search-form,
 #page #main #highlight .reveal-modal .block-views-newsflashes-block,
 .reveal-modal #page #main .block-views-last-publications-block,
 #page #main .reveal-modal .block-views-last-publications-block,
+.reveal-modal #page #main .block-views-press-releases-block,
+#page #main .reveal-modal .block-views-press-releases-block,
 .reveal-modal #page #sidebar,
 #page .reveal-modal #sidebar,
 .reveal-modal #footer #footer-first,
@@ -12041,12 +12404,12 @@ nav .block-superfish-1 {
 /* -----------------------------------------
    Typography
    ----------------------------------------- */
-/* line 95, ../sass/easpd.scss */
+/* line 99, ../sass/easpd.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 100, ../sass/easpd.scss */
+/* line 104, ../sass/easpd.scss */
 *:focus {
   border-style: dotted;
   border-width: 1px;
@@ -12056,7 +12419,7 @@ a:hover {
 /* -----------------------------------------
    Decoration
    ----------------------------------------- */
-/* line 110, ../sass/easpd.scss */
+/* line 114, ../sass/easpd.scss */
 body {
   border-top-color: #184996;
   border-top-width: 4px;
@@ -12064,7 +12427,7 @@ body {
   background-color: #ecf2f9;
 }
 
-/* line 118, ../sass/easpd.scss */
+/* line 122, ../sass/easpd.scss */
 .tabs dd {
   display: inline-block;
   padding: 3px 10px;
@@ -12080,24 +12443,24 @@ body {
   -o-border-radius: 4px 4px 0 0;
   border-radius: 4px 4px 0 0;
 }
-/* line 128, ../sass/easpd.scss */
+/* line 132, ../sass/easpd.scss */
 .tabs dd.active {
   border-bottom-width: 0;
 }
-/* line 130, ../sass/easpd.scss */
+/* line 134, ../sass/easpd.scss */
 .tabs dd.active a {
   font-weight: bold;
 }
 
-/* line 136, ../sass/easpd.scss */
+/* line 140, ../sass/easpd.scss */
 #language_switcher > div {
   float: right;
 }
-/* line 139, ../sass/easpd.scss */
+/* line 143, ../sass/easpd.scss */
 #language_switcher ul {
   margin: 0;
 }
-/* line 142, ../sass/easpd.scss */
+/* line 146, ../sass/easpd.scss */
 #language_switcher li {
   list-style: none;
   display: inline-block;
@@ -12112,27 +12475,27 @@ body {
   -o-border-radius: 0 0 4px 4px;
   border-radius: 0 0 4px 4px;
 }
-/* line 151, ../sass/easpd.scss */
+/* line 155, ../sass/easpd.scss */
 #language_switcher li.active {
   background-color: #184996;
 }
-/* line 154, ../sass/easpd.scss */
+/* line 158, ../sass/easpd.scss */
 #language_switcher li.disabled {
   background-color: #ffda2b;
 }
-/* line 157, ../sass/easpd.scss */
+/* line 161, ../sass/easpd.scss */
 #language_switcher li a {
   color: white;
   font-weight: bold;
   font-size: 0.8125em;
 }
-/* line 163, ../sass/easpd.scss */
+/* line 167, ../sass/easpd.scss */
 #language_switcher .block-text-resize {
   position: relative;
   top: 7px;
   right: 10px;
 }
-/* line 167, ../sass/easpd.scss */
+/* line 171, ../sass/easpd.scss */
 #language_switcher .block-text-resize a.changer {
   cursor: pointer;
   display: block;
@@ -12140,13 +12503,13 @@ body {
   outline: medium none;
   text-indent: -9000px;
 }
-/* line 173, ../sass/easpd.scss */
+/* line 177, ../sass/easpd.scss */
 #language_switcher .block-text-resize a.changer#text_resize_decrease {
   background: url('../images/text_resize_minus.gif?1365514547') no-repeat scroll 0 0 transparent;
   width: 10px;
   height: 10px;
 }
-/* line 178, ../sass/easpd.scss */
+/* line 182, ../sass/easpd.scss */
 #language_switcher .block-text-resize a.changer#text_resize_reset {
   background: url('../images/text_resize_reset.gif?1365514547') no-repeat scroll 0 0 transparent;
   width: 12px;
@@ -12155,7 +12518,7 @@ body {
   margin-right: 4px;
   margin-left: 5px;
 }
-/* line 186, ../sass/easpd.scss */
+/* line 190, ../sass/easpd.scss */
 #language_switcher .block-text-resize a.changer#text_resize_increase {
   background: url('../images/text_resize_plus.gif?1365514547') no-repeat scroll 0 0 transparent;
   width: 13px;
@@ -12163,13 +12526,13 @@ body {
   top: 1px;
 }
 
-/* line 196, ../sass/easpd.scss */
+/* line 200, ../sass/easpd.scss */
 #header-container {
   background: url('../images/header_background.png?1365514547') no-repeat scroll center 0;
   background-color: #ffe35e;
   height: 189px;
 }
-/* line 200, ../sass/easpd.scss */
+/* line 204, ../sass/easpd.scss */
 #header-container .block-block-2 {
   color: #184996;
   text-transform: uppercase;
@@ -12177,23 +12540,23 @@ body {
   font-family: "Roboto Condensed Book", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-stretch: semi-condensed;
 }
-/* line 206, ../sass/easpd.scss */
+/* line 210, ../sass/easpd.scss */
 #header-container .block-block-2 p {
   font-size: 14px;
 }
-/* line 209, ../sass/easpd.scss */
+/* line 213, ../sass/easpd.scss */
 #header-container .block-block-2 em {
   color: #5b87c4;
   font-weight: bold;
 }
 
-/* line 216, ../sass/easpd.scss */
+/* line 220, ../sass/easpd.scss */
 #nav-container {
   background-color: #ffd200;
   height: 51px;
 }
 
-/* line 221, ../sass/easpd.scss */
+/* line 225, ../sass/easpd.scss */
 .barrenav, nav .block-superfish-1 #superfish-1, nav .block-search-form form {
   position: relative;
   top: -1px;
@@ -12208,11 +12571,11 @@ body {
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.09);
 }
 
-/* line 233, ../sass/easpd.scss */
+/* line 237, ../sass/easpd.scss */
 nav .block-superfish-1 {
   padding-right: 0;
 }
-/* line 235, ../sass/easpd.scss */
+/* line 239, ../sass/easpd.scss */
 nav .block-superfish-1 #superfish-1 {
   -webkit-border-radius: 5px 0 0 5px;
   -moz-border-radius: 5px 0 0 5px;
@@ -12221,7 +12584,7 @@ nav .block-superfish-1 #superfish-1 {
   border-radius: 5px 0 0 5px;
   border-right: none;
 }
-/* line 239, ../sass/easpd.scss */
+/* line 243, ../sass/easpd.scss */
 nav .block-superfish-1 #superfish-1 > li.first a {
   -webkit-border-radius: 5px 0 0 5px;
   -moz-border-radius: 5px 0 0 5px;
@@ -12232,7 +12595,7 @@ nav .block-superfish-1 #superfish-1 > li.first a {
   background: url('../images/home_icon.png?1365514547') no-repeat scroll center center;
   text-indent: -99999px;
 }
-/* line 245, ../sass/easpd.scss */
+/* line 249, ../sass/easpd.scss */
 nav .block-superfish-1 #superfish-1 li {
   list-style: none;
   float: left;
@@ -12247,14 +12610,14 @@ nav .block-superfish-1 #superfish-1 li {
   -moz-box-shadow: 1px 1px 3px white inset;
   box-shadow: 1px 1px 3px white inset;
 }
-/* line 256, ../sass/easpd.scss */
+/* line 260, ../sass/easpd.scss */
 nav .block-superfish-1 #superfish-1 li:hover, nav .block-superfish-1 #superfish-1 li a:focus {
   background-color: #dedede;
   -webkit-box-shadow: 1px 1px 3px #c4c4c4 inset;
   -moz-box-shadow: 1px 1px 3px #c4c4c4 inset;
   box-shadow: 1px 1px 3px #c4c4c4 inset;
 }
-/* line 260, ../sass/easpd.scss */
+/* line 264, ../sass/easpd.scss */
 nav .block-superfish-1 #superfish-1 li a {
   height: 100%;
   font-family: "Roboto Condensed", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
@@ -12264,11 +12627,11 @@ nav .block-superfish-1 #superfish-1 li a {
   display: block;
   padding: 18px 18px 0px 18px;
 }
-/* line 269, ../sass/easpd.scss */
+/* line 273, ../sass/easpd.scss */
 nav .block-superfish-1 #superfish-1 li ul {
   margin-top: 11px;
 }
-/* line 271, ../sass/easpd.scss */
+/* line 275, ../sass/easpd.scss */
 nav .block-superfish-1 #superfish-1 li ul li {
   background-color: #f7f7f7;
   border-bottom-style: solid;
@@ -12278,22 +12641,22 @@ nav .block-superfish-1 #superfish-1 li ul li {
   -moz-box-shadow: 1px 1px 3px white inset;
   box-shadow: 1px 1px 3px white inset;
 }
-/* line 277, ../sass/easpd.scss */
+/* line 281, ../sass/easpd.scss */
 nav .block-superfish-1 #superfish-1 li ul li a {
   padding: 10px 18px;
 }
-/* line 280, ../sass/easpd.scss */
+/* line 284, ../sass/easpd.scss */
 nav .block-superfish-1 #superfish-1 li ul li ul {
   margin-left: -8px;
   margin-top: 10px;
 }
 
-/* line 290, ../sass/easpd.scss */
+/* line 294, ../sass/easpd.scss */
 nav .block-search-form {
   padding-left: 0;
   left: -1px;
 }
-/* line 293, ../sass/easpd.scss */
+/* line 297, ../sass/easpd.scss */
 nav .block-search-form form {
   padding-left: 15px;
   -webkit-border-radius: 0 5px 5px 0;
@@ -12302,7 +12665,7 @@ nav .block-search-form form {
   -o-border-radius: 0 5px 5px 0;
   border-radius: 0 5px 5px 0;
 }
-/* line 297, ../sass/easpd.scss */
+/* line 301, ../sass/easpd.scss */
 nav .block-search-form form #edit-search-block-form--2 {
   position: relative;
   top: 9px;
@@ -12316,7 +12679,7 @@ nav .block-search-form form #edit-search-block-form--2 {
   -o-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 306, ../sass/easpd.scss */
+/* line 310, ../sass/easpd.scss */
 nav .block-search-form form #edit-submit {
   background: url('../images/search_icon.png?1365514547') no-repeat;
   border: none;
@@ -12330,7 +12693,7 @@ nav .block-search-form form #edit-submit {
   box-shadow: none;
 }
 
-/* line 319, ../sass/easpd.scss */
+/* line 323, ../sass/easpd.scss */
 #page {
   margin-top: 25px;
 }
@@ -12338,13 +12701,13 @@ nav .block-search-form form #edit-submit {
 /* -----------------------------------------
    Article Lists
    ----------------------------------------- */
-/* line 327, ../sass/easpd.scss */
+/* line 331, ../sass/easpd.scss */
 .thumbnail {
   float: right;
 }
 
-/* line 331, ../sass/easpd.scss */
-.titre_bloc, .block-views-newsflashes-block h2, .block-views-last-publications-block h2 {
+/* line 335, ../sass/easpd.scss */
+.titre_bloc, .block-views-newsflashes-block h2, .block-views-last-publications-block h2, .block-views-press-releases-block h2 {
   display: inline-block;
   padding: 0 15px;
   margin: 0;
@@ -12358,8 +12721,8 @@ nav .block-search-form form #edit-submit {
   font-size: 1.875em;
 }
 
-/* line 341, ../sass/easpd.scss */
-.titre_article, .block-views-newsflashes-block h3, .block-views-last-publications-block h3 {
+/* line 345, ../sass/easpd.scss */
+.titre_article, .block-views-newsflashes-block h3, .block-views-last-publications-block h3, .block-views-press-releases-block h3 {
   text-transform: uppercase;
   font-weight: bold;
   font-stretch: semi-condensed;
@@ -12367,8 +12730,8 @@ nav .block-search-form form #edit-submit {
   font-size: 0.875em;
 }
 
-/* line 349, ../sass/easpd.scss */
-.bouton_bleu_clair, .block-views-newsflashes-block p .readmore, .block-views-last-publications-block p .readmore {
+/* line 353, ../sass/easpd.scss */
+.bouton_bleu_clair, .block-views-newsflashes-block p .readmore, .block-views-last-publications-block p .readmore, .block-views-press-releases-block p .readmore {
   display: inline-block;
   color: white;
   font-size: 0.875em;
@@ -12384,7 +12747,7 @@ nav .block-search-form form #edit-submit {
   background: url('../images/fleche_readmore.png?1366812498') no-repeat scroll right center #5b87c4;
 }
 
-/* line 397, ../sass/easpd.scss */
+/* line 401, ../sass/easpd.scss */
 .block-views-newsflashes-block {
   background-color: white;
   -webkit-border-radius: 5px;
@@ -12395,7 +12758,7 @@ nav .block-search-form form #edit-submit {
   padding: 0 30px !important;
   margin-bottom: 23px;
 }
-/* line 366, ../sass/easpd.scss */
+/* line 370, ../sass/easpd.scss */
 .block-views-newsflashes-block .view-header {
   font-style: italic;
   left: 150px;
@@ -12405,12 +12768,12 @@ nav .block-search-form form #edit-submit {
   color: #184996;
   font-size: 0.875em;
 }
-/* line 381, ../sass/easpd.scss */
+/* line 385, ../sass/easpd.scss */
 .block-views-newsflashes-block p {
   font-size: 0.9375em;
   line-height: 1.2;
 }
-/* line 388, ../sass/easpd.scss */
+/* line 392, ../sass/easpd.scss */
 .block-views-newsflashes-block .date {
   float: left;
   color: #5b87c4;
@@ -12418,23 +12781,23 @@ nav .block-search-form form #edit-submit {
   margin: 7px 5px 0 0;
   font-size: 0.875em;
 }
-/* line 399, ../sass/easpd.scss */
-.block-views-newsflashes-block .h3 {
-  float: left;
-}
-/* line 405, ../sass/easpd.scss */
+/* line 406, ../sass/easpd.scss */
 .block-views-newsflashes-block .views-row-1 {
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #eaeaea;
   margin-bottom: 10px;
 }
-/* line 412, ../sass/easpd.scss */
+/* line 413, ../sass/easpd.scss */
+.block-views-newsflashes-block .views-row-1 .date {
+  margin-top: 3px;
+}
+/* line 416, ../sass/easpd.scss */
 .block-views-newsflashes-block .views-row-1 .logo {
   float: left;
   margin: 5px 15px 0 0;
 }
-/* line 415, ../sass/easpd.scss */
+/* line 419, ../sass/easpd.scss */
 .block-views-newsflashes-block .views-row-1 .logo a {
   display: block;
   width: 200px;
@@ -12442,17 +12805,17 @@ nav .block-search-form form #edit-submit {
   background: url('../images/cadre_news_grand.png?1366645025');
   padding: 5px 4px;
 }
-/* line 427, ../sass/easpd.scss */
+/* line 431, ../sass/easpd.scss */
 .block-views-newsflashes-block .views-row-2 .views-field-body p, .block-views-newsflashes-block .views-row-3 .views-field-body p, .block-views-newsflashes-block .views-row-4 .views-field-body p {
   clear: both;
 }
-/* line 430, ../sass/easpd.scss */
+/* line 434, ../sass/easpd.scss */
 .block-views-newsflashes-block .views-row-2 .logo, .block-views-newsflashes-block .views-row-3 .logo, .block-views-newsflashes-block .views-row-4 .logo {
   width: 200px;
   height: 105px;
   background: url('../images/cadre_news_petit.png?1366815479');
 }
-/* line 434, ../sass/easpd.scss */
+/* line 438, ../sass/easpd.scss */
 .block-views-newsflashes-block .views-row-2 .logo a, .block-views-newsflashes-block .views-row-3 .logo a, .block-views-newsflashes-block .views-row-4 .logo a {
   position: relative;
   display: block;
@@ -12461,13 +12824,13 @@ nav .block-search-form form #edit-submit {
   height: 97px;
   top: 4px;
 }
-/* line 441, ../sass/easpd.scss */
+/* line 445, ../sass/easpd.scss */
 .block-views-newsflashes-block .views-row-2 .logo a img, .block-views-newsflashes-block .views-row-3 .logo a img, .block-views-newsflashes-block .views-row-4 .logo a img {
   position: relative;
   top: -20px;
 }
 
-/* line 450, ../sass/easpd.scss */
+/* line 454, ../sass/easpd.scss */
 .block-views-last-publications-block {
   background-color: white;
   -webkit-border-radius: 5px;
@@ -12477,9 +12840,10 @@ nav .block-search-form form #edit-submit {
   border-radius: 5px;
   padding: 0 30px !important;
   margin-bottom: 23px;
+  width: 355px !important;
   padding-bottom: 30px !important;
 }
-/* line 366, ../sass/easpd.scss */
+/* line 370, ../sass/easpd.scss */
 .block-views-last-publications-block .view-header {
   font-style: italic;
   left: 150px;
@@ -12489,12 +12853,12 @@ nav .block-search-form form #edit-submit {
   color: #184996;
   font-size: 0.875em;
 }
-/* line 381, ../sass/easpd.scss */
+/* line 385, ../sass/easpd.scss */
 .block-views-last-publications-block p {
   font-size: 0.9375em;
   line-height: 1.2;
 }
-/* line 388, ../sass/easpd.scss */
+/* line 392, ../sass/easpd.scss */
 .block-views-last-publications-block .date {
   float: left;
   color: #5b87c4;
@@ -12502,21 +12866,21 @@ nav .block-search-form form #edit-submit {
   margin: 7px 5px 0 0;
   font-size: 0.875em;
 }
-/* line 453, ../sass/easpd.scss */
+/* line 458, ../sass/easpd.scss */
 .block-views-last-publications-block h2 {
   margin-bottom: 15px;
 }
-/* line 456, ../sass/easpd.scss */
+/* line 461, ../sass/easpd.scss */
 .block-views-last-publications-block .logo {
   float: right;
   padding-left: 5px;
 }
-/* line 460, ../sass/easpd.scss */
+/* line 465, ../sass/easpd.scss */
 .block-views-last-publications-block .readmore {
   clear: both;
   float: right;
 }
-/* line 464, ../sass/easpd.scss */
+/* line 469, ../sass/easpd.scss */
 .block-views-last-publications-block .views-row {
   clear: both;
   border-top-style: dotted;
@@ -12526,24 +12890,92 @@ nav .block-search-form form #edit-submit {
   top: 15px;
   padding-top: 5px;
 }
-/* line 472, ../sass/easpd.scss */
+/* line 477, ../sass/easpd.scss */
 .block-views-last-publications-block .views-row.views-row-first {
   border: none;
   top: 0;
   padding-top: 0;
 }
 
+/* line 485, ../sass/easpd.scss */
+.block-views-press-releases-block {
+  background-color: white;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  padding: 0 30px !important;
+  margin-bottom: 23px;
+  width: 355px !important;
+  margin-left: 17px;
+}
+/* line 370, ../sass/easpd.scss */
+.block-views-press-releases-block .view-header {
+  font-style: italic;
+  left: 150px;
+  position: relative;
+  text-decoration: underline;
+  top: -23px;
+  color: #184996;
+  font-size: 0.875em;
+}
+/* line 385, ../sass/easpd.scss */
+.block-views-press-releases-block p {
+  font-size: 0.9375em;
+  line-height: 1.2;
+}
+/* line 392, ../sass/easpd.scss */
+.block-views-press-releases-block .date {
+  float: left;
+  color: #5b87c4;
+  text-transform: uppercase;
+  margin: 7px 5px 0 0;
+  font-size: 0.875em;
+}
+/* line 489, ../sass/easpd.scss */
+.block-views-press-releases-block h2 {
+  margin-bottom: 15px;
+}
+/* line 492, ../sass/easpd.scss */
+.block-views-press-releases-block h3 {
+  font-weight: normal;
+  color: #5b87c4 !important;
+}
+/* line 496, ../sass/easpd.scss */
+.block-views-press-releases-block p {
+  clear: both;
+  margin-bottom: 10px !important;
+}
+/* line 500, ../sass/easpd.scss */
+.block-views-press-releases-block .views-row {
+  border-bottom-style: dotted;
+  border-bottom-width: 1px;
+  border-bottom-color: #184996;
+}
+/* line 505, ../sass/easpd.scss */
+.block-views-press-releases-block .view-footer h3 {
+  text-decoration: underline;
+  font-style: italic;
+  text-transform: capitalize;
+  margin: 10px 0 25px;
+}
+/* line 510, ../sass/easpd.scss */
+.block-views-press-releases-block .view-footer h3:focus {
+  margin: 10px 0 25px;
+}
+
 /* -----------------------------------------
    Orbit Slider
    ----------------------------------------- */
-/* line 484, ../sass/easpd.scss */
+/* line 520, ../sass/easpd.scss */
 #highlight {
   background: url('../images/fond_slideshow.png?1365514547') no-repeat;
   padding: 8px;
   max-width: 686px;
   margin: auto;
 }
-/* line 489, ../sass/easpd.scss */
+/* line 525, ../sass/easpd.scss */
 #highlight .orbit-container {
   border-style: solid;
   border-width: 1px;
@@ -12554,62 +12986,62 @@ nav .block-search-form form #edit-submit {
   -o-border-radius: 1px;
   border-radius: 1px;
 }
-/* line 495, ../sass/easpd.scss */
+/* line 531, ../sass/easpd.scss */
 #highlight .orbit-prev {
   background: url('../images/slideshow_fleche_gauche.png?1365605410') no-repeat scroll left center;
   /* pour virer les flèches en css */
 }
-/* line 497, ../sass/easpd.scss */
+/* line 533, ../sass/easpd.scss */
 #highlight .orbit-prev span {
   border: none;
 }
-/* line 499, ../sass/easpd.scss */
+/* line 535, ../sass/easpd.scss */
 #highlight .orbit-next {
   background: url('../images/slideshow_fleche_droite.png?1365605382') no-repeat scroll right center;
   /* pour virer les flèches en css */
 }
-/* line 501, ../sass/easpd.scss */
+/* line 537, ../sass/easpd.scss */
 #highlight .orbit-next span {
   border: none;
 }
-/* line 503, ../sass/easpd.scss */
+/* line 539, ../sass/easpd.scss */
 #highlight .orbit-caption {
   width: 80%;
   margin: 0 10%;
   background-color: rgba(255, 210, 0, 0.9);
 }
-/* line 507, ../sass/easpd.scss */
+/* line 543, ../sass/easpd.scss */
 #highlight .orbit-caption h2 a, #highlight .orbit-caption h2 {
   text-transform: uppercase;
   font-size: 1.0625em;
   color: #184996;
   margin: 1px 0;
 }
-/* line 513, ../sass/easpd.scss */
+/* line 549, ../sass/easpd.scss */
 #highlight .orbit-caption p {
   font-size: 1em;
   color: #0d2954;
   margin-bottom: 0;
 }
-/* line 517, ../sass/easpd.scss */
+/* line 553, ../sass/easpd.scss */
 #highlight .orbit-caption p a {
   color: #184996;
   text-decoration: underline;
   margin-left: 0.5em;
 }
-/* line 524, ../sass/easpd.scss */
+/* line 560, ../sass/easpd.scss */
 #highlight .orbit-bullets {
   display: table;
   top: 15px;
 }
-/* line 527, ../sass/easpd.scss */
+/* line 563, ../sass/easpd.scss */
 #highlight .orbit-bullets li {
   height: 21px;
   width: 21px;
   border: none;
   background: url('../images/slideshow_bullet_inactive.png?1366204728') no-repeat;
 }
-/* line 532, ../sass/easpd.scss */
+/* line 568, ../sass/easpd.scss */
 #highlight .orbit-bullets li.active {
   background: url('../images/slideshow_bullet_active.png?1366204765') no-repeat;
 }
