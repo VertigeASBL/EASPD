@@ -9,7 +9,8 @@
 :: Grid
 :: Typography
 :: Decoration
-:: Blocs 
+:: Colonne Centrale
+:: Colonne Droite
 :: Orbit Slider
 
 */
@@ -113,7 +114,7 @@ body {
   border-top-color: $darkBlue;
   border-top-width: 4px;
   border-top-style: solid;
-  background-color: $lighterBlue;
+  background-color: $lightestBlue;
 }
 
 .tabs {
@@ -324,7 +325,7 @@ nav .block-search-form {
 }
 
 /* -----------------------------------------
-   Blocs
+   Colonne Centrale
    ----------------------------------------- */
 
 .thumbnail {
@@ -349,7 +350,7 @@ nav .block-search-form {
   font-size: emCalc(14px);
 }
 
-.bouton_bleu_clair {
+@mixin bouton_fleche($couleur, $image_fleche) {
   display: inline-block;
   color: white;
   font-size: emCalc(14px);
@@ -358,7 +359,11 @@ nav .block-search-form {
   padding: 9px 40px 9px 10px;
   text-transform: uppercase;
   @include border-radius(5px);
-  @include background(image-url('fleche_readmore.png') no-repeat scroll right center $lightBlue);
+  @include background(image-url($image_fleche) no-repeat scroll right center $couleur);
+}
+
+.bouton_bleu_clair {
+  @include bouton_fleche($lightBlue, 'fleche_bouton_clair.png');
 }
 
 @mixin bloc {
@@ -509,15 +514,76 @@ nav .block-search-form {
   }
 }
 
+/* -----------------------------------------
+   Colonne Droite
+   ----------------------------------------- */
+
 .cadre_bleu {
   background-color: #5b87c4;
   @include border-radius(10px);
 }
 
+@mixin titre_bloc_sidebar ($icone) {
+  @include background(image-url($icone) no-repeat scroll 15px center $lighterBlue);
+  color: $darkYellow;
+  @include border-radius(0 5px 5px 0);
+  width: 264px;
+  height: 43px;
+  vertical-align: center;
+  padding: 5px 0 0 56px;    
+}
+
 #sidebar {
   @extend .cadre_bleu;
-  @include background(image-url('carte_europe.png') no-repeat scroll center top #5b87c4);
+  @include background(image-url('carte_europe.png') no-repeat scroll center top $lightBlue);
   padding-top: 300px;
+  .block {
+    clear: both;
+  }
+}
+
+.block-user-login {
+  h2 {
+    @include titre_bloc_sidebar('icone_login.png');
+  }
+  .form-type-textfield, .form-type-password {
+    margin-left: 25px;
+    width: 250px;
+    @include border-radius(5px);
+  }
+  form > div > .item-list {
+    float: right;
+    margin-right: 34px;
+    ul {
+      list-style: none;
+      margin: 0;
+    }
+    li a {
+      color: $lightYellow;
+      font-size: emCalc(13px);
+      font-style: italic;
+    }
+  }
+  .bouton {
+    @include bouton_fleche($darkBlue, 'fleche_bouton_fonce.png');
+    clear: both;
+    float: right;
+    margin-right: 34px;
+  }
+  input[type="submit"] {
+    box-shadow: none;
+    border: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .signup h3 {
+    margin-left: 25px;
+    color: $darkYellow;
+    clear: both;
+    position: relative;
+    top: 8px;
+  }
 }
 
 /* -----------------------------------------

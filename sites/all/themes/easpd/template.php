@@ -90,6 +90,12 @@ function easpd_text_resize_block() {
   return $output;
 }
 
+/* function easpd_form_element ($variables) { */
+
+/*   var_dump($variables); */
+/*   return theme_form_element($variables); */
+/* } */
+
 /**
  * Implements theme_links() targeting the main menu specifically
  * Outputs Foundation Nav bar http://foundation.zurb.com/docs/navigation.php
