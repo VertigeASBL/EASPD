@@ -46,40 +46,38 @@
 }
 
 nav {
-  @extend .row;
+  width: 1010px;
+  margin: auto;
   .block-superfish-1 {
-    @extend .large-9;
-    @extend .columns;
-    clear: both;
+    float: left;
+    width: 760px;
   }
   .block-search-form {
-    @extend .large-3;
-    @extend .columns;
+    width: 250px;
+    float: right;
   }
 }
 
 #page {
-  @extend .row;
+  width: 1010px;
+  margin: auto;
   #main {
-    @extend .large-9;
-    @extend .columns;
-    @extend .row;
-    #highlight .block-views-newsflashes-block {
-      @extend .large-12;
-      @extend .columns;
-    }
+    width: 686px;
+    float: left;
     .block-views-last-publications-block {
-      @extend .large-6;
-      @extend .columns;
+      width: 330px;
+      margin-right: 20px;
+      float: left;
     }
     .block-views-press-releases-block {
-      @extend .large-6;
-      @extend .columns;
-    }    
+      width: 330px;
+      float: right;
+    }
   }
   #sidebar {
-    @extend .large-3;
-    @extend .columns;
+    margin-left: 15px;
+    width: 309px;
+    float: right;
   }
 }
 
@@ -298,6 +296,7 @@ nav .block-search-form {
     @extend .barrenav;
     padding-left: 15px;
     @include border-radius(0 5px 5px 0);
+    border-left: none;
     #edit-search-block-form--2 {
       position: relative;
       top: 9px;
@@ -453,7 +452,6 @@ nav .block-search-form {
 
 .block-views-last-publications-block {
   @include bloc;
-  width: 355px !important;
   padding-bottom: 30px !important;
   h2 {
     margin-bottom: 15px;
@@ -484,8 +482,6 @@ nav .block-search-form {
 
 .block-views-press-releases-block {
   @include bloc;
-  width: 355px !important;
-  margin-left: 17px;
   h2 {
     margin-bottom: 15px;
   }
