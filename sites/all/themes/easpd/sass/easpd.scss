@@ -530,7 +530,7 @@ nav .block-search-form {
   width: 264px;
   height: 43px;
   vertical-align: center;
-  padding: 5px 0 0 56px;    
+  padding: 5px 0 0 56px;
   font-size: emCalc(27px);
 }
 
@@ -608,7 +608,7 @@ nav .block-search-form {
   }
   .view-content {
     margin: 0 35px 20px;
-    
+
     table.mini {
       th, td {
         color: $white;
@@ -641,6 +641,30 @@ nav .block-search-form {
           text-decoration: none !important;
         }
       }
+    }
+  }
+}
+
+.block-views-upcoming-events-block {
+  color: $white;
+  h2 {
+    @include titre_bloc_sidebar('icone_events.png');
+  }
+  .event {
+    margin: 0 30px;
+    p {
+      font-size: emCalc(13px);
+      color: lighten($lightBlue, 32%);
+    }
+    h3 {
+      @extend .titre_article;
+      a { color: $white; }
+    }
+    .date {
+        float: left;
+        text-transform: uppercase;
+        margin: 3.5px 5px 0 0;
+        font-size: emCalc(14px);
     }
   }
 }

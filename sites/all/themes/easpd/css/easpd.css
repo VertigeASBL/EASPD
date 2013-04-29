@@ -7508,7 +7508,7 @@ nav .block-search-form form #edit-submit {
 }
 
 /* line 345, ../sass/easpd.scss */
-.titre_article, .block-views-newsflashes-block h3, .block-views-last-publications-block h3, .block-views-press-releases-block h3 {
+.titre_article, .block-views-newsflashes-block h3, .block-views-last-publications-block h3, .block-views-press-releases-block h3, .block-views-upcoming-events-block .event h3 {
   text-transform: uppercase;
   font-weight: bold;
   font-stretch: semi-condensed;
@@ -7927,17 +7927,57 @@ nav .block-search-form form #edit-submit {
   text-decoration: none !important;
 }
 
+/* line 648, ../sass/easpd.scss */
+.block-views-upcoming-events-block {
+  color: white;
+}
+/* line 650, ../sass/easpd.scss */
+.block-views-upcoming-events-block h2 {
+  background: url('../images/icone_events.png?1367221634') no-repeat scroll 15px center #6792ce;
+  color: #ffd200;
+  -webkit-border-radius: 0 5px 5px 0;
+  -moz-border-radius: 0 5px 5px 0;
+  -ms-border-radius: 0 5px 5px 0;
+  -o-border-radius: 0 5px 5px 0;
+  border-radius: 0 5px 5px 0;
+  width: 264px;
+  height: 43px;
+  vertical-align: center;
+  padding: 5px 0 0 56px;
+  font-size: 1.6875em;
+}
+/* line 653, ../sass/easpd.scss */
+.block-views-upcoming-events-block .event {
+  margin: 0 30px;
+}
+/* line 655, ../sass/easpd.scss */
+.block-views-upcoming-events-block .event p {
+  font-size: 0.8125em;
+  color: #ccd9ec;
+}
+/* line 661, ../sass/easpd.scss */
+.block-views-upcoming-events-block .event h3 a {
+  color: white;
+}
+/* line 663, ../sass/easpd.scss */
+.block-views-upcoming-events-block .event .date {
+  float: left;
+  text-transform: uppercase;
+  margin: 3.5px 5px 0 0;
+  font-size: 0.875em;
+}
+
 /* -----------------------------------------
    Orbit Slider
    ----------------------------------------- */
-/* line 652, ../sass/easpd.scss */
+/* line 676, ../sass/easpd.scss */
 #highlight {
   background: url('../images/fond_slideshow.png?1365514547') no-repeat;
   padding: 8px;
   max-width: 686px;
   margin: auto;
 }
-/* line 657, ../sass/easpd.scss */
+/* line 681, ../sass/easpd.scss */
 #highlight .orbit-container {
   border-style: solid;
   border-width: 1px;
@@ -7948,62 +7988,62 @@ nav .block-search-form form #edit-submit {
   -o-border-radius: 1px;
   border-radius: 1px;
 }
-/* line 663, ../sass/easpd.scss */
+/* line 687, ../sass/easpd.scss */
 #highlight .orbit-prev {
   background: url('../images/slideshow_fleche_gauche.png?1365605410') no-repeat scroll left center;
   /* pour virer les flèches en css */
 }
-/* line 665, ../sass/easpd.scss */
+/* line 689, ../sass/easpd.scss */
 #highlight .orbit-prev span {
   border: none;
 }
-/* line 667, ../sass/easpd.scss */
+/* line 691, ../sass/easpd.scss */
 #highlight .orbit-next {
   background: url('../images/slideshow_fleche_droite.png?1365605382') no-repeat scroll right center;
   /* pour virer les flèches en css */
 }
-/* line 669, ../sass/easpd.scss */
+/* line 693, ../sass/easpd.scss */
 #highlight .orbit-next span {
   border: none;
 }
-/* line 671, ../sass/easpd.scss */
+/* line 695, ../sass/easpd.scss */
 #highlight .orbit-caption {
   width: 80%;
   margin: 0 10%;
   background-color: rgba(255, 210, 0, 0.9);
 }
-/* line 675, ../sass/easpd.scss */
+/* line 699, ../sass/easpd.scss */
 #highlight .orbit-caption h2 a, #highlight .orbit-caption h2 {
   text-transform: uppercase;
   font-size: 1.0625em;
   color: #184996;
   margin: 1px 0;
 }
-/* line 681, ../sass/easpd.scss */
+/* line 705, ../sass/easpd.scss */
 #highlight .orbit-caption p {
   font-size: 1em;
   color: #0d2954;
   margin-bottom: 0;
 }
-/* line 685, ../sass/easpd.scss */
+/* line 709, ../sass/easpd.scss */
 #highlight .orbit-caption p a {
   color: #184996;
   text-decoration: underline;
   margin-left: 0.5em;
 }
-/* line 692, ../sass/easpd.scss */
+/* line 716, ../sass/easpd.scss */
 #highlight .orbit-bullets {
   display: table;
   top: 15px;
 }
-/* line 695, ../sass/easpd.scss */
+/* line 719, ../sass/easpd.scss */
 #highlight .orbit-bullets li {
   height: 21px;
   width: 21px;
   border: none;
   background: url('../images/slideshow_bullet_inactive.png?1366204728') no-repeat;
 }
-/* line 700, ../sass/easpd.scss */
+/* line 724, ../sass/easpd.scss */
 #highlight .orbit-bullets li.active {
   background: url('../images/slideshow_bullet_active.png?1366204765') no-repeat;
 }
