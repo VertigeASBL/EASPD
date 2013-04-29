@@ -531,6 +531,7 @@ nav .block-search-form {
   height: 43px;
   vertical-align: center;
   padding: 5px 0 0 56px;    
+  font-size: emCalc(27px);
 }
 
 #sidebar {
@@ -575,6 +576,7 @@ nav .block-search-form {
     border: none;
     &:hover {
       text-decoration: underline;
+      cursor: pointer;
     }
   }
   .signup h3 {
@@ -583,6 +585,63 @@ nav .block-search-form {
     clear: both;
     position: relative;
     top: 8px;
+  }
+}
+
+.block-views-events-calendar-block-1 {
+  h2 {
+    @include titre_bloc_sidebar('icone_calendrier.png');
+  }
+  .view-header {
+    margin: 0 35px;
+    .date-nav { padding: 0; }
+    h3 {
+      text-transform: uppercase;
+      font-size: emCalc(18px) !important;
+      position: relative;
+      top: -2px;
+    }
+    .pager li {
+      @include background(transparent);
+      margin: 0;
+    }
+  }
+  .view-content {
+    margin: 0 35px 20px;
+    
+    table.mini {
+      th, td {
+        color: $white;
+        text-transform: uppercase;
+        font-weight: normal;
+        background-color: $lightBlue;
+        border: none;
+        text-align: center;
+        vertical-align: middle;
+      }
+      th {
+        font-size: emCalc(11px);
+      }
+      td {
+        font-size: emCalc(13px);
+        border-width: 1px;
+        border-style: solid;
+        border-color: lighten($lightBlue, 20%);
+        padding: 8px;
+        &.empty {
+          border: none;
+        }
+        &.today {
+          font-weight: bold;
+          color: $darkYellow;
+        }
+        &.has-events {
+          background-color: $darkYellow;
+          color: $darkBlue;
+          text-decoration: none !important;
+        }
+      }
+    }
   }
 }
 

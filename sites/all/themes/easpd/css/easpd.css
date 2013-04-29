@@ -7761,17 +7761,17 @@ nav .block-search-form form #edit-submit {
   border-radius: 10px;
 }
 
-/* line 536, ../sass/easpd.scss */
+/* line 537, ../sass/easpd.scss */
 #sidebar {
   background: url('../images/carte_europe.png?1366988066') no-repeat scroll center top #5b87c4;
   padding-top: 300px;
 }
-/* line 540, ../sass/easpd.scss */
+/* line 541, ../sass/easpd.scss */
 #sidebar .block {
   clear: both;
 }
 
-/* line 546, ../sass/easpd.scss */
+/* line 547, ../sass/easpd.scss */
 .block-user-login h2 {
   background: url('../images/icone_login.png?1367221453') no-repeat scroll 15px center #6792ce;
   color: #ffd200;
@@ -7784,8 +7784,9 @@ nav .block-search-form form #edit-submit {
   height: 43px;
   vertical-align: center;
   padding: 5px 0 0 56px;
+  font-size: 1.6875em;
 }
-/* line 549, ../sass/easpd.scss */
+/* line 550, ../sass/easpd.scss */
 .block-user-login .form-type-textfield, .block-user-login .form-type-password {
   margin-left: 25px;
   width: 250px;
@@ -7795,23 +7796,23 @@ nav .block-search-form form #edit-submit {
   -o-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 554, ../sass/easpd.scss */
+/* line 555, ../sass/easpd.scss */
 .block-user-login form > div > .item-list {
   float: right;
   margin-right: 34px;
 }
-/* line 557, ../sass/easpd.scss */
+/* line 558, ../sass/easpd.scss */
 .block-user-login form > div > .item-list ul {
   list-style: none;
   margin: 0;
 }
-/* line 561, ../sass/easpd.scss */
+/* line 562, ../sass/easpd.scss */
 .block-user-login form > div > .item-list li a {
   color: #ffe35e;
   font-size: 0.8125em;
   font-style: italic;
 }
-/* line 567, ../sass/easpd.scss */
+/* line 568, ../sass/easpd.scss */
 .block-user-login .bouton {
   display: inline-block;
   color: white;
@@ -7830,16 +7831,17 @@ nav .block-search-form form #edit-submit {
   float: right;
   margin-right: 34px;
 }
-/* line 573, ../sass/easpd.scss */
+/* line 574, ../sass/easpd.scss */
 .block-user-login input[type="submit"] {
   box-shadow: none;
   border: none;
 }
-/* line 576, ../sass/easpd.scss */
+/* line 577, ../sass/easpd.scss */
 .block-user-login input[type="submit"]:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
-/* line 580, ../sass/easpd.scss */
+/* line 582, ../sass/easpd.scss */
 .block-user-login .signup h3 {
   margin-left: 25px;
   color: #ffd200;
@@ -7848,17 +7850,94 @@ nav .block-search-form form #edit-submit {
   top: 8px;
 }
 
+/* line 592, ../sass/easpd.scss */
+.block-views-events-calendar-block-1 h2 {
+  background: url('../images/icone_calendrier.png?1367221588') no-repeat scroll 15px center #6792ce;
+  color: #ffd200;
+  -webkit-border-radius: 0 5px 5px 0;
+  -moz-border-radius: 0 5px 5px 0;
+  -ms-border-radius: 0 5px 5px 0;
+  -o-border-radius: 0 5px 5px 0;
+  border-radius: 0 5px 5px 0;
+  width: 264px;
+  height: 43px;
+  vertical-align: center;
+  padding: 5px 0 0 56px;
+  font-size: 1.6875em;
+}
+/* line 595, ../sass/easpd.scss */
+.block-views-events-calendar-block-1 .view-header {
+  margin: 0 35px;
+}
+/* line 597, ../sass/easpd.scss */
+.block-views-events-calendar-block-1 .view-header .date-nav {
+  padding: 0;
+}
+/* line 598, ../sass/easpd.scss */
+.block-views-events-calendar-block-1 .view-header h3 {
+  text-transform: uppercase;
+  font-size: 1.125em !important;
+  position: relative;
+  top: -2px;
+}
+/* line 604, ../sass/easpd.scss */
+.block-views-events-calendar-block-1 .view-header .pager li {
+  background: transparent;
+  margin: 0;
+}
+/* line 609, ../sass/easpd.scss */
+.block-views-events-calendar-block-1 .view-content {
+  margin: 0 35px 20px;
+}
+/* line 613, ../sass/easpd.scss */
+.block-views-events-calendar-block-1 .view-content table.mini th, .block-views-events-calendar-block-1 .view-content table.mini td {
+  color: white;
+  text-transform: uppercase;
+  font-weight: normal;
+  background-color: #5b87c4;
+  border: none;
+  text-align: center;
+  vertical-align: middle;
+}
+/* line 622, ../sass/easpd.scss */
+.block-views-events-calendar-block-1 .view-content table.mini th {
+  font-size: 0.6875em;
+}
+/* line 625, ../sass/easpd.scss */
+.block-views-events-calendar-block-1 .view-content table.mini td {
+  font-size: 0.8125em;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #a6bedf;
+  padding: 8px;
+}
+/* line 631, ../sass/easpd.scss */
+.block-views-events-calendar-block-1 .view-content table.mini td.empty {
+  border: none;
+}
+/* line 634, ../sass/easpd.scss */
+.block-views-events-calendar-block-1 .view-content table.mini td.today {
+  font-weight: bold;
+  color: #ffd200;
+}
+/* line 638, ../sass/easpd.scss */
+.block-views-events-calendar-block-1 .view-content table.mini td.has-events {
+  background-color: #ffd200;
+  color: #184996;
+  text-decoration: none !important;
+}
+
 /* -----------------------------------------
    Orbit Slider
    ----------------------------------------- */
-/* line 593, ../sass/easpd.scss */
+/* line 652, ../sass/easpd.scss */
 #highlight {
   background: url('../images/fond_slideshow.png?1365514547') no-repeat;
   padding: 8px;
   max-width: 686px;
   margin: auto;
 }
-/* line 598, ../sass/easpd.scss */
+/* line 657, ../sass/easpd.scss */
 #highlight .orbit-container {
   border-style: solid;
   border-width: 1px;
@@ -7869,62 +7948,62 @@ nav .block-search-form form #edit-submit {
   -o-border-radius: 1px;
   border-radius: 1px;
 }
-/* line 604, ../sass/easpd.scss */
+/* line 663, ../sass/easpd.scss */
 #highlight .orbit-prev {
   background: url('../images/slideshow_fleche_gauche.png?1365605410') no-repeat scroll left center;
   /* pour virer les flèches en css */
 }
-/* line 606, ../sass/easpd.scss */
+/* line 665, ../sass/easpd.scss */
 #highlight .orbit-prev span {
   border: none;
 }
-/* line 608, ../sass/easpd.scss */
+/* line 667, ../sass/easpd.scss */
 #highlight .orbit-next {
   background: url('../images/slideshow_fleche_droite.png?1365605382') no-repeat scroll right center;
   /* pour virer les flèches en css */
 }
-/* line 610, ../sass/easpd.scss */
+/* line 669, ../sass/easpd.scss */
 #highlight .orbit-next span {
   border: none;
 }
-/* line 612, ../sass/easpd.scss */
+/* line 671, ../sass/easpd.scss */
 #highlight .orbit-caption {
   width: 80%;
   margin: 0 10%;
   background-color: rgba(255, 210, 0, 0.9);
 }
-/* line 616, ../sass/easpd.scss */
+/* line 675, ../sass/easpd.scss */
 #highlight .orbit-caption h2 a, #highlight .orbit-caption h2 {
   text-transform: uppercase;
   font-size: 1.0625em;
   color: #184996;
   margin: 1px 0;
 }
-/* line 622, ../sass/easpd.scss */
+/* line 681, ../sass/easpd.scss */
 #highlight .orbit-caption p {
   font-size: 1em;
   color: #0d2954;
   margin-bottom: 0;
 }
-/* line 626, ../sass/easpd.scss */
+/* line 685, ../sass/easpd.scss */
 #highlight .orbit-caption p a {
   color: #184996;
   text-decoration: underline;
   margin-left: 0.5em;
 }
-/* line 633, ../sass/easpd.scss */
+/* line 692, ../sass/easpd.scss */
 #highlight .orbit-bullets {
   display: table;
   top: 15px;
 }
-/* line 636, ../sass/easpd.scss */
+/* line 695, ../sass/easpd.scss */
 #highlight .orbit-bullets li {
   height: 21px;
   width: 21px;
   border: none;
   background: url('../images/slideshow_bullet_inactive.png?1366204728') no-repeat;
 }
-/* line 641, ../sass/easpd.scss */
+/* line 700, ../sass/easpd.scss */
 #highlight .orbit-bullets li.active {
   background: url('../images/slideshow_bullet_active.png?1366204765') no-repeat;
 }
