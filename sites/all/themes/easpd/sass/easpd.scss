@@ -535,9 +535,18 @@ nav .block-search-form {
 }
 
 #sidebar {
+  .form-type-textfield, .form-type-password {
+    margin-left: 25px;
+    width: 250px;
+    @include border-radius(5px);
+  }
+}
+
+#sidebar-first {
   @extend .cadre_bleu;
   @include background(image-url('carte_europe.png') no-repeat scroll center top $lightBlue);
   padding-top: 300px;
+  padding-bottom: 10px;
   .block {
     clear: both;
   }
@@ -546,11 +555,6 @@ nav .block-search-form {
 .block-user-login {
   h2 {
     @include titre_bloc_sidebar('icone_login.png');
-  }
-  .form-type-textfield, .form-type-password {
-    margin-left: 25px;
-    width: 250px;
-    @include border-radius(5px);
   }
   form > div > .item-list {
     float: right;
@@ -669,6 +673,28 @@ nav .block-search-form {
   }
 }
 
+#sidebar-second {
+  margin-top: 30px;
+  @extend .cadre_bleu;
+}
+
+.block-newsletter-newsletter-subscribe {
+  padding: 20px 0 50px;
+  h2 {
+    @include titre_bloc_sidebar('icone_newsletter.png');
+  }
+  .prefix { display: none; }
+  input[type="submit"] {
+    @include bouton_fleche($darkBlue, 'fleche_bouton_fonce.png');
+    margin: 0 34px 0 0;
+    border: none;
+    float: right;
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}
 /* -----------------------------------------
    Orbit Slider
    ----------------------------------------- */
