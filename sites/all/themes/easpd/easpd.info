@@ -31,6 +31,7 @@ base theme = zurb_foundation
 stylesheets[all][] = css/easpd.css
 stylesheets[all][] = css/app.css
 stylesheets[all][] = css/foundation.min.css
+stylesheets[all][] = css/lightbox.css
 
 ; An empty JavaScript file ready to be used just uncomment and add JavaScript
 ; scripts[] = js/easpd.js
@@ -99,4 +100,5 @@ scripts[] = javascripts/foundation/foundation.orbit.js
 ; scripts[] = javascripts/foundation/foundation.tooltips.js
 ; scripts[] = javascripts/foundation/foundation.topbar.js
 
+scripts[] = javascripts/vendor/lightbox.js
 scripts[] = javascripts/easpd.js
