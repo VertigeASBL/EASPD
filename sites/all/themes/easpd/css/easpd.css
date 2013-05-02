@@ -8022,17 +8022,57 @@ nav .block-search-form form #edit-submit {
   cursor: pointer;
 }
 
+/* line 700, ../sass/easpd.scss */
+.block-block-6 h2 {
+  background: url('../images/icone_newsflashes.png?1367221793') no-repeat scroll 15px center #6792ce;
+  color: #ffd200;
+  -webkit-border-radius: 0 5px 5px 0;
+  -moz-border-radius: 0 5px 5px 0;
+  -ms-border-radius: 0 5px 5px 0;
+  -o-border-radius: 0 5px 5px 0;
+  border-radius: 0 5px 5px 0;
+  width: 264px;
+  height: 43px;
+  vertical-align: center;
+  padding: 5px 0 0 56px;
+  font-size: 1.6875em;
+}
+/* line 703, ../sass/easpd.scss */
+.block-block-6 p {
+  margin: 0 34px;
+  color: white;
+  font-size: 0.8125em;
+}
+/* line 707, ../sass/easpd.scss */
+.block-block-6 p a {
+  display: inline-block;
+  color: white;
+  font-size: 0.875em;
+  font-weight: bold;
+  margin-top: 6px;
+  padding: 9px 40px 9px 10px;
+  text-transform: uppercase;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  background: url('../images/fleche_bouton_fonce.png?1367226110') no-repeat scroll right center #184996;
+  border: none;
+  float: right;
+}
+
 /* -----------------------------------------
    Orbit Slider
    ----------------------------------------- */
-/* line 702, ../sass/easpd.scss */
+/* line 719, ../sass/easpd.scss */
 #highlight {
   background: url('../images/fond_slideshow.png?1365514547') no-repeat;
   padding: 8px;
   max-width: 686px;
   margin: auto;
 }
-/* line 707, ../sass/easpd.scss */
+/* line 724, ../sass/easpd.scss */
 #highlight .orbit-container {
   border-style: solid;
   border-width: 1px;
@@ -8043,62 +8083,62 @@ nav .block-search-form form #edit-submit {
   -o-border-radius: 1px;
   border-radius: 1px;
 }
-/* line 713, ../sass/easpd.scss */
+/* line 730, ../sass/easpd.scss */
 #highlight .orbit-prev {
   background: url('../images/slideshow_fleche_gauche.png?1365605410') no-repeat scroll left center;
   /* pour virer les flèches en css */
 }
-/* line 715, ../sass/easpd.scss */
+/* line 732, ../sass/easpd.scss */
 #highlight .orbit-prev span {
   border: none;
 }
-/* line 717, ../sass/easpd.scss */
+/* line 734, ../sass/easpd.scss */
 #highlight .orbit-next {
   background: url('../images/slideshow_fleche_droite.png?1365605382') no-repeat scroll right center;
   /* pour virer les flèches en css */
 }
-/* line 719, ../sass/easpd.scss */
+/* line 736, ../sass/easpd.scss */
 #highlight .orbit-next span {
   border: none;
 }
-/* line 721, ../sass/easpd.scss */
+/* line 738, ../sass/easpd.scss */
 #highlight .orbit-caption {
   width: 80%;
   margin: 0 10%;
   background-color: rgba(255, 210, 0, 0.9);
 }
-/* line 725, ../sass/easpd.scss */
+/* line 742, ../sass/easpd.scss */
 #highlight .orbit-caption h2 a, #highlight .orbit-caption h2 {
   text-transform: uppercase;
   font-size: 1.0625em;
   color: #184996;
   margin: 1px 0;
 }
-/* line 731, ../sass/easpd.scss */
+/* line 748, ../sass/easpd.scss */
 #highlight .orbit-caption p {
   font-size: 1em;
   color: #0d2954;
   margin-bottom: 0;
 }
-/* line 735, ../sass/easpd.scss */
+/* line 752, ../sass/easpd.scss */
 #highlight .orbit-caption p a {
   color: #184996;
   text-decoration: underline;
   margin-left: 0.5em;
 }
-/* line 742, ../sass/easpd.scss */
+/* line 759, ../sass/easpd.scss */
 #highlight .orbit-bullets {
   display: table;
   top: 15px;
 }
-/* line 745, ../sass/easpd.scss */
+/* line 762, ../sass/easpd.scss */
 #highlight .orbit-bullets li {
   height: 21px;
   width: 21px;
   border: none;
   background: url('../images/slideshow_bullet_inactive.png?1366204728') no-repeat;
 }
-/* line 750, ../sass/easpd.scss */
+/* line 767, ../sass/easpd.scss */
 #highlight .orbit-bullets li.active {
   background: url('../images/slideshow_bullet_active.png?1366204765') no-repeat;
 }

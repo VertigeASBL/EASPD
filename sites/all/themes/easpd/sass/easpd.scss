@@ -695,6 +695,22 @@ nav .block-search-form {
     }
   }
 }
+
+.block-block-6 {
+  h2 {
+    @include titre_bloc_sidebar('icone_newsflashes.png');
+  }
+  p {
+    margin: 0 34px;
+    color: $white;
+    font-size: emCalc(13px);
+    a {
+      @include bouton_fleche($darkBlue, 'fleche_bouton_fonce.png');
+      float: right;
+    }
+  }
+}
+
 /* -----------------------------------------
    Orbit Slider
    ----------------------------------------- */
