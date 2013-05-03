@@ -121,18 +121,28 @@ body {
 
 .tabs {
   dd {
+    font-size: emCalc(13px);
     display: inline-block;
     padding: 3px 10px;
     position: relative;
-    left: 6px;
-    margin: 0 0 0 -6px;
+    margin: 0;
     border-color: $darkBlue;
     border-style: solid;
-    border-width: 1px 2px 4px;
-    @include border-radius(4px 4px 0 0);
+    border-width: 1px;
+    @include border-radius(10px);
     &.active {
-      border-bottom-width: 0;
-      a { font-weight: bold; }
+      a {
+        font-weight: bold;
+        color: $white
+      }
+      background-color: $darkBlue;
+    }
+    &:hover {
+      a {
+        color: $white;
+        text-decoration: none;
+      }
+      background-color: $lightBlue;
     }
   }
 }

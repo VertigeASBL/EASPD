@@ -395,7 +395,7 @@ $header-font-family: 'Roboto Condensed', "Helvetica Neue", "Helvetica", Helvetic
 //
 
 // We use this to set the background color for the breadcrumb container.
-// $crumb-bg: lighten($secondary-color, 5%);
+$crumb-bg: darken($lightestBlue, 10%);
 
 // We use these to set the padding around the breadcrumbs.
 // $crumb-padding: emCalc(6px) emCalc(14px) emCalc(9px);
