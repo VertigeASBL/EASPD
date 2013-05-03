@@ -84,6 +84,7 @@ nav {
 }
 
 footer {
+  clear: both;
   @extend .row;
   #footer-first, #footer-middle, #footer-last {
     @extend .large-4;
