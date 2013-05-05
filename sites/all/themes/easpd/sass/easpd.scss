@@ -123,26 +123,35 @@ body {
   dd {
     font-size: emCalc(13px);
     display: inline-block;
-    padding: 3px 10px;
+    padding: 3px 12px;
     position: relative;
     margin: 0;
-    border-color: $darkBlue;
+    border-color: $lightBlue;
     border-style: solid;
     border-width: 1px;
-    @include border-radius(10px);
+    background-color: $lightBlue;
+    @include border-radius(7px 7px 0 0);
+    @include box-shadow($white 0px 1px 4px -4px inset, 1px 1px 11px -9px $lightBlue inset);
+    a {
+      position: relative;
+      top: 1px;
+      font-weight: bold;
+      color: $white
+    }
     &.active {
       a {
-        font-weight: bold;
-        color: $white
+        color: $darkBlue;
       }
-      background-color: $darkBlue;
+      background-color: $lightestBlue;
+      border-bottom: none;
+      @include border-radius(7px 7px 0 0);
     }
     &:hover {
       a {
         color: $white;
         text-decoration: none;
       }
-      background-color: $lightBlue;
+      background-color: $darkBlue;
     }
   }
 }
@@ -339,6 +348,10 @@ nav .block-search-form {
 /* -----------------------------------------
    Colonne Centrale
    ----------------------------------------- */
+
+.alert-box a {
+  color: red;
+}
 
 .thumbnail {
   float: right;
@@ -540,6 +553,11 @@ nav .block-search-form {
   }
 }
 
+article img {
+  margin: auto;
+  display: block;
+}
+
 .node-gallery a {
   display: inline-block;
 }
@@ -720,6 +738,10 @@ nav .block-search-form {
   }
   p {
     font-size: emCalc(13px);
+    color: $white;
+  }
+  label.option {
+    color: $white;
   }
   #edit-newsletters .form-checkbox {
     margin: 6px;
