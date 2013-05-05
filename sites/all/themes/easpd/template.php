@@ -158,8 +158,12 @@ function easpd_text_resize_block() {
  * Implements template_preprocess_node
  *
  */
-//function easpd_preprocess_node(&$vars) {
-//}
+function easpd_preprocess_node(&$vars) {
+
+  // Add template suggestions based on view modes
+  $vars['theme_hook_suggestions'][] = 'node__' . $vars['view_mode'];
+  $vars['theme_hook_suggestions'][] = 'node__' . $vars['view_mode'] . '__' . $vars['type'];
+}
 
 /**
  * Implements hook_preprocess_block()
