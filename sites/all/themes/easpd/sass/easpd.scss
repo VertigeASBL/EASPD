@@ -323,7 +323,7 @@ nav .block-search-form {
       @include background(image-url("search_icon.png") no-repeat);
       border: none;
       position: relative;
-      top: -29px;
+      top: -35px;
       left: 185px;
       padding-left: 45px;
       color: $darkYellow;
@@ -526,6 +526,20 @@ nav .block-search-form {
   }
 }
 
+.file {
+  margin-top: 30px;
+}
+
+.field-name-field-gallery {
+  margin-top: 30px;
+}
+
+.field-name-field-files {
+  .field-label {
+    margin: 5px 0;
+  }
+}
+
 .node-gallery a {
   display: inline-block;
 }
@@ -543,10 +557,12 @@ nav .block-search-form {
   @include background(image-url($icone) no-repeat scroll 15px center $lighterBlue);
   color: $darkYellow;
   @include border-radius(0 5px 5px 0);
-  width: 264px;
+  width: 270px;
   height: 43px;
   vertical-align: center;
-  padding: 5px 0 0 56px;
+  position: relative;
+  top: -1px;
+  padding: 0px 0 0 56px;
   font-size: emCalc(27px);
 }
 

@@ -7686,7 +7686,7 @@ nav .block-search-form form #edit-submit {
   background: url('../images/search_icon.png?1367640177') no-repeat;
   border: none;
   position: relative;
-  top: -29px;
+  top: -35px;
   left: 185px;
   padding-left: 45px;
   color: #ffd200;
@@ -7965,6 +7965,21 @@ nav .block-search-form form #edit-submit {
 }
 
 /* line 529, ../sass/easpd.scss */
+.file {
+  margin-top: 30px;
+}
+
+/* line 533, ../sass/easpd.scss */
+.field-name-field-gallery {
+  margin-top: 30px;
+}
+
+/* line 538, ../sass/easpd.scss */
+.field-name-field-files .field-label {
+  margin: 5px 0;
+}
+
+/* line 543, ../sass/easpd.scss */
 .node-gallery a {
   display: inline-block;
 }
@@ -7972,7 +7987,7 @@ nav .block-search-form form #edit-submit {
 /* -----------------------------------------
    Colonne Droite
    ----------------------------------------- */
-/* line 537, ../sass/easpd.scss */
+/* line 551, ../sass/easpd.scss */
 .cadre_bleu, #sidebar-first, #sidebar-second {
   background-color: #5b87c4;
   -webkit-border-radius: 10px;
@@ -7982,7 +7997,7 @@ nav .block-search-form form #edit-submit {
   border-radius: 10px;
 }
 
-/* line 554, ../sass/easpd.scss */
+/* line 570, ../sass/easpd.scss */
 #sidebar .form-type-textfield, #sidebar .form-type-password {
   margin-left: 25px;
   width: 250px;
@@ -7992,19 +8007,19 @@ nav .block-search-form form #edit-submit {
   -o-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 559, ../sass/easpd.scss */
+/* line 575, ../sass/easpd.scss */
 #sidebar .block {
   clear: both;
 }
 
-/* line 564, ../sass/easpd.scss */
+/* line 580, ../sass/easpd.scss */
 #sidebar-first {
   background: url('../images/carte_europe.png?1367640177') no-repeat scroll center 17px #5b87c4;
   padding-top: 275px;
   padding-bottom: 10px;
 }
 
-/* line 572, ../sass/easpd.scss */
+/* line 588, ../sass/easpd.scss */
 .block-user-login h2 {
   background: url('../images/icone_login.png?1367640177') no-repeat scroll 15px center #6792ce;
   color: #ffd200;
@@ -8013,29 +8028,31 @@ nav .block-search-form form #edit-submit {
   -ms-border-radius: 0 5px 5px 0;
   -o-border-radius: 0 5px 5px 0;
   border-radius: 0 5px 5px 0;
-  width: 264px;
+  width: 270px;
   height: 43px;
   vertical-align: center;
-  padding: 5px 0 0 56px;
+  position: relative;
+  top: -1px;
+  padding: 0px 0 0 56px;
   font-size: 1.6875em;
 }
-/* line 575, ../sass/easpd.scss */
+/* line 591, ../sass/easpd.scss */
 .block-user-login form > div > .item-list {
   float: right;
   margin-right: 34px;
 }
-/* line 578, ../sass/easpd.scss */
+/* line 594, ../sass/easpd.scss */
 .block-user-login form > div > .item-list ul {
   list-style: none;
   margin: 0;
 }
-/* line 582, ../sass/easpd.scss */
+/* line 598, ../sass/easpd.scss */
 .block-user-login form > div > .item-list li a {
   color: #ffe35e;
   font-size: 0.8125em;
   font-style: italic;
 }
-/* line 588, ../sass/easpd.scss */
+/* line 604, ../sass/easpd.scss */
 .block-user-login .bouton {
   display: inline-block;
   color: white;
@@ -8054,17 +8071,17 @@ nav .block-search-form form #edit-submit {
   float: right;
   margin-right: 34px;
 }
-/* line 594, ../sass/easpd.scss */
+/* line 610, ../sass/easpd.scss */
 .block-user-login input[type="submit"] {
   box-shadow: none;
   border: none;
 }
-/* line 597, ../sass/easpd.scss */
+/* line 613, ../sass/easpd.scss */
 .block-user-login input[type="submit"]:hover {
   text-decoration: underline;
   cursor: pointer;
 }
-/* line 602, ../sass/easpd.scss */
+/* line 618, ../sass/easpd.scss */
 .block-user-login .signup h3 {
   margin-left: 25px;
   color: #ffd200;
@@ -8073,7 +8090,7 @@ nav .block-search-form form #edit-submit {
   top: 8px;
 }
 
-/* line 612, ../sass/easpd.scss */
+/* line 628, ../sass/easpd.scss */
 .block-views-events-calendar-block-1 h2 {
   background: url('../images/icone_calendrier.png?1367640177') no-repeat scroll 15px center #6792ce;
   color: #ffd200;
@@ -8082,37 +8099,39 @@ nav .block-search-form form #edit-submit {
   -ms-border-radius: 0 5px 5px 0;
   -o-border-radius: 0 5px 5px 0;
   border-radius: 0 5px 5px 0;
-  width: 264px;
+  width: 270px;
   height: 43px;
   vertical-align: center;
-  padding: 5px 0 0 56px;
+  position: relative;
+  top: -1px;
+  padding: 0px 0 0 56px;
   font-size: 1.6875em;
 }
-/* line 615, ../sass/easpd.scss */
+/* line 631, ../sass/easpd.scss */
 .block-views-events-calendar-block-1 .view-header {
   margin: 0 35px;
 }
-/* line 617, ../sass/easpd.scss */
+/* line 633, ../sass/easpd.scss */
 .block-views-events-calendar-block-1 .view-header .date-nav {
   padding: 0;
 }
-/* line 618, ../sass/easpd.scss */
+/* line 634, ../sass/easpd.scss */
 .block-views-events-calendar-block-1 .view-header h3 {
   text-transform: uppercase;
   font-size: 1.125em !important;
   position: relative;
   top: -2px;
 }
-/* line 624, ../sass/easpd.scss */
+/* line 640, ../sass/easpd.scss */
 .block-views-events-calendar-block-1 .view-header .pager li {
   background: transparent;
   margin: 0;
 }
-/* line 629, ../sass/easpd.scss */
+/* line 645, ../sass/easpd.scss */
 .block-views-events-calendar-block-1 .view-content {
   margin: 0 35px 20px;
 }
-/* line 633, ../sass/easpd.scss */
+/* line 649, ../sass/easpd.scss */
 .block-views-events-calendar-block-1 .view-content table.mini th, .block-views-events-calendar-block-1 .view-content table.mini td {
   color: white;
   text-transform: uppercase;
@@ -8122,11 +8141,11 @@ nav .block-search-form form #edit-submit {
   text-align: center;
   vertical-align: middle;
 }
-/* line 642, ../sass/easpd.scss */
+/* line 658, ../sass/easpd.scss */
 .block-views-events-calendar-block-1 .view-content table.mini th {
   font-size: 0.6875em;
 }
-/* line 645, ../sass/easpd.scss */
+/* line 661, ../sass/easpd.scss */
 .block-views-events-calendar-block-1 .view-content table.mini td {
   font-size: 0.8125em;
   border-width: 1px;
@@ -8134,27 +8153,27 @@ nav .block-search-form form #edit-submit {
   border-color: #a6bedf;
   padding: 8px;
 }
-/* line 651, ../sass/easpd.scss */
+/* line 667, ../sass/easpd.scss */
 .block-views-events-calendar-block-1 .view-content table.mini td.empty {
   border: none;
 }
-/* line 654, ../sass/easpd.scss */
+/* line 670, ../sass/easpd.scss */
 .block-views-events-calendar-block-1 .view-content table.mini td.today {
   font-weight: bold;
   color: #ffd200;
 }
-/* line 658, ../sass/easpd.scss */
+/* line 674, ../sass/easpd.scss */
 .block-views-events-calendar-block-1 .view-content table.mini td.has-events {
   background-color: #ffd200;
   color: #184996;
   text-decoration: none !important;
 }
 
-/* line 668, ../sass/easpd.scss */
+/* line 684, ../sass/easpd.scss */
 .block-views-upcoming-events-block {
   color: white;
 }
-/* line 670, ../sass/easpd.scss */
+/* line 686, ../sass/easpd.scss */
 .block-views-upcoming-events-block h2 {
   background: url('../images/icone_events.png?1367640177') no-repeat scroll 15px center #6792ce;
   color: #ffd200;
@@ -8163,26 +8182,28 @@ nav .block-search-form form #edit-submit {
   -ms-border-radius: 0 5px 5px 0;
   -o-border-radius: 0 5px 5px 0;
   border-radius: 0 5px 5px 0;
-  width: 264px;
+  width: 270px;
   height: 43px;
   vertical-align: center;
-  padding: 5px 0 0 56px;
+  position: relative;
+  top: -1px;
+  padding: 0px 0 0 56px;
   font-size: 1.6875em;
 }
-/* line 673, ../sass/easpd.scss */
+/* line 689, ../sass/easpd.scss */
 .block-views-upcoming-events-block .event {
   margin: 0 30px;
 }
-/* line 675, ../sass/easpd.scss */
+/* line 691, ../sass/easpd.scss */
 .block-views-upcoming-events-block .event p {
   font-size: 0.8125em;
   color: #d3dfef;
 }
-/* line 681, ../sass/easpd.scss */
+/* line 697, ../sass/easpd.scss */
 .block-views-upcoming-events-block .event h3 a {
   color: white;
 }
-/* line 683, ../sass/easpd.scss */
+/* line 699, ../sass/easpd.scss */
 .block-views-upcoming-events-block .event .date {
   float: left;
   text-transform: uppercase;
@@ -8190,16 +8211,16 @@ nav .block-search-form form #edit-submit {
   font-size: 0.875em;
 }
 
-/* line 692, ../sass/easpd.scss */
+/* line 708, ../sass/easpd.scss */
 #sidebar-second {
   margin-top: 30px;
 }
 
-/* line 697, ../sass/easpd.scss */
+/* line 713, ../sass/easpd.scss */
 .block-simplenews-0 {
   padding: 30px 0 50px;
 }
-/* line 699, ../sass/easpd.scss */
+/* line 715, ../sass/easpd.scss */
 .block-simplenews-0 h2 {
   background: url('../images/icone_newsletter.png?1367640177') no-repeat scroll 15px center #6792ce;
   color: #ffd200;
@@ -8208,29 +8229,31 @@ nav .block-search-form form #edit-submit {
   -ms-border-radius: 0 5px 5px 0;
   -o-border-radius: 0 5px 5px 0;
   border-radius: 0 5px 5px 0;
-  width: 264px;
+  width: 270px;
   height: 43px;
   vertical-align: center;
-  padding: 5px 0 0 56px;
+  position: relative;
+  top: -1px;
+  padding: 0px 0 0 56px;
   font-size: 1.6875em;
 }
-/* line 702, ../sass/easpd.scss */
+/* line 718, ../sass/easpd.scss */
 .block-simplenews-0 p, .block-simplenews-0 #simplenews-subscriptions-multi-block-form {
   margin: 0 30px;
 }
-/* line 705, ../sass/easpd.scss */
+/* line 721, ../sass/easpd.scss */
 .block-simplenews-0 p {
   font-size: 0.8125em;
 }
-/* line 708, ../sass/easpd.scss */
+/* line 724, ../sass/easpd.scss */
 .block-simplenews-0 #edit-newsletters .form-checkbox {
   margin: 6px;
 }
-/* line 711, ../sass/easpd.scss */
+/* line 727, ../sass/easpd.scss */
 .block-simplenews-0 .form-item-mail {
   margin: 0 !important;
 }
-/* line 714, ../sass/easpd.scss */
+/* line 730, ../sass/easpd.scss */
 .block-simplenews-0 #edit-subscribe, .block-simplenews-0 #edit-update {
   display: inline-block;
   color: white;
@@ -8249,24 +8272,24 @@ nav .block-search-form form #edit-submit {
   float: right;
   margin-right: 4px;
 }
-/* line 719, ../sass/easpd.scss */
+/* line 735, ../sass/easpd.scss */
 .block-simplenews-0 #edit-subscribe:hover, .block-simplenews-0 #edit-update:hover {
   text-decoration: underline;
   cursor: pointer;
 }
-/* line 724, ../sass/easpd.scss */
+/* line 740, ../sass/easpd.scss */
 .block-simplenews-0 #edit-unsubscribe {
   background-color: transparent;
   border: none;
   color: #ffd200;
   text-decoration: underline;
 }
-/* line 729, ../sass/easpd.scss */
+/* line 745, ../sass/easpd.scss */
 .block-simplenews-0 #edit-unsubscribe:hover {
   cursor: pointer;
 }
 
-/* line 736, ../sass/easpd.scss */
+/* line 752, ../sass/easpd.scss */
 .block-block-7 h2 {
   background: url('../images/icone_newsflashes.png?1367640177') no-repeat scroll 15px center #6792ce;
   color: #ffd200;
@@ -8275,19 +8298,21 @@ nav .block-search-form form #edit-submit {
   -ms-border-radius: 0 5px 5px 0;
   -o-border-radius: 0 5px 5px 0;
   border-radius: 0 5px 5px 0;
-  width: 264px;
+  width: 270px;
   height: 43px;
   vertical-align: center;
-  padding: 5px 0 0 56px;
+  position: relative;
+  top: -1px;
+  padding: 0px 0 0 56px;
   font-size: 1.6875em;
 }
-/* line 739, ../sass/easpd.scss */
+/* line 755, ../sass/easpd.scss */
 .block-block-7 p {
   margin: 0 34px;
   color: white;
   font-size: 0.8125em;
 }
-/* line 743, ../sass/easpd.scss */
+/* line 759, ../sass/easpd.scss */
 .block-block-7 p a {
   display: inline-block;
   color: white;
@@ -8305,11 +8330,11 @@ nav .block-search-form form #edit-submit {
   float: right;
 }
 
-/* line 750, ../sass/easpd.scss */
+/* line 766, ../sass/easpd.scss */
 .block-views-sidebar-gallery-block {
   padding-top: 15px;
 }
-/* line 752, ../sass/easpd.scss */
+/* line 768, ../sass/easpd.scss */
 .block-views-sidebar-gallery-block h2 {
   background: url('../images/icone_galerie.png?1367640177') no-repeat scroll 15px center #6792ce;
   color: #ffd200;
@@ -8318,13 +8343,15 @@ nav .block-search-form form #edit-submit {
   -ms-border-radius: 0 5px 5px 0;
   -o-border-radius: 0 5px 5px 0;
   border-radius: 0 5px 5px 0;
-  width: 264px;
+  width: 270px;
   height: 43px;
   vertical-align: center;
-  padding: 5px 0 0 56px;
+  position: relative;
+  top: -1px;
+  padding: 0px 0 0 56px;
   font-size: 1.6875em;
 }
-/* line 755, ../sass/easpd.scss */
+/* line 771, ../sass/easpd.scss */
 .block-views-sidebar-gallery-block h3 {
   text-transform: uppercase;
   color: #184996;
@@ -8334,18 +8361,18 @@ nav .block-search-form form #edit-submit {
   top: -16px;
   z-index: 0;
 }
-/* line 764, ../sass/easpd.scss */
+/* line 780, ../sass/easpd.scss */
 .block-views-sidebar-gallery-block .orbit-container {
   width: 223px;
   height: 168px;
   background-color: #5b87c4;
   margin: auto;
 }
-/* line 769, ../sass/easpd.scss */
+/* line 785, ../sass/easpd.scss */
 .block-views-sidebar-gallery-block .orbit-container .orbit-slide-number {
   display: none;
 }
-/* line 770, ../sass/easpd.scss */
+/* line 786, ../sass/easpd.scss */
 .block-views-sidebar-gallery-block .orbit-container .orbit-prev {
   text-indent: 99999px;
   background: url('../images/pager_prev.png?1367640177') no-repeat center transparent;
@@ -8354,11 +8381,11 @@ nav .block-search-form form #edit-submit {
   left: -15px;
   z-index: 1;
 }
-/* line 772, ../sass/easpd.scss */
+/* line 788, ../sass/easpd.scss */
 .block-views-sidebar-gallery-block .orbit-container .orbit-prev span {
   border: none;
 }
-/* line 779, ../sass/easpd.scss */
+/* line 795, ../sass/easpd.scss */
 .block-views-sidebar-gallery-block .orbit-container .orbit-next {
   text-indent: 99999px;
   background: url('../images/pager_next.png?1367640177') no-repeat center transparent;
@@ -8367,11 +8394,11 @@ nav .block-search-form form #edit-submit {
   right: -15px;
   z-index: 1;
 }
-/* line 781, ../sass/easpd.scss */
+/* line 797, ../sass/easpd.scss */
 .block-views-sidebar-gallery-block .orbit-container .orbit-next span {
   border: none;
 }
-/* line 788, ../sass/easpd.scss */
+/* line 804, ../sass/easpd.scss */
 .block-views-sidebar-gallery-block .orbit-container img {
   border-color: white;
   border-width: 3px;
@@ -8381,24 +8408,24 @@ nav .block-search-form form #edit-submit {
 /* -----------------------------------------
    Footer
    ----------------------------------------- */
-/* line 800, ../sass/easpd.scss */
+/* line 816, ../sass/easpd.scss */
 footer {
   color: #5b87c4;
   font-size: 0.6875em;
 }
-/* line 803, ../sass/easpd.scss */
+/* line 819, ../sass/easpd.scss */
 footer p {
   margin: 0;
 }
-/* line 806, ../sass/easpd.scss */
+/* line 822, ../sass/easpd.scss */
 footer #footer-first {
   text-align: left;
 }
-/* line 809, ../sass/easpd.scss */
+/* line 825, ../sass/easpd.scss */
 footer #footer-middle {
   text-align: center;
 }
-/* line 812, ../sass/easpd.scss */
+/* line 828, ../sass/easpd.scss */
 footer #footer-last {
   text-align: right;
 }
@@ -8406,14 +8433,14 @@ footer #footer-last {
 /* -----------------------------------------
    Orbit Slider
    ----------------------------------------- */
-/* line 821, ../sass/easpd.scss */
+/* line 837, ../sass/easpd.scss */
 #highlight {
   background: url('../images/fond_slideshow.png?1367640177') no-repeat;
   padding: 8px;
   max-width: 686px;
   margin: auto;
 }
-/* line 826, ../sass/easpd.scss */
+/* line 842, ../sass/easpd.scss */
 #highlight .orbit-container {
   border-style: solid;
   border-width: 1px;
@@ -8424,62 +8451,62 @@ footer #footer-last {
   -o-border-radius: 1px;
   border-radius: 1px;
 }
-/* line 832, ../sass/easpd.scss */
+/* line 848, ../sass/easpd.scss */
 #highlight .orbit-prev {
   background: url('../images/slideshow_fleche_gauche.png?1367640177') no-repeat scroll left center;
   /* pour virer les flèches en css */
 }
-/* line 834, ../sass/easpd.scss */
+/* line 850, ../sass/easpd.scss */
 #highlight .orbit-prev span {
   border: none;
 }
-/* line 836, ../sass/easpd.scss */
+/* line 852, ../sass/easpd.scss */
 #highlight .orbit-next {
   background: url('../images/slideshow_fleche_droite.png?1367640177') no-repeat scroll right center;
   /* pour virer les flèches en css */
 }
-/* line 838, ../sass/easpd.scss */
+/* line 854, ../sass/easpd.scss */
 #highlight .orbit-next span {
   border: none;
 }
-/* line 840, ../sass/easpd.scss */
+/* line 856, ../sass/easpd.scss */
 #highlight .orbit-caption {
   width: 80%;
   margin: 0 10%;
   background-color: rgba(255, 210, 0, 0.9);
 }
-/* line 844, ../sass/easpd.scss */
+/* line 860, ../sass/easpd.scss */
 #highlight .orbit-caption h2 a, #highlight .orbit-caption h2 {
   text-transform: uppercase;
   font-size: 1.0625em;
   color: #184996;
   margin: 1px 0;
 }
-/* line 850, ../sass/easpd.scss */
+/* line 866, ../sass/easpd.scss */
 #highlight .orbit-caption p {
   font-size: 1em;
   color: #0d2954;
   margin-bottom: 0;
 }
-/* line 854, ../sass/easpd.scss */
+/* line 870, ../sass/easpd.scss */
 #highlight .orbit-caption p a {
   color: #184996;
   text-decoration: underline;
   margin-left: 0.5em;
 }
-/* line 861, ../sass/easpd.scss */
+/* line 877, ../sass/easpd.scss */
 #highlight .orbit-bullets {
   display: table;
   top: 15px;
 }
-/* line 864, ../sass/easpd.scss */
+/* line 880, ../sass/easpd.scss */
 #highlight .orbit-bullets li {
   height: 21px;
   width: 21px;
   border: none;
   background: url('../images/slideshow_bullet_inactive.png?1367640177') no-repeat;
 }
-/* line 869, ../sass/easpd.scss */
+/* line 885, ../sass/easpd.scss */
 #highlight .orbit-bullets li.active {
   background: url('../images/slideshow_bullet_active.png?1367640177') no-repeat;
 }
