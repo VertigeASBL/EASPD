@@ -27,5 +27,48 @@
  * @see template_preprocess_simplenews_newsletter_body()
  */
 ?>
-<h2><?php print $title; ?></h2>
-<?php print render($build); ?>
+<!-- HEADER -->
+<table class="head-wrap" bgcolor="#999999">
+	<tr>
+		<td></td>
+		<td class="header container" >
+				
+				<div class="content">
+				<table bgcolor="#999999">
+					<tr>
+						<td><img src="http://placehold.it/200x50/" /></td>
+    <td align="left"><h6 class="collapse"><?php print t('EASPD Newsletter'); ?></h6>
+</td>
+					</tr>
+				</table>
+				</div>
+				
+		</td>
+		<td></td>
+	</tr>
+</table><!-- /HEADER -->
+
+
+<!-- BODY -->
+<table class="body-wrap">
+	<tr>
+		<td></td>
+		<td class="container" bgcolor="#FFFFFF">
+
+			<div class="content">
+			<table>
+				<tr>
+					<td>
+
+           <h2><?php print $title; ?></h2>
+           <?php print render($build); ?>												
+						
+					</td>
+				</tr>
+			</table>
+			</div><!-- /content -->
+									
+		</td>
+		<td></td>
+	</tr>
+</table><!-- /BODY -->

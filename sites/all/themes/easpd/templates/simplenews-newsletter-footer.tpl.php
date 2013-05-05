@@ -28,11 +28,40 @@
  * @see template_preprocess_simplenews_newsletter_footer()
  */
 ?>
+
 <?php if (!$opt_out_hidden): ?>
   <?php if ($format == 'html'): ?>
-    <p class="newsletter-footer"><a href="[simplenews-subscriber:unsubscribe-url]"><?php print $unsubscribe_text ?></a></p>
+
+    <!-- FOOTER -->
+    <table class="footer-wrap">
+    	<tr>
+    		<td></td>
+    		<td class="container">
+    			
+    				<!-- content -->
+    				<div class="content">
+    				<table>
+    				<tr>
+    					<td align="center">
+    						<p>
+                  <p class="newsletter-footer">
+                    <a href="[simplenews-subscriber:unsubscribe-url]">
+                      <?php print $unsubscribe_text ?>
+                    </a>
+                  </p>
+    						</p>
+    					</td>
+    				</tr>
+    			</table>
+    				</div><!-- /content -->
+    				
+    		</td>
+    		<td></td>
+    	</tr>
+    </table><!-- /FOOTER -->
+    
   <?php else: ?>
-  -- <?php print $unsubscribe_text ?>: [simplenews-subscriber:unsubscribe-url]
+-- <?php print $unsubscribe_text ?>: [simplenews-subscriber:unsubscribe-url]
   <?php endif ?>
 <?php endif; ?>
 
