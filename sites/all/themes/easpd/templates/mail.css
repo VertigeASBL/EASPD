@@ -21,11 +21,14 @@ body {
   width: 100% !important;
   height: 100%; }
 
+td {
+  padding: 0 !important; }
+
 /* ------------------------------------- 
 		ELEMENTS 
 ------------------------------------- */
 a {
-  color: #2BA6CB; }
+  color: #184996; }
 
 .btn {
   text-decoration: none;
@@ -84,7 +87,7 @@ table.head-wrap {
   width: 100%; }
 
 .header.container table td.logo {
-  padding: 15px; }
+  padding: 0; }
 
 .header.container table td.label {
   padding: 15px;
@@ -132,7 +135,8 @@ h1 {
 
 h2 {
   font-weight: 200;
-  font-size: 37px; }
+  font-size: 37px;
+  margin-top: 15px; }
 
 h3 {
   font-weight: 500;
@@ -148,9 +152,9 @@ h5 {
 
 h6 {
   font-weight: 900;
-  font-size: 14px;
+  font-size: 15px;
   text-transform: uppercase;
-  color: #444; }
+  color: #184996; }
 
 .collapse {
   margin: 0 !important; }
@@ -216,7 +220,7 @@ ul.sidebar li a h1, ul.sidebar li a h2, ul.sidebar li a h3, ul.sidebar li a h4, 
 
 /* This should also be a block element, so that it will fill 100% of the .container */
 .content {
-  padding: 15px;
+  /*	padding:15px; */
   max-width: 600px;
   margin: 0 auto;
   display: block; }

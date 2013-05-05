@@ -28,17 +28,15 @@
  */
 ?>
 <!-- HEADER -->
-<table class="head-wrap" bgcolor="#999999">
+<table class="head-wrap" bgcolor="#ffe35e">
 	<tr>
 		<td></td>
 		<td class="header container" >
 				
 				<div class="content">
-				<table bgcolor="#999999">
+				<table bgcolor="#ffe35e">
 					<tr>
-						<td><img src="http://placehold.it/200x50/" /></td>
-    <td align="left"><h6 class="collapse"><?php print t('EASPD Newsletter'); ?></h6>
-</td>
+						<td><img src="sites/all/themes/easpd/images/logo_backlight.png" /></td>
 					</tr>
 				</table>
 				</div>
