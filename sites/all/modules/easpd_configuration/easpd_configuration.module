@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the EASPD Configuration feature.
+ */
+
+include_once 'easpd_configuration.features.inc';
