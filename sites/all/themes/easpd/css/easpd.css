@@ -7698,7 +7698,7 @@ nav .block-search-form form #edit-search-block-form--2 {
   border-radius: 3px;
 }
 /* line 331, ../sass/easpd.scss */
-nav .block-search-form form #edit-submit {
+nav .block-search-form form input[type="submit"] {
   background: url('../images/search_icon.png?1367640177') no-repeat;
   border: none;
   position: relative;

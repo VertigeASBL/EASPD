@@ -328,7 +328,7 @@ nav .block-search-form {
       border-color: #dedede;
       @include border-radius(3px);
     }
-    #edit-submit {
+    input[type="submit"] {
       @include background(image-url("search_icon.png") no-repeat);
       border: none;
       position: relative;
