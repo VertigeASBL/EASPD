@@ -1,6 +1,8 @@
 name = EASPD Configuration
 description = A feature covering the entire configuration of the website.
 core = 7.x
+package = Other
+php = 5.2.4
 dependencies[] = admin_menu
 dependencies[] = admin_menu_toolbar
 dependencies[] = advanced_help

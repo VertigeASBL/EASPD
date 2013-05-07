@@ -263,7 +263,7 @@ function easpd_configuration_user_default_permissions() {
   $permissions['administer features'] = array(
     'name' => 'administer features',
     'roles' => array(
-      'administrator' => 'administrator',
+      'developer' => 'developer',
     ),
     'module' => 'features',
   );
@@ -1066,7 +1066,7 @@ function easpd_configuration_user_default_permissions() {
   $permissions['manage features'] = array(
     'name' => 'manage features',
     'roles' => array(
-      'administrator' => 'administrator',
+      'developer' => 'developer',
     ),
     'module' => 'features',
   );
