@@ -31,14 +31,19 @@ function easpd_configuration_menu_default_menu_links() {
     'menu_name' => 'main-menu',
     'link_path' => 'eform/submit/reservation_for_conference',
     'router_path' => 'eform/submit/%',
-    'link_title' => 'Reservation',
-    'options' => array(),
+    'link_title' => 'Conferences',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'EASPD Conferences',
+      ),
+      'alter' => TRUE,
+    ),
     'module' => 'entityform',
     'hidden' => 0,
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => 0,
+    'weight' => -50,
     'parent_path' => 'node/63',
   );
   // Exported menu link: main-menu:newsflashes
@@ -53,7 +58,7 @@ function easpd_configuration_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -50,
+    'weight' => -49,
     'parent_path' => 'node/64',
   );
   // Exported menu link: main-menu:node/122
@@ -71,7 +76,7 @@ function easpd_configuration_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 1,
     'expanded' => 0,
-    'weight' => 0,
+    'weight' => -49,
     'parent_path' => 'node/62',
   );
   // Exported menu link: main-menu:node/54
@@ -79,9 +84,11 @@ function easpd_configuration_menu_default_menu_links() {
     'menu_name' => 'main-menu',
     'link_path' => 'node/54',
     'router_path' => 'node/%',
-    'link_title' => 'Who we are',
+    'link_title' => 'About us',
     'options' => array(
-      'attributes' => array(),
+      'attributes' => array(
+        'title' => 'Information about EASPD',
+      ),
       'alter' => TRUE,
       'node_type' => 'page',
     ),
@@ -131,17 +138,20 @@ function easpd_configuration_menu_default_menu_links() {
     'menu_name' => 'main-menu',
     'link_path' => 'node/60',
     'router_path' => 'node/%',
-    'link_title' => 'Our story',
+    'link_title' => 'Our Strategy',
     'options' => array(
       'node_type' => 'page',
       'alter' => TRUE,
+      'attributes' => array(
+        'title' => 'EASPD Strategy',
+      ),
     ),
     'module' => 'menu',
     'hidden' => 0,
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => 0,
+    'weight' => -48,
     'parent_path' => 'node/54',
   );
   // Exported menu link: main-menu:node/61
@@ -183,10 +193,13 @@ function easpd_configuration_menu_default_menu_links() {
     'menu_name' => 'main-menu',
     'link_path' => 'node/63',
     'router_path' => 'node/%',
-    'link_title' => 'Events',
+    'link_title' => 'Events ',
     'options' => array(
       'node_type' => 'page',
       'alter' => TRUE,
+      'attributes' => array(
+        'title' => '',
+      ),
     ),
     'module' => 'menu',
     'hidden' => 0,
@@ -200,10 +213,13 @@ function easpd_configuration_menu_default_menu_links() {
     'menu_name' => 'main-menu',
     'link_path' => 'node/64',
     'router_path' => 'node/%',
-    'link_title' => 'News and publications',
+    'link_title' => 'News & Media',
     'options' => array(
       'node_type' => 'page',
       'alter' => TRUE,
+      'attributes' => array(
+        'title' => '',
+      ),
     ),
     'module' => 'menu',
     'hidden' => 0,
@@ -225,7 +241,7 @@ function easpd_configuration_menu_default_menu_links() {
     'module' => 'menu',
     'hidden' => 0,
     'external' => 0,
-    'has_children' => 0,
+    'has_children' => 1,
     'expanded' => 0,
     'weight' => -44,
   );
@@ -251,17 +267,20 @@ function easpd_configuration_menu_default_menu_links() {
     'menu_name' => 'main-menu',
     'link_path' => 'node/67',
     'router_path' => 'node/%',
-    'link_title' => 'Our vision',
+    'link_title' => 'Our Partnerships',
     'options' => array(
       'node_type' => 'page',
       'alter' => TRUE,
+      'attributes' => array(
+        'title' => 'List of EASPD Partnerships',
+      ),
     ),
     'module' => 'menu',
     'hidden' => 0,
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => 0,
+    'weight' => -46,
     'parent_path' => 'node/54',
   );
   // Exported menu link: main-menu:node/68
@@ -269,17 +288,20 @@ function easpd_configuration_menu_default_menu_links() {
     'menu_name' => 'main-menu',
     'link_path' => 'node/68',
     'router_path' => 'node/%',
-    'link_title' => 'Our principles',
+    'link_title' => 'Our Philosophy',
     'options' => array(
       'node_type' => 'page',
       'alter' => TRUE,
+      'attributes' => array(
+        'title' => 'Vision, Principles & Objectives of EASPD',
+      ),
     ),
     'module' => 'menu',
     'hidden' => 0,
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => 0,
+    'weight' => -49,
     'parent_path' => 'node/54',
   );
   // Exported menu link: main-menu:node/69
@@ -287,17 +309,20 @@ function easpd_configuration_menu_default_menu_links() {
     'menu_name' => 'main-menu',
     'link_path' => 'node/69',
     'router_path' => 'node/%',
-    'link_title' => 'Our objectives',
+    'link_title' => 'Our Story',
     'options' => array(
       'node_type' => 'page',
       'alter' => TRUE,
+      'attributes' => array(
+        'title' => 'History of EASPD',
+      ),
     ),
     'module' => 'menu',
     'hidden' => 0,
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => 0,
+    'weight' => -50,
     'parent_path' => 'node/54',
   );
   // Exported menu link: main-menu:node/70
@@ -305,17 +330,20 @@ function easpd_configuration_menu_default_menu_links() {
     'menu_name' => 'main-menu',
     'link_path' => 'node/70',
     'router_path' => 'node/%',
-    'link_title' => 'Our structure / How we work',
+    'link_title' => 'Our Structure & Governance',
     'options' => array(
       'node_type' => 'page',
       'alter' => TRUE,
+      'attributes' => array(
+        'title' => '',
+      ),
     ),
     'module' => 'menu',
     'hidden' => 0,
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => 0,
+    'weight' => -47,
     'parent_path' => 'node/54',
   );
   // Exported menu link: main-menu:node/71
@@ -333,7 +361,7 @@ function easpd_configuration_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => 0,
+    'weight' => -45,
     'parent_path' => 'node/54',
   );
   // Exported menu link: main-menu:node/72
@@ -341,17 +369,20 @@ function easpd_configuration_menu_default_menu_links() {
     'menu_name' => 'main-menu',
     'link_path' => 'node/72',
     'router_path' => 'node/%',
-    'link_title' => 'Vacancies',
+    'link_title' => 'Job Vacancies',
     'options' => array(
       'node_type' => 'page',
       'alter' => TRUE,
+      'attributes' => array(
+        'title' => 'EASPD Job Vacancies',
+      ),
     ),
     'module' => 'menu',
     'hidden' => 0,
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => 0,
+    'weight' => -44,
     'parent_path' => 'node/54',
   );
   // Exported menu link: main-menu:node/73
@@ -492,6 +523,9 @@ function easpd_configuration_menu_default_menu_links() {
     'options' => array(
       'node_type' => 'page',
       'alter' => TRUE,
+      'attributes' => array(
+        'title' => 'Employment and working conditions',
+      ),
     ),
     'module' => 'menu',
     'hidden' => 0,
@@ -681,112 +715,25 @@ function easpd_configuration_menu_default_menu_links() {
     'weight' => 0,
     'parent_path' => 'node/87',
   );
-  // Exported menu link: main-menu:node/91
-  $menu_links['main-menu:node/91'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'node/91',
-    'router_path' => 'node/%',
-    'link_title' => 'PARTNERS',
-    'options' => array(
-      'node_type' => 'page',
-      'alter' => TRUE,
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 1,
-    'expanded' => 0,
-    'weight' => -46,
-    'parent_path' => 'node/61',
-  );
-  // Exported menu link: main-menu:node/92
-  $menu_links['main-menu:node/92'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'node/92',
-    'router_path' => 'node/%',
-    'link_title' => 'EU institutions',
-    'options' => array(
-      'node_type' => 'page',
-      'alter' => TRUE,
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => 0,
-    'parent_path' => 'node/91',
-  );
-  // Exported menu link: main-menu:node/93
-  $menu_links['main-menu:node/93'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'node/93',
-    'router_path' => 'node/%',
-    'link_title' => 'EU networks',
-    'options' => array(
-      'node_type' => 'page',
-      'alter' => TRUE,
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => 0,
-    'parent_path' => 'node/91',
-  );
-  // Exported menu link: main-menu:node/94
-  $menu_links['main-menu:node/94'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'node/94',
-    'router_path' => 'node/%',
-    'link_title' => 'international organisations',
-    'options' => array(
-      'node_type' => 'page',
-      'alter' => TRUE,
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => 0,
-    'parent_path' => 'node/91',
-  );
-  // Exported menu link: main-menu:node/95
-  $menu_links['main-menu:node/95'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'node/95',
-    'router_path' => 'node/%',
-    'link_title' => 'links',
-    'options' => array(
-      'node_type' => 'page',
-      'alter' => TRUE,
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => 0,
-    'parent_path' => 'node/91',
-  );
   // Exported menu link: main-menu:node/96
   $menu_links['main-menu:node/96'] = array(
     'menu_name' => 'main-menu',
     'link_path' => 'node/96',
     'router_path' => 'node/%',
-    'link_title' => 'General information',
+    'link_title' => 'Project Archive',
     'options' => array(
       'node_type' => 'page',
       'alter' => TRUE,
+      'attributes' => array(
+        'title' => '',
+      ),
     ),
     'module' => 'menu',
     'hidden' => 0,
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => 0,
+    'weight' => -48,
     'parent_path' => 'node/62',
   );
   // Exported menu link: main-menu:node/97
@@ -794,17 +741,20 @@ function easpd_configuration_menu_default_menu_links() {
     'menu_name' => 'main-menu',
     'link_path' => 'node/97',
     'router_path' => 'node/%',
-    'link_title' => 'Funding',
+    'link_title' => 'Project Opportunities',
     'options' => array(
       'node_type' => 'page',
       'alter' => TRUE,
+      'attributes' => array(
+        'title' => '',
+      ),
     ),
     'module' => 'menu',
     'hidden' => 0,
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => 0,
+    'weight' => -50,
     'parent_path' => 'node/62',
   );
   // Exported menu link: main-menu:press-releases
@@ -812,14 +762,19 @@ function easpd_configuration_menu_default_menu_links() {
     'menu_name' => 'main-menu',
     'link_path' => 'press-releases',
     'router_path' => 'press-releases',
-    'link_title' => 'Press Releases',
-    'options' => array(),
+    'link_title' => 'Press Releases & Position Papers',
+    'options' => array(
+      'attributes' => array(
+        'title' => '',
+      ),
+      'alter' => TRUE,
+    ),
     'module' => 'system',
     'hidden' => 0,
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -49,
+    'weight' => -50,
     'parent_path' => 'node/64',
   );
   // Exported menu link: management:admin
@@ -2582,6 +2537,7 @@ function easpd_configuration_menu_default_menu_links() {
   );
   // Translatables
   // Included for use with string extractors like potx.
+  t('About us');
   t('Account settings');
   t('Actions');
   t('Add content');
@@ -2599,6 +2555,7 @@ function easpd_configuration_menu_default_menu_links() {
   t('Calendar');
   t('Clean URLs');
   t('Compose tips');
+  t('Conferences');
   t('Configuration');
   t('Contact');
   t('Contact form');
@@ -2615,20 +2572,16 @@ function easpd_configuration_menu_default_menu_links() {
   t('Disability policy framework');
   t('EDS 201-2020');
   t('EU 2020 Strategy');
-  t('EU institutions');
-  t('EU networks');
   t('Employment and working conditions');
   t('Entityform Settings');
   t('Entityform Submissions');
   t('Entityform Types');
   t('Event');
-  t('Events');
+  t('Events ');
   t('Features');
   t('File system');
   t('File types');
-  t('Funding');
   t('Funding of Services');
-  t('General information');
   t('Help');
   t('Home');
   t('IMCE');
@@ -2638,6 +2591,7 @@ function easpd_configuration_menu_default_menu_links() {
   t('Image toolkit');
   t('Implementation of CRPD');
   t('Innovation of services');
+  t('Job Vacancies');
   t('Languages');
   t('Legal framework');
   t('Log out');
@@ -2655,22 +2609,23 @@ function easpd_configuration_menu_default_menu_links() {
   t('Modules');
   t('Multilingual settings');
   t('Navigation');
-  t('News and publications');
+  t('News & Media');
   t('Newsflashes');
   t('Newsletter');
   t('Newsletters');
-  t('Our objectives');
-  t('Our principles');
-  t('Our story');
-  t('Our structure / How we work');
-  t('Our vision');
+  t('Our Partnerships');
+  t('Our Philosophy');
+  t('Our Story');
+  t('Our Strategy');
+  t('Our Structure & Governance');
   t('Over Ons');
-  t('PARTNERS');
   t('People');
   t('Performance');
   t('Person Centered Technology');
   t('Policy');
-  t('Press Releases');
+  t('Press Releases & Position Papers');
+  t('Project Archive');
+  t('Project Opportunities');
   t('Projects');
   t('Quality of Services');
   t('RSS publishing');
@@ -2679,7 +2634,6 @@ function easpd_configuration_menu_default_menu_links() {
   t('Regional and language');
   t('Regional settings');
   t('Reports');
-  t('Reservation');
   t('Right to Education');
   t('Right to Employment');
   t('Right to independent living');
@@ -2711,14 +2665,10 @@ function easpd_configuration_menu_default_menu_links() {
   t('User interface');
   t('User menu');
   t('Users\' involvement');
-  t('Vacancies');
   t('Web services');
-  t('Who we are');
   t('Workflow');
-  t('international organisations');
   t('jPlayer');
   t('jQuery update');
-  t('links');
   t('À propos de nous');
 
 
