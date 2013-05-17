@@ -334,9 +334,7 @@ function easpd_configuration_menu_default_menu_links() {
     'options' => array(
       'node_type' => 'page',
       'alter' => TRUE,
-      'attributes' => array(
-        'title' => '',
-      ),
+      'attributes' => array(),
     ),
     'module' => 'menu',
     'hidden' => 0,
@@ -429,10 +427,13 @@ function easpd_configuration_menu_default_menu_links() {
     'menu_name' => 'main-menu',
     'link_path' => 'node/75',
     'router_path' => 'node/%',
-    'link_title' => 'EDS 201-2020',
+    'link_title' => 'EDS 2010-2020',
     'options' => array(
       'node_type' => 'page',
       'alter' => TRUE,
+      'attributes' => array(
+        'title' => 'European Disability Strategy',
+      ),
     ),
     'module' => 'menu',
     'hidden' => 0,
@@ -2570,7 +2571,7 @@ function easpd_configuration_menu_default_menu_links() {
   t('Development');
   t('Diff');
   t('Disability policy framework');
-  t('EDS 201-2020');
+  t('EDS 2010-2020');
   t('EU 2020 Strategy');
   t('Employment and working conditions');
   t('Entityform Settings');
