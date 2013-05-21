@@ -746,9 +746,7 @@ function easpd_configuration_menu_default_menu_links() {
     'options' => array(
       'node_type' => 'page',
       'alter' => TRUE,
-      'attributes' => array(
-        'title' => '',
-      ),
+      'attributes' => array(),
     ),
     'module' => 'menu',
     'hidden' => 0,
