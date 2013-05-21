@@ -42,6 +42,24 @@ function easpd_configuration_user_default_permissions() {
     'module' => 'views',
   );
 
+  // Exported permission: access backup and migrate.
+  $permissions['access backup and migrate'] = array(
+    'name' => 'access backup and migrate',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'backup_migrate',
+  );
+
+  // Exported permission: access backup files.
+  $permissions['access backup files'] = array(
+    'name' => 'access backup files',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'backup_migrate',
+  );
+
   // Exported permission: access ckeditor link.
   $permissions['access ckeditor link'] = array(
     'name' => 'access ckeditor link',
@@ -188,6 +206,15 @@ function easpd_configuration_user_default_permissions() {
       'developer' => 'developer',
     ),
     'module' => 'system',
+  );
+
+  // Exported permission: administer backup and migrate.
+  $permissions['administer backup and migrate'] = array(
+    'name' => 'administer backup and migrate',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'backup_migrate',
   );
 
   // Exported permission: administer blocks.
@@ -729,6 +756,15 @@ function easpd_configuration_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: delete backup files.
+  $permissions['delete backup files'] = array(
+    'name' => 'delete backup files',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'backup_migrate',
+  );
+
   // Exported permission: delete own article content.
   $permissions['delete own article content'] = array(
     'name' => 'delete own article content',
@@ -833,6 +869,13 @@ function easpd_configuration_user_default_permissions() {
     'roles' => array(
       'developer' => 'developer',
     ),
+    'module' => 'taxonomy',
+  );
+
+  // Exported permission: delete terms in 6.
+  $permissions['delete terms in 6'] = array(
+    'name' => 'delete terms in 6',
+    'roles' => array(),
     'module' => 'taxonomy',
   );
 
@@ -1040,6 +1083,13 @@ function easpd_configuration_user_default_permissions() {
     'module' => 'taxonomy',
   );
 
+  // Exported permission: edit terms in 6.
+  $permissions['edit terms in 6'] = array(
+    'name' => 'edit terms in 6',
+    'roles' => array(),
+    'module' => 'taxonomy',
+  );
+
   // Exported permission: flush caches.
   $permissions['flush caches'] = array(
     'name' => 'flush caches',
@@ -1080,6 +1130,24 @@ function easpd_configuration_user_default_permissions() {
       'staff' => 'staff',
     ),
     'module' => 'pathauto',
+  );
+
+  // Exported permission: perform backup.
+  $permissions['perform backup'] = array(
+    'name' => 'perform backup',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'backup_migrate',
+  );
+
+  // Exported permission: restore from backup.
+  $permissions['restore from backup'] = array(
+    'name' => 'restore from backup',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'backup_migrate',
   );
 
   // Exported permission: revert revisions.
@@ -1218,6 +1286,18 @@ function easpd_configuration_user_default_permissions() {
     'name' => 'use text format full_html',
     'roles' => array(
       'developer' => 'developer',
+    ),
+    'module' => 'filter',
+  );
+
+  // Exported permission: use text format limited_html.
+  $permissions['use text format limited_html'] = array(
+    'name' => 'use text format limited_html',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
+      'developer' => 'developer',
+      'staff' => 'staff',
     ),
     'module' => 'filter',
   );

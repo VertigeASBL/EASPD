@@ -30,6 +30,32 @@ function easpd_configuration_views_api() {
  */
 function easpd_configuration_default_entityform_type() {
   $items = array();
+  $items['information_form'] = entity_import('entityform_type', '{
+    "type" : "information_form",
+    "label" : "Information Form",
+    "data" : {
+      "draftable" : 0,
+      "draft_button_text" : "",
+      "draft_save_text" : { "value" : "", "format" : "full_html" },
+      "submission_rules" : [],
+      "validation_rules" : [],
+      "submit_button_text" : "",
+      "submission_page_title" : "",
+      "submission_text" : { "value" : "", "format" : "full_html" },
+      "submission_show_submitted" : 0,
+      "submissions_view" : "entityforms",
+      "user_submissions_view" : "user_entityforms",
+      "form_status" : "ENTITYFORM_OPEN",
+      "roles" : { "2" : "2", "3" : "3", "4" : "4", "5" : "5", "1" : 0 },
+      "resubmit_action" : "old",
+      "access_rules" : [],
+      "redirect_path" : "",
+      "instruction_pre" : { "value" : "", "format" : "full_html" }
+    },
+    "weight" : "0",
+    "rdf_mapping" : [],
+    "paths" : []
+  }');
   $items['praises'] = entity_import('entityform_type', '{
     "type" : "praises",
     "label" : "Praises",

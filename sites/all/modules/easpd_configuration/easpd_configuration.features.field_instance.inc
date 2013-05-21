@@ -10,6 +10,105 @@
 function easpd_configuration_field_default_field_instances() {
   $field_instances = array();
 
+  // Exported field_instance: 'entityform-information_form-field_full_name_of_the_organisa2'
+  $field_instances['entityform-information_form-field_full_name_of_the_organisa2'] = array(
+    'bundle' => 'information_form',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 1,
+      ),
+    ),
+    'entity_type' => 'entityform',
+    'field_name' => 'field_full_name_of_the_organisa2',
+    'label' => 'Full name of the organisation [as officially registered]',
+    'required' => 1,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance: 'entityform-information_form-field_full_name_of_the_organisat'
+  $field_instances['entityform-information_form-field_full_name_of_the_organisat'] = array(
+    'bundle' => 'information_form',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'entityform',
+    'field_name' => 'field_full_name_of_the_organisat',
+    'label' => 'Full name of the organisation [English]',
+    'required' => 1,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 1,
+    ),
+  );
+
+  // Exported field_instance: 'entityform-information_form-field_type_of_organisation'
+  $field_instances['entityform-information_form-field_type_of_organisation'] = array(
+    'bundle' => 'information_form',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 2,
+      ),
+    ),
+    'entity_type' => 'entityform',
+    'field_name' => 'field_type_of_organisation',
+    'label' => 'Type of organisation',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 3,
+    ),
+  );
+
   // Exported field_instance: 'entityform-praises-field_email'
   $field_instances['entityform-praises-field_email'] = array(
     'bundle' => 'praises',
@@ -1120,6 +1219,8 @@ function easpd_configuration_field_default_field_instances() {
   t('Body');
   t('Choose in which section the article should appear.');
   t('Date(s)');
+  t('Full name of the organisation [English]');
+  t('Full name of the organisation [as officially registered]');
   t('Image');
   t('Image Gallery');
   t('Images');
@@ -1127,6 +1228,7 @@ function easpd_configuration_field_default_field_instances() {
   t('Tags');
   t('Tell us what you thing about the awesome work we are doing :');
   t('Type in which tags should be associated with this content. You can input several tags by separating them with a comma, eg. "policy, europe, disabilities". ');
+  t('Type of organisation');
   t('Upload an image to go with this article.');
   t('email');
   t('message');

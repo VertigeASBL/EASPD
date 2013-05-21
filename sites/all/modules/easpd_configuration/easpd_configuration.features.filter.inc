@@ -71,6 +71,26 @@ function easpd_configuration_filter_default_formats() {
     ),
   );
 
+  // Exported format: Limited HTML.
+  $formats['limited_html'] = array(
+    'format' => 'limited_html',
+    'name' => 'Limited HTML',
+    'cache' => 1,
+    'status' => 1,
+    'weight' => 0,
+    'filters' => array(
+      'filter_html' => array(
+        'weight' => -10,
+        'status' => 1,
+        'settings' => array(
+          'allowed_html' => '<a> <em> <strong> <cite> <blockquote> <code> <ul> <ol> <li> <dl> <dt> <dd>',
+          'filter_html_help' => 1,
+          'filter_html_nofollow' => 1,
+        ),
+      ),
+    ),
+  );
+
   // Exported format: Plain text.
   $formats['plain_text'] = array(
     'format' => 'plain_text',

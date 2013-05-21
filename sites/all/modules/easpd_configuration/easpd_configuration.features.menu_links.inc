@@ -79,6 +79,456 @@ function easpd_configuration_menu_default_menu_links() {
     'weight' => -49,
     'parent_path' => 'node/62',
   );
+  // Exported menu link: main-menu:node/124
+  $menu_links['main-menu:node/124'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/124',
+    'router_path' => 'node/%',
+    'link_title' => 'Seminars & Policy Events',
+    'options' => array(
+      'node_type' => 'page',
+      'alter' => TRUE,
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -49,
+    'parent_path' => 'node/63',
+  );
+  // Exported menu link: main-menu:node/125
+  $menu_links['main-menu:node/125'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/125',
+    'router_path' => 'node/%',
+    'link_title' => 'Provider Forums',
+    'options' => array(
+      'node_type' => 'page',
+      'alter' => TRUE,
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 1,
+    'expanded' => 0,
+    'weight' => -48,
+    'parent_path' => 'node/63',
+  );
+  // Exported menu link: main-menu:node/126
+  $menu_links['main-menu:node/126'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/126',
+    'router_path' => 'node/%',
+    'link_title' => 'Upcoming',
+    'options' => array(
+      'node_type' => 'page',
+      'alter' => TRUE,
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'parent_path' => 'node/125',
+  );
+  // Exported menu link: main-menu:node/127
+  $menu_links['main-menu:node/127'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/127',
+    'router_path' => 'node/%',
+    'link_title' => 'Archive',
+    'options' => array(
+      'node_type' => 'page',
+      'alter' => TRUE,
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'parent_path' => 'node/125',
+  );
+  // Exported menu link: main-menu:node/128
+  $menu_links['main-menu:node/128'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/128',
+    'router_path' => 'node/%',
+    'link_title' => 'Courses & Trainings',
+    'options' => array(
+      'node_type' => 'page',
+      'alter' => TRUE,
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 1,
+    'expanded' => 0,
+    'weight' => -47,
+    'parent_path' => 'node/63',
+  );
+  // Exported menu link: main-menu:node/129
+  $menu_links['main-menu:node/129'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/129',
+    'router_path' => 'node/%',
+    'link_title' => 'Upcoming',
+    'options' => array(
+      'node_type' => 'page',
+      'alter' => TRUE,
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'parent_path' => 'node/128',
+  );
+  // Exported menu link: main-menu:node/130
+  $menu_links['main-menu:node/130'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/130',
+    'router_path' => 'node/%',
+    'link_title' => 'Archive',
+    'options' => array(
+      'node_type' => 'page',
+      'alter' => TRUE,
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'parent_path' => 'node/128',
+  );
+  // Exported menu link: main-menu:node/131
+  $menu_links['main-menu:node/131'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/131',
+    'router_path' => 'node/%',
+    'link_title' => 'Suscribe to next event',
+    'options' => array(
+      'node_type' => 'page',
+      'alter' => TRUE,
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -46,
+    'parent_path' => 'node/63',
+  );
+  // Exported menu link: main-menu:node/132
+  $menu_links['main-menu:node/132'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/132',
+    'router_path' => 'node/%',
+    'link_title' => 'Newsletters',
+    'options' => array(
+      'node_type' => 'page',
+      'alter' => TRUE,
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -48,
+    'parent_path' => 'node/64',
+  );
+  // Exported menu link: main-menu:node/133
+  $menu_links['main-menu:node/133'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/133',
+    'router_path' => 'node/%',
+    'link_title' => 'Annual Reports',
+    'options' => array(
+      'node_type' => 'page',
+      'alter' => TRUE,
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -47,
+    'parent_path' => 'node/64',
+  );
+  // Exported menu link: main-menu:node/134
+  $menu_links['main-menu:node/134'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/134',
+    'router_path' => 'node/%',
+    'link_title' => 'Publications',
+    'options' => array(
+      'node_type' => 'page',
+      'alter' => TRUE,
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -46,
+    'parent_path' => 'node/64',
+  );
+  // Exported menu link: main-menu:node/135
+  $menu_links['main-menu:node/135'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/135',
+    'router_path' => 'node/%',
+    'link_title' => 'Other documents',
+    'options' => array(
+      'node_type' => 'page',
+      'alter' => TRUE,
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -45,
+    'parent_path' => 'node/64',
+  );
+  // Exported menu link: main-menu:node/136
+  $menu_links['main-menu:node/136'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/136',
+    'router_path' => 'node/%',
+    'link_title' => 'Our Members',
+    'options' => array(
+      'node_type' => 'page',
+      'alter' => TRUE,
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -50,
+    'parent_path' => 'node/65',
+  );
+  // Exported menu link: main-menu:node/137
+  $menu_links['main-menu:node/137'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/137',
+    'router_path' => 'node/%',
+    'link_title' => 'Join Us',
+    'options' => array(
+      'node_type' => 'page',
+      'alter' => TRUE,
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -49,
+    'parent_path' => 'node/65',
+  );
+  // Exported menu link: main-menu:node/138
+  $menu_links['main-menu:node/138'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/138',
+    'router_path' => 'node/%',
+    'link_title' => 'Members Section',
+    'options' => array(
+      'node_type' => 'page',
+      'alter' => TRUE,
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -48,
+    'parent_path' => 'node/65',
+  );
+  // Exported menu link: main-menu:node/141
+  $menu_links['main-menu:node/141'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/141',
+    'router_path' => 'node/%',
+    'link_title' => 'Employment',
+    'options' => array(
+      'node_type' => 'page',
+      'alter' => TRUE,
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 1,
+    'expanded' => 0,
+    'weight' => 0,
+    'parent_path' => 'node/122',
+  );
+  // Exported menu link: main-menu:node/142
+  $menu_links['main-menu:node/142'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/142',
+    'router_path' => 'node/%',
+    'link_title' => 'Education',
+    'options' => array(
+      'node_type' => 'page',
+      'alter' => TRUE,
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'parent_path' => 'node/122',
+  );
+  // Exported menu link: main-menu:node/143
+  $menu_links['main-menu:node/143'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/143',
+    'router_path' => 'node/%',
+    'link_title' => 'Assistive technologies',
+    'options' => array(
+      'node_type' => 'page',
+      'alter' => TRUE,
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'parent_path' => 'node/122',
+  );
+  // Exported menu link: main-menu:node/144
+  $menu_links['main-menu:node/144'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/144',
+    'router_path' => 'node/%',
+    'link_title' => 'Innovation in service provision',
+    'options' => array(
+      'node_type' => 'page',
+      'alter' => TRUE,
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 1,
+    'expanded' => 0,
+    'weight' => 0,
+    'parent_path' => 'node/122',
+  );
+  // Exported menu link: main-menu:node/145
+  $menu_links['main-menu:node/145'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/145',
+    'router_path' => 'node/%',
+    'link_title' => 'Independent living',
+    'options' => array(
+      'node_type' => 'page',
+      'alter' => TRUE,
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'parent_path' => 'node/122',
+  );
+  // Exported menu link: main-menu:node/146
+  $menu_links['main-menu:node/146'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/146',
+    'router_path' => 'node/%',
+    'link_title' => 'Disability & Cooperation & Development',
+    'options' => array(
+      'node_type' => 'page',
+      'alter' => TRUE,
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'parent_path' => 'node/122',
+  );
+  // Exported menu link: main-menu:node/149
+  $menu_links['main-menu:node/149'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/149',
+    'router_path' => 'node/%',
+    'link_title' => 'BITSE',
+    'options' => array(
+      'node_type' => 'page',
+      'alter' => TRUE,
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'parent_path' => 'node/141',
+  );
+  // Exported menu link: main-menu:node/150
+  $menu_links['main-menu:node/150'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/150',
+    'router_path' => 'node/%',
+    'link_title' => 'My Rights - My Voice',
+    'options' => array(
+      'node_type' => 'page',
+      'alter' => TRUE,
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'parent_path' => 'node/144',
+  );
+  // Exported menu link: main-menu:node/151
+  $menu_links['main-menu:node/151'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/151',
+    'router_path' => 'node/%',
+    'link_title' => 'RACE',
+    'options' => array(
+      'node_type' => 'page',
+      'alter' => TRUE,
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'parent_path' => 'node/141',
+  );
+  // Exported menu link: main-menu:node/152
+  $menu_links['main-menu:node/152'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/152',
+    'router_path' => 'node/%',
+    'link_title' => 'T-EST',
+    'options' => array(
+      'node_type' => 'page',
+      'alter' => TRUE,
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'parent_path' => 'node/141',
+  );
   // Exported menu link: main-menu:node/54
   $menu_links['main-menu:node/54'] = array(
     'menu_name' => 'main-menu',
@@ -1694,6 +2144,25 @@ function easpd_configuration_menu_default_menu_links() {
     'weight' => 0,
     'parent_path' => 'admin/config/system',
   );
+  // Exported menu link: management:admin/config/system/backup_migrate
+  $menu_links['management:admin/config/system/backup_migrate'] = array(
+    'menu_name' => 'management',
+    'link_path' => 'admin/config/system/backup_migrate',
+    'router_path' => 'admin/config/system/backup_migrate',
+    'link_title' => 'Backup and Migrate',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Backup/restore your database or migrate data to or from another Drupal site.',
+      ),
+    ),
+    'module' => 'system',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'parent_path' => 'admin/config/system',
+  );
   // Exported menu link: management:admin/config/system/cron
   $menu_links['management:admin/config/system/cron'] = array(
     'menu_name' => 'management',
@@ -2045,6 +2514,25 @@ function easpd_configuration_menu_default_menu_links() {
     'options' => array(
       'attributes' => array(
         'title' => 'View Submissions for all Entityforms',
+      ),
+    ),
+    'module' => 'system',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'parent_path' => 'admin/reports',
+  );
+  // Exported menu link: management:admin/reports/fields
+  $menu_links['management:admin/reports/fields'] = array(
+    'menu_name' => 'management',
+    'link_path' => 'admin/reports/fields',
+    'router_path' => 'admin/reports/fields',
+    'link_title' => 'Field list',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Overview of fields on all entity types.',
       ),
     ),
     'module' => 'system',
@@ -2543,10 +3031,15 @@ function easpd_configuration_menu_default_menu_links() {
   t('Administration');
   t('Administration menu');
   t('Advanced help');
+  t('Annual Reports');
   t('Antidiscrimination directive');
   t('Appearance');
+  t('Archive');
   t('Article');
+  t('Assistive technologies');
   t('Available updates');
+  t('BITSE');
+  t('Backup and Migrate');
   t('Basic page');
   t('Blocks');
   t('CKEditor');
@@ -2562,15 +3055,19 @@ function easpd_configuration_menu_default_menu_links() {
   t('Content');
   t('Content authoring');
   t('Content types');
+  t('Courses & Trainings');
   t('Cron');
   t('Dashboard');
   t('Date API');
   t('Date and time');
   t('Development');
   t('Diff');
+  t('Disability & Cooperation & Development');
   t('Disability policy framework');
   t('EDS 2010-2020');
   t('EU 2020 Strategy');
+  t('Education');
+  t('Employment');
   t('Employment and working conditions');
   t('Entityform Settings');
   t('Entityform Submissions');
@@ -2578,6 +3075,7 @@ function easpd_configuration_menu_default_menu_links() {
   t('Event');
   t('Events ');
   t('Features');
+  t('Field list');
   t('File system');
   t('File types');
   t('Funding of Services');
@@ -2589,8 +3087,11 @@ function easpd_configuration_menu_default_menu_links() {
   t('Image styles');
   t('Image toolkit');
   t('Implementation of CRPD');
+  t('Independent living');
+  t('Innovation in service provision');
   t('Innovation of services');
   t('Job Vacancies');
+  t('Join Us');
   t('Languages');
   t('Legal framework');
   t('Log out');
@@ -2601,17 +3102,21 @@ function easpd_configuration_menu_default_menu_links() {
   t('Management');
   t('Media');
   t('Media browser settings');
+  t('Members Section');
   t('Membership');
   t('Menus');
   t('Metatag');
   t('Mime Mail');
   t('Modules');
   t('Multilingual settings');
+  t('My Rights - My Voice');
   t('Navigation');
   t('News & Media');
   t('Newsflashes');
   t('Newsletter');
   t('Newsletters');
+  t('Other documents');
+  t('Our Members');
   t('Our Partnerships');
   t('Our Philosophy');
   t('Our Story');
@@ -2626,7 +3131,10 @@ function easpd_configuration_menu_default_menu_links() {
   t('Project Archive');
   t('Project Opportunities');
   t('Projects');
+  t('Provider Forums');
+  t('Publications');
   t('Quality of Services');
+  t('RACE');
   t('RSS publishing');
   t('Rebuild type information for media');
   t('Recent log messages');
@@ -2641,6 +3149,7 @@ function easpd_configuration_menu_default_menu_links() {
   t('Search and metadata');
   t('Search settings');
   t('Secretariat');
+  t('Seminars & Policy Events');
   t('Shortcuts');
   t('Site information');
   t('Social Dialogue');
@@ -2649,7 +3158,9 @@ function easpd_configuration_menu_default_menu_links() {
   t('Status report');
   t('Structure');
   t('Superfish');
+  t('Suscribe to next event');
   t('System');
+  t('T-EST');
   t('Taxonomy');
   t('Taxonomy access control');
   t('Text Resize');
@@ -2660,6 +3171,7 @@ function easpd_configuration_menu_default_menu_links() {
   t('Translate interface');
   t('Translation sets');
   t('URL aliases');
+  t('Upcoming');
   t('User account');
   t('User interface');
   t('User menu');
