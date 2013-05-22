@@ -28,10 +28,13 @@ base theme = zurb_foundation
 ; CSS3 media queries: http://www.w3.org/TR/css3-mediaqueries/
 
 ; Base theme specific CSS
-stylesheets[all][] = css/easpd.css
 stylesheets[all][] = css/app.css
 stylesheets[all][] = css/foundation.min.css
 stylesheets[all][] = css/lightbox.css
+
+; Alternative stylesheets
+styleswitcher[css][default]     = css/easpd.css
+styleswitcher[css][hi-contrast] = css/easpd-hi-contrast.css
 
 ; An empty JavaScript file ready to be used just uncomment and add JavaScript
 ; scripts[] = js/easpd.js

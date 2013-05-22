@@ -1,18 +1,18 @@
-$darkBlue:       #184996;
-$darkBlue-w:     $darkBlue;
-$lightBlue:      #5b87c4;
-$lightBlue-w:    $lightBlue;
-$lighterBlue:    #6792ce;
-$lightestBlue:   #ecf2f9;
+$darkBlue:       black;
+$darkBlue-w:     white;
+$lightBlue:      black;
+$lightBlue-w:    white;
+$lighterBlue:    white;
+$lightestBlue:   white;
 
-$blueBackground: #5B87C4;
+$blueBackground: black;
 
-$lightYellow:    #ffe35e;
-$darkYellow:     #ffd200;
-$darkYellow-w:   $darkYellow;
+$lightYellow:    white;
+$darkYellow:     black;
+$darkYellow-w:   white;
 
-$lightGrey:      #f7f7f7;
-$darkGrey:       #555555;
+$lightGrey:      white;
+$darkGrey:       black;
 $white:          #fff;
 
 /* couleurs pré-définies pour les éditeurs */
@@ -25,7 +25,7 @@ $typo-violet:    #672b7d;
 $typo-orange:    #ff9600;
 
 // pas de media queries
-$small-screen:   0px;
+$small-screen: 0px;
 
 // Font Settings
 
