@@ -408,11 +408,12 @@ nav .block-search-form {
       @include background(image-url("search_icon.png") no-repeat);
       border: none;
       position: relative;
-      top: -35px;
+      top: -30px;
       left: 185px;
       padding-left: 45px;
       color: $darkYellow;
       @include box-shadow(none);
+      &:hover { cursor: pointer; }
     }
   }
 }
