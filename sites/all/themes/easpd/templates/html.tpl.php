@@ -67,7 +67,16 @@
   <?php print $page; ?>
   <?php print $page_bottom; ?>
   <script>(function ($) { 
-      $(function () { jQuery('head link').last().remove(); });
+      $(function () {
+          // on vire ll link ajouté en cas d'absence de js
+          jQuery('head link').last().remove();
+
+          // comportement des boutons hi-contrast
+          $('.block-styleswitcher .first').hide();
+          $('.block-styleswitcher li a').click(function () {
+              $('.block-styleswitcher li').toggle();
+          });
+        });
     })(jQuery);</script>
 </body>
 </html>
