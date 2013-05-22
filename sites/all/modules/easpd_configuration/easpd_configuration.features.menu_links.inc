@@ -2239,6 +2239,25 @@ function easpd_configuration_menu_default_menu_links() {
     'weight' => -20,
     'parent_path' => 'admin/config/system',
   );
+  // Exported menu link: management:admin/config/system/styleswitcher
+  $menu_links['management:admin/config/system/styleswitcher'] = array(
+    'menu_name' => 'management',
+    'link_path' => 'admin/config/system/styleswitcher',
+    'router_path' => 'admin/config/system/styleswitcher',
+    'link_title' => 'Styleswitcher',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Configure Styleswitcher module.',
+      ),
+    ),
+    'module' => 'system',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'parent_path' => 'admin/config/system',
+  );
   // Exported menu link: management:admin/config/user-interface
   $menu_links['management:admin/config/user-interface'] = array(
     'menu_name' => 'management',
@@ -3157,6 +3176,7 @@ function easpd_configuration_menu_default_menu_links() {
   t('Social Services of General Interest');
   t('Status report');
   t('Structure');
+  t('Styleswitcher');
   t('Superfish');
   t('Suscribe to next event');
   t('System');

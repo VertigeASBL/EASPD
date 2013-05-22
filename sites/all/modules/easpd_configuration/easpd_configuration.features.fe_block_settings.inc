@@ -104,7 +104,7 @@ function easpd_configuration_default_fe_block_settings() {
         'region' => 'header',
         'status' => 1,
         'theme' => 'easpd',
-        'weight' => 0,
+        'weight' => -23,
       ),
       'seven' => array(
         'region' => '',
@@ -436,6 +436,41 @@ function easpd_configuration_default_fe_block_settings() {
     'visibility' => 0,
   );
 
+  $export['styleswitcher-styleswitcher'] = array(
+    'cache' => -1,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => 'styleswitcher',
+    'i18n_block_language' => array(),
+    'i18n_mode' => 0,
+    'module' => 'styleswitcher',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'easpd' => array(
+        'region' => 'header',
+        'status' => 1,
+        'theme' => 'easpd',
+        'weight' => -21,
+      ),
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '<none>',
+    'visibility' => 0,
+  );
+
   $export['superfish-1'] = array(
     'cache' => -1,
     'css_class' => '',
@@ -633,7 +668,7 @@ function easpd_configuration_default_fe_block_settings() {
         'region' => 'content',
         'status' => 1,
         'theme' => 'easpd',
-        'weight' => -18,
+        'weight' => -22,
       ),
       'seven' => array(
         'region' => 'content',
@@ -843,7 +878,7 @@ function easpd_configuration_default_fe_block_settings() {
         'region' => 'header',
         'status' => 1,
         'theme' => 'easpd',
-        'weight' => 0,
+        'weight' => -22,
       ),
       'seven' => array(
         'region' => '',
@@ -1053,7 +1088,7 @@ function easpd_configuration_default_fe_block_settings() {
         'region' => 'content',
         'status' => 1,
         'theme' => 'easpd',
-        'weight' => 0,
+        'weight' => -20,
       ),
       'seven' => array(
         'region' => '',
@@ -1088,7 +1123,7 @@ function easpd_configuration_default_fe_block_settings() {
         'region' => 'content',
         'status' => 1,
         'theme' => 'easpd',
-        'weight' => -17,
+        'weight' => -21,
       ),
       'seven' => array(
         'region' => '',
@@ -1123,7 +1158,7 @@ function easpd_configuration_default_fe_block_settings() {
         'region' => 'content',
         'status' => 1,
         'theme' => 'easpd',
-        'weight' => 0,
+        'weight' => -19,
       ),
       'seven' => array(
         'region' => '',
