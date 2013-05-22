@@ -1,0 +1,11 @@
+name = Style Switcher
+description = Framework for themes to easily add stylesheet switching functionality.
+core = 7.x
+scripts[] = styleswitcher.js
+
+; Information added by drupal.org packaging script on 2012-04-20
+version = "7.x-1.x-dev"
+core = "7.x"
+project = "styleswitcher"
+datestamp = "1334925977"
+

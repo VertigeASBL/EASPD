@@ -1,0 +1,91 @@
+<?php
+
+/**
+ * @file
+ * Framework for themes to easily add stylesheet switching functionality.
+ */
+
+/**
+ * Implements hook_block_info().
+ */
+function styleswitcher_block_info() {
+  $blocks['styleswitcher'] = array(
+    'info' => t('Style Switcher'),
+    'cache' => DRUPAL_NO_CACHE,
+  );
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function styleswitcher_block_view($delta) {
+  switch ($delta) {
+    case 'styleswitcher':
+      global $theme_info;
+      if (!empty($theme_info->info['styleswitcher'])) {
+        $links = array();
+        foreach ($theme_info->info['styleswitcher']['css'] as $title => $file) {
+          $theme_directory = path_to_theme();
+          $filepath = $theme_directory . '/' . $file;
+          $classes = 'style-switcher style-' . drupal_html_class($title);
+          $links[] = '<a href="#" class="' . $classes . '" data-rel="' . $title . '">' . $title . '</a>';
+          global $language;
+          $language->prefix = '';
+          drupal_add_html_head_link(array(
+              'rel' => 'alternate stylesheet',
+              'type' => 'text/css',
+              'title' => $title,
+              // Force the URL to be absolute, for consistency with other <link> tags
+              // output by Drupal.
+              'href' => url($filepath, array('absolute' => TRUE, 'language' => $language)),
+            ));
+        }
+        drupal_add_library('system', 'jquery.cookie', TRUE);
+        drupal_add_js('jQuery(document).ready(function () { Drupal.styleSwitcher.defaultStyle(); });', array('type' => 'inline'));
+        // Do we want the overlay and fade
+        $styleswitcher_enable_overlay = variable_get('styleswitcher_enable_overlay', 1);
+        drupal_add_js(array('styleSwitcher' => array('enableOverlay' => $styleswitcher_enable_overlay)), array('type' => 'setting', 'scope' => JS_DEFAULT));
+        $default = $theme_info->info['styleswitcher']['css']['default'];
+        drupal_add_js(array('styleSwitcher' => array('defaultStyle' => $default)), array('type' => 'setting', 'scope' => JS_DEFAULT));
+
+        $block['subject'] = t('Style Switcher');
+        $block['content'] = theme('item_list', array('items' => $links));
+        return $block;
+      }
+      break;
+  }
+}
+
+/**
+ * Implements hook_menu().
+ */
+function styleswitcher_menu() {
+  $items['admin/config/system/styleswitcher'] = array(
+    'title' => 'Styleswitcher',
+    'description' => 'Configure Styleswitcher module.',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('styleswitcher_admin'),
+    'access arguments' => array('administer site'),
+    'type' => MENU_NORMAL_ITEM,
+  );
+
+  return $items;
+}
+
+/**
+ * Add a settings form
+ */
+function styleswitcher_admin() {
+  $form = array();
+
+  $form['styleswitcher_enable_overlay'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Enable Overlay'),
+    '#default_value' => variable_get('styleswitcher_enable_overlay', 1),
+    '#description' => t("Enable the overlay and fade when switching stylesheets"),
+    '#required' => FALSE,
+  );
+
+  return system_settings_form($form);
+}
