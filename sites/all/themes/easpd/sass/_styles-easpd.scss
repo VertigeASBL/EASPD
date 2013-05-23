@@ -190,33 +190,35 @@ footer {
   color: $typo-orange    !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: $darkBlue;
-}
-h1 {
-    @include heading(7);
-}
-h2 {
-    @include heading(6);
-}
-h3 {
-    @include heading(5);
-}
-h4 {
-    @include heading(4);
-}
-h5 {
-    @include heading(3);
-}
-h6 {
-    @include heading(2);
-}
-p, caption {
-    font-size: ms(1);
-    margin-bottom: ms(1)/2;
-}
-li {
-    font-size: ms(1);
+#main {
+  h1, h2, h3, h4, h5, h6 {
+      color: $darkBlue;
+  }
+  h1 {
+      @include heading(7);
+  }
+  h2 {
+      @include heading(6);
+  }
+  h3 {
+      @include heading(5);
+  }
+  h4 {
+      @include heading(4);
+  }
+  h5 {
+      @include heading(3);
+  }
+  h6 {
+      @include heading(2);
+  }
+  p, caption {
+      font-size: ms(1);
+      margin-bottom: ms(1)/2;
+  }
+  li {
+      font-size: ms(1);
+  }
 }
 
 #admin-menu {
@@ -342,6 +344,8 @@ a {
     li {
       @include border-radius(4px);
       background-color: black;
+      font-size: 0.65em;
+      line-height: 20px;
       a { color: white }
     }
   }
