@@ -1,5 +1,8 @@
 <?php
 
+global $switch_styles_styles;
+$switch_styles_styles = array('default', 'hi-contrast');
+
 /**
  * @file
  * Framework for themes to easily add stylesheet switching functionality.
@@ -22,38 +25,23 @@ function switch_styles_block_info() {
 function switch_styles_block_view($delta) {
   switch ($delta) {
     case 'switch_styles':
-      global $theme_info;
-      if (!empty($theme_info->info['switch_styles'])) {
-        $links = array();
-        foreach ($theme_info->info['switch_styles']['css'] as $title => $file) {
-          $theme_directory = path_to_theme();
-          $filepath = $theme_directory . '/' . $file;
-          $classes = 'style-switcher style-' . drupal_html_class($title);
-          $links[] = '<a href="#" class="' . $classes . '" data-rel="' . $title . '">' . $title . '</a>';
-          global $language;
-          $language->prefix = '';
-          drupal_add_html_head_link(array(
-              'rel' => 'alternate stylesheet',
-              'type' => 'text/css',
-              'title' => $title,
-              // Force the URL to be absolute, for consistency with other <link> tags
-              // output by Drupal.
-              'href' => url($filepath, array('absolute' => TRUE, 'language' => $language)),
-            ));
-        }
-        drupal_add_library('system', 'jquery.cookie', TRUE);
-        drupal_add_js('jQuery(document).ready(function () { Drupal.switch_styles.defaultStyle(); });', array('type' => 'inline'));
-        // Do we want the overlay and fade
-        $switch_styles_enable_overlay = variable_get('switch_styles_enable_overlay', 1);
-        drupal_add_js(array('switch_styles' => array('enableOverlay' => $switch_styles_enable_overlay)), array('type' => 'setting', 'scope' => JS_DEFAULT));
-        $default = $theme_info->info['switch_styles']['css']['default'];
-        drupal_add_js(array('switch_styles' => array('defaultStyle' => $default)), array('type' => 'setting', 'scope' => JS_DEFAULT));
 
-        $block['subject'] = t('Style Switcher');
-        $block['content'] = theme('item_list', array('items' => $links));
-        return $block;
+      drupal_add_library('system', 'jquery.cookie', TRUE);
+
+      global $switch_styles_styles;
+
+      $links = array();
+      foreach ($switch_styles_styles as $style) {
+        $links[] = l($style, current_path(), 
+                     array(
+                           'query' => array('switch_styles' => $style),
+                           'attributes' => array('data-target-style' => $style),                           
+                           ));
       }
-      break;
+
+      $block['subject'] = t('Style Switcher');
+      $block['content'] = theme('item_list', array('items' => $links));
+      return $block;
   }
 }
 
@@ -88,4 +76,37 @@ function switch_styles_admin() {
   );
 
   return system_settings_form($form);
+}
+
+/**
+ * Implements hook_preprocess().
+ */
+function switch_styles_preprocess (&$variables, $hook) {
+
+  if ($hook == 'html') {
+    global $switch_styles_styles;
+
+    /* we change the cookie based on a query parameter */
+    $query_params = drupal_get_query_parameters();
+    if (array_key_exists('switch_styles', $query_params)) {
+      set_current_style($query_params['switch_styles']);
+      $current_style = $query_params['switch_styles'];
+    } else {
+      $current_style = get_current_style();
+    }
+    $variables['classes_array'][] = $current_style;
+  }
+}
+
+function get_current_style () {
+
+  if (array_key_exists('Drupal_visitor_switch_styles', $_COOKIE))
+    return $_COOKIE['Drupal_visitor_switch_styles'];
+  else
+    return 'default';
+}
+
+function set_current_style ($style) {
+
+  user_cookie_save(array('switch_styles' => $style));
 }

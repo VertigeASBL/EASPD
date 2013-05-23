@@ -1,5 +1,5 @@
-name = Style Switcher
-description = Framework for themes to easily add stylesheet switching functionality.
+name = Switch Styles
+description = Framework for themes to easily add styling switching functionality.
 core = 7.x
 scripts[] = switch_styles.js
 
