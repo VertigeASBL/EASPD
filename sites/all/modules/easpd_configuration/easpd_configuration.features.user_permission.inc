@@ -1290,18 +1290,6 @@ function easpd_configuration_user_default_permissions() {
     'module' => 'filter',
   );
 
-  // Exported permission: use text format limited_html.
-  $permissions['use text format limited_html'] = array(
-    'name' => 'use text format limited_html',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'authenticated user' => 'authenticated user',
-      'developer' => 'developer',
-      'staff' => 'staff',
-    ),
-    'module' => 'filter',
-  );
-
   // Exported permission: view advanced help index.
   $permissions['view advanced help index'] = array(
     'name' => 'view advanced help index',

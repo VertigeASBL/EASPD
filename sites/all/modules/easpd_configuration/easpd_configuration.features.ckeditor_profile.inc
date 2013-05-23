@@ -251,9 +251,7 @@ function easpd_configuration_ckeditor_profile_defaults() {
         'js_conf' => '',
         'loadPlugins' => array(),
       ),
-      'input_formats' => array(
-        'limited_html' => 'Limited HTML',
-      ),
+      'input_formats' => array(),
     ),
   );
   return $data;
