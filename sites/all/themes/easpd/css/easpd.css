@@ -7629,11 +7629,11 @@ a:hover {
   top: 1px;
 }
 /* line 340, ../sass/_styles-easpd.scss */
-#language_switcher .block-styleswitcher {
+#language_switcher .block-switch-styles {
   margin: 40px -50px 0 0;
 }
 /* line 342, ../sass/_styles-easpd.scss */
-#language_switcher .block-styleswitcher li {
+#language_switcher .block-switch-styles li {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -7642,7 +7642,7 @@ a:hover {
   background-color: black;
 }
 /* line 345, ../sass/_styles-easpd.scss */
-#language_switcher .block-styleswitcher li a {
+#language_switcher .block-switch-styles li a {
   color: white;
 }
 
@@ -8665,4 +8665,13 @@ html body {
   border-top-width: 4px;
   border-top-style: solid;
   background-color: #ecf2f9;
+}
+
+/* line 41, ../sass/easpd.scss */
+.block-switch-styles .first {
+  display: none !important;
+}
+/* line 44, ../sass/easpd.scss */
+.block-switch-styles .last {
+  display: block;
 }

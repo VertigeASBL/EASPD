@@ -36,3 +36,12 @@ html body {
   border-top-style: solid;
   background-color: $lightestBlue;
 }
+
+.block-switch-styles {
+  .first {
+    display: none !important;
+  }
+  .last {
+    display: block;
+  }
+}

@@ -8404,11 +8404,11 @@ a.th {
   top: 1px;
 }
 /* line 340, ../sass/_styles-easpd.scss */
-.hi-contrast #language_switcher .block-styleswitcher {
+.hi-contrast #language_switcher .block-switch-styles {
   margin: 40px -50px 0 0;
 }
 /* line 342, ../sass/_styles-easpd.scss */
-.hi-contrast #language_switcher .block-styleswitcher li {
+.hi-contrast #language_switcher .block-switch-styles li {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -8417,7 +8417,7 @@ a.th {
   background-color: black;
 }
 /* line 345, ../sass/_styles-easpd.scss */
-.hi-contrast #language_switcher .block-styleswitcher li a {
+.hi-contrast #language_switcher .block-switch-styles li a {
   color: white;
 }
 /* line 350, ../sass/_styles-easpd.scss */
@@ -9388,4 +9388,12 @@ a.th {
 /* line 979, ../sass/_styles-easpd.scss */
 .hi-contrast #highlight .orbit-bullets li.active {
   background: url('../images/slideshow_bullet_active.png?1367640177') no-repeat;
+}
+/* line 35, ../sass/easpd-hi-contrast.scss */
+.hi-contrast .block-switch-styles .last {
+  display: none !important;
+}
+/* line 38, ../sass/easpd-hi-contrast.scss */
+.hi-contrast .block-switch-styles .first {
+  display: block !important;
 }
