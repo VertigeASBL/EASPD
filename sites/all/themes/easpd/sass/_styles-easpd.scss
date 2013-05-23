@@ -1,6 +1,79 @@
 @import "compass/css3/border-radius";
 @import "compass/css3/box-shadow";
 @import "compass/css3/images";
+@import 'modular-scale';
+
+/* modular scale settings */
+$base-size: 13px;
+$ratio: major-second();
+
+@mixin heading($scale-number) {
+  font-size: ms($scale-number);
+  margin: ms($scale-number)/4 0 ms($scale-number)/3 0;
+}
+
+@mixin bouton_fleche($couleur, $image_fleche) {
+  display: inline-block;
+  color: white;
+  font-size: emCalc(14px);
+  font-weight: bold;
+  margin-top: 6px;
+  padding: 9px 40px 9px 10px;
+  text-transform: uppercase;
+  @include border-radius(5px);
+  @include background(image-url($image_fleche) no-repeat scroll right center $couleur);
+}
+
+@mixin bloc ($darkBlue, $lightBlue) {
+  background-color: white;
+  @include border-radius(5px);
+  padding: 0 30px !important;
+  margin-bottom: 23px;
+  .view-header {
+    font-style: italic;
+    left: 150px;
+    position: relative;
+    text-decoration: underline;
+    top: -23px;
+    color: $darkBlue;
+    font-size: emCalc(14px);
+  }
+  h2 {
+    @extend .titre_bloc;
+  }
+  h3 {
+    @extend .titre_article;
+  }
+  p {
+    font-size: emCalc(15px);
+    line-height: 1.2;
+    .readmore {
+      @extend .bouton_bleu_clair;
+    }
+  }
+  .date {
+    float: left;
+    color: $lightBlue;
+    text-transform: uppercase;
+    margin: 7px 5px 0 0;
+    font-size: emCalc(14px);
+  }
+}
+
+@mixin titre_bloc_sidebar ($icone, $lighterBlue, $darkYellow) {
+  @include background(image-url($icone) no-repeat scroll 15px center $lighterBlue);
+  color: $darkYellow;
+  @include border-radius(0 5px 5px 0);
+  width: 270px;
+  height: 43px;
+  vertical-align: center;
+  position: relative;
+  top: -1px;
+  padding: 0px 0 0 56px;
+  font-size: emCalc(27px);
+}
+
+@mixin styles-easpd($darkBlue, $darkBlue-w, $lightBlue, $lightBlue-w, $lighterBlue, $lightestBlue, $blueBackground, $lightYellow, $darkYellow, $darkYellow-w, $lightGrey, $darkGrey, $white, $typo-bleu, $typo-bleuPale, $typo-bleuClair, $typo-vert, $typo-turquoise, $typo-violet, $typo-orange) {
 
 /* =====================================================================
    Table of Contents
@@ -117,45 +190,33 @@ footer {
   color: $typo-orange    !important;
 }
 
-/* modular scale settings */
-@import 'modular-scale';
-$base-size: 13px;
-$ratio: major-second();
-
-@mixin heading($scale-number) {
-  font-size: ms($scale-number);
-  margin: ms($scale-number)/4 0 ms($scale-number)/3 0;
-}
-
-body {
-  h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
     color: $darkBlue;
-  }
-  h1 {
+}
+h1 {
     @include heading(7);
-  }
-  h2 {
+}
+h2 {
     @include heading(6);
-  }
-  h3 {
+}
+h3 {
     @include heading(5);
-  }
-  h4 {
+}
+h4 {
     @include heading(4);
-  }
-  h5 {
+}
+h5 {
     @include heading(3);
-  }
-  h6 {
+}
+h6 {
     @include heading(2);
-  }
-  p, caption {
+}
+p, caption {
     font-size: ms(1);
     margin-bottom: ms(1)/2;
-  }
-  li {
+}
+li {
     font-size: ms(1);
-  }
 }
 
 #admin-menu {
@@ -179,13 +240,6 @@ a {
 /* -----------------------------------------
    Header et menu
    ----------------------------------------- */
-
-body {
-  border-top-color: $darkBlue;
-  border-top-width: 4px;
-  border-top-style: solid;
-  background-color: $lightestBlue;
-}
 
 .tabs {
   dd {
@@ -452,60 +506,12 @@ nav .block-search-form {
   font-size: emCalc(14px);
 }
 
-@mixin bouton_fleche($couleur, $image_fleche) {
-  display: inline-block;
-  color: white;
-  font-size: emCalc(14px);
-  font-weight: bold;
-  margin-top: 6px;
-  padding: 9px 40px 9px 10px;
-  text-transform: uppercase;
-  @include border-radius(5px);
-  @include background(image-url($image_fleche) no-repeat scroll right center $couleur);
-}
-
 .bouton_bleu_clair {
   @include bouton_fleche($lightBlue, 'fleche_bouton_clair.png');
 }
 
-@mixin bloc {
-  background-color: white;
-  @include border-radius(5px);
-  padding: 0 30px !important;
-  margin-bottom: 23px;
-  .view-header {
-    font-style: italic;
-    left: 150px;
-    position: relative;
-    text-decoration: underline;
-    top: -23px;
-    color: $darkBlue;
-    font-size: emCalc(14px);
-  }
-  h2 {
-    @extend .titre_bloc;
-  }
-  h3 {
-    @extend .titre_article;
-  }
-  p {
-    font-size: emCalc(15px);
-    line-height: 1.2;
-    .readmore {
-      @extend .bouton_bleu_clair;
-    }
-  }
-  .date {
-    float: left;
-    color: $lightBlue;
-    text-transform: uppercase;
-    margin: 7px 5px 0 0;
-    font-size: emCalc(14px);
-  }
-}
-
 .block-views-newsflashes-block {
-  @include bloc;
+  @include bloc($darkBlue, $lightBlue);
   .view-content {
     @extend .row;
   }
@@ -558,7 +564,7 @@ nav .block-search-form {
 }
 
 .block-views-last-publications-block {
-  @include bloc;
+  @include bloc($darkBlue, $lightBlue);
   padding-bottom: 30px !important;
   h2 {
     margin-bottom: 15px;
@@ -588,7 +594,7 @@ nav .block-search-form {
 }
 
 .block-views-press-releases-block {
-  @include bloc;
+  @include bloc($darkBlue, $lightBlue);
   h2 {
     margin-bottom: 15px;
   }
@@ -648,19 +654,6 @@ article img {
   @include border-radius(10px);
 }
 
-@mixin titre_bloc_sidebar ($icone) {
-  @include background(image-url($icone) no-repeat scroll 15px center $lighterBlue);
-  color: $darkYellow;
-  @include border-radius(0 5px 5px 0);
-  width: 270px;
-  height: 43px;
-  vertical-align: center;
-  position: relative;
-  top: -1px;
-  padding: 0px 0 0 56px;
-  font-size: emCalc(27px);
-}
-
 #sidebar {
   .form-type-textfield, .form-type-password {
     margin-left: 25px;
@@ -681,7 +674,7 @@ article img {
 
 .block-user-login {
   h2 {
-    @include titre_bloc_sidebar('icone_login.png');
+    @include titre_bloc_sidebar('icone_login.png', $lighterBlue, $darkYellow);
   }
   form > div > .item-list {
     float: right;
@@ -721,7 +714,7 @@ article img {
 
 .block-views-events-calendar-block-1 {
   h2 {
-    @include titre_bloc_sidebar('icone_calendrier.png');
+    @include titre_bloc_sidebar('icone_calendrier.png', $lighterBlue, $darkYellow);
   }
   .view-header {
     margin: 0 35px;
@@ -780,7 +773,7 @@ article img {
 .block-views-upcoming-events-block {
   color: $white;
   h2 {
-    @include titre_bloc_sidebar('icone_events.png');
+    @include titre_bloc_sidebar('icone_events.png', $lighterBlue, $darkYellow);
   }
   .event {
     margin: 0 30px;
@@ -809,7 +802,7 @@ article img {
 .block-simplenews-0 {
   padding: 30px 0 50px;
   h2 {
-    @include titre_bloc_sidebar('icone_newsletter.png');
+    @include titre_bloc_sidebar('icone_newsletter.png', $lighterBlue, $darkYellow);
   }
   p, #simplenews-subscriptions-multi-block-form {
     margin: 0 30px;
@@ -850,7 +843,7 @@ article img {
 
 .block-block-7 {
   h2 {
-    @include titre_bloc_sidebar('icone_newsflashes.png');
+    @include titre_bloc_sidebar('icone_newsflashes.png', $lighterBlue, $darkYellow);
   }
   p {
     margin: 0 34px;
@@ -866,7 +859,7 @@ article img {
 .block-views-sidebar-gallery-block {
   padding-top: 15px;
   h2 {
-    @include titre_bloc_sidebar('icone_galerie.png');
+    @include titre_bloc_sidebar('icone_galerie.png', $lighterBlue, $darkYellow);
   }
   h3 {
     text-transform: uppercase;
@@ -989,3 +982,6 @@ footer {
     }
   }
 }
+
+/* fin mixin styles-easpd */
+};

@@ -1,3 +1,33 @@
-@import "settings-hi-contrast";
+$darkBlue:       black;
+$darkBlue-w:     white;
+$lightBlue:      black;
+$lightBlue-w:    white;
+$lighterBlue:    white;
+$lightestBlue:   white;
+
+$blueBackground: black;
+
+$lightYellow:    white;
+$darkYellow:     black;
+$darkYellow-w:   white;
+
+$lightGrey:      white;
+$darkGrey:       black;
+$white:          #fff;
+
+/* couleurs pré-définies pour les éditeurs */
+$typo-bleu:      $darkBlue;
+$typo-bleuPale:  #92afd8;
+$typo-bleuClair: #0291c0;
+$typo-vert:      #002f2f;
+$typo-turquoise: #048b9a;
+$typo-violet:    #672b7d;
+$typo-orange:    #ff9600;
+
+@import "settings";
 @import "foundation";
 @import "styles-easpd";
+
+.hi-contrast {
+    @include styles-easpd($darkBlue, $darkBlue-w, $lightBlue, $lightBlue-w, $lighterBlue, $lightestBlue, $blueBackground, $lightYellow, $darkYellow, $darkYellow-w, $lightGrey, $darkGrey, $white, $typo-bleu, $typo-bleuPale, $typo-bleuClair, $typo-vert, $typo-turquoise, $typo-violet, $typo-orange);
+}

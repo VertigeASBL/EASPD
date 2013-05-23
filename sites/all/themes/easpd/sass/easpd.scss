@@ -1,3 +1,38 @@
+$darkBlue:       #184996;
+$darkBlue-w:     $darkBlue;
+$lightBlue:      #5b87c4;
+$lightBlue-w:    $lightBlue;
+$lighterBlue:    #6792ce;
+$lightestBlue:   #ecf2f9;
+
+$blueBackground: #5B87C4;
+
+$lightYellow:    #ffe35e;
+$darkYellow:     #ffd200;
+$darkYellow-w:   $darkYellow;
+
+$lightGrey:      #f7f7f7;
+$darkGrey:       #555555;
+$white:          #fff;
+
+/* couleurs pré-définies pour les éditeurs */
+$typo-bleu:      $darkBlue;
+$typo-bleuPale:  #92afd8;
+$typo-bleuClair: #0291c0;
+$typo-vert:      #002f2f;
+$typo-turquoise: #048b9a;
+$typo-violet:    #672b7d;
+$typo-orange:    #ff9600;
+
 @import "settings";
 @import "foundation";
 @import "styles-easpd";
+
+@include styles-easpd($darkBlue, $darkBlue-w, $lightBlue, $lightBlue-w, $lighterBlue, $lightestBlue, $blueBackground, $lightYellow, $darkYellow, $darkYellow-w, $lightGrey, $darkGrey, $white, $typo-bleu, $typo-bleuPale, $typo-bleuClair, $typo-vert, $typo-turquoise, $typo-violet, $typo-orange);
+
+html body {
+  border-top-color: $darkBlue;
+  border-top-width: 4px;
+  border-top-style: solid;
+  background-color: $lightestBlue;
+}
