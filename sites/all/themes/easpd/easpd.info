@@ -31,8 +31,8 @@ base theme = zurb_foundation
 stylesheets[all][] = css/app.css
 stylesheets[all][] = css/foundation.min.css
 stylesheets[all][] = css/lightbox.css
-stylesheets[all][] = css/easpd.css
 stylesheets[all][] = css/easpd-hi-contrast.css
+stylesheets[all][] = css/easpd.css
 
 ; An empty JavaScript file ready to be used just uncomment and add JavaScript
 ; scripts[] = js/easpd.js

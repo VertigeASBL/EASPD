@@ -7,8 +7,13 @@
 $base-size: 13px;
 $ratio: major-second();
 
+/* Convert px to em for typography */
+@function emCalc($target){
+  @return ($target/15px)+0em;
+}
+
 @mixin heading($scale-number) {
-  font-size: ms($scale-number);
+  font-size: emCalc(ms($scale-number));
   margin: ms($scale-number)/4 0 ms($scale-number)/3 0;
 }
 
@@ -190,35 +195,33 @@ footer {
   color: $typo-orange    !important;
 }
 
-#main {
-  h1, h2, h3, h4, h5, h6 {
-      color: $darkBlue;
-  }
-  h1 {
-      @include heading(7);
-  }
-  h2 {
-      @include heading(6);
-  }
-  h3 {
-      @include heading(5);
-  }
-  h4 {
-      @include heading(4);
-  }
-  h5 {
-      @include heading(3);
-  }
-  h6 {
-      @include heading(2);
-  }
-  p, caption {
-      font-size: ms(1);
-      margin-bottom: ms(1)/2;
-  }
-  li {
-      font-size: ms(1);
-  }
+h1, h2, h3, h4, h5, h6 {
+    color: $darkBlue;
+}
+h1 {
+    @include heading(7);
+}
+h2 {
+    @include heading(6);
+}
+h3 {
+    @include heading(5);
+}
+h4 {
+    @include heading(4);
+}
+h5 {
+    @include heading(3);
+}
+h6 {
+    @include heading(2);
+}
+p, caption {
+    font-size: emCalc(ms(1));
+    margin-bottom: ms(1)/2;
+}
+li {
+    font-size: emCalc(ms(1));
 }
 
 #admin-menu {
