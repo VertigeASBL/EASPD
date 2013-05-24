@@ -740,12 +740,17 @@ article img {
       cursor: pointer;
     }
   }
-  .signup h3 {
-    margin-left: 25px;
-    color: $darkYellow;
-    clear: both;
-    position: relative;
-    top: 8px;
+  .signup {
+    h3 {
+      margin-left: 25px;
+      color: $darkYellow;
+      clear: both;
+      position: relative;
+      top: 8px;
+    }
+    a {
+      margin-bottom: 20px;
+    }
   }
 }
 
