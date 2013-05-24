@@ -1,5 +1,34 @@
 <?php
 
+/* On vire les éléments du head qui ne sont pas valides w3c */
+function easpd_html_head_alter (&$head_elements) {
+
+  unset($head_elements['chrome_frame']);
+  unset($head_elements['ie_image_toolbar']);
+}
+
+/* l'attribut lang du lien vers Easy-EN doit être EN pour éviter les */
+/* soucis de validation w3c. */
+function easpd_block_view_locale_language_alter (&$vars) {
+
+  $qp = qp($vars['content']);
+
+  foreach ($qp->find('li') as $li) {
+    if ($li->find('a')->attr('lang') == 'en-Easy') {
+      $li->find('a')->attr('lang', 'en');
+    }
+  }
+
+  $vars['content'] = $qp->top()->find('body')->innerHtml();
+}
+
+/* nettoyage pour w3c… */
+function easpd_preprocess_date_display_single (&$vars) {
+
+  unset($vars['attributes']['datatype']);
+  unset($vars['attributes']['content']);
+}
+
 function ajouter_read_more ($variables, $suffix='') {
 
   $qp = qp($variables['output']);
@@ -133,18 +162,6 @@ function easpd_text_resize_block() {
 //    }
 //  }
 //  return '<ul class="nav-bar">' . $output . '</ul>';
-//}
-
-/**
- * Implements template_preprocess_html().
- * 
- */
-//function easpd_preprocess_html(&$vars) {
-//  // Add conditional CSS for IE. To use uncomment below and add IE css file
-//  drupal_add_css(path_to_theme() . '/css/ie.css', array('weight' => CSS_THEME, 'browsers' => array('!IE' => FALSE), 'preprocess' => FALSE));
-//  
-//  // Need legacy support for IE downgrade to Foundation 2 or use JS file below
-//  // drupal_add_js('http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE7.js', 'external'); 
 //}
 
 /**

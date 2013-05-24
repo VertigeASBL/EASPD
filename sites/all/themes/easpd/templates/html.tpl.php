@@ -45,19 +45,16 @@
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" <?php print $html_attributes; ?>> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" <?php print $html_attributes; ?>> <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9" <?php print $html_attributes; ?>> <![endif]-->
-<!--[if gt IE 8]><!--> <html <?php print $html_attributes . $rdf_namespaces; ?>> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html <?php print $html_attributes ?>> <!--<![endif]-->
 <head>
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
-  <?php print $styles; ?>
-  <?php print $scripts; ?>
   <!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
+  <?php print $styles; ?>
+  <?php print $scripts; ?>
   <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300,700,300italic,400italic,700italic,400' rel='stylesheet' type='text/css'>
-  <!-- on vire ceci plus tard en js, mais sans ça le site n'est pas 
-       stylé si js désactivé à cause du style switcher -->
-  <!-- <link rel="stylesheet" type="text/css" href="sites/all/themes/easpd/css/easpd.css" /> -->
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
   <div class="skip-link">
