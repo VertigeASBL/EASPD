@@ -30,7 +30,7 @@
    ----------------------------------------- */
 
 /* modular scale settings */
-$base-size: 13px;
+$base-size: 12px;
 $ratio: major-second();
 
 /* Convert px to em for typography */
@@ -83,7 +83,7 @@ $ratio: major-second();
     @extend .titre_article;
   }
   p {
-    font-size: emCalc(15px);
+    font-size: emCalc(14px);
     line-height: 1.2;
     .readmore {
       @extend .bouton_bleu_clair;
@@ -104,11 +104,11 @@ $ratio: major-second();
   color: $darkYellow;
   @include border-radius(0 5px 5px 0);
   width: 270px;
-  height: 43px;
+  min-height: 43px;
   vertical-align: center;
   position: relative;
   top: -1px;
-  padding: 0px 0 0 56px;
+  padding: 2px 0 0 56px;
   font-size: emCalc(27px);
 }
 
@@ -513,7 +513,7 @@ nav .block-search-form {
    ----------------------------------------- */
 
 .breadcrumbs > li {
-  font-size: 0.8em;
+  font-size: 0.6875em;
 }
 
 .alert-box a {
@@ -531,7 +531,7 @@ nav .block-search-form {
   @include border-radius(0 0 8px 8px);
   background-color: $darkBlue;
   color: white;
-  font-size: emCalc(30px);
+  font-size: emCalc(28px);
 }
 
 .titre_article {
@@ -691,6 +691,7 @@ article img {
 }
 
 #sidebar {
+  font-size: emCalc(14px);
   .form-type-textfield, .form-type-password {
     margin-left: 25px;
     width: 250px;
@@ -858,6 +859,7 @@ article img {
   }
   #edit-subscribe, #edit-update {
     @include bouton_fleche($darkBlue, 'fleche_bouton_fonce.png');
+    font-size: emCalc(12.5px);
     border: none;
     float: right;
     margin-right: 4px;
@@ -945,7 +947,7 @@ article img {
 
 footer {
   color: $lightBlue;
-  font-size: emCalc(11px);
+  font-size: emCalc(14px);
   p {
     margin: 0;
   }
@@ -989,12 +991,12 @@ footer {
     background-color: fade_out($darkYellow-w, 0.1);
     h2 a, h2 {
       text-transform: uppercase;
-      font-size: emCalc(17px);
+      font-size: emCalc(16px);
       color: $darkBlue;
       margin: 1px 0;
     }
     p {
-      font-size: emCalc(16px);
+      font-size: emCalc(15px);
       color: darken($darkBlue, 15);
       margin-bottom: 0;
       a {
