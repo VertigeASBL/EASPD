@@ -1,7 +1,33 @@
+/* =====================================================================
+   Table of Contents
+   =====================================================================
+::
+:: Sass Imports
+:: Sass Functions
+:: Sass Mixins
+:: Main Mixin
+:: - Grid
+:: - Typography
+:: - Header et menu
+:: - Colonne Centrale
+:: - Colonne Droite
+:: - Footer
+:: - Orbit Slider
+
+*/
+
+/* -----------------------------------------
+   Sass Imports
+   ----------------------------------------- */
+
 @import "compass/css3/border-radius";
 @import "compass/css3/box-shadow";
 @import "compass/css3/images";
 @import 'modular-scale';
+
+/* -----------------------------------------
+   Sass Functions
+   ----------------------------------------- */
 
 /* modular scale settings */
 $base-size: 13px;
@@ -12,11 +38,17 @@ $ratio: major-second();
   @return ($target/15px)+0em;
 }
 
+/* -----------------------------------------
+   Sass Mixins
+   ----------------------------------------- */
+
+/* Generate heading's sizes using modular-scale */
 @mixin heading($scale-number) {
   font-size: emCalc(ms($scale-number));
   margin: ms($scale-number)/4 0 ms($scale-number)/3 0;
 }
 
+/* A button with an arrow */
 @mixin bouton_fleche($couleur, $image_fleche) {
   display: inline-block;
   color: white;
@@ -29,6 +61,7 @@ $ratio: major-second();
   @include background(image-url($image_fleche) no-repeat scroll right center $couleur);
 }
 
+/* The blocs on the homepage */
 @mixin bloc ($darkBlue, $lightBlue) {
   background-color: white;
   @include border-radius(5px);
@@ -65,6 +98,7 @@ $ratio: major-second();
   }
 }
 
+/* The bloc titles in the sidebar */
 @mixin titre_bloc_sidebar ($icone, $lighterBlue, $darkYellow) {
   @include background(image-url($icone) no-repeat scroll 15px center $lighterBlue);
   color: $darkYellow;
@@ -78,20 +112,11 @@ $ratio: major-second();
   font-size: emCalc(27px);
 }
 
+/* -----------------------------------------
+   Main Mixin
+   ----------------------------------------- */
+
 @mixin styles-easpd($darkBlue, $darkBlue-w, $lightBlue, $lightBlue-w, $lighterBlue, $lightestBlue, $blueBackground, $lightYellow, $darkYellow, $darkYellow-w, $lightGrey, $darkGrey, $white, $typo-bleu, $typo-bleuPale, $typo-bleuClair, $typo-vert, $typo-turquoise, $typo-violet, $typo-orange) {
-
-/* =====================================================================
-   Table of Contents
-   =====================================================================
-:: Grid
-:: Typography
-:: Header et menu
-:: Colonne Centrale
-:: Colonne Droite
-:: Footer
-:: Orbit Slider
-
-*/
 
 /* -----------------------------------------
    Grid
