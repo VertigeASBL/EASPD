@@ -49,9 +49,15 @@
 <head>
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
+
+  <!--[if lt IE 8]>
+    <style type="text/css">* { box-sizing: border-box; *behavior: url(/easpd/sites/all/themes/easpd/iehacks/boxsizing.htc); }</style>
+  <![endif]-->
+
   <!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
+
   <?php print $styles; ?>
   <?php print $scripts; ?>
   <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300,700,300italic,400italic,700italic,400' rel='stylesheet' type='text/css'>
