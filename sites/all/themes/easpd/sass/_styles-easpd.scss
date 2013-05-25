@@ -710,6 +710,26 @@ nav .block-search-form {
   }
 }
 
+.view-display-id-page .view-content {
+  .views-row {
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: lighten($lightBlue, 30%);
+    margin-top: 15px;
+    padding-top: 10px;
+    .logo {
+      float: right;
+      border-style: solid;
+      border-width: 1px;
+      border-color: $lightGrey;
+      margin: 0 0 10px 5px;
+      padding: 2px;
+      clear: both;
+      @include ie-border-radius(2px);
+    }
+  }
+}
+
 .file {
   margin-top: 30px;
 }
