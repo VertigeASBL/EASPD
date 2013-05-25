@@ -330,13 +330,15 @@ a {
       font-size: emCalc(13px);
     }
   }
-  .block-text-resize {
+  /* text resizer */
+  .block-block-8 {
     position: relative;
-    top: 7px;
+    top: 18px;
     right: 10px;
     a.changer {
       cursor: pointer;
       display: block;
+      float: right;
       position: relative;
       outline: medium none;
       text-indent: -9000px;
@@ -344,20 +346,19 @@ a {
         @include background(image-url("text_resize_minus.gif") no-repeat scroll 0 0 transparent);
         width: 10px;
         height: 10px;
+        top: 5px;
+        left: -10px;
       }
       &#text_resize_reset {
         @include background(image-url("text_resize_reset.gif") no-repeat scroll 0 0 transparent);
         width: 12px;
         height: 12px;
-        top: 1px;
-        margin-right: 4px;
-        margin-left: 5px;
+        top: 3px;
+        left: -5px;
       }
       &#text_resize_increase {
         @include background(image-url("text_resize_plus.gif") no-repeat scroll 0 0 transparent);
         width: 13px;
-        height: 15px;
-        top: 1px;
       }
     }
   }

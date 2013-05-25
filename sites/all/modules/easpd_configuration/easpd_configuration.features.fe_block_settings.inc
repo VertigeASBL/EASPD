@@ -12,6 +12,41 @@ function easpd_configuration_default_fe_block_settings() {
 
   $export['version'] = '2.0';
 
+  $export['block-resize_text'] = array(
+    'cache' => -1,
+    'css_class' => '',
+    'custom' => 0,
+    'i18n_block_language' => array(),
+    'i18n_mode' => 0,
+    'machine_name' => 'resize_text',
+    'module' => 'block',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'easpd' => array(
+        'region' => 'header',
+        'status' => 1,
+        'theme' => 'easpd',
+        'weight' => 0,
+      ),
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => 0,
+      ),
+    ),
+    'title' => 'Resize Text',
+    'visibility' => 0,
+  );
+
   $export['calendar-calendar_legend'] = array(
     'cache' => 1,
     'css_class' => '',
@@ -875,8 +910,8 @@ function easpd_configuration_default_fe_block_settings() {
         'weight' => 0,
       ),
       'easpd' => array(
-        'region' => 'header',
-        'status' => 1,
+        'region' => '',
+        'status' => 0,
         'theme' => 'easpd',
         'weight' => -21,
       ),
