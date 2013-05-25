@@ -114,8 +114,20 @@ $ratio: major-second();
   vertical-align: center;
   position: relative;
   top: -1px;
-  padding: 2px 0 0 56px;
+  padding: 0px 0 0 56px;
   font-size: emCalc(27px);
+  margin-bottom: 12px;
+}
+
+/* Grid helpers */
+@mixin full-width($page-width) {
+  width: 100%;
+  min-width: $page-width;
+}
+
+@mixin content-width($page-width) {
+  width: $page-width;
+  margin: auto;
 }
 
 /* -----------------------------------------
@@ -128,18 +140,25 @@ $ratio: major-second();
    Grid
    ----------------------------------------- */
 
+$page-width: 1010px;
+$content-padding: 8px;
+
+@include full-width($page-width);
+
 #top-container {
   position: absolute;
-  width: 100%;
   z-index: 1;
+  @include full-width($page-width);
 }
 
 #top {
-  @extend .row;
+  @include content-width($page-width);
   #language_switcher {
-    @extend .large-3;
-    @extend .columns;
-    @extend .push-9;
+    float: right;
+    .block {
+      clear: both;
+      float: right;
+    }
   }
 }
 
@@ -156,37 +175,42 @@ $ratio: major-second();
 }
 
 nav {
-  width: 1010px;
-  margin: auto;
+  $menu-bar-width: 760px;
+  @include content-width($page-width);
+  padding: 0 $content-padding;
   .block-superfish-1 {
     float: left;
-    width: 760px;
+    width: $menu-bar-width - $content-padding;
   }
   .block-search-form {
-    width: 250px;
+    width: $page-width - $menu-bar-width - $content-padding;
     float: right;
   }
 }
 
+
 #page {
-  width: 1010px;
-  margin: auto;
+  $main-col-width: 701px;
+  @include content-width($page-width);
+  padding: 0 $content-padding;
   #main {
-    width: 686px;
+    $main-padding: 12px;
+    $gutter: 12px;
+    width: $main-col-width;
+    padding-right: $main-padding;
     float: left;
     .block-views-last-publications-block {
-      width: 330px;
-      margin-right: 20px;
+      width: ($main-col-width - $main-padding - $gutter) / 2;
+      margin-right: $gutter;
       float: left;
     }
     .block-views-press-releases-block {
-      width: 330px;
+      width: ($main-col-width - $main-padding - $gutter) / 2;
       float: right;
     }
   }
   #sidebar {
-    margin-left: 15px;
-    width: 309px;
+    width: $page-width - (2 * $content-padding) - $main-col-width;
     float: right;
   }
 }
