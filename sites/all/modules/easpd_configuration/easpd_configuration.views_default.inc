@@ -629,7 +629,7 @@ function easpd_configuration_views_default_views() {
   $handler->display->display_options['fields']['body']['label'] = '';
   $handler->display->display_options['fields']['body']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['body']['alter']['text'] = '<div class="logo">[field_image]</div>
-<h3 class="title">[title]</h3>
+<h2 class="title">[title]</h2>
 [body]';
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['body']['settings'] = array(
