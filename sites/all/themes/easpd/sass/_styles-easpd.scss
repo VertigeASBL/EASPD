@@ -378,6 +378,7 @@ a {
   @include background(image-url("header_background.png") no-repeat scroll center 0);
   background-color: $lightYellow;
   height: 189px;
+  max-width: 100%;
   #logo {
     a {
       display: block;

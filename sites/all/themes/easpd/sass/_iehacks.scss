@@ -1,0 +1,18 @@
+.lt-ie8 {
+  .default, .hi-contrast {
+
+    #header-container .block-block-2 {
+      left: 280px;
+      top: -100px;
+
+      #header #logo a {
+        width: 224px;
+      }
+    }
+
+    nav .block-superfish-1 #superfish-1 > li.first a {
+      width: 16px;
+      height: 34px;
+    }
+  }
+}
