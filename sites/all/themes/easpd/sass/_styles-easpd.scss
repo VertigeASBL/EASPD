@@ -717,14 +717,14 @@ nav .block-search-form {
     border-top-color: lighten($lightBlue, 30%);
     margin-top: 15px;
     padding-top: 10px;
-    .logo {
+    clear: both;
+    .logo, .image {
       float: right;
       border-style: solid;
       border-width: 1px;
       border-color: $lightGrey;
       margin: 0 0 10px 5px;
       padding: 2px;
-      clear: both;
       @include ie-border-radius(2px);
     }
   }
