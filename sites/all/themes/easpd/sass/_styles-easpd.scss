@@ -710,6 +710,15 @@ nav .block-search-form {
   }
 }
 
+.bordure-image {
+  border-style: solid;
+  border-width: 1px;
+  border-color: $lightGrey;
+  margin: 0 0 10px 5px;
+  padding: 2px;
+  @include ie-border-radius(2px);
+}
+
 .view-display-id-page .view-content {
   .views-row {
     border-top-style: solid;
@@ -719,19 +728,19 @@ nav .block-search-form {
     padding-top: 10px;
     clear: both;
     .logo, .image {
+      @extend .bordure-image;
       float: right;
-      border-style: solid;
-      border-width: 1px;
-      border-color: $lightGrey;
-      margin: 0 0 10px 5px;
-      padding: 2px;
-      @include ie-border-radius(2px);
     }
   }
 }
 
 .file {
   margin-top: 30px;
+}
+
+.image img {
+  @extend .bordure-image;
+  margin: auto;
 }
 
 .field-name-field-gallery {
