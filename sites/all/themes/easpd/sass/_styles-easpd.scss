@@ -277,6 +277,7 @@ p, caption {
 }
 li {
     font-size: emCalc(ms(1));
+    list-style-position: inside;
 }
 
 #admin-menu {
@@ -361,7 +362,7 @@ a {
     }
   }
   .block-switch-styles {
-    margin: 40px -50px 0 0;
+    margin-top: 20px;
     li {
       @include ie-border-radius(4px);
       background-color: black;
@@ -474,9 +475,16 @@ nav .block-search-form {
     padding-left: 15px;
     @include ie-border-radius(0 5px 5px 0);
     border-left: none;
-    #edit-search-block-form--2 {
+    div {
+      width: 100%;
+      height: 100%;
+    }
+    .form-item {
+      margin: 0;
       position: relative;
-      top: 9px;
+      top: 7px;
+    }
+    #edit-search-block-form--2 {
       width: 175px;
       border-style: solid;
       border-width: 1px;
@@ -484,13 +492,14 @@ nav .block-search-form {
       @include ie-border-radius(3px);
     }
     input[type="submit"] {
-      @include background(image-url("search_icon.png") no-repeat);
+      @include background(image-url("search_icon.png") no-repeat scroll center center);
       border: none;
       position: relative;
-      top: -30px;
-      left: 185px;
-      padding-left: 45px;
-      color: $darkYellow;
+      top: -45px;
+      height: 37px;
+      left: 176px;
+      width: 50px;
+      color: transparent;
       @include box-shadow(none);
       &:hover { cursor: pointer; }
     }
@@ -763,6 +772,7 @@ article img {
     margin-right: 34px;
   }
   input[type="submit"] {
+    font-family: $body-font-family;
     box-shadow: none;
     border: none;
     &:hover {
@@ -790,13 +800,24 @@ article img {
   }
   .view-header {
     margin: 0 35px;
-    .date-nav { padding: 0; }
+    .date-nav-wrapper {
+      height: 32px;
+    }
+    .date-nav {
+      padding: 0;
+      margin: 0;
+      min-height: 0;
+    }
     h3 {
       text-transform: uppercase;
       font-size: emCalc(18px) !important;
       position: relative;
       top: -2px;
-      a { color: $darkBlue-w; }
+      a {
+        color: $darkBlue-w;
+        position: relative;
+        top: 3px;
+      }
     }
     .pager li {
       @include background(transparent);
@@ -807,6 +828,9 @@ article img {
     margin: 0 35px 20px;
 
     table.mini {
+      thead {
+        line-height: 30px;
+      }
       th, td {
         color: $white;
         text-transform: uppercase;
@@ -894,6 +918,7 @@ article img {
   }
   #edit-subscribe, #edit-update {
     @include bouton_fleche($darkBlue, 'fleche_bouton_fonce.png');
+    font-family: $body-font-family;
     font-size: emCalc(12.5px);
     border: none;
     float: right;
