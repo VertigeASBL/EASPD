@@ -16,7 +16,7 @@ javascripts_dir = "js"
 # output_style = :compressed
 output_style = :expanded
 
-# nécessaire pour FireSass…
+# nécessaire pour FireSass, casse tout avec IE…
 # sass_options = {:debug_info => true}
 
 # To enable relative paths to assets via compass helper functions. Uncomment:
