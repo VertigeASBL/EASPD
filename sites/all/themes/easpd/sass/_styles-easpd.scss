@@ -378,14 +378,26 @@ a {
   @include background(image-url("header_background.png") no-repeat scroll center 0);
   background-color: $lightYellow;
   height: 189px;
+  #logo {
+    a {
+      display: block;
+    }
+    img {
+      height: 189px;
+      min-width: 224px;
+    }
+  }
   .block-block-2 {
     color: $darkBlue;
     text-transform: uppercase;
-    padding: 77px 195px 0 30px;
     font-family: $body-font-family;
     font-stretch: semi-condensed;
+    width: 550px;
+    position: relative;
+    top: 80px;
+    left: 10px;
     p {
-      font-size: 14px;
+      font-size: emCalc(12px);
     }
     em {
       color: $lightBlue;
@@ -441,14 +453,14 @@ nav .block-superfish-1 {
       a {
         height: 100%;
         font-family: $header-font-family;
-        font-size: 13.5px;
+        font-size: emCalc(13px);
         font-weight: bold;
         color: $darkGrey;
         display: block;
         padding: 18px 18px 0px 18px;
       }
       ul {
-        margin-top: 11px;
+        margin-top: 8px;
         li {
           background-color: $lightGrey;
           border-bottom-style: solid;
