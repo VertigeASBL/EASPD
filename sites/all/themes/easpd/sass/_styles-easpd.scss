@@ -1012,28 +1012,28 @@ article img {
     z-index: 0;
     a { color: $darkBlue-w; }
   }
-  .orbit-container {
+  #sidebar-gallery {
     width: 223px;
     height: 168px;
     background-color: $lightBlue;
     margin: auto;
     .orbit-slide-number { display: none; }
-    .orbit-prev {
-      text-indent: 99999px;
-      span { border: none; }
+    .slides-prev {
+      display: block;
+      color: transparent;
       @include background(image-url('pager_prev.png') no-repeat center transparent);
-      position: absolute;
-      top: 156px;
-      left: -15px;
+      position: relative;
+      top: 27px;
+      left: -90px;
       z-index: 1;
     }
-    .orbit-next {
-      text-indent: 99999px;
-      span { border: none; }
+    .slides-next {
+      display: block;
+      color: transparent;
       @include background(image-url('pager_next.png') no-repeat center transparent);
-      position: absolute;
-      top: 156px;
-      right: -15px;
+      position: relative;
+      top: 27px;
+      right: -90px;
       z-index: 1;
     }
     img {
@@ -1092,6 +1092,8 @@ footer {
     display: block;
     width: 26px;
     height: 51px;
+    position: relative;
+    top: -198px;
   }
   .slides-next {
     @include background(image-url("slideshow_fleche_droite.png") no-repeat scroll right center);
@@ -1099,6 +1101,9 @@ footer {
     display: block;
     width: 26px;
     height: 51px;
+    position: relative;
+    left: 644px;
+    top: -165px;
   }
   .orbit-caption {
     position: absolute;

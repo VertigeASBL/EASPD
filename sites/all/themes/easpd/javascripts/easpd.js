@@ -1,6 +1,8 @@
 (function ($) { $(function () {
 
-    var $slideshowHome = $('.slideshow-home').slides();
+    var $slideshowHome = $('.slideshow-home').slides(),
+    $slideshowGallery = $('#sidebar-gallery').slides();
+    
 
     // TODO faire ça dans hook_preprocess plutôt
     $('#edit-submit').removeClass('button');
