@@ -1,12 +1,6 @@
 (function ($) { $(function () {
 
-    $(document).foundation('orbit', {timer_speed: 0});
-
-    // comportement des boutons hi-contrast
-    $('.block-styleswitcher .first').hide();
-    $('.block-styleswitcher li a').click(function () {
-        $('.block-styleswitcher li').toggle();
-    });
+    var $slideshowHome = $('.slideshow-home').slides();
 
     // TODO faire ça dans hook_preprocess plutôt
     $('#edit-submit').removeClass('button');
@@ -29,7 +23,7 @@
 
         $('body').css('font-size', '100%');
         default_size = parseInt(
-            $('body').css('font-size').replace('px', '')
+            $('body').css('font-size').replace('px', ''), 10
         );
         $.cookie('Drupal.visitor.text_size', default_size, { expires: 36500 });
     }
@@ -38,9 +32,9 @@
         var text_size = $.cookie('Drupal.visitor.text_size');
 
         if ( text_size !== undefined) {
-            $('body').css('font-size', text_size + "px")
+            $('body').css('font-size', text_size + "px");
         }
-    };
+    }
 
     set_init_size();
 

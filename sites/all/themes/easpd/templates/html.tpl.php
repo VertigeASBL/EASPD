@@ -40,8 +40,7 @@
  * @see template_preprocess_html()
  * @see template_process()
  */
-?>
-<!DOCTYPE html>
+?><!DOCTYPE html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" <?php print $html_attributes; ?>> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" <?php print $html_attributes; ?>> <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9" <?php print $html_attributes; ?>> <![endif]-->
@@ -50,7 +49,7 @@
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
 
-  <!--[if lt IE 8]>
+  <!--[if IE 8]>
     <style type="text/css">* { box-sizing: border-box; *behavior: url(/easpd/sites/all/themes/easpd/iehacks/boxsizing.htc); }</style>
   <![endif]-->
 
