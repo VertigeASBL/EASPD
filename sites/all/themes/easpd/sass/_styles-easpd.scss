@@ -280,6 +280,9 @@ li {
     font-size: emCalc(ms(1));
     list-style-position: inside;
 }
+li li {
+  font-size: inherit;
+}
 
 #admin-menu {
   li {
@@ -455,7 +458,6 @@ nav .block-superfish-1 {
       a {
         height: 100%;
         font-family: $header-font-family;
-        font-size: emCalc(13px);
         font-weight: bold;
         color: $darkGrey;
         display: block;
@@ -510,11 +512,12 @@ nav .block-search-form {
       @include background(image-url("search_icon.png") no-repeat scroll center center);
       border: none;
       position: relative;
-      top: -45px;
+      top: -41px;
       height: 37px;
       left: 176px;
       width: 50px;
       color: transparent;
+      text-indent: -99999px;
       @include box-shadow(none);
       &:hover { cursor: pointer; }
     }
@@ -734,7 +737,6 @@ nav .block-search-form {
     padding-top: 10px;
     clear: both;
     .logo, .image {
-      @extend .bordure-image;
       float: right;
     }
   }
@@ -1026,6 +1028,7 @@ article img {
     .slides-prev, .slides-next {
       display: block;
       color: transparent;
+      text-indent: -99999px;
       position: relative;
       top: 27px;
       z-index: 1;
@@ -1093,6 +1096,7 @@ footer {
   .slides-prev {
     @include background(image-url("slideshow_fleche_gauche.png") no-repeat scroll left center);
     color: transparent;
+    text-indent: -99999px;
     display: block;
     width: 26px;
     height: 51px;
@@ -1102,6 +1106,7 @@ footer {
   .slides-next {
     @include background(image-url("slideshow_fleche_droite.png") no-repeat scroll right center);
     color: transparent;
+    text-indent: -99999px;
     display: block;
     width: 26px;
     height: 51px;
@@ -1143,6 +1148,7 @@ footer {
       display: inline-block;
       a {        
         color: transparent;
+        text-indent: -99999px;
         height: 100%;
         width: 100%;
         &:active {
