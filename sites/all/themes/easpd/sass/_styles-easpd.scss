@@ -741,7 +741,7 @@ nav .block-search-form {
 
 .image img {
   @extend .bordure-image;
-  margin: auto;
+  float: right;
 }
 
 .field-name-field-gallery {
@@ -1018,23 +1018,22 @@ article img {
     background-color: $lightBlue;
     margin: auto;
     .orbit-slide-number { display: none; }
-    .slides-prev {
+    .slides-prev, .slides-next {
       display: block;
       color: transparent;
-      @include background(image-url('pager_prev.png') no-repeat center transparent);
       position: relative;
       top: 27px;
-      left: -90px;
       z-index: 1;
+      height: 15px;
+      width: 15px;
+    }
+    .slides-prev {
+      left: 25px;
+      @include background(image-url('pager_prev.png') no-repeat center transparent);
     }
     .slides-next {
-      display: block;
-      color: transparent;
+      right: -184px;
       @include background(image-url('pager_next.png') no-repeat center transparent);
-      position: relative;
-      top: 27px;
-      right: -90px;
-      z-index: 1;
     }
     img {
       border-color: $white;
@@ -1134,10 +1133,13 @@ footer {
     display: table;
     margin: auto;
     top: 15px;
+    left: 0;
     li {
       display: inline-block;
-      a {
+      a {        
         color: transparent;
+        height: 100%;
+        width: 100%;
         &:active {
           border: none;
         }
