@@ -91,9 +91,10 @@ $ratio: major-second();
   p {
     font-size: emCalc(14px);
     line-height: 1.2;
-    .readmore {
-      @extend .bouton_bleu_clair;
-    }
+  }
+  .readmore {
+    @extend .bouton_bleu_clair;
+    float: right;
   }
   .date {
     float: left;
@@ -650,6 +651,9 @@ nav .block-search-form {
       }
     }
   }
+  .readmore {
+    margin: 0 0 10px 0;
+  }
 }
 
 .block-views-last-publications-block {
@@ -665,6 +669,7 @@ nav .block-search-form {
   .readmore {
     clear: both;
     float: right;
+    margin-bottom: 10px;
   }
   .views-row {
     clear: both;

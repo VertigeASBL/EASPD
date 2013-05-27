@@ -34,12 +34,8 @@ function ajouter_read_more ($variables, $suffix='') {
   $qp = qp($variables['output']);
 
   $href = $qp->find('a')->attr('href');
-  
-  $qp->top()
-    ->find('p')
-    ->append("<a class='readmore' href='$href'>" . t('Read more') .  $suffix . "</a>");
 
-  return $qp->top()->find('body')->innerHtml();
+  return $variables['output'] . "<a class='readmore' href='$href'>" . t('Read more') .  $suffix . "</a>";
 }
 
 function easpd_views_view_field__newsflashes__block__body ($variables) {
@@ -96,7 +92,7 @@ function easpd_menu_tree($variables) {
     $active_link->parent()->addClass('active');
   }
 
-  // on doit décoder l'utf8 parce que Drupal ré-encode par la suite 
+  // on doit décoder l'utf8 parce que Drupal ré-encode par la suite
   return '<ul class="menu">' . utf8_decode($qp->top()->find('body')->innerHtml()) . '</ul>';
 }
 
@@ -128,12 +124,12 @@ function easpd_text_resize_block() {
 /**
  * Implements theme_links() targeting the main menu specifically
  * Outputs Foundation Nav bar http://foundation.zurb.com/docs/navigation.php
- * 
+ *
  */
 //function easpd_links__system_main_menu($vars) {
 //  // Get all the main menu links
 //  $menu_links = menu_tree_output(menu_tree_all_data('main-menu'));
-//  
+//
 //  // Initialize some variables to prevent errors
 //  $output = '';
 //  $sub_menu = '';
@@ -150,14 +146,14 @@ function easpd_text_resize_block() {
 //        if (!empty($sub_link['#href'])) {
 //          $sub_menu .= '<li>' . l($sub_link['#title'], $sub_link['#href']) . '</li>';
 //        }
-//        
+//
 //      }
 //      $output .= !empty($link['#below']) ? '<a href="#" class="flyout-toggle"><span> </span></a><ul class="flyout">' . $sub_menu . '</ul>' : '';
-//      
+//
 //      // Reset dropdown to prevent duplicates
 //      unset($sub_menu);
 //      $sub_menu = '';
-//      
+//
 //      $output .=  '</li>';
 //    }
 //  }
@@ -188,10 +184,10 @@ function easpd_preprocess_node(&$vars) {
 //function easpd_preprocess_block(&$vars) {
 //  // Add wrapping div with global class to all block content sections.
 //  $vars['content_attributes_array']['class'][] = 'block-content';
-//  
+//
 //  // Convenience variable for classes based on block ID
 //  $block_id = $vars['block']->module . '-' . $vars['block']->delta;
-//  
+//
 //  // Add classes based on a specific block
 //  switch ($block_id) {
 //    // System Navigation block
@@ -203,7 +199,7 @@ function easpd_preprocess_node(&$vars) {
 //      // Wrapping div with custom class for block content
 //      $vars['content_attributes_array']['class'] = 'system-nav-content';
 //      break;
-//    
+//
 //    // User Login block
 //    case 'user-login':
 //      // Hide title
@@ -248,32 +244,32 @@ function easpd_preprocess_node(&$vars) {
  */
 //function easpd_status_messages($vars) {
 //  $display = $vars['display'];
-//  $output = ''; 
+//  $output = '';
 //
 //  $status_heading = array(
-//    'status' => t('Status message'), 
-//    'error' => t('Error message'), 
+//    'status' => t('Status message'),
+//    'error' => t('Error message'),
 //    'warning' => t('Warning message'),
-//  );  
+//  );
 //  foreach (drupal_get_messages($display) as $type => $messages) {
 //    $output .= "<div class=\"messages $type\">\n";
 //    if (!empty($status_heading[$type])) {
 //      $output .= '<h2 class="element-invisible">' . $status_heading[$type] . "</h2>\n";
-//    }   
+//    }
 //    if (count($messages) > 1) {
 //      $output .= " <ul>\n";
 //      foreach ($messages as $message) {
 //        $output .= '  <li>' . $message . "</li>\n";
-//      }   
+//      }
 //      $output .= " </ul>\n";
-//    }   
+//    }
 //    else {
 //      $output .= $messages[0];
-//    }   
+//    }
 //    $output .= "</div>\n";
 //  }
 //  if ($output != '') {
-//    drupal_add_js("jQuery(document).ready(function() { jQuery('#status-messages').reveal(); 
+//    drupal_add_js("jQuery(document).ready(function() { jQuery('#status-messages').reveal();
 //            });", array('type' => 'inline', 'scope' => 'footer'));
 //    $output = '<div id="status-messages" class="reveal-modal expand" >'. $output;
 //    $output .= '<a class="close-reveal-modal">&#215;</a>';
