@@ -22,7 +22,6 @@
         position: relative;
         top: 10px;
         left: -17px;
-        text-align: middle;
         padding: 0 0 5px 23px;
       }
     }
@@ -56,5 +55,117 @@
 .lt-ie8 {
   .default, .hi-contrast {
 
+    #nav-container {
+      position: relative;
+      z-index: 1000;
+    }
+
+    nav {
+      position: relative;
+      top: 0;
+
+      .block-superfish-1 {
+        position: relative;
+        z-index: 100;
+        #superfish-1 > li.first a {
+          width: 20px;
+          height: 35px;
+        }
+      }
+
+      .block-search-form {
+        position: relative;
+        left: -20px;
+        #edit-search-block-form--2 {
+          top: 1px;
+          left: 0;
+          width: 155px;
+          padding: 9px 0 0 12px;
+          height: 25px;
+        }
+        input[type="submit"] {
+          text-indent: 0;
+          font-size: 0.01px;
+          top: -43px;
+          left: 174px;
+        }
+      }
+    }
+
+    #page {
+      top: 0;
+      #highlight {
+        position: relative;
+        z-index: 50;
+        .slideshow-home {
+          z-index: 50;
+          width: 670px;
+        }
+        .slides-next {
+          top: -135px;
+          left: 565px;
+        }
+        .slides-prev {
+          top: -170px;
+        }
+        .slides-pagination {
+          left: 300px;
+          li {
+            float: left;
+          }
+        }
+      }
+
+      h2.block-title {
+        display: inline;
+      }
+
+      .block-views-newsflashes-block {
+        .views-row-1 .logo a {
+          background-repeat: no-repeat;
+        }
+        .views-row-2, .views-row-3, .views-row-4 {
+          width: 28%;
+          .logo img {
+            top: -30px;
+          }
+        }
+      }
+
+      #main {
+        position: relative;
+        z-index: 10;
+        .block-views-last-publications-block,
+        .block-views-press-releases-block {
+          width: 40%;
+        }
+      }
+
+      .block-views-last-publications-block {
+        .field-content > p {
+          min-height: 120px;
+        }
+      }
+
+      #main article .image {
+        float: right;
+        img { float: none; }
+      }
+
+      #sidebar {
+        .block-title {
+          width: 220px;
+          padding-top: 10px;
+        }
+        input[type="text"], input[type="password"] {
+          margin-left: -30px;
+          height: 20px;
+          padding-top: 10px;
+        }
+        #edit-mail {
+          margin-left: -40px;
+        }
+      }
+    }
   }
 }
