@@ -96,13 +96,6 @@ $ratio: major-second();
     @extend .bouton_bleu_clair;
     float: right;
   }
-  .date {
-    float: left;
-    color: $lightBlue;
-    text-transform: uppercase;
-    margin: 7px 5px 0 0;
-    font-size: emCalc(14px);
-  }
 }
 
 /* The bloc titles in the sidebar */
@@ -603,6 +596,15 @@ nav .block-search-form {
   @include bouton_fleche($lightBlue, 'fleche_bouton_clair.png');
 }
 
+.date {
+  float: left;
+  color: $lightBlue;
+  text-transform: uppercase;
+  margin: 7px 5px 0 0;
+  font-size: emCalc(14px);
+}
+
+
 .block-views-newsflashes-block {
   @include bloc($darkBlue, $lightBlue);
   .view-content {
@@ -716,6 +718,21 @@ nav .block-search-form {
     &:focus {
       margin: 10px 0 25px;
     }
+  }
+}
+
+.view-id-newsflashes.view-display-id-page {
+  h2 {
+    float: left;
+    max-width: 585px;
+  }
+  .date {
+    padding: 0 0 4px 3px;
+    margin: 0;
+    clear: left;
+  }
+  p {
+    clear: left;
   }
 }
 
@@ -932,10 +949,11 @@ article img {
       a { color: $white; }
     }
     .date {
-        float: left;
-        text-transform: uppercase;
-        margin: 3.5px 5px 0 0;
-        font-size: emCalc(14px);
+      float: left;
+      text-transform: uppercase;
+      margin: 3.5px 5px 0 0;
+      font-size: emCalc(14px);
+      color: $white;
     }
   }
 }
