@@ -31,7 +31,7 @@ function easpd_preprocess_date_display_single (&$vars) {
 
 function ajouter_read_more ($variables, $suffix='') {
 
-  $qp = qp($variables['output']);
+  $qp = qp(utf8_decode($variables['output']));
 
   $href = $qp->find('a')->attr('href');
 
@@ -40,7 +40,7 @@ function ajouter_read_more ($variables, $suffix='') {
 
 function strip_tags_in_paragraphs ($variables) {
 
-  $qp = qp($variables['output'], 'p');
+  $qp = qp(utf8_decode($variables['output']), 'p');
 
   foreach ($qp as $p) {
     $p->html(strip_tags($p->html()));
@@ -59,11 +59,13 @@ function easpd_views_view_field__newsflashes__block__body ($variables) {
 
 function easpd_views_view_field__newsflashes__page__body ($variables) {
 
+  $variables = strip_tags_in_paragraphs($variables);
   return ajouter_read_more($variables, ' …');
 }
 
 function easpd_views_view_field__last_publications__block__body ($variables) {
 
+  $variables = strip_tags_in_paragraphs($variables);
   return ajouter_read_more($variables, ' …');
 }
 
