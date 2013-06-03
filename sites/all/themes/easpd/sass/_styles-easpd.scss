@@ -202,6 +202,22 @@ nav {
       width: ($main-col-width - $main-padding - $gutter) / 2;
       float: right;
     }
+    .block-block-9 {
+      width: ($main-col-width - $main-padding - $gutter) / 2;
+      clear: both;
+      float: left;
+    }
+    .block-block-10 {
+      width: ($main-col-width - $main-padding - $gutter) / 2;
+      float: right;
+      p, div {
+        overflow: visible;
+      }
+      img {
+        max-width: none;
+        margin-left: -22px;
+      }
+    }
   }
   #sidebar {
     width: $page-width - (2 * $content-padding) - $main-col-width;
@@ -211,6 +227,7 @@ nav {
 
 footer {
   clear: both;
+  padding-top: 15px;
   @extend .row;
   #footer-first, #footer-middle, #footer-last {
     @extend .large-4;

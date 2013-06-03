@@ -12,6 +12,41 @@ function easpd_configuration_default_fe_block_settings() {
 
   $export['version'] = '2.0';
 
+  $export['block-fb_like_box'] = array(
+    'cache' => -1,
+    'css_class' => '',
+    'custom' => 0,
+    'i18n_block_language' => array(),
+    'i18n_mode' => 0,
+    'machine_name' => 'fb_like_box',
+    'module' => 'block',
+    'node_types' => array(),
+    'pages' => '<front>',
+    'roles' => array(),
+    'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'easpd' => array(
+        'region' => 'content',
+        'status' => 1,
+        'theme' => 'easpd',
+        'weight' => -18,
+      ),
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '<none>',
+    'visibility' => 1,
+  );
+
   $export['block-resize_text'] = array(
     'cache' => -1,
     'css_class' => '',
@@ -45,6 +80,41 @@ function easpd_configuration_default_fe_block_settings() {
     ),
     'title' => 'Resize Text',
     'visibility' => 0,
+  );
+
+  $export['block-social_links'] = array(
+    'cache' => -1,
+    'css_class' => '',
+    'custom' => 0,
+    'i18n_block_language' => array(),
+    'i18n_mode' => 1,
+    'machine_name' => 'social_links',
+    'module' => 'block',
+    'node_types' => array(),
+    'pages' => '<front>',
+    'roles' => array(),
+    'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'easpd' => array(
+        'region' => 'content',
+        'status' => 1,
+        'theme' => 'easpd',
+        'weight' => -19,
+      ),
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '<none>',
+    'visibility' => 1,
   );
 
   $export['calendar-calendar_legend'] = array(
@@ -703,7 +773,7 @@ function easpd_configuration_default_fe_block_settings() {
         'region' => 'content',
         'status' => 1,
         'theme' => 'easpd',
-        'weight' => -21,
+        'weight' => -23,
       ),
       'seven' => array(
         'region' => 'content',
@@ -1123,7 +1193,7 @@ function easpd_configuration_default_fe_block_settings() {
         'region' => 'content',
         'status' => 1,
         'theme' => 'easpd',
-        'weight' => -20,
+        'weight' => -21,
       ),
       'seven' => array(
         'region' => '',
@@ -1158,7 +1228,7 @@ function easpd_configuration_default_fe_block_settings() {
         'region' => 'content',
         'status' => 1,
         'theme' => 'easpd',
-        'weight' => -21,
+        'weight' => -22,
       ),
       'seven' => array(
         'region' => '',
@@ -1193,7 +1263,7 @@ function easpd_configuration_default_fe_block_settings() {
         'region' => 'content',
         'status' => 1,
         'theme' => 'easpd',
-        'weight' => -19,
+        'weight' => -20,
       ),
       'seven' => array(
         'region' => '',
