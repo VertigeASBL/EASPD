@@ -28,19 +28,26 @@
  */
 ?>
 <!-- HEADER -->
-<table class="head-wrap" bgcolor="#ffe35e">
+<table cellpadding="0" cellspacing="0" class="head-wrap">
+  <tr height="4">
+    <td class="body-top"></td>
+    <td class="body-top"></td>
+    <td class="body-top"></td>
+  </tr>
+	<tr>
+		<td class="fond-jaune-pale"></td>
+		<td class="header container" >				
+    <img src="sites/all/themes/easpd/images/newsletter_header.png" />
+		</td>
+		<td class="fond-jaune"></td>
+	</tr>
+</table>
+
+<table cellpadding="0" cellspacing="0" class="head-wrap jaune-fonce">
 	<tr>
 		<td></td>
-		<td class="header container" >
-				
-				<div class="content">
-				<table bgcolor="#ffe35e">
-					<tr>
-						<td><img src="sites/all/themes/easpd/images/logo_backlight.png" /></td>
-					</tr>
-				</table>
-				</div>
-				
+		<td class="title container" >						
+      <h1 style="margin-bottom: 0;"><?php print $title; ?></h1>
 		</td>
 		<td></td>
 	</tr>
@@ -48,7 +55,7 @@
 
 
 <!-- BODY -->
-<table class="body-wrap">
+<table cellspacing="0" cellpadding="0" class="body-wrap">
 	<tr>
 		<td></td>
 		<td class="container" bgcolor="#FFFFFF">
@@ -58,7 +65,6 @@
 				<tr>
 					<td>
 
-           <h2><?php print $title; ?></h2>
            <?php print render($build); ?>												
 						
 					</td>

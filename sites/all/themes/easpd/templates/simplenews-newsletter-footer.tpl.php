@@ -33,6 +33,80 @@
   <?php if ($format == 'html'): ?>
 
     <!-- FOOTER -->
+
+    <table class="footer-wrap">
+      <tr>
+        <td></td>
+        <td class="container">
+          <table>
+            <tr>
+              <td>
+                <img src="sites/all/themes/easpd/images/euro_flag.png" />
+              </td>
+              <td>
+                <p><?php print t('This publication is sponsored by the Progress programme of the European Commission, DG Employment, Social Affairs, and Equal Opportunities. It reflects the view only of the author and the Commission cannot be held responsible for any use which may be made of the information contained therein.');?></p>
+              </td>
+            </tr>
+          </table>
+        </td>
+        <td></td>
+      </tr>
+    </table>
+
+    <table class="footer-wrap">
+      <tr>
+        <td></td>
+        <td class="container">
+          <table>
+            <tr>
+              <td>
+                <p>&copy; EASPD 2013 - All Rights reserved <br>
+                  <a href="http://easpd.eu/en/content/contact-us">
+                    contact
+                  </a>
+                </p>
+              </td>
+              <td>
+                <p>EASPD<br>
+                  Oudergemselaan / Avenue d'Auderghem 63<br>
+                  1040 Brussels - Belgium
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+        <td></td>
+      </tr>
+    </table>
+
+    <table class="footer-wrap">
+      <tr>
+        <td></td>
+        <td class="container">
+          <table>
+            <tr>
+              <td>
+                <a href="https://www.youtube.com/user/EASPD">
+                  <img src="http://localhost/easpd/sites/all/themes/easpd/images/youtube_img.png" />
+                </a>
+              </td>
+              <td>
+                <a href="https://www.facebook.com/easpdbrux">
+                  <img src="http://localhost/easpd/sites/all/themes/easpd/images/facebook_img.png" />
+                </a>
+              </td>
+              <td>
+                <a href="http://employmentforall.eu/">
+                  <img src="http://localhost/easpd/sites/all/themes/easpd/images/jobs4all_img.png" />
+                </a>                
+              </td>
+            </tr>
+          </table>
+        </td>
+        <td></td>
+      </tr>
+    </table>
+
     <table class="footer-wrap">
     	<tr>
     		<td></td>

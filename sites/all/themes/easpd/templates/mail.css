@@ -1,4 +1,7 @@
 /* ------------------------------------- 
+		VARIABLES 
+------------------------------------- */
+/* ------------------------------------- 
 		GLOBAL 
 ------------------------------------- */
 * {
@@ -8,9 +11,6 @@
 * {
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
 
-img {
-  max-width: 100%; }
-
 .collapse {
   margin: 0;
   padding: 0; }
@@ -19,7 +19,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: none;
   width: 100% !important;
-  height: 100%; }
+  height: 100%;
+  background-color: #ecf2f9; }
 
 td {
   padding: 0 !important; }
@@ -27,58 +28,11 @@ td {
 /* ------------------------------------- 
 		ELEMENTS 
 ------------------------------------- */
+img {
+  max-width: 100%; }
+
 a {
   color: #184996; }
-
-.btn {
-  text-decoration: none;
-  color: #FFF;
-  background-color: #666;
-  padding: 10px 16px;
-  font-weight: bold;
-  margin-right: 10px;
-  text-align: center;
-  cursor: pointer;
-  display: inline-block; }
-
-p.callout {
-  padding: 15px;
-  background-color: #ECF8FF;
-  margin-bottom: 15px; }
-
-.callout a {
-  font-weight: bold;
-  color: #2BA6CB; }
-
-table.social {
-  /* 	padding:15px; */
-  background-color: #ebebeb; }
-
-.social .soc-btn {
-  padding: 3px 7px;
-  font-size: 12px;
-  margin-bottom: 10px;
-  text-decoration: none;
-  color: #FFF;
-  font-weight: bold;
-  display: block;
-  text-align: center; }
-
-a.fb {
-  background-color: #3b5998 !important; }
-
-a.tw {
-  background-color: #1daced !important; }
-
-a.gp {
-  background-color: #db4a39 !important; }
-
-a.ms {
-  background-color: black !important; }
-
-.sidebar .soc-btn {
-  display: block;
-  width: 100%; }
 
 /* ------------------------------------- 
 		HEADER 
@@ -86,12 +40,36 @@ a.ms {
 table.head-wrap {
   width: 100%; }
 
-.header.container table td.logo {
-  padding: 0; }
+.jaune-fonce {
+  background-color: #ffd200; }
 
-.header.container table td.label {
-  padding: 15px;
-  padding-left: 0px; }
+.body-top {
+  background-color: #184996; }
+
+.fond-jaune {
+  background-color: #ffe35e;
+  min-width: 20px;
+  width: 50%; }
+
+.fond-jaune-pale {
+  background-color: #ffea85;
+  min-width: 20px;
+  width: 50%; }
+
+.header p {
+  margin: 0; }
+
+.title {
+  background-color: #f6f6f6;
+  border-color: #dedede;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 2px; }
+  .title h1 {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 12px 10px 10px 10px;
+    color: #555555; }
 
 /* ------------------------------------- 
 		BODY 
@@ -121,11 +99,11 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   line-height: 1.1;
   margin-bottom: 15px;
-  color: #000; }
+  color: #184996; }
 
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
   font-size: 60%;
-  color: #6f6f6f;
+  color: #184996;
   line-height: 0;
   text-transform: none; }
 
@@ -175,37 +153,6 @@ ul li {
   margin-left: 5px;
   list-style-position: inside; }
 
-/* ------------------------------------- 
-		SIDEBAR 
-------------------------------------- */
-ul.sidebar {
-  background: #ebebeb;
-  display: block;
-  list-style-type: none; }
-
-ul.sidebar li {
-  display: block;
-  margin: 0; }
-
-ul.sidebar li a {
-  text-decoration: none;
-  color: #666;
-  padding: 10px 16px;
-  /* 	font-weight:bold; */
-  margin-right: 10px;
-  /* 	text-align:center; */
-  cursor: pointer;
-  border-bottom: 1px solid #777777;
-  border-top: 1px solid #FFFFFF;
-  display: block;
-  margin: 0; }
-
-ul.sidebar li a.last {
-  border-bottom-width: 0px; }
-
-ul.sidebar li a h1, ul.sidebar li a h2, ul.sidebar li a h3, ul.sidebar li a h4, ul.sidebar li a h5, ul.sidebar li a h6, ul.sidebar li a p {
-  margin-bottom: 0 !important; }
-
 /* --------------------------------------------------- 
 		RESPONSIVENESS
 		Nuke it from orbit. It's the only way to be sure. 
@@ -213,15 +160,18 @@ ul.sidebar li a h1, ul.sidebar li a h2, ul.sidebar li a h3, ul.sidebar li a h4, 
 /* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
 .container {
   display: block !important;
-  max-width: 600px !important;
+  max-width: 801px !important;
   margin: 0 auto !important;
   /* makes it centered */
   clear: both !important; }
 
+.container.header {
+  max-width: 1025px !important; }
+
 /* This should also be a block element, so that it will fill 100% of the .container */
 .content {
   /*	padding:15px; */
-  max-width: 600px;
+  max-width: 750px;
   margin: 0 auto;
   display: block; }
 
@@ -240,7 +190,7 @@ ul.sidebar li a h1, ul.sidebar li a h2, ul.sidebar li a h3, ul.sidebar li a h4, 
 .column-wrap {
   padding: 0 !important;
   margin: 0 auto;
-  max-width: 600px !important; }
+  max-width: 1025px !important; }
 
 .column table {
   width: 100%; }
@@ -254,22 +204,3 @@ ul.sidebar li a h1, ul.sidebar li a h2, ul.sidebar li a h3, ul.sidebar li a h4, 
 .clear {
   display: block;
   clear: both; }
-
-/* ------------------------------------------- 
-		PHONE
-		For clients that support media queries.
-		Nothing fancy. 
--------------------------------------------- */
-@media only screen and (max-width: 600px) {
-  a[class="btn"] {
-    display: block !important;
-    margin-bottom: 10px !important;
-    background-image: none !important;
-    margin-right: 0 !important; }
-
-  div[class="column"] {
-    width: auto !important;
-    float: none !important; }
-
-  table.social div[class="column"] {
-    width: auto !important; } }
