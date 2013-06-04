@@ -34,7 +34,7 @@
 
     <!-- FOOTER -->
 
-    <table class="footer-wrap">
+    <table class="footer-wrap disclaimer">
       <tr>
         <td></td>
         <td class="container">
@@ -53,21 +53,21 @@
       </tr>
     </table>
 
-    <table class="footer-wrap">
+    <table class="footer-wrap contact-info">
       <tr>
         <td></td>
         <td class="container">
           <table>
             <tr>
               <td>
-                <p>&copy; EASPD 2013 - All Rights reserved <br>
+                <p class="left">&copy; EASPD 2013 - All Rights reserved <br>
                   <a href="http://easpd.eu/en/content/contact-us">
                     contact
                   </a>
                 </p>
               </td>
               <td>
-                <p>EASPD<br>
+                <p class="right">EASPD<br>
                   Oudergemselaan / Avenue d'Auderghem 63<br>
                   1040 Brussels - Belgium
                 </p>

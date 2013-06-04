@@ -1,5 +1,5 @@
-/* ------------------------------------- 
-		VARIABLES 
+/* -------------------------------------
+		VARIABLES
 ------------------------------------- */
 
 $font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
@@ -13,10 +13,11 @@ $lightGrey:   #f6f6f6;
 $grey:        #dedede;
 $darkGrey:    #555555;
 
-/* ------------------------------------- 
-		GLOBAL 
+/* -------------------------------------
+		GLOBAL
 ------------------------------------- */
-* { 
+
+* {
 	margin:0;
 	padding:0;
 }
@@ -29,9 +30,9 @@ $darkGrey:    #555555;
 }
 
 body {
-	-webkit-font-smoothing:antialiased; 
-	-webkit-text-size-adjust:none; 
-	width: 100%!important; 
+	-webkit-font-smoothing:antialiased;
+	-webkit-text-size-adjust:none;
+	width: 100%!important;
 	height: 100%;
   background-color: $bg-color;
 }
@@ -40,19 +41,20 @@ td {
   padding: 0 !important;
 }
 
-/* ------------------------------------- 
-		ELEMENTS 
+/* -------------------------------------
+		ELEMENTS
 ------------------------------------- */
 
-img { 
-	max-width: 100%; 
+img {
+	max-width: 100%;
 }
 
 a { color: $darkBlue; }
 
-/* ------------------------------------- 
-		HEADER 
+/* -------------------------------------
+		HEADER
 ------------------------------------- */
+
 table.head-wrap {
   width: 100%;
 }
@@ -96,28 +98,71 @@ table.head-wrap {
   }
 }
 
-/* ------------------------------------- 
-		BODY 
+/* -------------------------------------
+		BODY
 ------------------------------------- */
 table.body-wrap { width: 100%;}
 
 
-/* ------------------------------------- 
-		FOOTER 
+/* -------------------------------------
+		FOOTER
 ------------------------------------- */
-table.footer-wrap { width: 100%;	clear:both!important;
+
+table.footer-wrap {
+  width: 100%;
+  clear: both !important;
 }
-.footer-wrap .container td.content  p { border-top: 1px solid rgb(215,215,215); padding-top:15px;}
+
+.footer-wrap .container td.content  p {
+  border-top: 1px solid rgb(215,215,215);
+  padding-top:15px;
+}
+
 .footer-wrap .container td.content p {
 	font-size:10px;
 	font-weight: bold;
-	
 }
 
+.disclaimer .container  {
+  border-bottom-style: dotted;
+  border-bottom-color: $darkBlue;
+  border-bottom-width: 1px;
+  img {
+    padding: 0 0 4px 10px;
+  }
+  p {
+    font-size: 13px;
+    color: $darkBlue;
+    padding: 10px;
+    margin-bottom: 0 !important;
+  }
+}
 
-/* ------------------------------------- 
-		TYPOGRAPHY 
+.contact-info {
+  padding-top: 20px;
+  table {
+    width: 100%;
+  }
+  p {
+    color: $darkBlue;
+    font-style: italic;
+    line-height: 0.8;
+    &.left {
+      text-align: left;
+    }
+    &.right {
+      text-align: right;
+    }
+    a {
+      font-style: normal;
+    }
+  }
+}
+
+/* -------------------------------------
+		TYPOGRAPHY
 ------------------------------------- */
+
 h1,h2,h3,h4,h5,h6 {
 font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; line-height: 1.1; margin-bottom:15px; color: $darkBlue;
 }
@@ -132,10 +177,10 @@ h6 { font-weight:900; font-size: 15px; text-transform: uppercase; color:#184996;
 
 .collapse { margin:0!important;}
 
-p, ul { 
-	margin-bottom: 10px; 
-	font-weight: normal; 
-	font-size:14px; 
+p, ul {
+	margin-bottom: 10px;
+	font-weight: normal;
+	font-size:14px;
 	line-height:1.6;
 }
 p.lead { font-size:17px; }
@@ -146,9 +191,9 @@ ul li {
 	list-style-position: inside;
 }
 
-/* --------------------------------------------------- 
+/* ---------------------------------------------------
 		RESPONSIVENESS
-		Nuke it from orbit. It's the only way to be sure. 
+		Nuke it from orbit. It's the only way to be sure.
 ------------------------------------------------------ */
 
 /* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
@@ -167,7 +212,7 @@ ul li {
 /*	padding:15px; */
 	max-width:750px;
 	margin:0 auto;
-	display:block; 
+	display:block;
 }
 
 /* Let's make sure tables in the content area are 100% wide */
@@ -180,9 +225,9 @@ ul li {
 	float:left;
 }
 .column tr td { padding: 15px; }
-.column-wrap { 
-	padding:0!important; 
-	margin:0 auto; 
+.column-wrap {
+	padding:0!important;
+	margin:0 auto;
 	max-width:1025px!important;
 }
 .column table { width:100%;}

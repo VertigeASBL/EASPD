@@ -1,8 +1,8 @@
-/* ------------------------------------- 
-		VARIABLES 
+/* -------------------------------------
+		VARIABLES
 ------------------------------------- */
-/* ------------------------------------- 
-		GLOBAL 
+/* -------------------------------------
+		GLOBAL
 ------------------------------------- */
 * {
   margin: 0;
@@ -25,8 +25,8 @@ body {
 td {
   padding: 0 !important; }
 
-/* ------------------------------------- 
-		ELEMENTS 
+/* -------------------------------------
+		ELEMENTS
 ------------------------------------- */
 img {
   max-width: 100%; }
@@ -34,8 +34,8 @@ img {
 a {
   color: #184996; }
 
-/* ------------------------------------- 
-		HEADER 
+/* -------------------------------------
+		HEADER
 ------------------------------------- */
 table.head-wrap {
   width: 100%; }
@@ -71,14 +71,14 @@ table.head-wrap {
     padding: 12px 10px 10px 10px;
     color: #555555; }
 
-/* ------------------------------------- 
-		BODY 
+/* -------------------------------------
+		BODY
 ------------------------------------- */
 table.body-wrap {
   width: 100%; }
 
-/* ------------------------------------- 
-		FOOTER 
+/* -------------------------------------
+		FOOTER
 ------------------------------------- */
 table.footer-wrap {
   width: 100%;
@@ -92,8 +92,35 @@ table.footer-wrap {
   font-size: 10px;
   font-weight: bold; }
 
-/* ------------------------------------- 
-		TYPOGRAPHY 
+.disclaimer .container {
+  border-bottom-style: dotted;
+  border-bottom-color: #184996;
+  border-bottom-width: 1px; }
+  .disclaimer .container img {
+    padding: 0 0 4px 10px; }
+  .disclaimer .container p {
+    font-size: 13px;
+    color: #184996;
+    padding: 10px;
+    margin-bottom: 0 !important; }
+
+.contact-info {
+  padding-top: 20px; }
+  .contact-info table {
+    width: 100%; }
+  .contact-info p {
+    color: #184996;
+    font-style: italic;
+    line-height: 0.8; }
+    .contact-info p.left {
+      text-align: left; }
+    .contact-info p.right {
+      text-align: right; }
+    .contact-info p a {
+      font-style: normal; }
+
+/* -------------------------------------
+		TYPOGRAPHY
 ------------------------------------- */
 h1, h2, h3, h4, h5, h6 {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -153,9 +180,9 @@ ul li {
   margin-left: 5px;
   list-style-position: inside; }
 
-/* --------------------------------------------------- 
+/* ---------------------------------------------------
 		RESPONSIVENESS
-		Nuke it from orbit. It's the only way to be sure. 
+		Nuke it from orbit. It's the only way to be sure.
 ------------------------------------------------------ */
 /* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
 .container {
