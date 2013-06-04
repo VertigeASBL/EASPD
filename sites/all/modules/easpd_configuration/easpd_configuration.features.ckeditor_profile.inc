@@ -51,7 +51,7 @@ function easpd_configuration_ckeditor_profile_defaults() {
           ),
         ),
         'css_mode' => 'self',
-        'css_path' => '%t/css/easpd.css',
+        'css_path' => '%t/css/ckeditor.css',
         'css_style' => 'theme',
         'styles_path' => '',
         'filebrowser' => 'imce',
