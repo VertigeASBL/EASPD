@@ -1284,9 +1284,7 @@ function easpd_configuration_user_default_permissions() {
   // Exported permission: use text format full_html.
   $permissions['use text format full_html'] = array(
     'name' => 'use text format full_html',
-    'roles' => array(
-      'developer' => 'developer',
-    ),
+    'roles' => array(),
     'module' => 'filter',
   );
 
