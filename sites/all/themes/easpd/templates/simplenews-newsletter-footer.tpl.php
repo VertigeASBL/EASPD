@@ -41,7 +41,7 @@
           <table>
             <tr>
               <td>
-                <img src="sites/all/themes/easpd/images/euro_flag.png" />
+                <img src="<?php print base_path() . 'sites/all/themes/easpd/images/euro_flag.png'; ?>" />
               </td>
               <td>
                 <p><?php print t('This publication is sponsored by the Progress programme of the European Commission, DG Employment, Social Affairs, and Equal Opportunities. It reflects the view only of the author and the Commission cannot be held responsible for any use which may be made of the information contained therein.');?></p>
@@ -61,14 +61,14 @@
             <tr>
               <td>
                 <p class="left">&copy; EASPD 2013 - All Rights reserved <br>
-                  <a href="http://easpd.eu/en/content/contact-us">
+                  <a href="<?php url('content/contact-us', array('absolute' => TRUE)); ?>">
                     contact
                   </a>
                 </p>
               </td>
               <td>
                 <p class="right">EASPD<br>
-                  Oudergemselaan / Avenue d'Auderghem 63<br>
+                  Oudergemselaan / Avenue d&rsquo;Auderghem 63<br>
                   1040 Brussels - Belgium
                 </p>
               </td>
@@ -87,17 +87,17 @@
             <tr>
               <td>
                 <a href="https://www.youtube.com/user/EASPD">
-                  <img src="http://localhost/easpd/sites/all/themes/easpd/images/youtube_img.png" />
+                  <img src="<?php print base_path() . 'sites/all/themes/easpd/images/youtube_img.png'; ?>" />
                 </a>
               </td>
               <td>
                 <a href="https://www.facebook.com/easpdbrux">
-                  <img src="http://localhost/easpd/sites/all/themes/easpd/images/facebook_img.png" />
+                  <img src="<?php print base_path() . 'sites/all/themes/easpd/images/facebook_img.png'; ?>" />
                 </a>
               </td>
               <td>
                 <a href="http://employmentforall.eu/">
-                  <img src="http://localhost/easpd/sites/all/themes/easpd/images/jobs4all_img.png" />
+                  <img src="<?php print base_path() . 'sites/all/themes/easpd/images/jobs4all_img.png'; ?>" />
                 </a>                
               </td>
             </tr>

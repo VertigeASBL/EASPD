@@ -37,7 +37,7 @@
 	<tr>
 		<td class="fond-jaune-pale"></td>
 		<td class="header container" >				
-    <img src="sites/all/themes/easpd/images/newsletter_header.png" />
+    <img src="<?php print base_path() . 'sites/all/themes/easpd/images/newsletter_header.png'; ?>" />
 		</td>
 		<td class="fond-jaune"></td>
 	</tr>

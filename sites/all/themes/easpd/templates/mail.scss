@@ -60,6 +60,8 @@ img {
 
 a { color: $darkBlue; }
 
+p { color: black; }
+
 /* -------------------------------------
 		HEADER
 ------------------------------------- */
@@ -91,6 +93,10 @@ table.head-wrap {
 
 .header {
   p { margin: 0; }
+}
+
+.header.container img {
+  max-width: none;
 }
 
 .title {

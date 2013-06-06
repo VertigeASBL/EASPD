@@ -35,6 +35,9 @@ img {
 a {
   color: #184996; }
 
+p {
+  color: black; }
+
 /* -------------------------------------
 		HEADER
 ------------------------------------- */
@@ -59,6 +62,9 @@ table.head-wrap {
 
 .header p {
   margin: 0; }
+
+.header.container img {
+  max-width: none; }
 
 .title {
   background-color: #f6f6f6;
