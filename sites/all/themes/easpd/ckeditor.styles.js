@@ -10,6 +10,7 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
 if(typeof(CKEDITOR) !== 'undefined') {
     CKEDITOR.addStylesSet( 'drupal',
     [
+        /* inline styles */
         { name : 'Blue'      , element: 'span', attributes: { 'class': 'bleu' } },
         { name : 'Pale Blue' , element: 'span', attributes: { 'class': 'bleu-pale' } },
         { name : 'Light Blue', element: 'span', attributes: { 'class': 'bleu-clair' } },
@@ -17,6 +18,17 @@ if(typeof(CKEDITOR) !== 'undefined') {
         { name : 'Turquoise' , element: 'span', attributes: { 'class': 'turquoise' } },
         { name : 'Purple'    , element: 'span', attributes: { 'class': 'violet' } },
         { name : 'Orange'    , element: 'span', attributes: { 'class': 'orange' } },
+
+        /* block styles */
+        { name : 'Blue Title'      , element: 'h2', attributes: { 'class': 'bloc-bleu' } },
+        { name : 'Pale Blue Title' , element: 'h2', attributes: { 'class': 'bloc-bleu-pale' } },
+        { name : 'Light Blue Title', element: 'h2', attributes: { 'class': 'bloc-bleu-clair' } },
+        { name : 'Green Title'     , element: 'h2', attributes: { 'class': 'bloc-vert' } },
+        { name : 'Turquoise Title' , element: 'h2', attributes: { 'class': 'bloc-turquoise' } },
+        { name : 'Purple Title'    , element: 'h2', attributes: { 'class': 'bloc-violet' } },
+        { name : 'Orange Title'    , element: 'h2', attributes: { 'class': 'bloc-orange' } },
+
+        { name : 'White Background', element: 'div', attributes: { 'class': 'white-bg' } },
 
     ]);
 }

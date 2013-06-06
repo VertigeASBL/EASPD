@@ -128,10 +128,8 @@ function easpd_configuration_field_default_field_instances() {
       'scs' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(
-          'trim_length' => 600,
-        ),
-        'type' => 'text_summary_or_trimmed',
+        'settings' => array(),
+        'type' => 'text_default',
         'weight' => 1,
       ),
       'teaser' => array(

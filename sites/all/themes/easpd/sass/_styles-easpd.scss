@@ -113,6 +113,16 @@ $ratio: major-second();
   margin-bottom: 12px;
 }
 
+/* a title with rounded corners for the newsletters */
+@mixin titre-bloc($couleur) {
+  background-color: $couleur;
+  color: white;
+  padding: 0 20px 0 10px;
+  border-radius: 0 0 8px 8px;
+  display: inline-block;
+  margin-top: 0;
+}
+
 /* Grid helpers */
 @mixin full-width($page-width) {
   width: 100%;
@@ -261,6 +271,28 @@ footer {
   color: $typo-orange    !important;
 }
 
+.bloc-bleu {
+  @include titre-bloc($typo-bleu);
+}
+.bloc-bleu-pale {
+  @include titre-bloc($typo-bleuPale);
+}
+.bloc-bleu-clair {
+  @include titre-bloc($typo-bleuClair);
+}
+.bloc-vert {
+  @include titre-bloc($typo-vert);
+}
+.bloc-turquoise {
+  @include titre-bloc($typo-turquoise);
+}
+.bloc-violet {
+  @include titre-bloc($typo-violet);
+}
+.bloc-orange {
+  @include titre-bloc($typo-orange);
+}
+
 h1, h2, h3, h4, h5, h6 {
     color: $darkBlue;
 }
@@ -310,6 +342,11 @@ a {
   border-style: dotted;
   border-width: 1px;
   border-color: $darkBlue;
+}
+
+.white-bg {
+  background-color: white;
+  padding: 0 15px;
 }
 
 /* -----------------------------------------

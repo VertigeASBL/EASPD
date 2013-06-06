@@ -13,6 +13,15 @@ $lightGrey:   #f6f6f6;
 $grey:        #dedede;
 $darkGrey:    #555555;
 
+/* couleurs pré-définies pour les éditeurs */
+$typo-bleu:      $darkBlue;
+$typo-bleuPale:  #92afd8;
+$typo-bleuClair: #0291c0;
+$typo-vert:      #002f2f;
+$typo-turquoise: #048b9a;
+$typo-violet:    #672b7d;
+$typo-orange:    #ff9600;
+
 /* -------------------------------------
 		GLOBAL
 ------------------------------------- */
@@ -101,8 +110,16 @@ table.head-wrap {
 /* -------------------------------------
 		BODY
 ------------------------------------- */
-table.body-wrap { width: 100%;}
 
+table.body-wrap {
+  padding-top: 20px;
+  width: 100%;
+}
+
+.white-bg {
+  background-color: white;
+  padding: 0 15px;
+}
 
 /* -------------------------------------
 		FOOTER
@@ -168,12 +185,72 @@ font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", He
 }
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small { font-size: 60%; color: $darkBlue; line-height: 0; text-transform: none; }
 
-h1 { font-weight:200; font-size: 44px;}
-h2 { font-weight:200; font-size: 37px; margin-top: 15px;}
-h3 { font-weight:500; font-size: 27px;}
-h4 { font-weight:500; font-size: 23px;}
-h5 { font-weight:900; font-size: 17px;}
-h6 { font-weight:900; font-size: 15px; text-transform: uppercase; color:#184996;}
+@mixin titre-bloc($couleur) {
+  background-color: $couleur;
+  color: white;
+  padding: 4px 20px 3px 10px;
+  display: inline-block;
+  border-radius: 0 0 8px 8px;
+  margin-top: 0;
+}
+
+.bloc-bleu {
+  @include titre-bloc($typo-bleu);
+}
+.bloc-bleu-pale {
+  @include titre-bloc($typo-bleuPale);
+}
+.bloc-bleu-clair {
+  @include titre-bloc($typo-bleuClair);
+}
+.bloc-vert {
+  @include titre-bloc($typo-vert);
+}
+.bloc-turquoise {
+  @include titre-bloc($typo-turquoise);
+}
+.bloc-violet {
+  @include titre-bloc($typo-violet);
+}
+.bloc-orange {
+  @include titre-bloc($typo-orange);
+}
+
+h1 {
+  font-size: 2em;
+  margin: 6.25px 0 8.33333px 0;
+}
+h2 {
+  font-size: 1.6667em;
+  margin: 0 0 7.33333px 0;
+}
+h3 {
+  font-size: 1.33333em;
+  margin: 5px 0 6.66667px 0;
+}
+h4 {
+  font-size: 1.2em;
+  margin: 4.5px 0 6px 0;
+}
+h5 {
+  font-size: 1.06667em;
+  margin: 4px 0 5.33333px 0;
+}
+h6 {
+  font-size: 0.93333em;
+  margin: 3.5px 0 4.66667px 0;
+}
+p, caption {
+  font-size: 0.8em;
+  margin-bottom: 6px;
+}
+li {
+  font-size: 1em;
+  list-style-position: inside;
+}
+li li {
+  font-size: inherit;
+}
 
 .collapse { margin:0!important;}
 
@@ -185,11 +262,6 @@ p, ul {
 }
 p.lead { font-size:17px; }
 p.last { margin-bottom:0px;}
-
-ul li {
-	margin-left:5px;
-	list-style-position: inside;
-}
 
 /* ---------------------------------------------------
 		RESPONSIVENESS
@@ -209,8 +281,7 @@ ul li {
 
 /* This should also be a block element, so that it will fill 100% of the .container */
 .content {
-/*	padding:15px; */
-	max-width:750px;
+	max-width:801px;
 	margin:0 auto;
 	display:block;
 }

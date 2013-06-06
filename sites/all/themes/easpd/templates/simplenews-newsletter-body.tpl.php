@@ -58,19 +58,19 @@
 <table cellspacing="0" cellpadding="0" class="body-wrap">
 	<tr>
 		<td></td>
-		<td class="container" bgcolor="#FFFFFF">
+		<td class="container">
 
-			<div class="content">
 			<table>
 				<tr>
-					<td>
+		 			<td class="container">
+           <div class="content">
 
            <?php print render($build); ?>												
 						
+			     </div><!-- /content -->
 					</td>
 				</tr>
 			</table>
-			</div><!-- /content -->
 									
 		</td>
 		<td></td>
