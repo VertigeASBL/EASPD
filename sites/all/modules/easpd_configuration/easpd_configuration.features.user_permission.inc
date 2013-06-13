@@ -304,6 +304,15 @@ function easpd_configuration_user_default_permissions() {
     'module' => 'filter',
   );
 
+  // Exported permission: administer google analytics.
+  $permissions['administer google analytics'] = array(
+    'name' => 'administer google analytics',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'googleanalytics',
+  );
+
   // Exported permission: administer image styles.
   $permissions['administer image styles'] = array(
     'name' => 'administer image styles',
@@ -448,6 +457,15 @@ function easpd_configuration_user_default_permissions() {
       'developer' => 'developer',
     ),
     'module' => 'search',
+  );
+
+  // Exported permission: administer sharethis.
+  $permissions['administer sharethis'] = array(
+    'name' => 'administer sharethis',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'sharethis',
   );
 
   // Exported permission: administer shortcuts.
@@ -1132,6 +1150,15 @@ function easpd_configuration_user_default_permissions() {
     'module' => 'pathauto',
   );
 
+  // Exported permission: opt-in or out of tracking.
+  $permissions['opt-in or out of tracking'] = array(
+    'name' => 'opt-in or out of tracking',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'googleanalytics',
+  );
+
   // Exported permission: perform backup.
   $permissions['perform backup'] = array(
     'name' => 'perform backup',
@@ -1215,6 +1242,15 @@ function easpd_configuration_user_default_permissions() {
     'module' => 'shortcut',
   );
 
+  // Exported permission: switch users.
+  $permissions['switch users'] = array(
+    'name' => 'switch users',
+    'roles' => array(
+      'developer' => 'developer',
+    ),
+    'module' => 'devel',
+  );
+
   // Exported permission: translate admin strings.
   $permissions['translate admin strings'] = array(
     'name' => 'translate admin strings',
@@ -1256,6 +1292,15 @@ function easpd_configuration_user_default_permissions() {
       'staff' => 'staff',
     ),
     'module' => 'i18n_string',
+  );
+
+  // Exported permission: use PHP for tracking visibility.
+  $permissions['use PHP for tracking visibility'] = array(
+    'name' => 'use PHP for tracking visibility',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'googleanalytics',
   );
 
   // Exported permission: use advanced search.

@@ -48,8 +48,11 @@ html body {
   }
 }
 
-.sharethis-buttons * {
-  @include box-sizing(content-box);
+.sharethis-buttons {
+  padding-bottom: 10px;
+  * {
+    @include box-sizing(content-box);
+  }
 }
 
 @import "iehacks";
