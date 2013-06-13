@@ -48,4 +48,8 @@ html body {
   }
 }
 
+.sharethis-buttons * {
+  @include box-sizing(content-box);
+}
+
 @import "iehacks";
