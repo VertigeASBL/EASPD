@@ -55,21 +55,6 @@ function easpd_configuration_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'admin_menu_devel_modules_enabled';
-  $strongarm->value = array(
-    'admin_devel' => 'admin_devel',
-    'context_ui' => 'context_ui',
-    'devel_themer' => 'devel_themer',
-    'field_ui' => 'field_ui',
-    'l10n_update' => 'l10n_update',
-    'views_ui' => 'views_ui',
-    'devel' => 'devel',
-  );
-  $export['admin_menu_devel_modules_enabled'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'admin_menu_display';
   $strongarm->value = 'plid';
   $export['admin_menu_display'] = $strongarm;
@@ -94,34 +79,6 @@ function easpd_configuration_strongarm() {
   $strongarm->name = 'anonymous';
   $strongarm->value = 'Anonymous';
   $export['anonymous'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'backup_migrate_destination_id';
-  $strongarm->value = 'download';
-  $export['backup_migrate_destination_id'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'backup_migrate_profile_id';
-  $strongarm->value = '7834bffffc628b907530ff2e2b9f2072';
-  $export['backup_migrate_profile_id'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'backup_migrate_schedule_last_run_e432fe6af9996a747d58c360619afbf0';
-  $strongarm->value = 1371109670;
-  $export['backup_migrate_schedule_last_run_e432fe6af9996a747d58c360619afbf0'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'backup_migrate_source_id';
-  $strongarm->value = 'db';
-  $export['backup_migrate_source_id'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -244,37 +201,9 @@ function easpd_configuration_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'cron_key';
-  $strongarm->value = 'fU6ezJ6GcX0TKiCcbPoX0kkCbVFMtOiLajMxlZe-5C4';
-  $export['cron_key'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'cron_last';
-  $strongarm->value = 1371136637;
-  $export['cron_last'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'css_js_query_string';
-  $strongarm->value = 'moc6y8';
-  $export['css_js_query_string'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'ctools_last_cron';
   $strongarm->value = 1371125739;
   $export['ctools_last_cron'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'date_api_version';
-  $strongarm->value = '7.2';
-  $export['date_api_version'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -552,11 +481,11 @@ function easpd_configuration_strongarm() {
       'language' => 'fcc3f4983c1c098787ec65a267811a9d',
       'menu_custom' => FALSE,
       'menu_links' => FALSE,
-      'metatag' => 'b91b89f5046781c9b4a222744906cd8a',
+      'metatag' => '4b6d5a97eb408fb825be14e8b6541720',
       'taxonomy' => 'ce44c7bae556c3fa3684e7c5a4573ca8',
       'user_role' => 'ec7d902efe9245df4097182adb75aa63',
-      'dependencies' => 'bee6b3295858a179835a476dd891db41',
-      'user_permission' => '3e21f04b9463bc1781c0774065899dfa',
+      'dependencies' => '0540ffd237925c666483ae0abca137f5',
+      'user_permission' => 'ebe364f4a11ed0d5965bb545404f8697',
       'context' => 'b1143219d9522b3293d762204b9abddf',
       'entityform_type' => FALSE,
       'file_display' => '8217fe12c7cab8f7b50e494a68a06013',
@@ -565,11 +494,7 @@ function easpd_configuration_strongarm() {
       'views_view' => '80f521463040e37f6a73752656d871d7',
       'fe_block_settings' => '93e1c9c79af5c9456fbcf29c612c1bc6',
       'fe_block_boxes' => '824e5a650c76ec0999db884f27f762ed',
-      'variable' => '858abab72abc31ed572dc463be3882e9',
-    ),
-    'commons_social_sharing' => array(
-      'dependencies' => '56197f1a351c75808048e689a04d7aa8',
-      'variable' => '3877a8246f114d6c01f05990f917dd36',
+      'variable' => '08d473a29b6438f5a37e41a014d48db6',
     ),
   );
   $export['features_codecache'] = $strongarm;
@@ -1060,13 +985,6 @@ function easpd_configuration_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'fontyourface_css_md5';
-  $strongarm->value = 'd41d8cd98f00b204e9800998ecf8427e';
-  $export['fontyourface_css_md5'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'i18n_hide_translation_links';
   $strongarm->value = 1;
   $export['i18n_hide_translation_links'] = $strongarm;
@@ -1384,74 +1302,6 @@ function easpd_configuration_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'install_time';
-  $strongarm->value = 1362149523;
-  $export['install_time'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'javascript_parsed';
-  $strongarm->value = array(
-    0 => 'misc/drupal.js',
-    1 => 'sites/all/modules/jquery_update/replace/jquery/1.7/jquery.min.js',
-    2 => 'misc/jquery.once.js',
-    3 => 'sites/all/themes/easpd/javascripts/vendor/custom.modernizr.js',
-    4 => 'sites/all/themes/easpd/javascripts/foundation/foundation.js',
-    5 => 'sites/all/themes/easpd/javascripts/vendor/slideshow.js',
-    6 => 'sites/all/themes/easpd/javascripts/vendor/lightbox.js',
-    7 => 'sites/all/themes/easpd/javascripts/easpd.js',
-    8 => 'sites/all/modules/jquery_update/replace/ui/external/jquery.cookie.js',
-    9 => 'sites/all/modules/jquery_update/replace/misc/jquery.form.min.js',
-    10 => 'misc/progress.js',
-    11 => 'misc/ajax.js',
-    12 => 'sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.core.min.js',
-    13 => 'sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.widget.min.js',
-    14 => 'sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.mouse.min.js',
-    15 => 'sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.draggable.min.js',
-    16 => 'sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.resizable.min.js',
-    17 => 'sites/all/modules/devel_themer/devel_themer.js',
-    18 => 'sites/all/modules/devel/devel_krumo_path.js',
-    19 => 'sites/all/modules/devel/krumo/krumo.js',
-    20 => 'misc/jquery.ba-bbq.js',
-    21 => 'modules/overlay/overlay-parent.js',
-    22 => 'sites/all/modules/admin_menu/admin_devel/admin_devel.js',
-    23 => 'sites/all/modules/switch_styles/switch_styles.js',
-    24 => 'sites/all/modules/views/js/base.js',
-    25 => 'sites/all/modules/views/js/ajax_view.js',
-    26 => 'sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.droppable.min.js',
-    27 => 'sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.sortable.min.js',
-    28 => 'sites/all/modules/context/plugins/context_reaction_block.js',
-    29 => 'sites/all/libraries/superfish/jquery.hoverIntent.minified.js',
-    30 => 'sites/all/libraries/superfish/supersubs.js',
-    31 => 'sites/all/libraries/superfish/superfish.js',
-    32 => 'sites/all/modules/superfish/superfish.js',
-    33 => 'sites/all/modules/admin_menu/admin_menu.js',
-    34 => 'sites/all/modules/admin_menu/admin_menu_toolbar/admin_menu_toolbar.js',
-    'refresh:fr' => 'waiting',
-    'refresh:nl' => 'waiting',
-    'refresh:en-Easy' => 'waiting',
-    'refresh:de' => 'waiting',
-    35 => 'modules/overlay/overlay-child.js',
-    36 => 'misc/tableselect.js',
-    37 => 'misc/tableheader.js',
-    38 => 'sites/all/modules/sharethis/ShareThisForm.js',
-    39 => 'sites/all/modules/sharethis/stlib_picker.js',
-    40 => 'misc/form.js',
-    41 => 'misc/vertical-tabs.js',
-    42 => 'sites/all/modules/features/features.js',
-    43 => 'misc/collapse.js',
-    44 => 'misc/autocomplete.js',
-    45 => 'sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.button.min.js',
-    46 => 'sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.position.min.js',
-    47 => 'sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.dialog.min.js',
-    48 => 'sites/all/modules/views/js/jquery.ui.dialog.patch.js',
-  );
-  $export['javascript_parsed'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'jquery_update_compression_type';
   $strongarm->value = 'min';
   $export['jquery_update_compression_type'] = $strongarm;
@@ -1656,13 +1506,6 @@ function easpd_configuration_strongarm() {
     'mimemail' => 'MimeMailSystem',
   );
   $export['mail_system'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'maintenance_mode';
-  $strongarm->value = 0;
-  $export['maintenance_mode'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -2071,7 +1914,7 @@ function easpd_configuration_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_cron_last';
-  $strongarm->value = '1370946973';
+  $strongarm->value = '1370947753';
   $export['node_cron_last'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -2538,20 +2381,6 @@ function easpd_configuration_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'preprocess_css';
-  $strongarm->value = 0;
-  $export['preprocess_css'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'preprocess_js';
-  $strongarm->value = 0;
-  $export['preprocess_js'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'rules_empty_sets';
   $strongarm->value = array(
     'entityform_insert' => 0,
@@ -2616,6 +2445,51 @@ function easpd_configuration_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'sharethis_button_option';
+  $strongarm->value = 'stbc_hcount';
+  $export['sharethis_button_option'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'sharethis_comments';
+  $strongarm->value = 0;
+  $export['sharethis_comments'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'sharethis_late_load';
+  $strongarm->value = 1;
+  $export['sharethis_late_load'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'sharethis_location';
+  $strongarm->value = 'content';
+  $export['sharethis_location'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'sharethis_node_option';
+  $strongarm->value = 'article,event,image_gallery,page,0';
+  $export['sharethis_node_option'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'sharethis_option_extras';
+  $strongarm->value = array(
+    'Google Plus One:plusone' => 0,
+    'Facebook Like:fblike' => 0,
+  );
+  $export['sharethis_option_extras'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'sharethis_publisherID';
   $strongarm->value = 'dr-1032c951-6bcb-91f0-f212-4b56d3d64592';
   $export['sharethis_publisherID'] = $strongarm;
@@ -2630,6 +2504,13 @@ function easpd_configuration_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'sharethis_teaser_option';
+  $strongarm->value = 1;
+  $export['sharethis_teaser_option'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'sharethis_twitter_handle';
   $strongarm->value = '';
   $export['sharethis_twitter_handle'] = $strongarm;
@@ -2640,6 +2521,20 @@ function easpd_configuration_strongarm() {
   $strongarm->name = 'sharethis_twitter_suffix';
   $strongarm->value = '';
   $export['sharethis_twitter_suffix'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'sharethis_weight';
+  $strongarm->value = '10';
+  $export['sharethis_weight'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'sharethis_widget_option';
+  $strongarm->value = 'st_direct';
+  $export['sharethis_widget_option'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -2864,27 +2759,6 @@ No confirmation necessary because all requested changes equal the current state.
   $strongarm->name = 'simplenews_spool_expire';
   $strongarm->value = '0';
   $export['simplenews_spool_expire'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'simplenews_sync_account';
-  $strongarm->value = 1;
-  $export['simplenews_sync_account'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'simplenews_test_address';
-  $strongarm->value = 'michel@vertige.org';
-  $export['simplenews_test_address'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'simplenews_test_address_override';
-  $strongarm->value = 1;
-  $export['simplenews_test_address_override'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -3383,29 +3257,6 @@ No confirmation necessary because all requested changes equal the current state.
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'update_last_check';
-  $strongarm->value = 1371136659;
-  $export['update_last_check'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'update_last_email_notification';
-  $strongarm->value = 1371034475;
-  $export['update_last_email_notification'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'update_notify_emails';
-  $strongarm->value = array(
-    0 => 'michel@vertige.org',
-  );
-  $export['update_notify_emails'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'user_admin_role';
   $strongarm->value = '3';
   $export['user_admin_role'] = $strongarm;
@@ -3702,38 +3553,6 @@ Your account on [site:name] has been canceled.
   $strongarm->name = 'user_signatures';
   $strongarm->value = 0;
   $export['user_signatures'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'variable_module_list';
-  $strongarm->value = array(
-    'i18n' => array(
-      0 => 'i18n_language_list',
-    ),
-    'i18n_string' => array(
-      0 => 'i18n_string_translate_langcode_en',
-      1 => 'i18n_string_translate_langcode_fr',
-      2 => 'i18n_string_allowed_formats',
-      3 => 'i18n_string_source_language',
-      4 => 'i18n_string_debug',
-    ),
-    'simplenews' => array(
-      0 => 'simplenews_confirm_subscribe_subject',
-      1 => 'simplenews_confirm_subscribe_unsubscribed',
-      2 => 'simplenews_confirm_subscribe_subscribed',
-      3 => 'simplenews_confirm_unsubscribe_subscribed',
-      4 => 'simplenews_confirm_unsubscribe_unsubscribed',
-      5 => 'simplenews_confirm_combined_subject',
-      6 => 'simplenews_confirm_combined_body',
-      7 => 'simplenews_confirm_combined_body_unchanged',
-      8 => 'simplenews_confirm_combined_line_subscribe_unsubscribed',
-      9 => 'simplenews_confirm_combined_line_subscribe_subscribed',
-      10 => 'simplenews_confirm_combined_line_unsubscribe_subscribed',
-      11 => 'simplenews_confirm_combined_line_unsubscribe_unsubscribed',
-    ),
-  );
-  $export['variable_module_list'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

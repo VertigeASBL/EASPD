@@ -10,25 +10,6 @@
 function easpd_configuration_metatag_export_default() {
   $config = array();
 
-  // Exported Metatag config instance: global.
-  $config['global'] = array(
-    'instance' => 'global',
-    'config' => array(
-      'title' => array(
-        'value' => '[current-page:title] | [site:name]',
-      ),
-      'generator' => array(
-        'value' => 'Drupal 7 (http://drupal.org)',
-      ),
-      'canonical' => array(
-        'value' => '[current-page:url:absolute]',
-      ),
-      'shortlink' => array(
-        'value' => '[current-page:url:unaliased]',
-      ),
-    ),
-  );
-
   // Exported Metatag config instance: global:frontpage.
   $config['global:frontpage'] = array(
     'instance' => 'global:frontpage',
