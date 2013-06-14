@@ -494,7 +494,7 @@ function easpd_configuration_strongarm() {
       'views_view' => '80f521463040e37f6a73752656d871d7',
       'fe_block_settings' => '93e1c9c79af5c9456fbcf29c612c1bc6',
       'fe_block_boxes' => '824e5a650c76ec0999db884f27f762ed',
-      'variable' => '08d473a29b6438f5a37e41a014d48db6',
+      'variable' => '2c7eefb0f6d72a9fe993af1dee11a143',
     ),
   );
   $export['features_codecache'] = $strongarm;
