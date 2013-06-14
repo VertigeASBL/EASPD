@@ -1,4 +1,0 @@
-* les différents styles possibles sont définis dans une variable
-  globale php ET dans le fichier js. Il faudrait plutôt faire une
-  interface admin pour ça.
-  

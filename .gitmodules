@@ -1,0 +1,3 @@
+[submodule "sites/all/modules/switch_styles"]
+	path = sites/all/modules/switch_styles
+	url = git@github.com:VertigeASBL/switch_styles.git
