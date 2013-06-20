@@ -467,7 +467,7 @@ function easpd_configuration_default_fe_block_settings() {
         'weight' => 0,
       ),
     ),
-    'title' => 'Newsletter',
+    'title' => 'Newsflashes',
     'visibility' => 0,
   );
 

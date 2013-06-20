@@ -309,6 +309,7 @@ function easpd_configuration_user_default_permissions() {
     'name' => 'administer google analytics',
     'roles' => array(
       'administrator' => 'administrator',
+      'developer' => 'developer',
     ),
     'module' => 'googleanalytics',
   );
@@ -1155,6 +1156,7 @@ function easpd_configuration_user_default_permissions() {
     'name' => 'opt-in or out of tracking',
     'roles' => array(
       'administrator' => 'administrator',
+      'developer' => 'developer',
     ),
     'module' => 'googleanalytics',
   );
@@ -1242,15 +1244,6 @@ function easpd_configuration_user_default_permissions() {
     'module' => 'shortcut',
   );
 
-  // Exported permission: switch users.
-  $permissions['switch users'] = array(
-    'name' => 'switch users',
-    'roles' => array(
-      'developer' => 'developer',
-    ),
-    'module' => 'devel',
-  );
-
   // Exported permission: translate admin strings.
   $permissions['translate admin strings'] = array(
     'name' => 'translate admin strings',
@@ -1299,6 +1292,7 @@ function easpd_configuration_user_default_permissions() {
     'name' => 'use PHP for tracking visibility',
     'roles' => array(
       'administrator' => 'administrator',
+      'developer' => 'developer',
     ),
     'module' => 'googleanalytics',
   );
