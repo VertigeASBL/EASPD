@@ -6,7 +6,7 @@
   </div></div>
 <?php endif; ?>
 
-<?php if (!empty($page['help'])): ?> 
+<?php if (!empty($page['help'])): ?>
   <div id="header-container">
   <div id="header">
     <?php if ($linked_site_name || $linked_logo): ?>
@@ -39,16 +39,23 @@
   <div id="main">
     <?php if ($breadcrumb): print $breadcrumb; endif; ?>
     <?php if ($messages): print $messages; endif; ?>
-    <?php if (!empty($page['highlighted'])): ?>
-      <div id="highlight">
-        <?php print render($page['highlighted']); ?>
-      </div>
-    <?php endif; ?>
     <a id="main-content"></a>
+
+    <?php if (drupal_is_front_page()) : ?>
+       <h1 class="element-invisible">
+          <?php print $site_name . ' - ' . $site_slogan; ?>
+       </h1>
+    <?php endif; ?>
     <?php if ($title && !$is_front): ?>
       <?php print render($title_prefix); ?>
       <h1 id="page-title" class="title"><?php print $title; ?></h1>
       <?php print render($title_suffix); ?>
+    <?php endif; ?>
+
+    <?php if (!empty($page['highlighted'])): ?>
+      <div id="highlight">
+        <?php print render($page['highlighted']); ?>
+      </div>
     <?php endif; ?>
 
     <?php if (!empty($tabs)): ?>
@@ -60,7 +67,7 @@
         <?php print render($action_links); ?>
       </ul>
     <?php endif; ?>
-      <?php 
+      <?php
       if (drupal_is_front_page()) {
         hide($page['content']['system_main']);
       } ?>
