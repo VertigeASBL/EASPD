@@ -7,6 +7,11 @@ function easpd_html_head_alter (&$head_elements) {
   unset($head_elements['ie_image_toolbar']);
 }
 
+function easpd_preprocess_html (&$vars) {
+
+  $vars['classes_array'][] = 'no-js';
+}
+
 /* l'attribut lang du lien vers Easy-EN doit être EN pour éviter les */
 /* soucis de validation w3c. */
 function easpd_block_view_locale_language_alter (&$vars) {

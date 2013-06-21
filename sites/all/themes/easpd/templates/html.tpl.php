@@ -80,5 +80,10 @@
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));</script>
   <?php } ?>
+<script type="text/javascript">
+  (function ($) { $(function () {
+     $('.no-js').removeClass('no-js');
+  }); })(jQuery);
+</script>
 </body>
 </html>
