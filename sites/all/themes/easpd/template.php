@@ -137,6 +137,28 @@ function easpd_text_resize_block() {
   return $output;
 }
 
+function easpd_foundation_breadcrumb($vars) {
+  $breadcrumb = $vars['breadcrumb'];
+
+  if (!empty($breadcrumb)) {
+    // Provide a navigational heading to give context for breadcrumb links to
+    // screen-reader users. Make the heading invisible with .element-invisible.
+    $breadcrumbs = '<p class="element-invisible"><strong>' . t('You are here') . '</strong></p>';
+
+    $breadcrumbs .= '<ul class="breadcrumbs">';
+
+    foreach ($breadcrumb as $key => $value) {
+      $breadcrumbs .= '<li>' . $value . '</li>';
+    }
+
+    $title = strip_tags(drupal_get_title());
+    $breadcrumbs .= '<li class="current"><a href="#">' . $title. '</a></li>';
+    $breadcrumbs .= '</ul>';
+
+    return $breadcrumbs;
+  }
+}
+
 /* function easpd_form_element ($variables) { */
 
 /*   var_dump($variables); */
