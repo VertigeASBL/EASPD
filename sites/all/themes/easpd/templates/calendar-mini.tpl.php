@@ -32,7 +32,7 @@ $params = array(
   </div>
 </div> 
 <?php endif; ?> 
-<table class="mini">
+<table class="mini" summary="<?php print t('A calendar showing EASPD related events.'); ?>">
   <thead>
     <tr>
       <?php foreach ($day_names as $cell): ?>
