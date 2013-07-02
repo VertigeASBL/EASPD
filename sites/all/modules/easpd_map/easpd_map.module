@@ -1,0 +1,29 @@
+<?php
+
+/**
+ * implements hook_menu
+ *
+ * Creates a "map" page
+ */
+function easpd_map_menu () {
+
+  $items['map'] = array(
+    'page callback' => 'easpd_map_view',
+    'access callback' => TRUE,
+  );
+
+  return $items;
+}
+
+/**
+ * hook_menu's page callback
+ *
+ * Renders the "map" page
+ */
+function easpd_map_view () {
+
+  $build['default_message'] = array(
+    '#markup' => '<h1>hello</h1>',
+  );
+  return $build;
+}
