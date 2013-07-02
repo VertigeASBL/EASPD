@@ -712,7 +712,7 @@ function easpd_configuration_default_fe_block_settings() {
         'weight' => 0,
       ),
     ),
-    'title' => '<none>',
+    'title' => 'Change Colors',
     'visibility' => 0,
   );
 
