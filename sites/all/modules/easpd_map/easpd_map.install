@@ -1,0 +1,28 @@
+<?php
+
+/**
+ * implements hook_enable
+ *
+ * Creates a "country_page" content type
+ */
+function easpd_map_enable () {
+
+  // Make sure a country_page content type doesn't already exist
+  if (!in_array('country_page', node_type_get_names())) {
+    $type = array(
+                  'type' => 'country_page',
+                  'name' => t('Country page'),
+                  'base' => 'node_content',
+                  'custom' => 1,
+                  'modified' => 1,
+                  'locked' => 0,
+                  'title_label' => t('Page title'),
+                  );
+
+    $type = node_type_set_defaults($type);
+    node_type_save($type);
+    node_add_body_field($type);
+    /* easpd_add_country_field($type); */
+    node_type_save($type);
+  }
+}
