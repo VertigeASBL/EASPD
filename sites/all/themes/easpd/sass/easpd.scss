@@ -27,9 +27,14 @@ $typo-orange:    #ff9600;
 @import "settings";
 @import "foundation-imports";
 @import "styles-easpd";
+@import "styles-easpd-nojs";
 
 .default {
   @include styles-easpd($darkBlue, $darkBlue-w, $lightBlue, $lightBlue-w, $lighterBlue, $lightestBlue, $blueBackground, $lightYellow, $darkYellow, $darkYellow-w, $lightGrey, $darkGrey, $white, $typo-bleu, $typo-bleuPale, $typo-bleuClair, $typo-vert, $typo-turquoise, $typo-violet, $typo-orange);
+}
+
+.no-js {
+  @include styles-easpd-nojs($darkBlue, $darkBlue-w, $lightBlue, $lightBlue-w, $lighterBlue, $lightestBlue, $blueBackground, $lightYellow, $darkYellow, $darkYellow-w, $lightGrey, $darkGrey, $white, $typo-bleu, $typo-bleuPale, $typo-bleuClair, $typo-vert, $typo-turquoise, $typo-violet, $typo-orange);
 }
 
 html body {

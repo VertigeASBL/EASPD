@@ -1165,6 +1165,11 @@ footer {
     img {
       position: absolute;
     }
+    a.readmore {
+      left: 530px;
+      position: relative;
+      top: 235px;
+    }
   }
   .slides-prev {
     @include background(image-url("slideshow_fleche_gauche.png") no-repeat scroll left center);
@@ -1204,11 +1209,11 @@ footer {
       font-size: emCalc(13px);
       color: darken($darkBlue, 15);
       margin-bottom: 0;
-      a {
-        color: $darkBlue;
-        text-decoration: underline;
-        margin-left: 0.5em;
-      }
+    }
+    a {
+      color: $darkBlue;
+      text-decoration: underline;
+      margin-left: 0.5em;
     }
   }
   .slides-pagination {

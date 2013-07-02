@@ -1,0 +1,16 @@
+@mixin styles-easpd-nojs($darkBlue, $darkBlue-w, $lightBlue, $lightBlue-w, $lighterBlue, $lightestBlue, $blueBackground, $lightYellow, $darkYellow, $darkYellow-w, $lightGrey, $darkGrey, $white, $typo-bleu, $typo-bleuPale, $typo-bleuClair, $typo-vert, $typo-turquoise, $typo-violet, $typo-orange) {
+  #highlight {
+    height: auto;
+    .slide {
+      margin-bottom: 23px;
+      .orbit-caption {
+        position: relative;
+        top: 182px;
+        height: 74px;
+      }
+      a.readmore {
+        top: 160px;
+      }
+    }
+  }
+}
