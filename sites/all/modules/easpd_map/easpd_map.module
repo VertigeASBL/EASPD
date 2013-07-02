@@ -66,6 +66,13 @@ function easpd_map_menu () {
  */
 function easpd_map_view () {
 
+  $select = db_select('node', 'n')
+    ->fields('n', array('nid', 'sticky', 'created'))
+    ->condition('n.type', 'country_page');
+
+  $nids = $select->execute()->fetchCol();
+  $nodes = node_load_multiple($nids);
+
   $build['default_message'] = array(
     '#markup' => '<h1>hello</h1>',
   );
