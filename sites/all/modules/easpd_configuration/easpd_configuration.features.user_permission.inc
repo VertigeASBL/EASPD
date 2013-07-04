@@ -640,6 +640,17 @@ function easpd_configuration_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: create country_page content.
+  $permissions['create country_page content'] = array(
+    'name' => 'create country_page content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'developer' => 'developer',
+      'staff' => 'staff',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: create event content.
   $permissions['create event content'] = array(
     'name' => 'create event content',
@@ -725,6 +736,16 @@ function easpd_configuration_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: delete any country_page content.
+  $permissions['delete any country_page content'] = array(
+    'name' => 'delete any country_page content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'developer' => 'developer',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: delete any entityform.
   $permissions['delete any entityform'] = array(
     'name' => 'delete any entityform',
@@ -787,6 +808,17 @@ function easpd_configuration_user_default_permissions() {
   // Exported permission: delete own article content.
   $permissions['delete own article content'] = array(
     'name' => 'delete own article content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'developer' => 'developer',
+      'staff' => 'staff',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: delete own country_page content.
+  $permissions['delete own country_page content'] = array(
+    'name' => 'delete own country_page content',
     'roles' => array(
       'administrator' => 'administrator',
       'developer' => 'developer',
@@ -920,6 +952,17 @@ function easpd_configuration_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: edit any country_page content.
+  $permissions['edit any country_page content'] = array(
+    'name' => 'edit any country_page content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'developer' => 'developer',
+      'staff' => 'staff',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: edit any entityform.
   $permissions['edit any entityform'] = array(
     'name' => 'edit any entityform',
@@ -1007,6 +1050,17 @@ function easpd_configuration_user_default_permissions() {
   // Exported permission: edit own article content.
   $permissions['edit own article content'] = array(
     'name' => 'edit own article content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'developer' => 'developer',
+      'staff' => 'staff',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: edit own country_page content.
+  $permissions['edit own country_page content'] = array(
+    'name' => 'edit own country_page content',
     'roles' => array(
       'administrator' => 'administrator',
       'developer' => 'developer',
