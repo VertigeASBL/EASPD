@@ -9,31 +9,6 @@
  */
 function easpd_configuration_taxonomy_default_vocabularies() {
   return array(
-    'access_control' => array(
-      'name' => 'Access Control',
-      'machine_name' => 'access_control',
-      'description' => '',
-      'hierarchy' => 0,
-      'module' => 'taxonomy',
-      'weight' => 0,
-      'language' => 'und',
-      'i18n_mode' => 0,
-      'rdf_mapping' => array(
-        'rdftype' => array(
-          0 => 'skos:ConceptScheme',
-        ),
-        'name' => array(
-          'predicates' => array(
-            0 => 'dc:title',
-          ),
-        ),
-        'description' => array(
-          'predicates' => array(
-            0 => 'rdfs:comment',
-          ),
-        ),
-      ),
-    ),
     'article_types' => array(
       'name' => 'Article Types',
       'machine_name' => 'article_types',

@@ -682,6 +682,13 @@ function easpd_configuration_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: create group_content content.
+  $permissions['create group_content content'] = array(
+    'name' => 'create group_content content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
   // Exported permission: create image_gallery content.
   $permissions['create image_gallery content'] = array(
     'name' => 'create image_gallery content',
@@ -798,6 +805,17 @@ function easpd_configuration_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: delete any group_content content.
+  $permissions['delete any group_content content'] = array(
+    'name' => 'delete any group_content content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'developer' => 'developer',
+      'staff' => 'staff',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: delete any image_gallery content.
   $permissions['delete any image_gallery content'] = array(
     'name' => 'delete any image_gallery content',
@@ -892,6 +910,17 @@ function easpd_configuration_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: delete own group_content content.
+  $permissions['delete own group_content content'] = array(
+    'name' => 'delete own group_content content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'developer' => 'developer',
+      'staff' => 'staff',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: delete own image_gallery content.
   $permissions['delete own image_gallery content'] = array(
     'name' => 'delete own image_gallery content',
@@ -953,15 +982,6 @@ function easpd_configuration_user_default_permissions() {
       'administrator' => 'administrator',
       'developer' => 'developer',
       'staff' => 'staff',
-    ),
-    'module' => 'taxonomy',
-  );
-
-  // Exported permission: delete terms in 5.
-  $permissions['delete terms in 5'] = array(
-    'name' => 'delete terms in 5',
-    'roles' => array(
-      'developer' => 'developer',
     ),
     'module' => 'taxonomy',
   );
@@ -1031,6 +1051,17 @@ function easpd_configuration_user_default_permissions() {
   // Exported permission: edit any group content.
   $permissions['edit any group content'] = array(
     'name' => 'edit any group content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'developer' => 'developer',
+      'staff' => 'staff',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: edit any group_content content.
+  $permissions['edit any group_content content'] = array(
+    'name' => 'edit any group_content content',
     'roles' => array(
       'administrator' => 'administrator',
       'developer' => 'developer',
@@ -1157,6 +1188,17 @@ function easpd_configuration_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: edit own group_content content.
+  $permissions['edit own group_content content'] = array(
+    'name' => 'edit own group_content content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'developer' => 'developer',
+      'staff' => 'staff',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: edit own image_gallery content.
   $permissions['edit own image_gallery content'] = array(
     'name' => 'edit own image_gallery content',
@@ -1208,15 +1250,6 @@ function easpd_configuration_user_default_permissions() {
       'administrator' => 'administrator',
       'developer' => 'developer',
       'staff' => 'staff',
-    ),
-    'module' => 'taxonomy',
-  );
-
-  // Exported permission: edit terms in 5.
-  $permissions['edit terms in 5'] = array(
-    'name' => 'edit terms in 5',
-    'roles' => array(
-      'developer' => 'developer',
     ),
     'module' => 'taxonomy',
   );

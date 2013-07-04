@@ -162,52 +162,6 @@ function easpd_configuration_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-article-field_access_control'
-  $field_instances['node-article-field_access_control'] = array(
-    'bundle' => 'article',
-    'default_value' => array(
-      0 => array(
-        'tid' => 9,
-      ),
-    ),
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 6,
-      ),
-      'scs' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_access_control',
-    'label' => 'Access Control',
-    'required' => 1,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 8,
-    ),
-  );
-
   // Exported field_instance: 'node-article-field_gallery'
   $field_instances['node-article-field_gallery'] = array(
     'bundle' => 'article',
@@ -593,52 +547,6 @@ function easpd_configuration_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-event-field_access_control'
-  $field_instances['node-event-field_access_control'] = array(
-    'bundle' => 'event',
-    'default_value' => array(
-      0 => array(
-        'tid' => 9,
-      ),
-    ),
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 4,
-      ),
-      'scs' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_access_control',
-    'label' => 'Access Control',
-    'required' => 1,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 6,
-    ),
-  );
-
   // Exported field_instance: 'node-event-field_event_date'
   $field_instances['node-event-field_event_date'] = array(
     'bundle' => 'event',
@@ -872,22 +780,69 @@ function easpd_configuration_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-image_gallery-field_access_control'
-  $field_instances['node-image_gallery-field_access_control'] = array(
-    'bundle' => 'image_gallery',
-    'default_value' => array(
-      0 => array(
-        'tid' => 9,
+  // Exported field_instance: 'node-group_content-body'
+  $field_instances['node-group_content-body'] = array(
+    'bundle' => 'group_content',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 1,
+      ),
+      'scs' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(
+          'trim_length' => 600,
+        ),
+        'type' => 'text_summary_or_trimmed',
+        'weight' => 1,
       ),
     ),
+    'entity_type' => 'node',
+    'field_name' => 'body',
+    'label' => 'Body',
+    'required' => FALSE,
+    'settings' => array(
+      'display_summary' => TRUE,
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 20,
+        'summary_rows' => 5,
+      ),
+      'type' => 'text_textarea_with_summary',
+      'weight' => 31,
+    ),
+  );
+
+  // Exported field_instance: 'node-group_content-og_group_ref'
+  $field_instances['node-group_content-og_group_ref'] = array(
+    'bundle' => 'group_content',
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
+        'module' => 'og_ui',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 1,
+        'type' => 'og_list_default',
+        'weight' => 0,
       ),
       'scs' => array(
         'label' => 'above',
@@ -903,18 +858,40 @@ function easpd_configuration_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_access_control',
-    'label' => 'Access Control',
-    'required' => 1,
+    'field_name' => 'og_group_ref',
+    'label' => 'Groups audience',
+    'required' => FALSE,
     'settings' => array(
+      'behaviors' => array(
+        'og_widget' => array(
+          'admin' => array(
+            'widget_type' => 'entityreference_autocomplete',
+          ),
+          'default' => array(
+            'widget_type' => 'options_select',
+          ),
+          'status' => TRUE,
+        ),
+      ),
       'user_register_form' => FALSE,
     ),
+    'view modes' => array(
+      'full' => array(
+        'custom settings' => FALSE,
+        'label' => 'Full',
+        'type' => 'og_list_default',
+      ),
+      'teaser' => array(
+        'custom settings' => FALSE,
+        'label' => 'Teaser',
+        'type' => 'og_list_default',
+      ),
+    ),
     'widget' => array(
-      'active' => 1,
-      'module' => 'options',
+      'module' => 'og',
       'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 33,
+      'type' => 'og_complex',
+      'weight' => 0,
     ),
   );
 
@@ -1022,52 +999,6 @@ function easpd_configuration_field_default_field_instances() {
       ),
       'type' => 'text_textarea_with_summary',
       'weight' => 2,
-    ),
-  );
-
-  // Exported field_instance: 'node-page-field_access_control'
-  $field_instances['node-page-field_access_control'] = array(
-    'bundle' => 'page',
-    'default_value' => array(
-      0 => array(
-        'tid' => 9,
-      ),
-    ),
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 4,
-      ),
-      'scs' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 3,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_access_control',
-    'label' => 'Access Control',
-    'required' => 1,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 6,
     ),
   );
 
@@ -1209,52 +1140,6 @@ function easpd_configuration_field_default_field_instances() {
       ),
       'type' => 'text_textarea_with_summary',
       'weight' => 31,
-    ),
-  );
-
-  // Exported field_instance: 'node-simplenews-field_access_control'
-  $field_instances['node-simplenews-field_access_control'] = array(
-    'bundle' => 'simplenews',
-    'default_value' => array(
-      0 => array(
-        'tid' => 9,
-      ),
-    ),
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 2,
-      ),
-      'scs' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_access_control',
-    'label' => 'Access Control',
-    'required' => 1,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 34,
     ),
   );
 
@@ -1406,7 +1291,6 @@ function easpd_configuration_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Access Control');
   t('Article Type');
   t('Body');
   t('Choose in which section the article should appear.');
@@ -1415,6 +1299,7 @@ function easpd_configuration_field_default_field_instances() {
   t('Determine if this is an OG group.');
   t('Group');
   t('Group membership');
+  t('Groups audience');
   t('Image');
   t('Image Gallery');
   t('Images');

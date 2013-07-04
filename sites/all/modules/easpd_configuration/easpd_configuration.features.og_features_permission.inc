@@ -31,6 +31,21 @@ function easpd_configuration_og_features_default_permissions() {
     ),
   );
 
+  // Exported og permission: 'node:group:create group_content content'
+  $permissions['node:group:create group_content content'] = array(
+    'roles' => array(),
+  );
+
+  // Exported og permission: 'node:group:delete any group_content content'
+  $permissions['node:group:delete any group_content content'] = array(
+    'roles' => array(),
+  );
+
+  // Exported og permission: 'node:group:delete own group_content content'
+  $permissions['node:group:delete own group_content content'] = array(
+    'roles' => array(),
+  );
+
   // Exported og permission: 'node:group:manage members'
   $permissions['node:group:manage members'] = array(
     'roles' => array(
@@ -71,11 +86,21 @@ function easpd_configuration_og_features_default_permissions() {
     ),
   );
 
+  // Exported og permission: 'node:group:update any group_content content'
+  $permissions['node:group:update any group_content content'] = array(
+    'roles' => array(),
+  );
+
   // Exported og permission: 'node:group:update group'
   $permissions['node:group:update group'] = array(
     'roles' => array(
       'administrator member' => 'administrator member',
     ),
+  );
+
+  // Exported og permission: 'node:group:update own group_content content'
+  $permissions['node:group:update own group_content content'] = array(
+    'roles' => array(),
   );
 
   return $permissions;
