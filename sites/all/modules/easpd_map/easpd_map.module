@@ -66,9 +66,13 @@ function easpd_map_menu () {
  */
 function easpd_map_view () {
 
+  // handy variables
   global $base_url;
 
-  // countries can define more than one zone of coords, by using the | separator, see Russia…
+  $module_path = drupal_get_path('module', 'easpd_map');
+  $images_path = $base_url . '/' . $module_path . '/images';
+
+  /* countries can define more than one zone of coords, by using the | separator, see Russia… */
   $country_coords = array(
       'albanie'           => '320,482,328,471,321,451,314,451,314,470',
       'allemagne'         => '237,285,261,293,271,329,251,343,257,371,230,378,205,370,199,340,202,318,218,295',
@@ -111,6 +115,7 @@ function easpd_map_view () {
       'ukraine'           => '494,334,456,327,431,312,407,323,356,326,341,364,368,371,402,364,414,388,448,391,465,398,454,406,446,402,442,396,481,366',
   );
 
+  // SQL query
   $select = db_select('node', 'n')
     ->fields('n', array('nid', 'sticky', 'created'))
     ->condition('n.type', 'country_page');
@@ -118,9 +123,12 @@ function easpd_map_view () {
   $nids  = $select->execute()->fetchCol();
   $nodes = node_load_multiple($nids);
 
+  // Build page
   drupal_set_title(t("EASPD's Members"));
+  drupal_add_js($module_path . '/easpd_map.js', 'file');
+  drupal_add_css($module_path . '/easpd_map.css', 'file');
 
-  $image = '<img src="' . $base_url . '/sites/all/modules/easpd_map/images/carte.png" width="668" height="560" usemap="#members_map" border="0" />';
+  $image = '<img src="' . $images_path . '/carte.png" width="668" height="560" usemap="#members_map" border="0" />';
 
   $map = '<map name="members_map" id="members_map">';
 
@@ -131,14 +139,14 @@ function easpd_map_view () {
     $href = url("node/".$nid);
 
     foreach ($coords as $coord) {
-      $map .= '<area shape="poly" coords="' . $coord . '" href="' . $href . '" data-overlay-image=" TODO " title="' . $title . '" />';
+      $map .= '<area shape="poly" coords="' . $coord . '" href="' . $href . '" data-hover-image-src="' . $images_path . '/' . $name . '.png" title="' . $title . '" />';
     }
   }
 
   $map .= '</map>';
 
   $build['default_message'] = array(
-    '#markup' => $image . $map,
+    '#markup' => '<div id="members_map_images">' . $image . '</div>' . $map,
   );
   return $build;
 }
