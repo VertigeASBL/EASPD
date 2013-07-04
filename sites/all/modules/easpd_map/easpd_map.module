@@ -95,7 +95,12 @@ function easpd_map_view () {
     $href = url("node/".$nid);
 
     foreach ($coords as $coord) {
-      $map .= '<area shape="poly" coords="' . $coord . '" href="' . $href . '" data-hover-image-src="' . $images_path . '/' . $name . '.png" title="' . $title . '" />';
+      $map .=
+        '<area shape="poly" coords="' . $coord .
+            '" href="' . $href .
+            '" data-hover-image-src="' . $images_path . '/' . $name . '.png"'.
+             ' title="' . $title .
+            '" alt="' . $name . '" />';
     }
   }
 
