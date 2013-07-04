@@ -945,10 +945,10 @@ function easpd_configuration_default_fe_block_settings() {
         'weight' => 0,
       ),
       'easpd' => array(
-        'region' => '',
-        'status' => 0,
+        'region' => 'sidebar_first',
+        'status' => 1,
         'theme' => 'easpd',
-        'weight' => -1,
+        'weight' => -22,
       ),
       'seven' => array(
         'region' => '',
@@ -1018,7 +1018,7 @@ function easpd_configuration_default_fe_block_settings() {
         'region' => 'sidebar_first',
         'status' => 1,
         'theme' => 'easpd',
-        'weight' => -19,
+        'weight' => -23,
       ),
       'seven' => array(
         'region' => 'content',
@@ -1123,7 +1123,7 @@ function easpd_configuration_default_fe_block_settings() {
         'region' => 'sidebar_first',
         'status' => 1,
         'theme' => 'easpd',
-        'weight' => 0,
+        'weight' => -21,
       ),
       'seven' => array(
         'region' => '',
@@ -1368,7 +1368,7 @@ function easpd_configuration_default_fe_block_settings() {
         'region' => 'sidebar_first',
         'status' => 1,
         'theme' => 'easpd',
-        'weight' => 0,
+        'weight' => -20,
       ),
       'seven' => array(
         'region' => '',

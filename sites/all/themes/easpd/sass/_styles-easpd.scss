@@ -874,7 +874,7 @@ article img {
   }
 }
 
-.block-user-login {
+.block-user-login, .block-system-user-menu {
   h2 {
     @include titre_bloc_sidebar('icone_login.png', $lighterBlue, $darkYellow);
   }
@@ -916,6 +916,16 @@ article img {
     }
     a {
       margin-bottom: 20px;
+    }
+  }
+  .menu {
+    li {
+      list-style: none;
+      margin-left: 20px;
+    }
+    a {
+      color: white;
+      font-size: emCalc(16px);
     }
   }
 }
