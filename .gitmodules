@@ -1,3 +1,6 @@
 [submodule "sites/all/modules/switch_styles"]
 	path = sites/all/modules/switch_styles
 	url = git@github.com:VertigeASBL/switch_styles.git
+[submodule "sites/all/modules/easpd_map"]
+	path = sites/all/modules/easpd_map
+	url = git@github.com:VertigeASBL/easpd_map.git
