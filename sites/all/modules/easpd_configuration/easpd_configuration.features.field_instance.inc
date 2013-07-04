@@ -1204,6 +1204,39 @@ function easpd_configuration_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'og_membership-og_membership_type_default-og_membership_request'
+  $field_instances['og_membership-og_membership_type_default-og_membership_request'] = array(
+    'bundle' => 'og_membership_type_default',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'This is the text a user may send to the group administrators.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'og_membership',
+    'field_name' => 'og_membership_request',
+    'label' => 'Request message',
+    'required' => FALSE,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 0,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Access Control');
@@ -1217,8 +1250,10 @@ function easpd_configuration_field_default_field_instances() {
   t('Images');
   t('Newsletter category');
   t('Please choose a country for this page. This will define which country on the map will be linked to this page.');
+  t('Request message');
   t('Tags');
   t('Tell us what you thing about the awesome work we are doing :');
+  t('This is the text a user may send to the group administrators.');
   t('Type in which tags should be associated with this content. You can input several tags by separating them with a comma, eg. "policy, europe, disabilities". ');
   t('Upload an image to go with this article.');
   t('email');
