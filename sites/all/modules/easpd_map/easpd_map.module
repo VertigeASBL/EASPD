@@ -1,48 +1,4 @@
 <?php
-/* These are the key/value pairs to be accepted for the easpd_country
-   field :
-
-albanie|Albany
-allemagne|Germany
-autriche|Austria
-belgique|Belgium
-bielorussie|Belarus
-bosnie|Bosnia
-bulgarie|Bulgaria
-croatie|Croatia
-dannemark|Denmark
-espagne|Spain
-estonie|Estonia
-finlande|Finland
-france|France
-grece|Greece
-hongrie|Hungary
-iceland|Iceland
-ireland|Ireland
-italie|Italy
-lettonie|Latvia
-lituanie|Lithuania
-luxembourg|Luxembourg
-macedoine|Macedonia
-moldavie|Moldova
-montenegro|Montenegro
-norvege|Norway
-paysBas|Holland
-pologne|Poland
-portugal|Portugal
-republiqueTcheque|Czech Republic
-roumanie|Romania
-russie|Russia
-serbie|Serbia
-slovaquie|Slovakia
-slovenie|Slovenia
-suede|Sweden
-suisse|Switzerland
-turquie|Turkey
-uk|UK
-ukraine|Ukraine
-
-*/
 
 /**
  * implements hook_menu
@@ -151,7 +107,7 @@ function easpd_map_view () {
   return $build;
 }
 
-// the following doesn't work, and I don't wanna know why…
+// the following doesn't work, and I don't wanna know why anymore…
 
 /**
  * Adds a country field to a content type
