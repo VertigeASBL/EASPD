@@ -139,6 +139,14 @@ function easpd_configuration_node_info() {
       'title_label' => t('Title'),
       'help' => '',
     ),
+    'country_page' => array(
+      'name' => t('Country page'),
+      'base' => 'node_content',
+      'description' => '',
+      'has_title' => '1',
+      'title_label' => t('Page title'),
+      'help' => '',
+    ),
     'event' => array(
       'name' => t('Event'),
       'base' => 'node_content',

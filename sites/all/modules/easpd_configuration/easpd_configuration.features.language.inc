@@ -16,7 +16,7 @@ function easpd_configuration_locale_default_languages() {
     'name' => 'German',
     'native' => 'Deutsch',
     'direction' => 0,
-    'enabled' => 1,
+    'enabled' => 0,
     'plurals' => 2,
     'formula' => '($n!=1)',
     'domain' => '',
