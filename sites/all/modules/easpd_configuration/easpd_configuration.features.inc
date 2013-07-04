@@ -155,6 +155,14 @@ function easpd_configuration_node_info() {
       'title_label' => t('Title'),
       'help' => '',
     ),
+    'group' => array(
+      'name' => t('Group'),
+      'base' => 'node_content',
+      'description' => '',
+      'has_title' => '1',
+      'title_label' => t('Group Name'),
+      'help' => '',
+    ),
     'image_gallery' => array(
       'name' => t('Image Gallery'),
       'base' => 'node_content',
