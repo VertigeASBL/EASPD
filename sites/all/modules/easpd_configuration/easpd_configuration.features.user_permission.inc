@@ -752,6 +752,7 @@ function easpd_configuration_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'developer' => 'developer',
+      'staff' => 'staff',
     ),
     'module' => 'node',
   );
@@ -792,6 +793,7 @@ function easpd_configuration_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'developer' => 'developer',
+      'staff' => 'staff',
     ),
     'module' => 'node',
   );
@@ -885,6 +887,7 @@ function easpd_configuration_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'developer' => 'developer',
+      'staff' => 'staff',
     ),
     'module' => 'node',
   );
@@ -1031,6 +1034,7 @@ function easpd_configuration_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'developer' => 'developer',
+      'staff' => 'staff',
     ),
     'module' => 'node',
   );
@@ -1148,6 +1152,7 @@ function easpd_configuration_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'developer' => 'developer',
+      'staff' => 'staff',
     ),
     'module' => 'node',
   );
@@ -1232,6 +1237,24 @@ function easpd_configuration_user_default_permissions() {
       'staff' => 'staff',
     ),
     'module' => 'admin_menu',
+  );
+
+  // Exported permission: grant content access.
+  $permissions['grant content access'] = array(
+    'name' => 'grant content access',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'content_access',
+  );
+
+  // Exported permission: grant own content access.
+  $permissions['grant own content access'] = array(
+    'name' => 'grant own content access',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'content_access',
   );
 
   // Exported permission: import media.
