@@ -865,9 +865,13 @@ article img {
 
 #sidebar-first {
   @extend .cadre_bleu;
-  @include background(image-url('carte_europe.png') no-repeat scroll center 17px $lightBlue);
-  padding-top: 275px;
+  padding-top: 10px;
   padding-bottom: 10px;
+  > a {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
 }
 
 .block-user-login {

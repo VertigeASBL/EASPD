@@ -76,6 +76,11 @@
   <div id="sidebar">
     <?php if (!empty($page['sidebar_first'])): ?>
       <div id="sidebar-first">
+         <a href="<?php print url('map'); ?>"
+            title="<?php print t('EASPD\'s members'); ?>">
+            <img src="<?php global $base_url; print $base_url . '/sites/all/themes/easpd/images/carte_europe.png'; ?>"
+                 alt="<?php print t('Map of Europe'); ?>">
+         </a>
         <?php print render($page['sidebar_first']); ?>
       </div>
     <?php endif; ?>
