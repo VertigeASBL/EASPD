@@ -920,12 +920,18 @@ article img {
   }
   .menu {
     li {
-      list-style: none;
-      margin-left: 20px;
+      list-style: disc inside;
+      margin-left: 34px;
+      color: white;
+      ul li {
+        list-style: circle outside;
+        margin-left: 15px;
+      }
     }
     a {
       color: white;
-      font-size: emCalc(16px);
+      font-size: emCalc(18px);
+      font-stretch: semi-condensed;
     }
   }
 }
@@ -1238,7 +1244,7 @@ footer {
     left: 0;
     li {
       display: inline-block;
-      a {        
+      a {
         color: transparent;
         text-indent: -99999px;
         height: 100%;
