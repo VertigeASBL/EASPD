@@ -7,12 +7,30 @@
  */
 function easpd_groups_page_menu () {
 
-  $items['groups'] = array(
-    'page callback' => 'easpd_groups_page_view',
-    'access callback' => TRUE,
-  );
+    if ($groups = get_groups()) {
+        $items['groups'] = array(
+            'title'           => t('Groups'),
+            'type'            => MENU_NORMAL_ITEM,
+            'menu_name'       => 'user-menu',
+            'tab_parent'      => '',
+            'expanded'        => TRUE,
+            'page callback'   => 'easpd_groups_page_view',
+            'access callback' => TRUE,
+        );
+        foreach ($groups as $gid => $group) {
+            $items['groups/'.$gid] = array(
+                'title'            => $group->title,
+                'type'             => MENU_NORMAL_ITEM,
+                'menu_name'        => 'user-menu',
+                'page callback'    => 'node_page_view',
+                'page arguments'   => array($group),
+                'access callback'  => 'node_access',
+                'access arguments' => array('view', $group),
+            );
+        }
+    }
 
-  return $items;
+    return $items;
 }
 
 function get_groups () {
