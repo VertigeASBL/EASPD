@@ -1,0 +1,3 @@
+name = EASPD Groups page
+description = creates a page that displays all groups and their contents
+core = 7.x
