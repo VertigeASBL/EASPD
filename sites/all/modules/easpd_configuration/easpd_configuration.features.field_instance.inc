@@ -677,7 +677,7 @@ function easpd_configuration_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 1,
+        'weight' => 0,
       ),
       'scs' => array(
         'label' => 'above',
@@ -733,7 +733,7 @@ function easpd_configuration_field_default_field_instances() {
           'field_name' => FALSE,
         ),
         'type' => 'og_group_subscribe',
-        'weight' => 0,
+        'weight' => 1,
       ),
       'scs' => array(
         'label' => 'above',
@@ -791,7 +791,7 @@ function easpd_configuration_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 1,
+        'weight' => 0,
       ),
       'scs' => array(
         'label' => 'above',
@@ -841,7 +841,7 @@ function easpd_configuration_field_default_field_instances() {
         'module' => 'og_ui',
         'settings' => array(),
         'type' => 'og_list_default',
-        'weight' => 0,
+        'weight' => 1,
       ),
       'scs' => array(
         'label' => 'above',

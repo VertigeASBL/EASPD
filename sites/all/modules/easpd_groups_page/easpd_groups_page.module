@@ -22,7 +22,7 @@ function easpd_groups_page_menu () {
                 'title'            => $group->title,
                 'type'             => MENU_NORMAL_ITEM,
                 'menu_name'        => 'user-menu',
-                'page callback'    => 'node_page_view',
+                'page callback'    => 'easpd_group_page_view',
                 'page arguments'   => array($group),
                 'access callback'  => 'node_access',
                 'access arguments' => array('view', $group),
@@ -96,6 +96,11 @@ function easpd_groups_page_view () {
                        )),
   );
   return $build;
+}
+
+function easpd_group_page_view ($node) {
+
+    drupal_goto('node/' . $node->nid);
 }
 
 /**
