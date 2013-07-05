@@ -461,10 +461,9 @@ function easpd_configuration_field_default_field_instances() {
     'description' => 'Please choose a country for this page. This will define which country on the map will be linked to this page.',
     'display' => array(
       'default' => array(
-        'label' => 'above',
-        'module' => 'list',
+        'label' => 'hidden',
         'settings' => array(),
-        'type' => 'list_default',
+        'type' => 'hidden',
         'weight' => 1,
       ),
       'scs' => array(
