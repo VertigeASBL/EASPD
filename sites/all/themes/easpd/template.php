@@ -58,6 +58,10 @@ function strip_tags_in_paragraphs ($variables) {
 
 function easpd_views_view_field__newsflashes__block__body ($variables) {
 
+  // empty images will break the layout without this
+  $variables['output'] = preg_replace('#<div class="logo"></div>#',
+                                      '<div class="logo">&nbsp;</div>',
+                                      $variables['output']);
   $variables = strip_tags_in_paragraphs($variables);
   return ajouter_read_more($variables, ' …');
 }
@@ -70,6 +74,10 @@ function easpd_views_view_field__newsflashes__page__body ($variables) {
 
 function easpd_views_view_field__last_publications__block__body ($variables) {
 
+  // empty images will break the layout without this
+  $variables['output'] = preg_replace('#<div class="logo"></div>#',
+                                      '<div class="logo">&nbsp;</div>',
+                                      $variables['output']);
   $variables = strip_tags_in_paragraphs($variables);
   return ajouter_read_more($variables, ' …');
 }
