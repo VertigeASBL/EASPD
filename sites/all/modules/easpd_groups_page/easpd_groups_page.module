@@ -118,3 +118,109 @@ function easpd_groups_page_theme () {
     ),
   );
 }
+
+function get_gids ($node) {
+
+    $gids = array();
+    if ($node->type === 'group_content') {
+        // find parent groups
+        $select = db_select('og_membership', 'm')
+            ->fields('m', array('gid'))
+            ->condition('m.entity_type', 'node')
+            ->condition('m.etid', $node->nid);
+
+        $gids  = $select->execute()->fetchCol();
+    } else if ($node->type === 'group') {
+        $gids = array($node->nid);
+    }
+    return $gids;
+}
+
+function is_in_group ($account, $node) {
+
+    $gids = get_gids($node);
+
+    $select = db_select('og_membership', 'm')
+        ->fields('m', array('etid'))
+        ->condition('m.entity_type', 'user')
+        ->condition('m.etid', $account->uid)
+        ->condition('m.gid', $gids);
+
+    if (count($select->execute()->fetchCol()) > 0) {
+        return TRUE;
+    } else {
+        return FALSE;
+    }
+}
+
+function is_write_access ($op) {
+
+    return in_array($op, array('create', 'delete', 'update'));
+}
+
+function is_group_admin ($account, $node) {
+
+    $admin_rid = 1;
+    $gids = get_gids($node);
+
+    // role account->group === rid
+    $select = db_select('og_users_roles', 'ur')
+        ->fields('ur', array('rid'))
+        ->condition('ur.gid', $gids)
+        ->condition('ur.uid', $account->uid);
+
+    if (in_array($admin_rid, $select->execute()->fetchCol())) {
+        return TRUE;
+    } else {
+        return FALSE;
+    }
+}
+
+/**
+ * implements hook_node_access
+ *
+ */
+function easpd_groups_page_node_access ($node, $op, $account) {
+
+    if (in_array($node->type, array('group', 'group_content'))) {
+
+        if (is_in_group($account, $node)) {
+            if (is_write_access($op)
+                && ( ! is_group_admin($account, $node))) {
+                return NODE_ACCESS_DENY;
+            } else {
+                return NODE_ACCESS_ALLOW;
+            }
+        } else {
+            return NODE_ACCESS_DENY;
+        }
+    }
+
+    return NODE_ACCESS_IGNORE;
+}
+
+/**
+ * implements hook_field_access
+ *
+ */
+/* function easpd_groups_page_field_access ($op, $field, $entity_type, $entity, $account) { */
+
+    /* var_dump($entity); */
+    /* if (in_array($node->type, array('group', 'group_content'))) { */
+
+    /*     /\* var_dump($node); *\/ */
+
+    /*     if (is_in_group($account, $node)) { */
+    /*         if (is_write_access($op) */
+    /*             && ( ! is_group_admin($account, $node))) { */
+    /*             return NODE_ACCESS_DENY; */
+    /*         } else { */
+    /*             return NODE_ACCESS_ALLOW; */
+    /*         } */
+    /*     } else { */
+    /*         return NODE_ACCESS_DENY; */
+    /*     } */
+    /* } */
+
+/*     return TRUE; */
+/* } */
