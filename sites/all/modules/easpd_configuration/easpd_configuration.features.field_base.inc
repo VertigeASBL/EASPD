@@ -120,13 +120,14 @@ function easpd_configuration_field_default_field_bases() {
     'module' => 'list',
     'settings' => array(
       'allowed_values' => array(
-        'albanie' => 'Albany',
+        'albanie' => 'Albania',
         'allemagne' => 'Germany',
         'autriche' => 'Austria',
         'belgique' => 'Belgium',
         'bielorussie' => 'Belarus',
         'bosnie' => 'Bosnia',
         'bulgarie' => 'Bulgaria',
+        'chypre' => 'Cyprus',
         'croatie' => 'Croatia',
         'dannemark' => 'Denmark',
         'espagne' => 'Spain',
@@ -142,6 +143,7 @@ function easpd_configuration_field_default_field_bases() {
         'lituanie' => 'Lithuania',
         'luxembourg' => 'Luxembourg',
         'macedoine' => 'Macedonia',
+        'malte' => 'Malta',
         'moldavie' => 'Moldova',
         'montenegro' => 'Montenegro',
         'norvege' => 'Norway',

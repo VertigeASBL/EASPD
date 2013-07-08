@@ -890,7 +890,7 @@ function easpd_configuration_field_default_field_instances() {
       'module' => 'og',
       'settings' => array(),
       'type' => 'og_complex',
-      'weight' => 0,
+      'weight' => 32,
     ),
   );
 

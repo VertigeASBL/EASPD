@@ -475,6 +475,7 @@ function easpd_configuration_user_default_permissions() {
     'name' => 'administer sharethis',
     'roles' => array(
       'administrator' => 'administrator',
+      'developer' => 'developer',
     ),
     'module' => 'sharethis',
   );
@@ -678,6 +679,7 @@ function easpd_configuration_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'developer' => 'developer',
+      'staff' => 'staff',
     ),
     'module' => 'node',
   );
@@ -685,7 +687,11 @@ function easpd_configuration_user_default_permissions() {
   // Exported permission: create group_content content.
   $permissions['create group_content content'] = array(
     'name' => 'create group_content content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+      'developer' => 'developer',
+      'staff' => 'staff',
+    ),
     'module' => 'node',
   );
 
@@ -800,7 +806,6 @@ function easpd_configuration_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'developer' => 'developer',
-      'staff' => 'staff',
     ),
     'module' => 'node',
   );
@@ -811,7 +816,6 @@ function easpd_configuration_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'developer' => 'developer',
-      'staff' => 'staff',
     ),
     'module' => 'node',
   );
@@ -989,7 +993,10 @@ function easpd_configuration_user_default_permissions() {
   // Exported permission: delete terms in 6.
   $permissions['delete terms in 6'] = array(
     'name' => 'delete terms in 6',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+      'developer' => 'developer',
+    ),
     'module' => 'taxonomy',
   );
 
@@ -1054,7 +1061,6 @@ function easpd_configuration_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'developer' => 'developer',
-      'staff' => 'staff',
     ),
     'module' => 'node',
   );
@@ -1065,7 +1071,6 @@ function easpd_configuration_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'developer' => 'developer',
-      'staff' => 'staff',
     ),
     'module' => 'node',
   );
@@ -1257,7 +1262,11 @@ function easpd_configuration_user_default_permissions() {
   // Exported permission: edit terms in 6.
   $permissions['edit terms in 6'] = array(
     'name' => 'edit terms in 6',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+      'developer' => 'developer',
+      'staff' => 'staff',
+    ),
     'module' => 'taxonomy',
   );
 
@@ -1277,6 +1286,8 @@ function easpd_configuration_user_default_permissions() {
     'name' => 'grant content access',
     'roles' => array(
       'administrator' => 'administrator',
+      'developer' => 'developer',
+      'staff' => 'staff',
     ),
     'module' => 'content_access',
   );
@@ -1286,6 +1297,8 @@ function easpd_configuration_user_default_permissions() {
     'name' => 'grant own content access',
     'roles' => array(
       'administrator' => 'administrator',
+      'developer' => 'developer',
+      'staff' => 'staff',
     ),
     'module' => 'content_access',
   );

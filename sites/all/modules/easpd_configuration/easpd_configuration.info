@@ -74,6 +74,7 @@ dependencies[] = multiupload_imagefield_widget
 dependencies[] = node
 dependencies[] = number
 dependencies[] = og
+dependencies[] = og_access
 dependencies[] = og_ui
 dependencies[] = options
 dependencies[] = overlay
