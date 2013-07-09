@@ -61,7 +61,7 @@ $ratio: major-second();
   font-size: emCalc(14px);
   font-weight: bold;
   margin-top: 6px;
-  padding: 9px 40px 9px 10px;
+  padding: 10px 40px 9px 10px;
   text-transform: uppercase;
   @include ie-border-radius(5px);
   @include background(image-url($image_fleche) no-repeat scroll right center $couleur);
@@ -108,7 +108,7 @@ $ratio: major-second();
   vertical-align: center;
   position: relative;
   top: -1px;
-  padding: 0px 0 0 56px;
+  padding: 2px 0 0 56px;
   font-size: emCalc(27px);
   margin-bottom: 12px;
 }
@@ -511,7 +511,7 @@ nav .block-superfish-1 {
         padding: 18px 18px 0px 18px;
       }
       ul {
-        margin-top: 8px;
+        margin-top: 19px;
         li {
           background-color: $lightGrey;
           border-bottom-style: solid;
@@ -523,7 +523,7 @@ nav .block-superfish-1 {
           }
           ul {
             margin-left: -8px;
-            margin-top: 10px;
+            margin-top: 3px;
           }
         }
       }
@@ -546,7 +546,7 @@ nav .block-search-form {
     .form-item {
       margin: 0;
       position: relative;
-      top: 7px;
+      top: 8px;
     }
     #edit-search-block-form--2 {
       width: 175px;
@@ -559,7 +559,7 @@ nav .block-search-form {
       @include background(image-url("search_icon.png") no-repeat scroll center center);
       border: none;
       position: relative;
-      top: -41px;
+      top: -40px;
       height: 37px;
       left: 176px;
       width: 50px;
