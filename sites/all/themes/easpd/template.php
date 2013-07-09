@@ -62,6 +62,8 @@ function easpd_views_view_field__newsflashes__block__body ($variables) {
   $variables['output'] = preg_replace('#<div class="logo"></div>#',
                                       '<div class="logo">&nbsp;</div>',
                                       $variables['output']);
+  // évite les merdres avec les apostrophes
+  $variables['output'] = str_replace("’", "&apos;", $variables['output']);
   $variables = strip_tags_in_paragraphs($variables);
   return ajouter_read_more($variables, ' …');
 }
@@ -78,6 +80,8 @@ function easpd_views_view_field__last_publications__block__body ($variables) {
   $variables['output'] = preg_replace('#<div class="logo"></div>#',
                                       '<div class="logo">&nbsp;</div>',
                                       $variables['output']);
+  // évite les merdres avec les apostrophes
+  $variables['output'] = str_replace("’", "&apos;", $variables['output']);
   $variables = strip_tags_in_paragraphs($variables);
   return ajouter_read_more($variables, ' …');
 }
