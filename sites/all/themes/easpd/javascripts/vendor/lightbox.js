@@ -48,8 +48,9 @@ lightbox = new Lightbox options
   LightboxOptions = (function() {
 
     function LightboxOptions() {
-      this.fileLoadingImage = 'sites/all/themes/easpd/images/lightbox/loading.gif';
-      this.fileCloseImage = 'sites/all/themes/easpd/images/lightbox/close.png';
+      baseref = window.location.href.replace(/\/[a-zA-Z]{2}(\/.*)?$/, '/');
+      this.fileLoadingImage = baseref + 'sites/all/themes/easpd/images/lightbox/loading.gif';
+      this.fileCloseImage = baseref + 'sites/all/themes/easpd/images/lightbox/close.png';
       this.resizeDuration = 700;
       this.fadeDuration = 500;
       this.labelImage = "Image";
