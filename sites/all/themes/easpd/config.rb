@@ -13,11 +13,10 @@ javascripts_dir = "js"
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed
 
-output_style = :compressed
-# output_style = :expanded
+output_style = (environment == :production) ? :compressed : :expanded
 
 # nécessaire pour FireSass, casse tout avec IE…
-# sass_options = {:debug_info => true}
+sass_options = (environment == :production) ? {} : {:debug_info => true}
 
 # To enable relative paths to assets via compass helper functions. Uncomment:
 # relative_assets = true
