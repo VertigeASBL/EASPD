@@ -15,7 +15,8 @@ foreach ($row->field_field_img as $ligne) {
   <li class="slide">
     <img title="<?php print $img['title']; ?>"
            alt="<?php print $img['alt']; ?>"
-           src="<?php print $src; ?>" />
+           src="<?php print $src; ?>"
+           height="142" width="223" />
   </li>
 
 <?php } ?>
