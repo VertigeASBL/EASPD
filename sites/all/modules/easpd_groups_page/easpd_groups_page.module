@@ -1,5 +1,20 @@
 <?php
 
+/*=========*/
+/* SUMMARY */
+/*=========*/
+
+/**
+ * - Hooks
+ * - Views
+ * - Get content
+ * - Permission helpers
+ */
+
+/*********
+ * Hooks *
+ *********/
+
 /**
  * implements hook_menu
  *
@@ -32,6 +47,118 @@ function easpd_groups_page_menu () {
 
     return $items;
 }
+
+/**
+ * implements hook_theme
+ *
+ */
+function easpd_groups_page_theme () {
+
+  return array(
+    'easpd_groups_page' => array(
+      'template' => 'easpd_groups_page',
+      'variables' => array(
+        'groups' => NULL,
+      ),
+    ),
+  );
+}
+
+/**
+ * implements hook_node_access
+ *
+ */
+function easpd_groups_page_node_access ($node, $op, $account) {
+
+    if (in_array($node->type, array('group', 'group_content'))) {
+
+        if (is_in_group($account, $node)) {
+            if (is_write_access($op)
+                && ( ! is_group_admin($account, $node))) {
+                return NODE_ACCESS_DENY;
+            } else {
+                return NODE_ACCESS_ALLOW;
+            }
+        } else {
+            return NODE_ACCESS_DENY;
+        }
+    }
+
+    return NODE_ACCESS_IGNORE;
+}
+
+/**
+ * implements hook_field_access
+ *
+ */
+/* function easpd_groups_page_field_access ($op, $field, $entity_type, $entity, $account) { */
+
+    /* var_dump($entity); */
+    /* if (in_array($node->type, array('group', 'group_content'))) { */
+
+    /*     /\* var_dump($node); *\/ */
+
+    /*     if (is_in_group($account, $node)) { */
+    /*         if (is_write_access($op) */
+    /*             && ( ! is_group_admin($account, $node))) { */
+    /*             return NODE_ACCESS_DENY; */
+    /*         } else { */
+    /*             return NODE_ACCESS_ALLOW; */
+    /*         } */
+    /*     } else { */
+    /*         return NODE_ACCESS_DENY; */
+    /*     } */
+    /* } */
+
+/*     return TRUE; */
+/* } */
+
+/*********
+ * Views *
+ *********/
+
+/**
+ * hook_menu's page callback
+ *
+ * Renders the "groups" page
+ */
+function easpd_groups_page_view () {
+
+  // handy variables
+  global $base_url;
+  $module_path = drupal_get_path('module', 'easpd_map');
+
+  $groups = get_groups();
+
+  foreach ($groups as $gid => $group) {
+    $group->og_contents = get_group_contents($gid);
+  }
+
+  // Build page
+  drupal_set_title(t("Your groups"));
+
+  $build['default_message'] = array(
+    '#markup' => theme('easpd_groups_page',
+                       array(
+                         'groups' => $groups,
+                       )),
+  );
+  return $build;
+}
+
+/**
+ * hook_menu's page callback
+ *
+ * Renders the "groups/%node" pages
+ */
+function easpd_group_page_view ($node) {
+
+    drupal_goto('node/' . $node->nid);
+}
+
+/***************
+ * Get content *
+ ***************/
 
 function get_groups () {
 
@@ -87,56 +214,6 @@ function get_group_contents ($group_nid) {
   return $allowed_nodes;
 }
 
-/**
- * hook_menu's page callback
- *
- * Renders the "groups" page
- */
-function easpd_groups_page_view () {
-
-  // handy variables
-  global $base_url;
-  $module_path = drupal_get_path('module', 'easpd_map');
-
-  $groups = get_groups();
-
-  foreach ($groups as $gid => $group) {
-    $group->og_contents = get_group_contents($gid);
-  }
-
-  // Build page
-  drupal_set_title(t("Your groups"));
-
-  $build['default_message'] = array(
-    '#markup' => theme('easpd_groups_page',
-                       array(
-                         'groups' => $groups,
-                       )),
-  );
-  return $build;
-}
-
-function easpd_group_page_view ($node) {
-
-    drupal_goto('node/' . $node->nid);
-}
-
-/**
- * implements hook_theme
- *
- */
-function easpd_groups_page_theme () {
-
-  return array(
-    'easpd_groups_page' => array(
-      'template' => 'easpd_groups_page',
-      'variables' => array(
-        'groups' => NULL,
-      ),
-    ),
-  );
-}
-
 function get_gids ($node) {
 
     $gids = array();
@@ -153,6 +230,10 @@ function get_gids ($node) {
     }
     return $gids;
 }
+
+/**********************
+ * Permission helpers *
+ *********************/
 
 function is_in_group ($account, $node) {
 
@@ -192,52 +273,3 @@ function is_group_admin ($account, $node) {
         return FALSE;
     }
 }
-
-/**
- * implements hook_node_access
- *
- */
-function easpd_groups_page_node_access ($node, $op, $account) {
-
-    if (in_array($node->type, array('group', 'group_content'))) {
-
-        if (is_in_group($account, $node)) {
-            if (is_write_access($op)
-                && ( ! is_group_admin($account, $node))) {
-                return NODE_ACCESS_DENY;
-            } else {
-                return NODE_ACCESS_ALLOW;
-            }
-        } else {
-            return NODE_ACCESS_DENY;
-        }
-    }
-
-    return NODE_ACCESS_IGNORE;
-}
-
-/**
- * implements hook_field_access
- *
- */
-/* function easpd_groups_page_field_access ($op, $field, $entity_type, $entity, $account) { */
-
-    /* var_dump($entity); */
-    /* if (in_array($node->type, array('group', 'group_content'))) { */
-
-    /*     /\* var_dump($node); *\/ */
-
-    /*     if (is_in_group($account, $node)) { */
-    /*         if (is_write_access($op) */
-    /*             && ( ! is_group_admin($account, $node))) { */
-    /*             return NODE_ACCESS_DENY; */
-    /*         } else { */
-    /*             return NODE_ACCESS_ALLOW; */
-    /*         } */
-    /*     } else { */
-    /*         return NODE_ACCESS_DENY; */
-    /*     } */
-    /* } */
-
-/*     return TRUE; */
-/* } */
