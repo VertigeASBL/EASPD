@@ -72,7 +72,7 @@ function easpd_groups_page_node_access ($node, $op, $account) {
 
     if (in_array($node->type, array('group', 'group_content'))) {
 
-        if (is_in_group($account, $node)) {
+        if (user_is_in_group($account, $node)) {
             if (is_write_access($op)
                 && ( ! is_group_admin($account, $node))) {
                 return NODE_ACCESS_DENY;
@@ -98,7 +98,7 @@ function easpd_groups_page_node_access ($node, $op, $account) {
 
     /*     /\* var_dump($node); *\/ */
 
-    /*     if (is_in_group($account, $node)) { */
+    /*     if (user_is_in_group($account, $node)) { */
     /*         if (is_write_access($op) */
     /*             && ( ! is_group_admin($account, $node))) { */
     /*             return NODE_ACCESS_DENY; */
@@ -160,14 +160,17 @@ function easpd_group_page_view ($node) {
  * Get content *
  ***************/
 
+/**
+ * returns an array of node objects containing all the defined Groups
+ */
 function get_groups () {
-
-  global $user;
 
   // SQL query
   $select = db_select('node', 'n')
     ->fields('n', array('nid', 'sticky', 'created'))
-    ->condition('n.type', 'group');
+    ->condition('n.type', 'group')
+    ->orderBy('title', 'ASC')
+    ->addTag('node_access');
 
   $nids  = $select->execute()->fetchCol();
   $nodes = node_load_multiple($nids);
@@ -182,14 +185,17 @@ function get_groups () {
   return $allowed_nodes;
 }
 
+/**
+ * returns an array of node objects belonging to the given group
+ */
 function get_group_contents ($group_nid) {
-
-  global $user;
 
   // SQL query
   $select = db_select('node', 'n')
     ->fields('n', array('nid', 'sticky', 'created'))
-    ->condition('n.type', 'group_content');
+    ->condition('n.type', 'group_content')
+    ->orderBy('title', 'ASC')
+    ->addTag('node_access');
 
   $nids  = $select->execute()->fetchCol();
   $nodes = node_load_multiple($nids);
@@ -214,6 +220,9 @@ function get_group_contents ($group_nid) {
   return $allowed_nodes;
 }
 
+/**
+ * Gets the group id(s) of the group(s) containing the given node
+ */
 function get_gids ($node) {
 
     $gids = array();
@@ -235,7 +244,7 @@ function get_gids ($node) {
  * Permission helpers *
  *********************/
 
-function is_in_group ($account, $node) {
+function user_is_in_group ($account, $node) {
 
     $gids = get_gids($node);
 
