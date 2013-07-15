@@ -10,7 +10,10 @@ $qp->top()->find('li.first > a')
    ->addClass('bouton')
    ->text(t('Join us'));
 
-$new_member_link = $qp->top()->find('li.first > a')->html();
+$new_member_link = '<a href="' . url('content/membership') .
+  '" class="bouton">' . t('Join us') . '</a>'; 
+/* $qp->top()->find('li.first > a')->html(); */
+
 $qp->top()->remove('li.first');
 
 $content = $qp->top()->find('body')->innerHtml();
