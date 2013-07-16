@@ -22,17 +22,15 @@
  */
 function easpd_groups_page_menu () {
 
-    global $user;
-
-    if ($groups = get_groups($user)) {
+    if ($groups = get_groups()) {
         $items['groups'] = array(
-            'title'           => t('Groups'),
-            'type'            => MENU_NORMAL_ITEM,
-            'menu_name'       => 'user-menu',
-            'tab_parent'      => '',
-            'expanded'        => TRUE,
-            'page callback'   => 'easpd_groups_page_view',
-            'access callback' => TRUE,
+            'title'            => t('Groups'),
+            'type'             => MENU_NORMAL_ITEM,
+            'menu_name'        => 'user-menu',
+            'tab_parent'       => '',
+            'expanded'         => TRUE,
+            'page callback'    => 'easpd_groups_page_view',
+            'access callback'  => 'easpd_groups_page_access',
         );
         foreach ($groups as $gid => $group) {
             $items['groups/'.$gid] = array(
@@ -72,7 +70,7 @@ function easpd_groups_page_theme () {
  */
 function easpd_groups_page_node_grants ($account, $op) {
 
-  $groups = get_groups($account);
+  $groups = get_groups();
   $allowed_group_nids = array();
 
   foreach ($groups as $group) {
@@ -84,7 +82,7 @@ function easpd_groups_page_node_grants ($account, $op) {
   $granted_content = $allowed_group_nids;
   foreach ($allowed_group_nids as $nid) {
     $granted_content = array_merge($granted_content,
-                                   get_group_contents($nid, $account));
+                                   get_group_contents($nid));
   }
 
   return array('easpd_groups_realm' => $granted_content);
@@ -128,10 +126,10 @@ function easpd_groups_page_view () {
   global $user;
   $module_path = drupal_get_path('module', 'easpd_map');
 
-  $groups = get_groups($user);
+  $groups = get_groups();
 
   foreach ($groups as $gid => $group) {
-    $group->og_contents = get_group_contents($gid, $user);
+    $group->og_contents = get_group_contents($gid);
   }
 
   $allowed_groups = array();
@@ -151,6 +149,25 @@ function easpd_groups_page_view () {
                        )),
   );
   return $build;
+}
+
+/**
+ * hook_menu's access callback
+ *
+ * Check access for the "groups" page
+ */
+function easpd_groups_page_access ($user) {
+
+  global $user;
+
+  $groups = get_groups();
+
+  foreach ($groups as $group) {
+    if (node_access('view', $group, $user)) {
+      return TRUE;
+    }
+  }
+  return FALSE;
 }
 
 /**
