@@ -666,6 +666,11 @@ nav .block-search-form {
   font-size: emCalc(14px);
 }
 
+.field-name-og-user-node a {
+  display: inline-block;
+  padding: 3px 30px 0 0;
+  line-height: 1.5;
+}
 
 .block-views-newsflashes-block {
   @include bloc($darkBlue, $lightBlue);
