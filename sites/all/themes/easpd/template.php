@@ -237,6 +237,11 @@ function easpd_preprocess_node(&$vars) {
   // Add template suggestions based on view modes
   $vars['theme_hook_suggestions'][] = 'node__' . $vars['view_mode'];
   $vars['theme_hook_suggestions'][] = 'node__' . $vars['view_mode'] . '__' . $vars['type'];
+
+  // group content infos to groups
+  if ($vars['type'] === 'group' ) {
+    $vars['group_content'] = get_group_contents($vars['nid']);
+  }
 }
 
 /**
