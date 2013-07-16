@@ -134,13 +134,20 @@ function easpd_groups_page_view () {
     $group->og_contents = get_group_contents($gid, $user);
   }
 
+  $allowed_groups = array();
+  foreach ($groups as $group) {
+    if (node_access('view', $group, $user)) {
+      $allowed_groups[] = $group;
+    }
+  }
+
   // Build page
   drupal_set_title(t("Your groups"));
 
   $build['default_message'] = array(
     '#markup' => theme('easpd_groups_page',
                        array(
-                         'groups' => $groups,
+                         'groups' => $allowed_groups,
                        )),
   );
   return $build;
