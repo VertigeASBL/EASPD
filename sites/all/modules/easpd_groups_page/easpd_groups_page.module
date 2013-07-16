@@ -81,8 +81,10 @@ function easpd_groups_page_node_grants ($account, $op) {
 
   $granted_content = $allowed_group_nids;
   foreach ($allowed_group_nids as $nid) {
-    $granted_content = array_merge($granted_content,
-                                   get_group_contents($nid));
+    $group_content = get_group_contents($nid);
+    $group_content_nids = array_map(function ($n) { return $n->nid; },
+                                    $group_content);
+    $granted_content = array_merge($granted_content, $group_content_nids);
   }
 
   return array('easpd_groups_realm' => $granted_content);
