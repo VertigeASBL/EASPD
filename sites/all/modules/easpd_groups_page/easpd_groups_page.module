@@ -22,7 +22,9 @@
  */
 function easpd_groups_page_menu () {
 
-    if ($groups = get_groups()) {
+    global $user;
+
+    if ($groups = get_groups($user)) {
         $items['groups'] = array(
             'title'           => t('Groups'),
             'type'            => MENU_NORMAL_ITEM,
@@ -65,53 +67,50 @@ function easpd_groups_page_theme () {
 }
 
 /**
- * implements hook_node_access
+ * implements hook_node_grants
  *
  */
-function easpd_groups_page_node_access ($node, $op, $account) {
+function easpd_groups_page_node_grants ($account, $op) {
 
-    if (in_array($node->type, array('group', 'group_content'))) {
+  $groups = get_groups($account);
+  $allowed_group_nids = array();
 
-        if (user_is_in_group($account, $node)) {
-            if (is_write_access($op)
-                && ( ! is_group_admin($account, $node))) {
-                return NODE_ACCESS_DENY;
-            } else {
-                return NODE_ACCESS_ALLOW;
-            }
-        } else {
-            return NODE_ACCESS_DENY;
-        }
+  foreach ($groups as $group) {
+    if (user_is_in_group($account, $group)) {
+      $allowed_group_nids[] = $group->nid;
     }
+  }
 
-    return NODE_ACCESS_IGNORE;
+  $granted_content = $allowed_group_nids;
+  foreach ($allowed_group_nids as $nid) {
+    $granted_content = array_merge($granted_content,
+                                   get_group_contents($nid, $account));
+  }
+
+  return array('easpd_groups_realm' => $granted_content);
 }
 
 /**
- * implements hook_field_access
+ * implements hook_node_access_records
  *
  */
-/* function easpd_groups_page_field_access ($op, $field, $entity_type, $entity, $account) { */
+function easpd_groups_page_node_access_records ($node) {
 
-    /* var_dump($entity); */
-    /* if (in_array($node->type, array('group', 'group_content'))) { */
+  $grants   = array();
 
-    /*     /\* var_dump($node); *\/ */
+  if (in_array($node->type, array('group', 'group_content'))) {
+    $grants[] = array(
+                      'realm'        => 'easpd_groups_realm',
+                      'gid'          => $node->nid,
+                      'grant_view'   => $node->status,
+                      'grant_update' => 0,
+                      'grant_delete' => 0,
+                      'priority'     => 1,
+                      );
+  }
 
-    /*     if (user_is_in_group($account, $node)) { */
-    /*         if (is_write_access($op) */
-    /*             && ( ! is_group_admin($account, $node))) { */
-    /*             return NODE_ACCESS_DENY; */
-    /*         } else { */
-    /*             return NODE_ACCESS_ALLOW; */
-    /*         } */
-    /*     } else { */
-    /*         return NODE_ACCESS_DENY; */
-    /*     } */
-    /* } */
-
-/*     return TRUE; */
-/* } */
+  return $grants;
+}
 
 /*********
  * Views *
@@ -126,12 +125,13 @@ function easpd_groups_page_view () {
 
   // handy variables
   global $base_url;
+  global $user;
   $module_path = drupal_get_path('module', 'easpd_map');
 
-  $groups = get_groups();
+  $groups = get_groups($user);
 
   foreach ($groups as $gid => $group) {
-    $group->og_contents = get_group_contents($gid);
+    $group->og_contents = get_group_contents($gid, $user);
   }
 
   // Build page
@@ -161,7 +161,8 @@ function easpd_group_page_view ($node) {
  ***************/
 
 /**
- * returns an array of node objects containing all the defined Groups
+ * returns an array of node objects containing all the defined Groups.
+ * doesn't check permissions.
  */
 function get_groups () {
 
@@ -169,24 +170,17 @@ function get_groups () {
   $select = db_select('node', 'n')
     ->fields('n', array('nid', 'sticky', 'created'))
     ->condition('n.type', 'group')
-    ->orderBy('title', 'ASC')
-    ->addTag('node_access');
+    ->orderBy('n.title', 'ASC');
 
   $nids  = $select->execute()->fetchCol();
   $nodes = node_load_multiple($nids);
 
-  $allowed_nodes = array();
-  foreach ($nodes as $nid => $node) {
-    if (node_access('view', $node, $user)) {
-      $allowed_nodes[$nid] = $node;
-    }
-  }
-
-  return $allowed_nodes;
+  return $nodes;
 }
 
 /**
  * returns an array of node objects belonging to the given group
+ * doesn't check permissions.
  */
 function get_group_contents ($group_nid) {
 
@@ -194,8 +188,7 @@ function get_group_contents ($group_nid) {
   $select = db_select('node', 'n')
     ->fields('n', array('nid', 'sticky', 'created'))
     ->condition('n.type', 'group_content')
-    ->orderBy('title', 'ASC')
-    ->addTag('node_access');
+    ->orderBy('n.title', 'ASC');
 
   $nids  = $select->execute()->fetchCol();
   $nodes = node_load_multiple($nids);
@@ -210,14 +203,7 @@ function get_group_contents ($group_nid) {
     $nodes = $filtered;
   }
 
-  $allowed_nodes = array();
-  foreach ($nodes as $nid => $node) {
-    if (node_access('view', $node, $user)) {
-      $allowed_nodes[$nid] = $node;
-    }
-  }
-
-  return $allowed_nodes;
+  return $nodes;
 }
 
 /**
@@ -246,13 +232,13 @@ function get_gids ($node) {
 
 function user_is_in_group ($account, $node) {
 
-    $gids = get_gids($node);
+    $group_ids = get_gids($node);
 
     $select = db_select('og_membership', 'm')
         ->fields('m', array('etid'))
         ->condition('m.entity_type', 'user')
         ->condition('m.etid', $account->uid)
-        ->condition('m.gid', $gids);
+        ->condition('m.gid', $group_ids);
 
     if (count($select->execute()->fetchCol()) > 0) {
         return TRUE;
@@ -268,15 +254,15 @@ function is_write_access ($op) {
 
 function is_group_admin ($account, $node) {
 
-    $admin_rid = 1;
-    $gids = get_gids($node);
+    $admin_role_id = 1;
+    $group_ids = get_gids($node);
 
     $select = db_select('og_users_roles', 'ur')
         ->fields('ur', array('rid'))
-        ->condition('ur.gid', $gids)
+        ->condition('ur.gid', $group_ids)
         ->condition('ur.uid', $account->uid);
 
-    if (in_array($admin_rid, $select->execute()->fetchCol())) {
+    if (in_array($admin_role_id, $select->execute()->fetchCol())) {
         return TRUE;
     } else {
         return FALSE;
