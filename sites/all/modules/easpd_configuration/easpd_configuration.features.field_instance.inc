@@ -728,11 +728,8 @@ function easpd_configuration_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'og_ui',
-        'settings' => array(
-          'field_name' => FALSE,
-        ),
-        'type' => 'og_group_subscribe',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 1,
       ),
       'scs' => array(

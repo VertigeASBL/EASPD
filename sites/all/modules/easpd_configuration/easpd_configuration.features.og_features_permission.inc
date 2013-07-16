@@ -75,9 +75,7 @@ function easpd_configuration_og_features_default_permissions() {
 
   // Exported og permission: 'node:group:subscribe'
   $permissions['node:group:subscribe'] = array(
-    'roles' => array(
-      'non-member' => 'non-member',
-    ),
+    'roles' => array(),
   );
 
   // Exported og permission: 'node:group:subscribe without approval'
@@ -89,7 +87,6 @@ function easpd_configuration_og_features_default_permissions() {
   $permissions['node:group:unsubscribe'] = array(
     'roles' => array(
       'administrator member' => 'administrator member',
-      'member' => 'member',
     ),
   );
 

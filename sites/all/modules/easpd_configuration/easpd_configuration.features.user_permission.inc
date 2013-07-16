@@ -806,6 +806,7 @@ function easpd_configuration_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'developer' => 'developer',
+      'staff' => 'staff',
     ),
     'module' => 'node',
   );
@@ -816,6 +817,7 @@ function easpd_configuration_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'developer' => 'developer',
+      'staff' => 'staff',
     ),
     'module' => 'node',
   );
@@ -1061,6 +1063,7 @@ function easpd_configuration_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'developer' => 'developer',
+      'staff' => 'staff',
     ),
     'module' => 'node',
   );
@@ -1071,6 +1074,7 @@ function easpd_configuration_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'developer' => 'developer',
+      'staff' => 'staff',
     ),
     'module' => 'node',
   );

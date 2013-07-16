@@ -33,7 +33,8 @@ function easpd_configuration_default_fe_block_boxes() {
   $fe_block_boxes->machine_name = 'social_links';
   $fe_block_boxes->body = '<p><a href="https://www.youtube.com/user/EASPD" target="_blank"><img alt="" src="/sites/default/files/sites/default/files/youtube-img.png" style="height:76px; width:375px" /></a></p>
 
-<p><a href="https://www.facebook.com/easpdbrux" target="_blank"><img alt="" src="/sites/default/files/sites/default/files/facebook-img.png" style="height:85px; width:375px" /></a></p>
+<p><a href="https://www.facebook.com/easpdbrux" target="_blank"><img alt="" src="/sites/default/files/sites/default/files/facebook-img.png" style="height:85px; width:375px" /></a><br />
+<a href="https://twitter.com/EASPD_Brussels" target="_blank"><img alt="" src="/sites/default/files/sites/default/files/twitter_button.png" style="height:85px; width:375px" /></a></p>
 
 <p><a href="http://employmentforall.eu/" target="_blank"><img alt="" src="/sites/default/files/sites/default/files/jobs4all-img.png" style="height:55px; width:375px" /></a></p>
 ';
