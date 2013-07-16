@@ -135,7 +135,7 @@ function easpd_groups_page_view () {
   $allowed_groups = array();
   foreach ($groups as $group) {
     if (node_access('view', $group, $user)) {
-      $allowed_groups[] = $group;
+      $allowed_groups[$group->nid] = $group;
     }
   }
 
