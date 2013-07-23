@@ -1387,7 +1387,7 @@ function easpd_configuration_default_fe_block_settings() {
     'custom' => 0,
     'delta' => 'upcoming_events-block',
     'i18n_block_language' => array(),
-    'i18n_mode' => 0,
+    'i18n_mode' => 1,
     'module' => 'views',
     'node_types' => array(),
     'pages' => '',

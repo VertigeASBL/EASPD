@@ -346,7 +346,9 @@ function easpd_configuration_user_default_permissions() {
   $permissions['administer languages'] = array(
     'name' => 'administer languages',
     'roles' => array(
+      'administrator' => 'administrator',
       'developer' => 'developer',
+      'staff' => 'staff',
     ),
     'module' => 'locale',
   );
