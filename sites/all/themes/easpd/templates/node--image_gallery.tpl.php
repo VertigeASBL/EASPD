@@ -1,4 +1,5 @@
 <div id="node-<?php print $node->nid; ?>" class="node-gallery">
+  <h3><?php print $node->title; ?></h3>
   <?php
   $imgcount = count($node->field_img['und']);
 
