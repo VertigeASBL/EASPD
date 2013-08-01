@@ -636,6 +636,20 @@ nav .block-search-form {
   }
 }
 
+.links {
+  li {
+    list-style: none;
+    float: left;
+    display: inline-block;
+    padding: 5px;
+  }
+  a {
+    font-style: italic;
+    font-size: 1.3em;
+    color: $lightBlue;
+  }
+}
+
 .titre_bloc {
   display: inline-block;
   padding: 0 15px;
