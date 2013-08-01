@@ -931,8 +931,10 @@ function easpd_configuration_default_fe_block_settings() {
     'css_class' => '',
     'custom' => 0,
     'delta' => 'user-menu',
-    'i18n_block_language' => array(),
-    'i18n_mode' => 0,
+    'i18n_block_language' => array(
+      0 => 'en',
+    ),
+    'i18n_mode' => 1,
     'module' => 'system',
     'node_types' => array(),
     'pages' => '',
