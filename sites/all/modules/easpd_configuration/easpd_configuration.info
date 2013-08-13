@@ -103,6 +103,7 @@ dependencies[] = transliteration
 dependencies[] = update
 dependencies[] = user
 dependencies[] = variable
+dependencies[] = video_filter
 dependencies[] = views
 dependencies[] = views_bulk_operations
 dependencies[] = views_data_export

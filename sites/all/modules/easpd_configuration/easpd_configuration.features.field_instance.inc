@@ -222,7 +222,7 @@ function easpd_configuration_field_default_field_instances() {
           'image_style' => 'large',
         ),
         'type' => 'image',
-        'weight' => 0,
+        'weight' => 1,
       ),
       'scs' => array(
         'label' => 'hidden',
@@ -369,7 +369,7 @@ function easpd_configuration_field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 1,
+        'weight' => 0,
       ),
       'scs' => array(
         'label' => 'above',
