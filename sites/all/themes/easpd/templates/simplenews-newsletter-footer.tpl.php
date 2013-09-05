@@ -34,7 +34,7 @@
 
     <!-- FOOTER -->
 
-    <table class="footer-wrap disclaimer">
+    <table bgcolor="#ECF2F9" class="footer-wrap disclaimer">
       <tr>
         <td></td>
         <td class="container">
@@ -53,7 +53,7 @@
       </tr>
     </table>
 
-    <table class="footer-wrap contact-info">
+    <table bgcolor="#ECF2F9" class="footer-wrap contact-info">
       <tr>
         <td></td>
         <td class="container">
@@ -79,7 +79,7 @@
       </tr>
     </table>
 
-    <table class="footer-wrap">
+    <table bgcolor="#ECF2F9" class="footer-wrap">
       <tr>
         <td></td>
         <td class="container">
@@ -107,7 +107,7 @@
       </tr>
     </table>
 
-    <table class="footer-wrap">
+    <table bgcolor="#ECF2F9" class="footer-wrap">
     	<tr>
     		<td></td>
     		<td class="container">

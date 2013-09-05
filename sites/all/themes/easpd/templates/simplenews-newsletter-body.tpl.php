@@ -28,7 +28,7 @@
  */
 ?>
 <!-- HEADER -->
-<table cellpadding="0" cellspacing="0" class="head-wrap">
+<table bgcolor="#ECF2F9" cellpadding="0" cellspacing="0" class="head-wrap">
   <tr height="4">
     <td class="body-top"></td>
     <td class="body-top"></td>
@@ -43,36 +43,34 @@
 	</tr>
 </table>
 
-<table cellpadding="0" cellspacing="0" class="head-wrap jaune-fonce">
+<table bgcolor="#ECF2F9" cellpadding="0" cellspacing="0" class="head-wrap jaune-fonce">
 	<tr>
-		<td></td>
+		<td style="min-width: 10px;"></td>
 		<td class="title container" >						
       <h1 style="margin-bottom: 0;"><?php print $title; ?></h1>
 		</td>
-		<td></td>
+		<td style="min-width: 10px;"></td>
 	</tr>
 </table><!-- /HEADER -->
 
 
 <!-- BODY -->
-<table cellspacing="0" cellpadding="0" class="body-wrap">
+<table bgcolor="#ECF2F9" cellspacing="0" cellpadding="0" class="body-wrap">
 	<tr>
-		<td></td>
+    <td style="min-width: 10px;"></td>
 		<td class="container">
 
 			<table>
 				<tr>
 		 			<td class="container">
-           <div class="content">
 
            <?php print render($build); ?>												
 						
-			     </div><!-- /content -->
 					</td>
 				</tr>
 			</table>
 									
 		</td>
-		<td></td>
+    <td style="min-width: 10px;"></td>
 	</tr>
 </table><!-- /BODY -->
