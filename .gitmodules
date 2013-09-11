@@ -4,3 +4,6 @@
 [submodule "sites/all/modules/easpd_map"]
 	path = sites/all/modules/easpd_map
 	url = git@github.com:VertigeASBL/easpd_map.git
+[submodule "sites/all/modules/import_vertige"]
+	path = sites/all/modules/import_vertige
+	url = git@github.com:VertigeASBL/import_vertige.git
