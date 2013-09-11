@@ -12,6 +12,7 @@ dependencies[] = block
 dependencies[] = calendar
 dependencies[] = ckeditor
 dependencies[] = ckeditor_link
+dependencies[] = ckeditor
 dependencies[] = ckeditor_link_file
 dependencies[] = contact
 dependencies[] = content_access
