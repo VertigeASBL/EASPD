@@ -56,26 +56,35 @@ function strip_tags_in_paragraphs ($variables) {
   return $variables;
 }
 
+function my_htmlchars($html) {
+
+  // évite les merdres avec les apostrophes
+  $html = str_replace("’", "&apos;", $html);
+  $html = str_replace("‘", "&lsquo;", $html);
+  $html = str_replace("’", "&rsquo;", $html);
+  $html = str_replace("“", "&ldquo;", $html);
+  $html = str_replace("”", "&rdquo;", $html);
+  $html = str_replace("—", "&mdash;", $html);
+  $html = str_replace("–", "&ndash;", $html);
+  $html = str_replace("œ", "&oelig;", $html);
+  return $html;
+}
+
 function easpd_views_view_field__newsflashes__block__body ($variables) {
 
   // empty images will break the layout without this
   $variables['output'] = preg_replace('#<div class="logo"></div>#',
                                       '<div class="logo">&nbsp;</div>',
                                       $variables['output']);
-  // évite les merdres avec les apostrophes
-  $variables['output'] = str_replace("’", "&apos;", $variables['output']);
-  $variables['output'] = str_replace("‘", "&lsquo;", $variables['output']);
-  $variables['output'] = str_replace("’", "&rsquo;", $variables['output']);
-  $variables['output'] = str_replace("“", "&ldquo;", $variables['output']);
-  $variables['output'] = str_replace("”", "&rdquo;", $variables['output']);
-  $variables['output'] = str_replace("—", "&mdash;", $variables['output']);
-  $variables['output'] = str_replace("–", "&ndash;", $variables['output']);
+
+  $variables['output'] = my_htmlchars($variables['output']);
   $variables = strip_tags_in_paragraphs($variables);
   return ajouter_read_more($variables, ' …');
 }
 
 function easpd_views_view_field__newsflashes__page__body ($variables) {
 
+  $variables['output'] = my_htmlchars($variables['output']);
   $variables = strip_tags_in_paragraphs($variables);
   return ajouter_read_more($variables, ' …');
 }
@@ -86,20 +95,15 @@ function easpd_views_view_field__last_publications__block__body ($variables) {
   $variables['output'] = preg_replace('#<div class="logo"></div>#',
                                       '<div class="logo">&nbsp;</div>',
                                       $variables['output']);
-  // évite les merdres avec les apostrophes
-  $variables['output'] = str_replace("’", "&apos;", $variables['output']);
-  $variables['output'] = str_replace("‘", "&lsquo;", $variables['output']);
-  $variables['output'] = str_replace("’", "&rsquo;", $variables['output']);
-  $variables['output'] = str_replace("“", "&ldquo;", $variables['output']);
-  $variables['output'] = str_replace("”", "&rdquo;", $variables['output']);
-  $variables['output'] = str_replace("—", "&mdash;", $variables['output']);
-  $variables['output'] = str_replace("–", "&ndash;", $variables['output']);
+
+  $variables['output'] = my_htmlchars($variables['output']);
   $variables = strip_tags_in_paragraphs($variables);
   return ajouter_read_more($variables, ' …');
 }
 
 function easpd_views_view_field__slideshow_home__block__body($variables) {
 
+  $variables['output'] = my_htmlchars($variables['output']);
   $variables = strip_tags_in_paragraphs($variables);
   return ajouter_read_more($variables);
 }
