@@ -52,6 +52,7 @@ $ratio: major-second();
 @mixin heading($scale-number) {
   font-size: emCalc(ms($scale-number));
   margin: ms($scale-number)/4 0 ms($scale-number)/3 0;
+  clear: both;
 }
 
 /* A button with an arrow */
@@ -880,6 +881,12 @@ nav .block-search-form {
   .field-label {
     margin: 5px 0;
   }
+}
+
+.node-event .field-name-field-event-date .date-display-single {
+  @extend .date;
+  float: none;
+  text-transform: none;
 }
 
 article img {
