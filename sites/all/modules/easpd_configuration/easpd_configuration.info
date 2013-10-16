@@ -30,7 +30,6 @@ dependencies[] = easpd_map
 dependencies[] = email
 dependencies[] = entity
 dependencies[] = entity_token
-dependencies[] = entityform
 dependencies[] = entityreference
 dependencies[] = fe_block
 dependencies[] = features
@@ -475,6 +474,7 @@ features_exclude[field][entityform-information_form-field_type_of_organisation] 
 features_exclude[dependencies][styleswitcher] = styleswitcher
 features_exclude[dependencies][devel] = devel
 features_exclude[dependencies][strongarm] = strongarm
+features_exclude[dependencies][entityform] = entityform
 features_exclude[variable][comment_page] = comment_page
 features_exclude[variable][field_bundle_settings_node__article] = field_bundle_settings_node__article
 features_exclude[variable][field_bundle_settings_node__event] = field_bundle_settings_node__event

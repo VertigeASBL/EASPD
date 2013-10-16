@@ -549,7 +549,7 @@ function easpd_configuration_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'date',
         'settings' => array(
           'format_type' => 'long',
@@ -623,7 +623,7 @@ function easpd_configuration_field_default_field_instances() {
     'description' => 'Type in which tags should be associated with this content. You can input several tags by separating them with a comma, eg. "policy, europe, disabilities". ',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'i18n_taxonomy',
         'settings' => array(),
         'type' => 'i18n_taxonomy_term_reference_link',
