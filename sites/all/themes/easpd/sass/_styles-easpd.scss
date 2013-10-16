@@ -898,6 +898,19 @@ article img {
   display: inline-block;
 }
 
+.webform-component {
+  clear: both;
+}
+
+.webform-datepicker > div {
+  float: left;
+}
+
+.form-radios label {
+  position: relative;
+  top: -6px;
+}
+
 /* -----------------------------------------
    Colonne Droite
    ----------------------------------------- */
