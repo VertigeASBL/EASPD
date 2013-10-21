@@ -127,15 +127,14 @@ table.footer-wrap {
   padding-top: 20px; }
   .contact-info table {
     width: 100%; }
-  .contact-info p {
+  .contact-info td {
     color: #184996;
-    font-style: italic;
-    line-height: 0.8; }
-    .contact-info p.left {
+    font-style: italic; }
+    .contact-info td.left {
       text-align: left; }
-    .contact-info p.right {
+    .contact-info td.right {
       text-align: right; }
-    .contact-info p a {
+    .contact-info td a {
       font-style: normal; }
 
 /* -------------------------------------

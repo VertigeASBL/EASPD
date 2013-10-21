@@ -59,18 +59,16 @@
         <td class="container">
           <table>
             <tr>
-              <td>
-                <p class="left">&copy; EASPD 2013 - All Rights reserved <br>
+              <td class="left">
+                  &copy; EASPD 2013 - All Rights reserved
                   <a href="<?php url('content/contact-us', array('absolute' => TRUE)); ?>">
                     contact
                   </a>
-                </p>
               </td>
-              <td>
-                <p class="right">EASPD<br>
-                  Oudergemselaan / Avenue d&rsquo;Auderghem 63<br>
+              <td class="right">
+                  EASPD
+                  Oudergemselaan / Avenue d&rsquo;Auderghem 63
                   1040 Brussels - Belgium
-                </p>
               </td>
             </tr>
           </table>
@@ -78,6 +76,7 @@
         <td></td>
       </tr>
     </table>
+
 
     <table bgcolor="#ECF2F9" class="footer-wrap">
       <tr>
