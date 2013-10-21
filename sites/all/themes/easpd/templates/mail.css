@@ -155,7 +155,13 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
 .bloc-bleu {
   background-color: #184996;
   color: white;
-  padding: 4px 20px 3px 10px;
+  padding: 0;
+  border-top-width: 4px;
+  border-right-width: 20px;
+  border-bottom-width: 3px;
+  border-left-width: 10px;
+  border-color: #184996;
+  border-style: solid;
   display: inline-block;
   border-radius: 0 0 8px 8px;
   margin-top: 0; }
@@ -163,7 +169,13 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
 .bloc-bleu-pale {
   background-color: #92afd8;
   color: white;
-  padding: 4px 20px 3px 10px;
+  padding: 0;
+  border-top-width: 4px;
+  border-right-width: 20px;
+  border-bottom-width: 3px;
+  border-left-width: 10px;
+  border-color: #92afd8;
+  border-style: solid;
   display: inline-block;
   border-radius: 0 0 8px 8px;
   margin-top: 0; }
@@ -171,7 +183,13 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
 .bloc-bleu-clair {
   background-color: #0291c0;
   color: white;
-  padding: 4px 20px 3px 10px;
+  padding: 0;
+  border-top-width: 4px;
+  border-right-width: 20px;
+  border-bottom-width: 3px;
+  border-left-width: 10px;
+  border-color: #0291c0;
+  border-style: solid;
   display: inline-block;
   border-radius: 0 0 8px 8px;
   margin-top: 0; }
@@ -179,7 +197,13 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
 .bloc-vert {
   background-color: #002f2f;
   color: white;
-  padding: 4px 20px 3px 10px;
+  padding: 0;
+  border-top-width: 4px;
+  border-right-width: 20px;
+  border-bottom-width: 3px;
+  border-left-width: 10px;
+  border-color: #002f2f;
+  border-style: solid;
   display: inline-block;
   border-radius: 0 0 8px 8px;
   margin-top: 0; }
@@ -187,7 +211,13 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
 .bloc-turquoise {
   background-color: #048b9a;
   color: white;
-  padding: 4px 20px 3px 10px;
+  padding: 0;
+  border-top-width: 4px;
+  border-right-width: 20px;
+  border-bottom-width: 3px;
+  border-left-width: 10px;
+  border-color: #048b9a;
+  border-style: solid;
   display: inline-block;
   border-radius: 0 0 8px 8px;
   margin-top: 0; }
@@ -195,7 +225,13 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
 .bloc-violet {
   background-color: #672b7d;
   color: white;
-  padding: 4px 20px 3px 10px;
+  padding: 0;
+  border-top-width: 4px;
+  border-right-width: 20px;
+  border-bottom-width: 3px;
+  border-left-width: 10px;
+  border-color: #672b7d;
+  border-style: solid;
   display: inline-block;
   border-radius: 0 0 8px 8px;
   margin-top: 0; }
@@ -203,7 +239,13 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
 .bloc-orange {
   background-color: #ff9600;
   color: white;
-  padding: 4px 20px 3px 10px;
+  padding: 0;
+  border-top-width: 4px;
+  border-right-width: 20px;
+  border-bottom-width: 3px;
+  border-left-width: 10px;
+  border-color: #ff9600;
+  border-style: solid;
   display: inline-block;
   border-radius: 0 0 8px 8px;
   margin-top: 0; }
