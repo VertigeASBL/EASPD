@@ -5,6 +5,9 @@
  * Integrates CKEditor Link with file entities.
  */
 
+// Functions for recording file usage when using CKEditor Link File links.
+require_once dirname(__FILE__) . '/includes/ckeditor_link_file.usage.inc';
+
 /**
  * Implements hook_ckeditor_link_types().
  */

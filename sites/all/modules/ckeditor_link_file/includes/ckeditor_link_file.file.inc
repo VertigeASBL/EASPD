@@ -9,54 +9,22 @@
  * Implements hook_ckeditor_link_TYPE_autocomplete().
  */
 function ckeditor_link_file_ckeditor_link_file_autocomplete($string, $limit) {
-  global $user;
+  $matches = array();
 
   $file_types = array_keys(array_filter(variable_get('ckeditor_link_file_autocomplete_file_types', array('- any -' => '- any -'))));
   if (count($file_types)) {
-    $query = db_select('file_managed');
-    $query->fields('file_managed', array('fid'));
-    if (user_access('bypass file access')) {
-      // Administrators don't need to be restricted to only permanent files.
-      $query
-        ->condition('filename', '%' . db_like($string) . '%', 'LIKE');
-    }
-    elseif(user_access('view own private files') && user_is_logged_in()) {
-      // For private files, users can access their own private files if the
-      // user is not anonymous, and has the 'view own private files' permission.
-      $query
-        ->condition('filename', '%' . db_like($string) . '%', 'LIKE')
-        ->condition('uri', db_like('private://') . '%', 'LIKE')
-        ->condition('uid', $user->uid, '=')
-        ->condition('status', 1);
-    }
-    elseif(user_access('view own files')) {
-      // Users with the 'view own files' permission can access non-private
-      // files if they own the file.
-      $query
-        ->condition('filename', '%' . db_like($string) . '%', 'LIKE')
-        ->condition('uid', $user->uid, '=')
-        ->condition('status', 1);
-    }
-    elseif(user_access('view files')) {
-      // For non-private files, allow users to access them if they have the
-      // 'view files' permission.
-      $query
-        ->condition('filename', '%' . db_like($string) . '%', 'LIKE')
-        ->condition('status', 1);
-    }
-    if (!in_array('- any -', $file_types)) {
-      $query->condition('type', $file_types, 'IN');
-    }
-    $fids = $query
-      ->orderBy('filename')
-      ->orderBy('type')
+    $query = db_select('file_managed', 'fm')
+      ->fields('fm', array('fid', 'filename'))
+      ->condition('fm.filename', '%'. db_like($string) .'%', 'LIKE')
+      ->orderBy('fm.filename')
+      ->orderBy('fm.type')
       ->range(0, $limit)
-      ->execute()
-      ->fetchCol();
-    $files = file_load_multiple($fids);
-
-    $matches = array();
-    foreach ($files as $file) {
+      ->addTag('file_access');
+    if (!in_array('- any -', $file_types)) {
+      $query->condition('fm.type', $file_types, 'IN');
+    }
+    $result = $query->execute();
+    foreach ($result as $file) {
       $matches['file/'. $file->fid] = $file->filename;
     }
   }
@@ -73,8 +41,11 @@ function ckeditor_link_file_ckeditor_link_file_revert($path, &$langcode) {
   }
 
   $fid = $matches[1];
-
-  if ($file = file_load($fid)) {
+  $query = db_select('file_managed', 'fm')
+    ->fields('fm', array('filename'))
+    ->condition('fm.fid', $fid)
+    ->addTag('file_access');
+  if ($file = $query->execute()->fetchObject()) {
     return $file->filename;
   }
 
@@ -127,7 +98,7 @@ function ckeditor_link_file_ckeditor_link_file_settings() {
       'download' => t('Download'),
     ),
     '#default_value' => variable_get('ckeditor_link_file_link_method', 'file'),
-    '#description' => t('Choose whether the link points to the file or a download of the file.'),
+    '#description' => t('Choose whether the link points to the file, the URL of the file or a download of the file.'),
   );
 
   $options = array();
