@@ -176,9 +176,10 @@ table.footer-wrap {
   table {
     width: 100%;
   }
-  td {
+  p {
     color: $darkBlue;
     font-style: italic;
+    line-height: 0.8;
     &.left {
       text-align: left;
     }
@@ -203,13 +204,7 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small { font-size: 60%; col
 @mixin titre-bloc($couleur) {
   background-color: $couleur;
   color: white;
-  padding: 0;
-  border-top-width: 4px;
-  border-right-width: 20px;
-  border-bottom-width: 3px;
-  border-left-width: 10px;
-  border-color: $couleur;
-  border-style: solid;
+  padding: 4px 20px 3px 10px;
   display: inline-block;
   border-radius: 0 0 8px 8px;
   margin-top: 0;
