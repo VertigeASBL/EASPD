@@ -35,7 +35,7 @@
     <td class="body-top"></td>
   </tr>
 	<tr>
-		<td class="fond-jaune-pale"></td>
+		<td class="fond-jaune"></td>
 		<td class="header container" >				
     <img src="<?php print base_path() . 'sites/all/themes/easpd/images/newsletter_header.png'; ?>" />
 		</td>
@@ -58,15 +58,18 @@
 <table bgcolor="#ECF2F9" cellspacing="0" cellpadding="0" class="body-wrap">
 	<tr>
     <td style="min-width: 10px;"></td>
-		<td class="container">
+		<td class="container white-bg">
 
 			<table>
+        <tr style="height: 20px;"></tr>
 				<tr>
-		 			<td class="container">
+          <td style="min-width: 10px;"></td>
+		 			<td class="container main">
 
            <?php print render($build); ?>												
 						
 					</td>
+          <td style="min-width: 10px;"></td>
 				</tr>
 			</table>
 									
