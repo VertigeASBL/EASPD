@@ -987,3 +987,9 @@ div.add-or-remove-shortcuts {
   -webkit-border-radius: 8px;
   border-radius: 8px;
 }
+
+
+/* Fix l'admin pour FF > 26, cf https://drupal.org/node/2158353 */
+fieldset .fieldset-legend {
+  z-index: 1;
+}
