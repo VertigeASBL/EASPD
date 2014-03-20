@@ -4634,6 +4634,9 @@ html .block-simplenews-0 #edit-unsubscribe {
 html .block-simplenews-0 #edit-unsubscribe:hover {
   cursor: pointer;
 }
+html .block-block-7 {
+  min-height: 130px;
+}
 html .block-block-7 h2 {
   background: url('../images/icone_newsflashes.png?1386319934') no-repeat scroll 15px center #6792ce;
   color: #ffd200;

@@ -1998,6 +1998,9 @@ select {
 .hi-contrast .block-simplenews-0 #edit-unsubscribe:hover {
   cursor: pointer;
 }
+.hi-contrast .block-block-7 {
+  min-height: 130px;
+}
 .hi-contrast .block-block-7 h2 {
   background: url('../images/icone_newsflashes.png?1386319934') no-repeat scroll 15px center white;
   color: black;

@@ -1153,6 +1153,7 @@ article img {
 }
 
 .block-block-7 {
+  min-height: 130px;
   h2 {
     @include titre_bloc_sidebar('icone_newsflashes.png', $lighterBlue, $darkYellow);
   }
