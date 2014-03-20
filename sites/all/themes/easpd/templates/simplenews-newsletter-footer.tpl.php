@@ -44,7 +44,7 @@
                 <img src="<?php print base_path() . 'sites/all/themes/easpd/images/euro_flag.png'; ?>" />
               </td>
               <td>
-                <p><?php print t('This publication is sponsored by the Progress programme of the European Commission, DG Employment, Social Affairs, and Equal Opportunities. It reflects the view only of the author and the Commission cannot be held responsible for any use which may be made of the information contained therein.');?></p>
+                <p><?php print t('With support from the European Union Progress Programme.<br/>The information contained in this publication does not necessarily reflect the position or opinion of the European Commission.');?></p>
               </td>
             </tr>
           </table>
