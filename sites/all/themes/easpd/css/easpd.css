@@ -4901,6 +4901,10 @@ html body {
   box-sizing: content-box;
 }
 
+.view-press-releases h2 {
+  clear: none;
+}
+
 .lt-ie9 .default #header-container .block-block-2, .lt-ie9 .hi-contrast #header-container .block-block-2 {
   left: 280px;
   top: -100px;
