@@ -44,7 +44,7 @@
                 <img src="<?php print base_path() . 'sites/all/themes/easpd/images/euro_flag.png'; ?>" />
               </td>
               <td>
-                <p><?php print t('With support from the European Union Progress Programme.<br/>The information contained in this publication does not necessarily reflect the position or opinion of the European Commission.');?></p>
+                <p><?php print t('European Union Programme for Employment and Social Innovation “EaSI” (2014-2020)');?></p>
               </td>
             </tr>
           </table>
