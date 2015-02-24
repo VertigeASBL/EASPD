@@ -1,0 +1,10 @@
+body.html #page {
+  width: 994px; }
+  body.html #page #main {
+    width: 100%;
+    padding-right: 0;
+    font-size: 1.6em; }
+    body.html #page #main .breadcrumbs, body.html #page #main .tabs {
+      font-size: 0.6em; }
+
+/*# sourceMappingURL=easpd_easy2read.css.map */

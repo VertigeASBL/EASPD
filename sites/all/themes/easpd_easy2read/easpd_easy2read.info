@@ -5,6 +5,9 @@ core = 7.x
 engine = phptemplate
 base theme = easpd
 
+; We keep the stylesheets of the base theme, but add one for this subtheme
+stylesheets[all][] = css/easpd_easy2read.css
+
 ; This section lists the regions defined in the page.tpl.php. The name in 
 ; brackets is the machine name of the region. The text after the equals sign is
 ; a descriptive text used on the admin/structure/blocks page.
@@ -33,3 +36,4 @@ regions[footer_last]     = Footer last
 
 regions[page_top]       = Page top
 regions[page_bottom]    = Page bottom
+

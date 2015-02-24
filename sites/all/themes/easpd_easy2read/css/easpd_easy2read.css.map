@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEE,eAAM;EACJ,KAAK,EAAE,KAAK;EACZ,qBAAM;IACJ,KAAK,EAAE,IAAI;IACX,aAAa,EAAE,CAAC;IAChB,SAAS,EAAE,KAAK;IAChB,+DAAoB;MAClB,SAAS,EAAE,KAAK",
+"sources": ["easpd_easy2read.scss"],
+"names": [],
+"file": "easpd_easy2read.css"
+}
