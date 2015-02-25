@@ -24,13 +24,15 @@ $typo-turquoise: #048b9a;
 $typo-violet:    #672b7d;
 $typo-orange:    #ff9600;
 
+$rouge:          #fd1111;
+
 @import "settings";
 @import "foundation-imports";
 @import "styles-easpd";
 @import "styles-easpd-nojs";
 
 .default {
-  @include styles-easpd($darkBlue, $darkBlue-w, $lightBlue, $lightBlue-w, $lighterBlue, $lightestBlue, $blueBackground, $lightYellow, $darkYellow, $darkYellow-w, $lightGrey, $darkGrey, $white, $typo-bleu, $typo-bleuPale, $typo-bleuClair, $typo-vert, $typo-turquoise, $typo-violet, $typo-orange);
+  @include styles-easpd($darkBlue, $darkBlue-w, $lightBlue, $lightBlue-w, $lighterBlue, $lightestBlue, $blueBackground, $lightYellow, $darkYellow, $darkYellow-w, $lightGrey, $darkGrey, $white, $typo-bleu, $typo-bleuPale, $typo-bleuClair, $typo-vert, $typo-turquoise, $typo-violet, $typo-orange, $rouge);
 }
 
 .no-js {

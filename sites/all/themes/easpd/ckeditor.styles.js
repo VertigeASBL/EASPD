@@ -20,6 +20,7 @@ if(typeof(CKEDITOR) !== 'undefined') {
         { name : 'Orange'    , element: 'span', attributes: { 'class': 'orange' } },
 
         /* block styles */
+        { name : 'Red Box'         , element: 'div', attributes:{ 'class': 'boite-rouge' } },
         { name : 'Blue Title'      , element: 'h2', attributes: { 'class': 'bloc-bleu' } },
         { name : 'Pale Blue Title' , element: 'h2', attributes: { 'class': 'bloc-bleu-pale' } },
         { name : 'Light Blue Title', element: 'h2', attributes: { 'class': 'bloc-bleu-clair' } },

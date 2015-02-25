@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* couleurs pré-définies pour les éditeurs */
 *,
 *:before,
@@ -1038,6 +1039,13 @@ select {
 }
 .hi-contrast tbody {
   border-top: none;
+}
+.hi-contrast .boite-rouge {
+  border: solid 3px #fd1111;
+  border-radius: 3px;
+}
+.hi-contrast .boite-rouge h1, .hi-contrast .boite-rouge h2, .hi-contrast .boite-rouge h3, .hi-contrast .boite-rouge h4, .hi-contrast .boite-rouge h5, .hi-contrast .boite-rouge h6 {
+  font-color: black;
 }
 .hi-contrast #language_switcher {
   /* text resizer */

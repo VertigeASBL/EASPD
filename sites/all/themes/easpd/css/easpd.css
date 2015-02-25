@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* couleurs pré-définies pour les éditeurs */
 *,
 *:before,
@@ -3674,6 +3675,13 @@ form.custom .custom.disabled {
 }
 .default tbody {
   border-top: none;
+}
+.default .boite-rouge {
+  border: solid 3px #fd1111;
+  border-radius: 3px;
+}
+.default .boite-rouge h1, .default .boite-rouge h2, .default .boite-rouge h3, .default .boite-rouge h4, .default .boite-rouge h5, .default .boite-rouge h6 {
+  font-color: black;
 }
 .default #language_switcher {
   /* text resizer */

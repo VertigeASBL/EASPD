@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* couleurs pré-définies pour les éditeurs */
 *,
 *:before,
@@ -3674,6 +3675,13 @@ html table {
 }
 html tbody {
   border-top: none;
+}
+html .boite-rouge {
+  border: solid 3px #fd1111;
+  border-radius: 3px;
+}
+html .boite-rouge h1, html .boite-rouge h2, html .boite-rouge h3, html .boite-rouge h4, html .boite-rouge h5, html .boite-rouge h6 {
+  font-color: black;
 }
 html #language_switcher {
   /* text resizer */

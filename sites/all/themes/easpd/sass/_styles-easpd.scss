@@ -139,7 +139,7 @@ $ratio: major-second();
    Main Mixin
    ----------------------------------------- */
 
-@mixin styles-easpd($darkBlue, $darkBlue-w, $lightBlue, $lightBlue-w, $lighterBlue, $lightestBlue, $blueBackground, $lightYellow, $darkYellow, $darkYellow-w, $lightGrey, $darkGrey, $white, $typo-bleu, $typo-bleuPale, $typo-bleuClair, $typo-vert, $typo-turquoise, $typo-violet, $typo-orange) {
+@mixin styles-easpd($darkBlue, $darkBlue-w, $lightBlue, $lightBlue-w, $lighterBlue, $lightestBlue, $blueBackground, $lightYellow, $darkYellow, $darkYellow-w, $lightGrey, $darkGrey, $white, $typo-bleu, $typo-bleuPale, $typo-bleuClair, $typo-vert, $typo-turquoise, $typo-violet, $typo-orange, $rouge) {
 
 /* -----------------------------------------
    Grid
@@ -356,6 +356,14 @@ table {
 
 tbody {
   border-top: none;
+}
+
+.boite-rouge {
+  border: solid 3px $rouge;
+  border-radius: 3px;
+  h1, h2, h3, h4, h5, h6 {
+    font-color: black;
+  }
 }
 
 /* -----------------------------------------
