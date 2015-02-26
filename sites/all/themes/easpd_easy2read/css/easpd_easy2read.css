@@ -7,4 +7,10 @@ body.html #page {
     body.html #page #main .breadcrumbs, body.html #page #main .tabs {
       font-size: 0.6em; }
 
+body.html.front #page {
+  width: 1100px; }
+body.html.front .block-views-nodequeue-1-block table {
+  width: 100%;
+  border-spacing: 28px; }
+
 /*# sourceMappingURL=easpd_easy2read.css.map */

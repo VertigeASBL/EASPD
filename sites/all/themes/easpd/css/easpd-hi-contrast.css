@@ -1043,9 +1043,25 @@ select {
 .hi-contrast .boite-rouge {
   border: solid 3px #fd1111;
   border-radius: 3px;
+  width: 50%;
+  vertical-align: top;
+}
+.hi-contrast .boite-rouge > div {
+  height: 100%;
+}
+.hi-contrast .boite-rouge a {
+  display: block;
+  height: 100%;
+  color: black;
+}
+.hi-contrast .boite-rouge a:hover {
+  font-weight: bold;
 }
 .hi-contrast .boite-rouge h1, .hi-contrast .boite-rouge h2, .hi-contrast .boite-rouge h3, .hi-contrast .boite-rouge h4, .hi-contrast .boite-rouge h5, .hi-contrast .boite-rouge h6 {
-  font-color: black;
+  color: black;
+  width: 100%;
+  text-align: center;
+  background-color: inherit;
 }
 .hi-contrast #language_switcher {
   /* text resizer */

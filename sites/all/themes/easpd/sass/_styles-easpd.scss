@@ -361,8 +361,24 @@ tbody {
 .boite-rouge {
   border: solid 3px $rouge;
   border-radius: 3px;
+  width: 50%;
+  vertical-align: top;
+  & > div {
+    height: 100%;
+  }
+  a {
+    display: block;
+    height: 100%;
+    color: black;
+    &:hover {
+      font-weight: bold;
+    }
+  }
   h1, h2, h3, h4, h5, h6 {
-    font-color: black;
+    color: black;
+    width: 100%;
+    text-align: center;
+    background-color: inherit;
   }
 }
 

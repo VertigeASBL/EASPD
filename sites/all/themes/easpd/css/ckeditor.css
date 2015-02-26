@@ -3679,9 +3679,25 @@ html tbody {
 html .boite-rouge {
   border: solid 3px #fd1111;
   border-radius: 3px;
+  width: 50%;
+  vertical-align: top;
+}
+html .boite-rouge > div {
+  height: 100%;
+}
+html .boite-rouge a {
+  display: block;
+  height: 100%;
+  color: black;
+}
+html .boite-rouge a:hover {
+  font-weight: bold;
 }
 html .boite-rouge h1, html .boite-rouge h2, html .boite-rouge h3, html .boite-rouge h4, html .boite-rouge h5, html .boite-rouge h6 {
-  font-color: black;
+  color: black;
+  width: 100%;
+  text-align: center;
+  background-color: inherit;
 }
 html #language_switcher {
   /* text resizer */
