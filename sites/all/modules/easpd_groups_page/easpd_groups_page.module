@@ -158,7 +158,7 @@ function easpd_groups_page_view () {
  *
  * Check access for the "groups" page
  */
-function easpd_groups_page_access ($user) {
+function easpd_groups_page_access () {
 
   global $user;
 
