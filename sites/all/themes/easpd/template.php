@@ -77,15 +77,18 @@ function easpd_views_view_field__newsflashes__block__body ($variables) {
                                       '<div class="logo">&nbsp;</div>',
                                       $variables['output']);
 
-  $variables['output'] = my_htmlchars($variables['output']);
-  $variables = strip_tags_in_paragraphs($variables);
+  $variables['output'] = strip_tags($variables['output'], '<a><p><h3><img/><img><div>');
   return ajouter_read_more($variables, ' …');
 }
 
 function easpd_views_view_field__newsflashes__page__body ($variables) {
 
-  $variables['output'] = my_htmlchars($variables['output']);
-  $variables = strip_tags_in_paragraphs($variables);
+  // empty images will break the layout without this
+  $variables['output'] = preg_replace('#<div class="logo"></div>#',
+                                      '<div class="logo">&nbsp;</div>',
+                                      $variables['output']);
+
+  $variables['output'] = strip_tags($variables['output'], '<a><p><h3><img/><img><div>');
   return ajouter_read_more($variables, ' …');
 }
 
@@ -96,16 +99,19 @@ function easpd_views_view_field__last_publications__block__body ($variables) {
                                       '<div class="logo">&nbsp;</div>',
                                       $variables['output']);
 
-  $variables['output'] = my_htmlchars($variables['output']);
-  $variables = strip_tags_in_paragraphs($variables);
+  $variables['output'] = strip_tags($variables['output'], '<a><p><h3><img/><img><div>');
   return ajouter_read_more($variables, ' …');
 }
 
 function easpd_views_view_field__slideshow_home__block__body($variables) {
 
-  $variables['output'] = my_htmlchars($variables['output']);
-  $variables = strip_tags_in_paragraphs($variables);
-  return ajouter_read_more($variables);
+  // empty images will break the layout without this
+  $variables['output'] = preg_replace('#<div class="logo"></div>#',
+                                      '<div class="logo">&nbsp;</div>',
+                                      $variables['output']);
+
+  $variables['output'] = strip_tags($variables['output'], '<a><p><h3><img/><img><div>');
+  return ajouter_read_more($variables, ' …');
 }
 
 function easpd_links__locale_block($variables) {
