@@ -18,6 +18,7 @@ if(typeof(CKEDITOR) !== 'undefined') {
         { name : 'Turquoise' , element: 'span', attributes: { 'class': 'turquoise' } },
         { name : 'Purple'    , element: 'span', attributes: { 'class': 'violet' } },
         { name : 'Orange'    , element: 'span', attributes: { 'class': 'orange' } },
+        { name : 'White'     , element: 'span', attributes: { 'class': 'white' } },
 
         /* block styles */
         // { name : 'Red Box'         , element: 'div', attributes:{ 'class': 'boite-rouge' } },

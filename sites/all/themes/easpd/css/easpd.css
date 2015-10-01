@@ -3538,7 +3538,7 @@ form.custom .custom.disabled {
   color: #184996 !important;
 }
 .default .bleu-pale {
-  color: #92afd8 !important;
+  color: white !important;
 }
 .default .bleu-clair {
   color: #0291c0 !important;
@@ -3554,6 +3554,9 @@ form.custom .custom.disabled {
 }
 .default .orange {
   color: #ff9600 !important;
+}
+.default .white {
+  color: white !important;
 }
 .default .bloc-bleu {
   background-color: #184996;
@@ -3748,21 +3751,21 @@ form.custom .custom.disabled {
   text-indent: -9000px;
 }
 .default #language_switcher .block-block-8 a.changer#text_resize_decrease {
-  background: url('../images/text_resize_minus.gif?1386319935') no-repeat scroll 0 0 transparent;
+  background: url('../images/text_resize_minus.gif?1441898192') no-repeat scroll 0 0 transparent;
   width: 10px;
   height: 10px;
   top: 5px;
   left: -10px;
 }
 .default #language_switcher .block-block-8 a.changer#text_resize_reset {
-  background: url('../images/text_resize_reset.gif?1386319934') no-repeat scroll 0 0 transparent;
+  background: url('../images/text_resize_reset.gif?1441898192') no-repeat scroll 0 0 transparent;
   width: 12px;
   height: 12px;
   top: 3px;
   left: -5px;
 }
 .default #language_switcher .block-block-8 a.changer#text_resize_increase {
-  background: url('../images/text_resize_plus.gif?1386319935') no-repeat scroll 0 0 transparent;
+  background: url('../images/text_resize_plus.gif?1441898192') no-repeat scroll 0 0 transparent;
   width: 13px;
 }
 .default #language_switcher .block-switch-styles {
@@ -3783,7 +3786,7 @@ form.custom .custom.disabled {
   color: white;
 }
 .default #header-container {
-  background: url('../images/header_background.png?1386319935') no-repeat scroll center 0;
+  background: url('../images/header_background.png?1441898192') no-repeat scroll center 0;
   background-color: #ffe35e;
   height: 189px;
   max-width: 100%;
@@ -3849,7 +3852,7 @@ form.custom .custom.disabled {
   border-radius: 5px 0 0 5px;
   behavior: url(/easpd/sites/all/themes/easpd/iehacks/PIE.htc);
   width: 46px;
-  background: url('../images/home_icon.png?1386319934') no-repeat scroll center center;
+  background: url('../images/home_icon.png?1441898192') no-repeat scroll center center;
   text-indent: -99999px;
 }
 .default nav .block-superfish-1 #superfish-1 li {
@@ -3935,7 +3938,7 @@ form.custom .custom.disabled {
   behavior: url(/easpd/sites/all/themes/easpd/iehacks/PIE.htc);
 }
 .default nav .block-search-form form input[type="submit"] {
-  background: url('../images/search_icon.png?1386319935') no-repeat scroll center center;
+  background: url('../images/search_icon.png?1441898192') no-repeat scroll center center;
   border: none;
   position: relative;
   top: -40px;
@@ -4085,7 +4088,7 @@ form.custom .custom.disabled {
   -o-border-radius: 5px;
   border-radius: 5px;
   behavior: url(/easpd/sites/all/themes/easpd/iehacks/PIE.htc);
-  background: url('../images/fleche_bouton_clair.png?1386319935') no-repeat scroll right center #5b87c4;
+  background: url('../images/fleche_bouton_clair.png?1441898192') no-repeat scroll right center #5b87c4;
 }
 .default .date, .default .node-event .field-name-field-event-date .date-display-single {
   float: left;
@@ -4144,7 +4147,7 @@ form.custom .custom.disabled {
   display: block;
   width: 200px;
   height: 139px;
-  background: url('../images/cadre_news_grand.png?1386319935');
+  background: url('../images/cadre_news_grand.png?1441898192');
   padding: 5px 4px;
 }
 .default .block-views-newsflashes-block .views-row-2 .views-field-body p, .default .block-views-newsflashes-block .views-row-3 .views-field-body p, .default .block-views-newsflashes-block .views-row-4 .views-field-body p {
@@ -4153,7 +4156,7 @@ form.custom .custom.disabled {
 .default .block-views-newsflashes-block .views-row-2 .logo, .default .block-views-newsflashes-block .views-row-3 .logo, .default .block-views-newsflashes-block .views-row-4 .logo {
   width: 200px;
   height: 105px;
-  background: url('../images/cadre_news_petit.png?1386319934');
+  background: url('../images/cadre_news_petit.png?1441898191');
 }
 .default .block-views-newsflashes-block .views-row-2 .logo a, .default .block-views-newsflashes-block .views-row-3 .logo a, .default .block-views-newsflashes-block .views-row-4 .logo a {
   position: relative;
@@ -4383,7 +4386,7 @@ form.custom .custom.disabled {
   margin-bottom: 40px;
 }
 .default .block-user-login h2, .default .block-system-user-menu h2 {
-  background: url('../images/icone_login.png?1386319935') no-repeat scroll 15px center #6792ce;
+  background: url('../images/icone_login.png?1441898192') no-repeat scroll 15px center #6792ce;
   color: #ffd200;
   -webkit-border-radius: 0 5px 5px 0;
   -moz-border-radius: 0 5px 5px 0;
@@ -4427,7 +4430,7 @@ form.custom .custom.disabled {
   -o-border-radius: 5px;
   border-radius: 5px;
   behavior: url(/easpd/sites/all/themes/easpd/iehacks/PIE.htc);
-  background: url('../images/fleche_bouton_fonce.png?1386319934') no-repeat scroll right center #184996;
+  background: url('../images/fleche_bouton_fonce.png?1441898191') no-repeat scroll right center #184996;
   clear: both;
   float: right;
   margin-right: 34px;
@@ -4466,7 +4469,7 @@ form.custom .custom.disabled {
   font-stretch: semi-condensed;
 }
 .default .block-views-events-calendar-block-1 h2 {
-  background: url('../images/icone_calendrier.png?1386319935') no-repeat scroll 15px center #6792ce;
+  background: url('../images/icone_calendrier.png?1441898192') no-repeat scroll 15px center #6792ce;
   color: #ffd200;
   -webkit-border-radius: 0 5px 5px 0;
   -moz-border-radius: 0 5px 5px 0;
@@ -4550,7 +4553,7 @@ form.custom .custom.disabled {
   color: white;
 }
 .default .block-views-upcoming-events-block h2 {
-  background: url('../images/icone_events.png?1386319935') no-repeat scroll 15px center #6792ce;
+  background: url('../images/icone_events.png?1441898192') no-repeat scroll 15px center #6792ce;
   color: #ffd200;
   -webkit-border-radius: 0 5px 5px 0;
   -moz-border-radius: 0 5px 5px 0;
@@ -4591,7 +4594,7 @@ form.custom .custom.disabled {
   padding: 30px 0 50px;
 }
 .default .block-simplenews-0 h2 {
-  background: url('../images/icone_newsletter.png?1386319935') no-repeat scroll 15px center #6792ce;
+  background: url('../images/icone_newsletter.png?1441898192') no-repeat scroll 15px center #6792ce;
   color: #ffd200;
   -webkit-border-radius: 0 5px 5px 0;
   -moz-border-radius: 0 5px 5px 0;
@@ -4638,7 +4641,7 @@ form.custom .custom.disabled {
   -o-border-radius: 5px;
   border-radius: 5px;
   behavior: url(/easpd/sites/all/themes/easpd/iehacks/PIE.htc);
-  background: url('../images/fleche_bouton_fonce.png?1386319934') no-repeat scroll right center #184996;
+  background: url('../images/fleche_bouton_fonce.png?1441898191') no-repeat scroll right center #184996;
   font-family: "Roboto Condensed Book", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-size: 0.83333em;
   border: none;
@@ -4662,7 +4665,7 @@ form.custom .custom.disabled {
   min-height: 130px;
 }
 .default .block-block-7 h2 {
-  background: url('../images/icone_newsflashes.png?1386319934') no-repeat scroll 15px center #6792ce;
+  background: url('../images/icone_newsflashes.png?1441898192') no-repeat scroll 15px center #6792ce;
   color: #ffd200;
   -webkit-border-radius: 0 5px 5px 0;
   -moz-border-radius: 0 5px 5px 0;
@@ -4698,14 +4701,14 @@ form.custom .custom.disabled {
   -o-border-radius: 5px;
   border-radius: 5px;
   behavior: url(/easpd/sites/all/themes/easpd/iehacks/PIE.htc);
-  background: url('../images/fleche_bouton_fonce.png?1386319934') no-repeat scroll right center #184996;
+  background: url('../images/fleche_bouton_fonce.png?1441898191') no-repeat scroll right center #184996;
   float: right;
 }
 .default .block-views-sidebar-gallery-block {
   padding-top: 15px;
 }
 .default .block-views-sidebar-gallery-block h2 {
-  background: url('../images/icone_galerie.png?1386319935') no-repeat scroll 15px center #6792ce;
+  background: url('../images/icone_galerie.png?1441898192') no-repeat scroll 15px center #6792ce;
   color: #ffd200;
   -webkit-border-radius: 0 5px 5px 0;
   -moz-border-radius: 0 5px 5px 0;
@@ -4755,11 +4758,11 @@ form.custom .custom.disabled {
 }
 .default .block-views-sidebar-gallery-block #sidebar-gallery .slides-prev {
   left: 25px;
-  background: url('../images/pager_prev.png?1386319935') no-repeat center transparent;
+  background: url('../images/pager_prev.png?1441898192') no-repeat center transparent;
 }
 .default .block-views-sidebar-gallery-block #sidebar-gallery .slides-next {
   right: -184px;
-  background: url('../images/pager_next.png?1386319935') no-repeat center transparent;
+  background: url('../images/pager_next.png?1441898192') no-repeat center transparent;
 }
 .default .block-views-sidebar-gallery-block #sidebar-gallery img {
   border-color: white;
@@ -4783,7 +4786,7 @@ form.custom .custom.disabled {
   text-align: right;
 }
 .default #highlight {
-  background: url('../images/fond_slideshow.png?1386319935') no-repeat;
+  background: url('../images/fond_slideshow.png?1441898192') no-repeat;
   padding: 8px;
   max-width: 686px;
   margin: auto;
@@ -4812,7 +4815,7 @@ form.custom .custom.disabled {
   top: 235px;
 }
 .default #highlight .slides-prev {
-  background: url('../images/slideshow_fleche_gauche.png?1386319935') no-repeat scroll left center;
+  background: url('../images/slideshow_fleche_gauche.png?1441898192') no-repeat scroll left center;
   color: transparent;
   text-indent: -99999px;
   display: block;
@@ -4822,7 +4825,7 @@ form.custom .custom.disabled {
   top: -198px;
 }
 .default #highlight .slides-next {
-  background: url('../images/slideshow_fleche_droite.png?1386319934') no-repeat scroll right center;
+  background: url('../images/slideshow_fleche_droite.png?1441898191') no-repeat scroll right center;
   color: transparent;
   text-indent: -99999px;
   display: block;
@@ -4868,7 +4871,7 @@ form.custom .custom.disabled {
   height: 21px;
   width: 21px;
   border: none;
-  background: url('../images/slideshow_bullet_inactive.png?1386319934') no-repeat;
+  background: url('../images/slideshow_bullet_inactive.png?1441898192') no-repeat;
 }
 .default #highlight .slides-pagination li a {
   color: transparent;
@@ -4880,7 +4883,7 @@ form.custom .custom.disabled {
   border: none;
 }
 .default #highlight .slides-pagination li.selected {
-  background: url('../images/slideshow_bullet_active.png?1386319935') no-repeat;
+  background: url('../images/slideshow_bullet_active.png?1441898192') no-repeat;
 }
 .default #highlight .slides-pagination li:focus {
   height: 21px;
