@@ -1101,6 +1101,21 @@ select {
   font-weight: bold;
   font-size: 0.86667em;
 }
+.hi-contrast #language_switcher .block-locale-language li:last-child {
+  padding: 0;
+}
+.hi-contrast #language_switcher .block-locale-language li:last-child a {
+  display: block;
+  background: url('../images/easy2read-light.png?1446024818') no-repeat center;
+  height: 50px;
+  width: 50px;
+  text-indent: -99999px;
+  cursor: pointer;
+  border-radius: 0 0 4px 4px;
+}
+.hi-contrast #language_switcher .block-locale-language li:last-child a:hover, .hi-contrast #language_switcher .block-locale-language li:last-child a.active {
+  background-image: url('../images/easy2read.png?1445958658');
+}
 .hi-contrast #language_switcher .block-block-8 {
   position: relative;
   top: 18px;

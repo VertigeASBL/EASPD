@@ -3737,6 +3737,21 @@ form.custom .custom.disabled {
   font-weight: bold;
   font-size: 0.86667em;
 }
+.default #language_switcher .block-locale-language li:last-child {
+  padding: 0;
+}
+.default #language_switcher .block-locale-language li:last-child a {
+  display: block;
+  background: url('../images/easy2read-light.png?1446024818') no-repeat center;
+  height: 50px;
+  width: 50px;
+  text-indent: -99999px;
+  cursor: pointer;
+  border-radius: 0 0 4px 4px;
+}
+.default #language_switcher .block-locale-language li:last-child a:hover, .default #language_switcher .block-locale-language li:last-child a.active {
+  background-image: url('../images/easy2read.png?1445958658');
+}
 .default #language_switcher .block-block-8 {
   position: relative;
   top: 18px;

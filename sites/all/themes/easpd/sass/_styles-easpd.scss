@@ -417,6 +417,23 @@ tbody {
       font-size: emCalc(13px);
     }
   }
+  .block-locale-language {
+    li:last-child {
+      padding: 0;
+    }
+    li:last-child a {
+      display: block;
+      background: image-url('easy2read-light.png') no-repeat center;
+      height: 50px;
+      width: 50px;
+      text-indent: -99999px;
+      cursor: pointer;
+      border-radius: 0 0 4px 4px;
+      &:hover, &.active {
+        background-image: image-url('easy2read.png');
+      }
+    }
+  }
   /* text resizer */
   .block-block-8 {
     position: relative;
