@@ -38,9 +38,9 @@ function easpd_groups_page_menu () {
                 'type'             => MENU_NORMAL_ITEM,
                 'menu_name'        => 'user-menu',
                 'page callback'    => 'easpd_group_page_view',
-                'page arguments'   => array($group),
+                'page arguments'   => array($group->nid),
                 'access callback'  => 'node_access',
-                'access arguments' => array('view', $group),
+                'access arguments' => array('view', $group->nid),
             );
         }
     }
