@@ -83,6 +83,10 @@
 <script type="text/javascript">
   (function ($) { $(function () {
      $('.no-js').removeClass('no-js');
+	  // Bon d'accord, c'est bourrin mais il faut comprendre…
+	  var lien_mal_encode = $('.block-views-events-calendar-block-1 .date-heading a'),
+		  texte_lien_mal_encode = lien_mal_encode.html();
+	  lien_mal_encode.html(texte_lien_mal_encode.replace('Ã©','é'));
   }); })(jQuery);
 </script>
 </body>
