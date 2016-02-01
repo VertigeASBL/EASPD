@@ -418,10 +418,14 @@ tbody {
     }
   }
   .block-locale-language {
-    li:last-child {
-      padding: 0;
-    }
-    li:last-child a {
+	li {
+	  padding: 0;
+	  a {
+		margin: 0 7px;
+	  }
+	}
+    li a.language-link[href$="easy"] {
+	  margin: 0;
       display: block;
       background: image-url('easy2read-light.png') no-repeat center;
       height: 50px;

@@ -3737,10 +3737,14 @@ html #language_switcher li a {
   font-weight: bold;
   font-size: 0.86667em;
 }
-html #language_switcher .block-locale-language li:last-child {
+html #language_switcher .block-locale-language li {
   padding: 0;
 }
-html #language_switcher .block-locale-language li:last-child a {
+html #language_switcher .block-locale-language li a {
+  margin: 0 7px;
+}
+html #language_switcher .block-locale-language li a.language-link[href$="easy"] {
+  margin: 0;
   display: block;
   background: url('../images/easy2read-light.png?1446024818') no-repeat center;
   height: 50px;
@@ -3749,7 +3753,7 @@ html #language_switcher .block-locale-language li:last-child a {
   cursor: pointer;
   border-radius: 0 0 4px 4px;
 }
-html #language_switcher .block-locale-language li:last-child a:hover, html #language_switcher .block-locale-language li:last-child a.active {
+html #language_switcher .block-locale-language li a.language-link[href$="easy"]:hover, html #language_switcher .block-locale-language li a.language-link[href$="easy"].active {
   background-image: url('../images/easy2read.png?1445958658');
 }
 html #language_switcher .block-block-8 {

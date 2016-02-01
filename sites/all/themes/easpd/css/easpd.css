@@ -3737,10 +3737,14 @@ form.custom .custom.disabled {
   font-weight: bold;
   font-size: 0.86667em;
 }
-.default #language_switcher .block-locale-language li:last-child {
+.default #language_switcher .block-locale-language li {
   padding: 0;
 }
-.default #language_switcher .block-locale-language li:last-child a {
+.default #language_switcher .block-locale-language li a {
+  margin: 0 7px;
+}
+.default #language_switcher .block-locale-language li a.language-link[href$="easy"] {
+  margin: 0;
   display: block;
   background: url('../images/easy2read-light.png?1446024818') no-repeat center;
   height: 50px;
@@ -3749,7 +3753,7 @@ form.custom .custom.disabled {
   cursor: pointer;
   border-radius: 0 0 4px 4px;
 }
-.default #language_switcher .block-locale-language li:last-child a:hover, .default #language_switcher .block-locale-language li:last-child a.active {
+.default #language_switcher .block-locale-language li a.language-link[href$="easy"]:hover, .default #language_switcher .block-locale-language li a.language-link[href$="easy"].active {
   background-image: url('../images/easy2read.png?1445958658');
 }
 .default #language_switcher .block-block-8 {
