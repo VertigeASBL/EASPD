@@ -1066,6 +1066,9 @@ select {
   text-align: center;
   background-color: inherit;
 }
+.hi-contrast label {
+  margin-bottom: 1em;
+}
 .hi-contrast #language_switcher {
   /* text resizer */
 }
@@ -1110,7 +1113,7 @@ select {
 .hi-contrast #language_switcher .block-locale-language li a.language-link[href$="easy"] {
   margin: 0;
   display: block;
-  background: url('../images/easy2read-light.png?1446024818') no-repeat center;
+  background: url('../images/easy2read-light.png?1455181049') no-repeat center;
   height: 50px;
   width: 50px;
   text-indent: -99999px;
@@ -1118,7 +1121,7 @@ select {
   border-radius: 0 0 4px 4px;
 }
 .hi-contrast #language_switcher .block-locale-language li a.language-link[href$="easy"]:hover, .hi-contrast #language_switcher .block-locale-language li a.language-link[href$="easy"].active {
-  background-image: url('../images/easy2read.png?1445958658');
+  background-image: url('../images/easy2read.png?1455181049');
 }
 .hi-contrast #language_switcher .block-block-8 {
   position: relative;

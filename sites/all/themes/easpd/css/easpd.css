@@ -3702,6 +3702,9 @@ form.custom .custom.disabled {
   text-align: center;
   background-color: inherit;
 }
+.default label {
+  margin-bottom: 1em;
+}
 .default #language_switcher {
   /* text resizer */
 }
@@ -3746,7 +3749,7 @@ form.custom .custom.disabled {
 .default #language_switcher .block-locale-language li a.language-link[href$="easy"] {
   margin: 0;
   display: block;
-  background: url('../images/easy2read-light.png?1446024818') no-repeat center;
+  background: url('../images/easy2read-light.png?1455181049') no-repeat center;
   height: 50px;
   width: 50px;
   text-indent: -99999px;
@@ -3754,7 +3757,7 @@ form.custom .custom.disabled {
   border-radius: 0 0 4px 4px;
 }
 .default #language_switcher .block-locale-language li a.language-link[href$="easy"]:hover, .default #language_switcher .block-locale-language li a.language-link[href$="easy"].active {
-  background-image: url('../images/easy2read.png?1445958658');
+  background-image: url('../images/easy2read.png?1455181049');
 }
 .default #language_switcher .block-block-8 {
   position: relative;

@@ -3702,6 +3702,9 @@ html .boite-rouge h1, html .boite-rouge h2, html .boite-rouge h3, html .boite-ro
   text-align: center;
   background-color: inherit;
 }
+html label {
+  margin-bottom: 1em;
+}
 html #language_switcher {
   /* text resizer */
 }
@@ -3746,7 +3749,7 @@ html #language_switcher .block-locale-language li a {
 html #language_switcher .block-locale-language li a.language-link[href$="easy"] {
   margin: 0;
   display: block;
-  background: url('../images/easy2read-light.png?1446024818') no-repeat center;
+  background: url('../images/easy2read-light.png?1455181049') no-repeat center;
   height: 50px;
   width: 50px;
   text-indent: -99999px;
@@ -3754,7 +3757,7 @@ html #language_switcher .block-locale-language li a.language-link[href$="easy"] 
   border-radius: 0 0 4px 4px;
 }
 html #language_switcher .block-locale-language li a.language-link[href$="easy"]:hover, html #language_switcher .block-locale-language li a.language-link[href$="easy"].active {
-  background-image: url('../images/easy2read.png?1445958658');
+  background-image: url('../images/easy2read.png?1455181049');
 }
 html #language_switcher .block-block-8 {
   position: relative;
